@@ -941,9 +941,7 @@
     "title": "3-gatsu no Lion",
     "title_english": "March Comes In Like a Lion",
     "title_japanese": "3月のライオン",
-    "title_synonyms": [
-      "Sangatsu no Lion"
-    ],
+    "title_synonyms": ["Sangatsu no Lion"],
     "type": "TV",
     "source": "Manga",
     "episodes": 22,
@@ -1131,9 +1129,7 @@
     "title": "3-gatsu no Lion 2nd Season",
     "title_english": "March Comes In Like a Lion 2nd Season",
     "title_japanese": "3月のライオン 第2シリーズ",
-    "title_synonyms": [
-      "Sangatsu no Lion Second Season"
-    ],
+    "title_synonyms": ["Sangatsu no Lion Second Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 22,
@@ -1497,9 +1493,7 @@
     "title": "3D Kanojo: Real Girl",
     "title_english": "Real Girl",
     "title_japanese": "3D彼女 リアルガール",
-    "title_synonyms": [
-      "3D Girlfriend"
-    ],
+    "title_synonyms": ["3D Girlfriend"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -1657,9 +1651,7 @@
     "title": "3D Kanojo: Real Girl 2nd Season",
     "title_english": "Real Girl Season 2",
     "title_japanese": "3D彼女 リアルガール(第2シーズン)",
-    "title_synonyms": [
-      "3D Girlfriend 2nd Season"
-    ],
+    "title_synonyms": ["3D Girlfriend 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -1839,10 +1831,7 @@
     "title": "5-toubun no Hanayome",
     "title_english": "The Quintessential Quintuplets",
     "title_japanese": "五等分の花嫁",
-    "title_synonyms": [
-      "Gotoubun no Hanayome",
-      "The Five Wedded Brides"
-    ],
+    "title_synonyms": ["Gotoubun no Hanayome", "The Five Wedded Brides"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -2745,9 +2734,7 @@
     "title": "86",
     "title_english": "86 Eighty-Six",
     "title_japanese": "86―エイティシックス―",
-    "title_synonyms": [
-      "Eighty Six"
-    ],
+    "title_synonyms": ["Eighty Six"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 11,
@@ -2897,9 +2884,7 @@
     "title": "A-Rank Party wo Ridatsu shita Ore wa, Moto Oshiego-tachi to Meikyuu Shinbu wo Mezasu.",
     "title_english": "I Left My A-Rank Party to Help My Former Students Reach the Dungeon Depths!",
     "title_japanese": "Aランクパーティを離脱した俺は、元教え子たちと迷宮深部を目指す。",
-    "title_synonyms": [
-      "Aparida"
-    ],
+    "title_synonyms": ["Aparida"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 24,
@@ -3091,9 +3076,7 @@
     "title": "A-Rank Party wo Ridatsu shita Ore wa, Moto Oshiego-tachi to Meikyuu Shinbu wo Mezasu. 2nd Season",
     "title_english": "I Left My A-Rank Party to Help My Former Students Reach the Dungeon Depths! Season 2",
     "title_japanese": "Aランクパーティを離脱した俺は、元教え子たちと迷宮深部を目指す。第2期",
-    "title_synonyms": [
-      "Aparida"
-    ],
+    "title_synonyms": ["Aparida"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -3223,9 +3206,7 @@
     "title": "Aharen-san wa Hakarenai",
     "title_english": "Aharen-san wa Hakarenai",
     "title_japanese": "阿波連さんははかれない",
-    "title_synonyms": [
-      "Aharen Is Indecipherable"
-    ],
+    "title_synonyms": ["Aharen Is Indecipherable"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -3377,9 +3358,7 @@
     "title": "Aharen-san wa Hakarenai Season 2",
     "title_english": "Aharen-san wa Hakarenai Season 2",
     "title_japanese": "阿波連さんははかれない season2",
-    "title_synonyms": [
-      "Aharen Is Indecipherable 2nd Season"
-    ],
+    "title_synonyms": ["Aharen Is Indecipherable 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -3532,10 +3511,7 @@
     "title": "Aho Girl",
     "title_english": "AHO-GIRL",
     "title_japanese": "アホガール",
-    "title_synonyms": [
-      "Ahogaru: Clueless Girl",
-      "Dummy Girl"
-    ],
+    "title_synonyms": ["Ahogaru: Clueless Girl", "Dummy Girl"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 12,
@@ -3733,10 +3709,7 @@
     "title": "Aishen Qiaokeli-ing...",
     "title_english": "Cupid's Chocolate",
     "title_japanese": "爱神巧克力ING...",
-    "title_synonyms": [
-      "Cupid's Chocolates",
-      "Aishen Qiaokeli Jinxingshi"
-    ],
+    "title_synonyms": ["Cupid's Chocolates", "Aishen Qiaokeli Jinxingshi"],
     "type": "ONA",
     "source": "Web manga",
     "episodes": 15,
@@ -4126,14 +4099,14 @@
     "url": "https://myanimelist.net/anime/62164/Akane-banashi",
     "images": {
       "jpg": {
-        "image_url": "https://cdn.myanimelist.net/images/anime/1985/154519.jpg",
-        "small_image_url": "https://cdn.myanimelist.net/images/anime/1985/154519t.jpg",
-        "large_image_url": "https://cdn.myanimelist.net/images/anime/1985/154519l.jpg"
+        "image_url": "https://cdn.myanimelist.net/images/anime/1041/155129.jpg",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1041/155129t.jpg",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1041/155129l.jpg"
       },
       "webp": {
-        "image_url": "https://cdn.myanimelist.net/images/anime/1985/154519.webp",
-        "small_image_url": "https://cdn.myanimelist.net/images/anime/1985/154519t.webp",
-        "large_image_url": "https://cdn.myanimelist.net/images/anime/1985/154519l.webp"
+        "image_url": "https://cdn.myanimelist.net/images/anime/1041/155129.webp",
+        "small_image_url": "https://cdn.myanimelist.net/images/anime/1041/155129t.webp",
+        "large_image_url": "https://cdn.myanimelist.net/images/anime/1041/155129l.webp"
       }
     },
     "trailer": {
@@ -4454,9 +4427,7 @@
     "title": "Akkun to Kanojo",
     "title_english": "My Sweet Tyrant",
     "title_japanese": "あっくんとカノジョ",
-    "title_synonyms": [
-      "Akkun and His Girlfriend"
-    ],
+    "title_synonyms": ["Akkun and His Girlfriend"],
     "type": "TV",
     "source": "Manga",
     "episodes": 25,
@@ -5646,9 +5617,7 @@
     "title": "Amagami-san Chi no Enmusubi",
     "title_english": "Tying the Knot with an Amagami Sister",
     "title_japanese": "甘神さんちの縁結び",
-    "title_synonyms": [
-      "Matchmaking of the Amagami Household"
-    ],
+    "title_synonyms": ["Matchmaking of the Amagami Household"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -5817,9 +5786,7 @@
     "title": "Amagi Brilliant Park",
     "title_english": "Amagi Brilliant Park",
     "title_japanese": "甘城ブリリアントパーク",
-    "title_synonyms": [
-      "Amaburi"
-    ],
+    "title_synonyms": ["Amaburi"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -6268,11 +6235,7 @@
     "title": "Ame to Kimi to",
     "title_english": "With You and the Rain",
     "title_japanese": "雨と君と",
-    "title_synonyms": [
-      "Rain",
-      "You",
-      "and..."
-    ],
+    "title_synonyms": ["Rain", "You", "and..."],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -6465,9 +6428,7 @@
     "title": "Ameku Takao no Suiri Karte",
     "title_english": "Ameku M.D.: Doctor Detective",
     "title_japanese": "天久鷹央の推理カルテ",
-    "title_synonyms": [
-      "Ameku Takao's Detective Karte"
-    ],
+    "title_synonyms": ["Ameku Takao's Detective Karte"],
     "type": "TV",
     "source": "Novel",
     "episodes": 12,
@@ -7016,9 +6977,7 @@
     "title": "Ansatsu Kyoushitsu Movie: Minna no Jikan",
     "title_english": null,
     "title_japanese": "劇場版『暗殺教室』みんなの時間",
-    "title_synonyms": [
-      "Assassination Classroom Movie"
-    ],
+    "title_synonyms": ["Assassination Classroom Movie"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -7716,9 +7675,7 @@
     "title": "Ansatsusha de Aru Ore no Status ga Yuusha yori mo Akiraka ni Tsuyoi no da ga",
     "title_english": "My Status as an Assassin Obviously Exceeds the Hero's",
     "title_japanese": "暗殺者である俺のステータスが勇者よりも明らかに強いのだが",
-    "title_synonyms": [
-      "Sutetsuyo"
-    ],
+    "title_synonyms": ["Sutetsuyo"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -8204,9 +8161,7 @@
     "title": "Ao Haru Ride",
     "title_english": "Blue Spring Ride",
     "title_japanese": "アオハライド",
-    "title_synonyms": [
-      "Aoharaido"
-    ],
+    "title_synonyms": ["Aoharaido"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -8876,9 +8831,7 @@
     "title": "Ao no Miburo",
     "title_english": "Blue Miburo",
     "title_japanese": "青のミブロ",
-    "title_synonyms": [
-      "The Blue Wolves of Mibu"
-    ],
+    "title_synonyms": ["The Blue Wolves of Mibu"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -9029,9 +8982,7 @@
     "title": "Ao no Miburo: Serizawa Ansatsu-hen",
     "title_english": "Blue Miburo Season 2",
     "title_japanese": "青のミブロ 芹沢暗殺編",
-    "title_synonyms": [
-      "Blue Miburo: Serizawa Assassination Arc"
-    ],
+    "title_synonyms": ["Blue Miburo: Serizawa Assassination Arc"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -9184,9 +9135,7 @@
     "title": "Ao no Orchestra",
     "title_english": null,
     "title_japanese": "青のオーケストラ",
-    "title_synonyms": [
-      "The Blue Orchestra"
-    ],
+    "title_synonyms": ["The Blue Orchestra"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 24,
@@ -9477,9 +9426,7 @@
     "title": "Araburu Kisetsu no Otome-domo yo.",
     "title_english": "O Maidens in Your Savage Season",
     "title_japanese": "荒ぶる季節の乙女どもよ。",
-    "title_synonyms": [
-      "Maidens of the Savage Season"
-    ],
+    "title_synonyms": ["Maidens of the Savage Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -9645,9 +9592,7 @@
     "title": "Arifureta Shokugyou de Sekai Saikyou",
     "title_english": "Arifureta: From Commonplace to World's Strongest",
     "title_japanese": "ありふれた職業で世界最強",
-    "title_synonyms": [
-      "From Common Job Class to the Strongest in the World"
-    ],
+    "title_synonyms": ["From Common Job Class to the Strongest in the World"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -10812,9 +10757,7 @@
     "title": "Arifureta Shokugyou de Sekai Saikyou: Prologue",
     "title_english": "Arifureta: From Commonplace to World's Strongest - Prologue",
     "title_japanese": "ありふれた職業で世界最強 プロローグ",
-    "title_synonyms": [
-      "Arifureta Shokugyou de Sekai Saikyou Episode 0"
-    ],
+    "title_synonyms": ["Arifureta Shokugyou de Sekai Saikyou Episode 0"],
     "type": "ONA",
     "source": "Light novel",
     "episodes": 1,
@@ -11932,10 +11875,7 @@
     "title": "Bakemonogatari",
     "title_english": "Bakemonogatari",
     "title_japanese": "化物語",
-    "title_synonyms": [
-      "Ghostory",
-      "Monstory"
-    ],
+    "title_synonyms": ["Ghostory", "Monstory"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 15,
@@ -12086,9 +12026,7 @@
     "title": "Ballpark de Tsukamaete!",
     "title_english": "Catch Me at the Ballpark!",
     "title_japanese": "ボールパークでつかまえて！",
-    "title_synonyms": [
-      "The Catcher in the Ballpark!"
-    ],
+    "title_synonyms": ["The Catcher in the Ballpark!"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -12429,9 +12367,7 @@
     "title": "Barakamon",
     "title_english": "Barakamon",
     "title_japanese": "ばらかもん",
-    "title_synonyms": [
-      "Barakamon"
-    ],
+    "title_synonyms": ["Barakamon"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -13495,9 +13431,7 @@
     "title": "Blue Lock vs. U-20 Japan",
     "title_english": "Blue Lock Season 2",
     "title_japanese": "ブルーロック VS. U-20 JAPAN",
-    "title_synonyms": [
-      "Blue Lock 2nd Season"
-    ],
+    "title_synonyms": ["Blue Lock 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 14,
@@ -14093,10 +14027,7 @@
     "title": "Bocchi the Rock! Movie",
     "title_english": null,
     "title_japanese": "ぼっち・ざ・ろっく！劇場総集編",
-    "title_synonyms": [
-      "Bocchi the Rock! Re:",
-      "Bocchi the Rock! Re:Re:"
-    ],
+    "title_synonyms": ["Bocchi the Rock! Re:", "Bocchi the Rock! Re:Re:"],
     "type": "Movie",
     "source": "4-koma manga",
     "episodes": 2,
@@ -14234,9 +14165,7 @@
     "title": "Boku ga Aishita Subete no Kimi e",
     "title_english": "To Every You I've Loved Before",
     "title_japanese": "僕が愛したすべての君へ",
-    "title_synonyms": [
-      "To All of You That I Loved"
-    ],
+    "title_synonyms": ["To All of You That I Loved"],
     "type": "Movie",
     "source": "Novel",
     "episodes": 1,
@@ -15091,9 +15020,7 @@
     "title": "Boku no Hero Academia 6th Season",
     "title_english": "My Hero Academia Season 6",
     "title_japanese": "僕のヒーローアカデミア",
-    "title_synonyms": [
-      "My Hero Academia 6"
-    ],
+    "title_synonyms": ["My Hero Academia 6"],
     "type": "TV",
     "source": "Manga",
     "episodes": 25,
@@ -15269,9 +15196,7 @@
     "title": "Boku no Hero Academia 7th Season",
     "title_english": "My Hero Academia Season 7",
     "title_japanese": "僕のヒーローアカデミア 第7期",
-    "title_synonyms": [
-      "My Hero Academia 7"
-    ],
+    "title_synonyms": ["My Hero Academia 7"],
     "type": "TV",
     "source": "Manga",
     "episodes": 21,
@@ -15459,9 +15384,7 @@
     "title": "Boku no Hero Academia the Movie 1: Futari no Hero",
     "title_english": "My Hero Academia: Two Heroes",
     "title_japanese": "僕のヒーローアカデミア THE MOVIE ～2人の英雄（ヒーロー）～",
-    "title_synonyms": [
-      "My Hero Academia the Movie: The Two Heroes"
-    ],
+    "title_synonyms": ["My Hero Academia the Movie: The Two Heroes"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -15625,9 +15548,7 @@
     "title": "Boku no Hero Academia the Movie 2: Heroes:Rising",
     "title_english": "My Hero Academia: Heroes Rising",
     "title_japanese": "僕のヒーローアカデミア THE MOVIE　ヒーローズ：ライジング",
-    "title_synonyms": [
-      "My Hero Academia the Movie 2: Heroes:Rising"
-    ],
+    "title_synonyms": ["My Hero Academia the Movie 2: Heroes:Rising"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -15928,9 +15849,7 @@
     "title": "Boku no Hero Academia the Movie 3: World Heroes' Mission",
     "title_english": "My Hero Academia: World Heroes' Mission",
     "title_japanese": "僕のヒーローアカデミア THE MOVIE ワールド ヒーローズ ミッション",
-    "title_synonyms": [
-      "My Hero Academia the Movie 3"
-    ],
+    "title_synonyms": ["My Hero Academia the Movie 3"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -16247,9 +16166,7 @@
     "title": "Boku no Hero Academia: Final Season",
     "title_english": "My Hero Academia Final Season",
     "title_japanese": "僕のヒーローアカデミア FINAL SEASON",
-    "title_synonyms": [
-      "My Hero Academia 8"
-    ],
+    "title_synonyms": ["My Hero Academia 8"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -16692,9 +16609,7 @@
     "title": "Boku no Kokoro no Yabai Yatsu",
     "title_english": "The Dangers in My Heart",
     "title_japanese": "僕の心のヤバイやつ",
-    "title_synonyms": [
-      "Bokuyaba"
-    ],
+    "title_synonyms": ["Bokuyaba"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -16882,9 +16797,7 @@
     "title": "Boku no Kokoro no Yabai Yatsu 2nd Season",
     "title_english": "The Dangers in My Heart Season 2",
     "title_japanese": "僕の心のヤバイやつ 第2期",
-    "title_synonyms": [
-      "Bokuyaba"
-    ],
+    "title_synonyms": ["Bokuyaba"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -17072,10 +16985,7 @@
     "title": "Boku no Kokoro no Yabai Yatsu Movie",
     "title_english": null,
     "title_japanese": "僕の心のヤバイやつ 劇場版",
-    "title_synonyms": [
-      "Bokuyaba",
-      "The Dangers in My Heart Season Movie"
-    ],
+    "title_synonyms": ["Bokuyaba", "The Dangers in My Heart Season Movie"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -17398,9 +17308,7 @@
     "title": "Boku no Tsuma wa Kanjou ga Nai",
     "title_english": "My Wife Has No Emotion",
     "title_japanese": "僕の妻は感情がない",
-    "title_synonyms": [
-      "Bokutsuma"
-    ],
+    "title_synonyms": ["Bokutsuma"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -17592,9 +17500,7 @@
     "title": "Bokura no Ame-iro Protocol",
     "title_english": "Protocol: Rain",
     "title_japanese": "僕らの雨いろプロトコル",
-    "title_synonyms": [
-      "Our Rainy Protocol"
-    ],
+    "title_synonyms": ["Our Rainy Protocol"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -17810,9 +17716,7 @@
     "title": "Bokutachi no Remake",
     "title_english": "Remake Our Life!",
     "title_japanese": "ぼくたちのリメイク",
-    "title_synonyms": [
-      "Bokurema"
-    ],
+    "title_synonyms": ["Bokurema"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -17980,9 +17884,7 @@
     "title": "Bokutachi no Remake Recap",
     "title_english": "Remake Our Life! Recap",
     "title_japanese": "ぼくたちのリメイク 第6.5話『総集編』",
-    "title_synonyms": [
-      "Bokutachi no Remake Episode 6.5"
-    ],
+    "title_synonyms": ["Bokutachi no Remake Episode 6.5"],
     "type": "TV Special",
     "source": "Light novel",
     "episodes": 1,
@@ -18306,9 +18208,7 @@
     "title": "Boukensha ni Naritai to Miyako ni Deteitta Musume ga S-Rank ni Natteta",
     "title_english": "My Daughter Left the Nest and Returned an S-Rank Adventurer",
     "title_japanese": "冒険者になりたいと都に出て行った娘がSランクになってた",
-    "title_synonyms": [
-      "S-Rank Musume"
-    ],
+    "title_synonyms": ["S-Rank Musume"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -19095,9 +18995,7 @@
     "title": "Buddy Daddies Intermission: Cherry-Pick",
     "title_english": null,
     "title_japanese": "Buddy Daddies Intermission: Cherry-Pick",
-    "title_synonyms": [
-      "Buddy Daddies Recap"
-    ],
+    "title_synonyms": ["Buddy Daddies Recap"],
     "type": "TV Special",
     "source": "Original",
     "episodes": 1,
@@ -19278,9 +19176,7 @@
     "title": "Bukiyou na Senpai.",
     "title_english": "My Awkward Senpai",
     "title_japanese": "不器用な先輩。",
-    "title_synonyms": [
-      "Awkward Senpai"
-    ],
+    "title_synonyms": ["Awkward Senpai"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -19650,9 +19546,7 @@
     "title": "Busu ni Hanataba wo.",
     "title_english": "April Showers Bring May Flowers",
     "title_japanese": "ブスに花束を。",
-    "title_synonyms": [
-      "A Bouquet for an Ugly Girl"
-    ],
+    "title_synonyms": ["A Bouquet for an Ugly Girl"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -21155,10 +21049,7 @@
     "title": "Charlotte: Tsuyoimono-tachi",
     "title_english": "Charlotte: The Strong Ones",
     "title_japanese": "Charlotte（シャーロット）特別篇 強い者たち",
-    "title_synonyms": [
-      "Charlotte Special",
-      "Strong People"
-    ],
+    "title_synonyms": ["Charlotte Special", "Strong People"],
     "type": "Special",
     "source": "Original",
     "episodes": 1,
@@ -23092,9 +22983,7 @@
     "title": "Chuunibyou demo Koi ga Shitai! Movie: Take On Me",
     "title_english": "Love, Chunibyo & Other Delusions!: Take On Me",
     "title_japanese": "映画 中二病でも恋がしたい！-Take On Me-",
-    "title_synonyms": [
-      "Eiga Chuunibyou demo Koi ga Shitai! Take On Me"
-    ],
+    "title_synonyms": ["Eiga Chuunibyou demo Koi ga Shitai! Take On Me"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -24074,9 +23963,7 @@
     "title": "City The Animation",
     "title_english": null,
     "title_japanese": "CITY THE ANIMATION",
-    "title_synonyms": [
-      "City"
-    ],
+    "title_synonyms": ["City"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -24819,9 +24706,7 @@
     "title": "Code:Breaker",
     "title_english": "Code:Breaker",
     "title_japanese": "CØDE:BREAKER",
-    "title_synonyms": [
-      "Code Breaker"
-    ],
+    "title_synonyms": ["Code Breaker"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -27924,10 +27809,7 @@
     "title": "D-Frag!",
     "title_english": "D-Frag!",
     "title_japanese": "ディーふらぐ！",
-    "title_synonyms": [
-      "D-Frag!",
-      "D-Fragments"
-    ],
+    "title_synonyms": ["D-Frag!", "D-Fragments"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -28109,10 +27991,7 @@
     "title": "D-Frag!*",
     "title_english": null,
     "title_japanese": "ディーふらぐ! ウォーター!!",
-    "title_synonyms": [
-      "D-Frag! OVA",
-      "D-Frag!: Water!!"
-    ],
+    "title_synonyms": ["D-Frag! OVA", "D-Frag!: Water!!"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -29059,9 +28938,7 @@
     "title": "Danna ga Nani wo Itteiru ka Wakaranai Ken",
     "title_english": "I Can't Understand What My Husband Is Saying",
     "title_japanese": "旦那が何を言っているかわからない件",
-    "title_synonyms": [
-      "Danna ga Nani wo Itteiru ka Wakaranai Ken"
-    ],
+    "title_synonyms": ["Danna ga Nani wo Itteiru ka Wakaranai Ken"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 13,
@@ -30190,9 +30067,7 @@
     "title": "Darwin Jihen",
     "title_english": "The Darwin Incident",
     "title_japanese": "ダーウィン事変",
-    "title_synonyms": [
-      "Darwin’s Incident"
-    ],
+    "title_synonyms": ["Darwin’s Incident"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -30649,9 +30524,7 @@
     "title": "Date A Live II",
     "title_english": "Date A Live II",
     "title_japanese": "デート・ア・ライブⅡ",
-    "title_synonyms": [
-      "Date A Live 2"
-    ],
+    "title_synonyms": ["Date A Live 2"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 10,
@@ -30961,11 +30834,7 @@
     "title": "Date A Live III",
     "title_english": "Date A Live III",
     "title_japanese": "デート・ア・ライブⅢ",
-    "title_synonyms": [
-      "Date A Live 3",
-      "Date A Live 3rd Season",
-      "DAL 3"
-    ],
+    "title_synonyms": ["Date A Live 3", "Date A Live 3rd Season", "DAL 3"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -31142,11 +31011,7 @@
     "title": "Date A Live IV",
     "title_english": "Date A Live IV",
     "title_japanese": "デート・ア・ライブⅣ",
-    "title_synonyms": [
-      "Date A Live 4",
-      "Date A Live Fourth Season",
-      "DAL 4"
-    ],
+    "title_synonyms": ["Date A Live 4", "Date A Live Fourth Season", "DAL 4"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -31333,9 +31198,7 @@
     "title": "Date A Live Movie: Mayuri Judgment",
     "title_english": "Date A Live Movie: Mayuri Judgement",
     "title_japanese": "劇場版 デート・ア・ライブ 万由里ジャッジメント",
-    "title_synonyms": [
-      "Gekijouban Date A Live"
-    ],
+    "title_synonyms": ["Gekijouban Date A Live"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -31493,11 +31356,7 @@
     "title": "Date A Live V",
     "title_english": "Date A Live V",
     "title_japanese": "デート・ア・ライブⅤ",
-    "title_synonyms": [
-      "Date A Live 5",
-      "Date A Live Fifth Season",
-      "DAL 5"
-    ],
+    "title_synonyms": ["Date A Live 5", "Date A Live Fifth Season", "DAL 5"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -31690,10 +31549,7 @@
     "title": "Date A Live: Date to Date",
     "title_english": null,
     "title_japanese": "デート・ア・ライブ DATE TO DATE",
-    "title_synonyms": [
-      "Date A Live OVA",
-      "Date A Live Episode 13"
-    ],
+    "title_synonyms": ["Date A Live OVA", "Date A Live Episode 13"],
     "type": "OVA",
     "source": "Light novel",
     "episodes": 1,
@@ -32023,9 +31879,7 @@
     "title": "Dead Mount Death Play Part 2",
     "title_english": null,
     "title_japanese": "デッドマウント・デスプレイ",
-    "title_synonyms": [
-      "Dead Mount Death Play 2nd Season"
-    ],
+    "title_synonyms": ["Dead Mount Death Play 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -32212,9 +32066,7 @@
     "title": "Deadman Wonderland",
     "title_english": "Deadman Wonderland",
     "title_japanese": "デッドマン・ワンダーランド",
-    "title_synonyms": [
-      "DEADMAN WONDERLAND"
-    ],
+    "title_synonyms": ["DEADMAN WONDERLAND"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -32713,9 +32565,7 @@
     "title": "Dekiru Neko wa Kyou mo Yuuutsu",
     "title_english": "The Masterful Cat Is Depressed Again Today",
     "title_japanese": "デキる猫は今日も憂鬱",
-    "title_synonyms": [
-      "Dekineko"
-    ],
+    "title_synonyms": ["Dekineko"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -32877,9 +32727,7 @@
     "title": "Dekisokonai to Yobareta Motoeiyuu wa Jikka kara Tsuihou sareta node Sukikatte ni Ikiru Koto ni Shita",
     "title_english": "The Banished Former Hero Lives as He Pleases",
     "title_japanese": "出来損ないと呼ばれた元英雄は、実家から追放されたので好き勝手に生きることにした",
-    "title_synonyms": [
-      "DekiSoko"
-    ],
+    "title_synonyms": ["DekiSoko"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -33058,9 +32906,7 @@
     "title": "Dekoboko Majo no Oyako Jijou",
     "title_english": "The Family Circumstances of the Irregular Witch",
     "title_japanese": "でこぼこ魔女の親子事情",
-    "title_synonyms": [
-      "The Family Circumstances of the Mismatched Witches"
-    ],
+    "title_synonyms": ["The Family Circumstances of the Mismatched Witches"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 12,
@@ -33398,9 +33244,7 @@
     "title": "Demi-chan wa Kataritai",
     "title_english": "Interviews With Monster Girls",
     "title_japanese": "亜人ちゃんは語りたい",
-    "title_synonyms": [
-      "Ajin-chan wa Kataritai"
-    ],
+    "title_synonyms": ["Ajin-chan wa Kataritai"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -33582,9 +33426,7 @@
     "title": "Do It Yourself!!",
     "title_english": "Do It Yourself!!",
     "title_japanese": "Do It Yourself!! -どぅー・いっと・ゆあせるふ-",
-    "title_synonyms": [
-      "DIY!!"
-    ],
+    "title_synonyms": ["DIY!!"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -33768,10 +33610,7 @@
     "title": "Domestic na Kanojo",
     "title_english": "Domestic Girlfriend",
     "title_japanese": "ドメスティックな彼女",
-    "title_synonyms": [
-      "Dome x Kano",
-      "Domekano"
-    ],
+    "title_synonyms": ["Dome x Kano", "Domekano"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -34114,9 +33953,7 @@
     "title": "Doraemon Movie 12: Nobita no Dorabian Nights",
     "title_english": "Doraemon the Movie: Nobita's Dorabian Nights",
     "title_japanese": "映画 ドラえもん のび太のドラビアンナイト",
-    "title_synonyms": [
-      "Doraemon: Nobita in Dorabian Nights"
-    ],
+    "title_synonyms": ["Doraemon: Nobita in Dorabian Nights"],
     "type": "Movie",
     "source": "Unknown",
     "episodes": 1,
@@ -35027,9 +34864,7 @@
     "title": "Dororo",
     "title_english": "Dororo",
     "title_japanese": "どろろ",
-    "title_synonyms": [
-      "Dororo to Hyakkimaru"
-    ],
+    "title_synonyms": ["Dororo to Hyakkimaru"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -35199,9 +35034,7 @@
     "title": "Dosanko Gal wa Namara Menkoi",
     "title_english": "Hokkaido Gals Are Super Adorable!",
     "title_japanese": "道産子ギャルはなまらめんこい",
-    "title_synonyms": [
-      "Dosanko Gyaru Is Mega Cute"
-    ],
+    "title_synonyms": ["Dosanko Gyaru Is Mega Cute"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -35736,9 +35569,7 @@
     "title": "Dr. Stone: New World",
     "title_english": null,
     "title_japanese": "Dr.STONE NEW WORLD",
-    "title_synonyms": [
-      "Dr. Stone 3rd Season"
-    ],
+    "title_synonyms": ["Dr. Stone 3rd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -35883,9 +35714,7 @@
     "title": "Dr. Stone: New World Part 2",
     "title_english": "Dr. Stone: New World Part 2",
     "title_japanese": "Dr.STONE NEW WORLD",
-    "title_synonyms": [
-      "Dr. Stone 3rd Season Part 2"
-    ],
+    "title_synonyms": ["Dr. Stone 3rd Season Part 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -36171,9 +36000,7 @@
     "title": "Dr. Stone: Science Future",
     "title_english": "Dr. Stone: Science Future",
     "title_japanese": "Dr.STONE SCIENCE FUTURE",
-    "title_synonyms": [
-      "Dr. Stone 4th Season"
-    ],
+    "title_synonyms": ["Dr. Stone 4th Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -36311,9 +36138,7 @@
     "title": "Dr. Stone: Science Future Part 2",
     "title_english": "Dr. Stone: Science Future Part 2",
     "title_japanese": "Dr.STONE SCIENCE FUTURE 第2クール",
-    "title_synonyms": [
-      "Dr. Stone 4th Season Part 2"
-    ],
+    "title_synonyms": ["Dr. Stone 4th Season Part 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -36451,9 +36276,7 @@
     "title": "Dr. Stone: Science Future Part 3",
     "title_english": "Dr. Stone: Science Future Part 3",
     "title_japanese": "Dr.STONE SCIENCE FUTURE 第3クール",
-    "title_synonyms": [
-      "Dr. Stone 4th Season Part 3"
-    ],
+    "title_synonyms": ["Dr. Stone 4th Season Part 3"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -36586,10 +36409,7 @@
     "title": "Dr. Stone: Stone Wars",
     "title_english": null,
     "title_japanese": "ドクターストーン STONE WARS",
-    "title_synonyms": [
-      "Dr. Stone 2nd Season",
-      "Dr. Stone Second Season"
-    ],
+    "title_synonyms": ["Dr. Stone 2nd Season", "Dr. Stone Second Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -36750,10 +36570,7 @@
     "title": "Dragon Ball",
     "title_english": "Dragon Ball",
     "title_japanese": "ドラゴンボール",
-    "title_synonyms": [
-      "Dragonball",
-      "DB"
-    ],
+    "title_synonyms": ["Dragonball", "DB"],
     "type": "TV",
     "source": "Manga",
     "episodes": 153,
@@ -37062,9 +36879,7 @@
     "title": "Dragon Ball GT: Gokuu Gaiden! Yuuki no Akashi wa Suushinchuu",
     "title_english": "Dragon Ball GT: A Hero's Legacy",
     "title_japanese": "ドラゴンボールGT 悟空外伝! 勇気の証しは四星球(スーシンチュウ)",
-    "title_synonyms": [
-      "Dragon Ball GT: 100 Years After - TV Special"
-    ],
+    "title_synonyms": ["Dragon Ball GT: 100 Years After - TV Special"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -37242,12 +37057,7 @@
     "title": "Dragon Ball Kai",
     "title_english": "Dragon Ball Z Kai",
     "title_japanese": "ドラゴンボール改",
-    "title_synonyms": [
-      "Dragonball Kai",
-      "DBK",
-      "DB Kai",
-      "DBZ Kai"
-    ],
+    "title_synonyms": ["Dragonball Kai", "DBK", "DB Kai", "DBZ Kai"],
     "type": "TV",
     "source": "Manga",
     "episodes": 97,
@@ -37421,12 +37231,7 @@
     "title": "Dragon Ball Kai (2014)",
     "title_english": "Dragon Ball Z Kai: The Final Chapters",
     "title_japanese": "ドラゴンボール改",
-    "title_synonyms": [
-      "Dragonball Kai",
-      "DBK",
-      "DB Kai",
-      "DBZ Kai"
-    ],
+    "title_synonyms": ["Dragonball Kai", "DBK", "DB Kai", "DBZ Kai"],
     "type": "TV",
     "source": "Manga",
     "episodes": 61,
@@ -37750,11 +37555,7 @@
     "title": "Dragon Ball Super",
     "title_english": "Dragon Ball Super",
     "title_japanese": "ドラゴンボール超（スーパー）",
-    "title_synonyms": [
-      "Dragon Ball Chou",
-      "DB Super",
-      "DBS"
-    ],
+    "title_synonyms": ["Dragon Ball Chou", "DB Super", "DBS"],
     "type": "TV",
     "source": "Manga",
     "episodes": 131,
@@ -38096,9 +37897,7 @@
     "title": "Dragon Ball Super: Super Hero",
     "title_english": "Dragon Ball Super: Super Hero",
     "title_japanese": "ドラゴンボール超スーパーヒーロー",
-    "title_synonyms": [
-      "Dragon Ball Super Movie 2: Superhero"
-    ],
+    "title_synonyms": ["Dragon Ball Super Movie 2: Superhero"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -38278,10 +38077,7 @@
     "title": "Dragon Ball Z",
     "title_english": "Dragon Ball Z",
     "title_japanese": "ドラゴンボールZ",
-    "title_synonyms": [
-      "DBZ",
-      "Dragonball Z"
-    ],
+    "title_synonyms": ["DBZ", "Dragonball Z"],
     "type": "TV",
     "source": "Manga",
     "episodes": 291,
@@ -40411,9 +40207,7 @@
     "title": "Dragon Ball Z: Zenbu Misemasu Toshi Wasure Dragon Ball Z!",
     "title_english": "Looking Back at it All: The Dragon Ball Z Year-End Show!",
     "title_japanese": "全部見せます 年忘れドラゴンボールZ!",
-    "title_synonyms": [
-      "Zenbu Misemasu Toshi Wasure Doragon Boru Zetto!"
-    ],
+    "title_synonyms": ["Zenbu Misemasu Toshi Wasure Doragon Boru Zetto!"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -40568,9 +40362,7 @@
     "title": "Drifters",
     "title_english": "Drifters",
     "title_japanese": "DRIFTERS",
-    "title_synonyms": [
-      "Drifters: Battle in a Brand-new World War"
-    ],
+    "title_synonyms": ["Drifters: Battle in a Brand-new World War"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -40971,9 +40763,7 @@
     "title": "Drifters: Special Edition",
     "title_english": null,
     "title_japanese": "DRIFTERS Special edition",
-    "title_synonyms": [
-      "Drifters OVA"
-    ],
+    "title_synonyms": ["Drifters OVA"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -41343,10 +41133,7 @@
     "title": "Dungeon Meshi",
     "title_english": "Delicious in Dungeon",
     "title_japanese": "ダンジョン飯",
-    "title_synonyms": [
-      "Dungeon Food",
-      "Dungeon Dining"
-    ],
+    "title_synonyms": ["Dungeon Food", "Dungeon Dining"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -41508,9 +41295,7 @@
     "title": "Dungeon Meshi 2nd Season",
     "title_english": "Delicious in Dungeon Season 2",
     "title_japanese": "ダンジョン飯 第2期",
-    "title_synonyms": [
-      "Dungeon Food"
-    ],
+    "title_synonyms": ["Dungeon Food"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -43346,10 +43131,7 @@
     "title": "Egao no Taenai Shokuba desu.",
     "title_english": "A Mangaka's Weirdly Wonderful Workplace",
     "title_japanese": "笑顔のたえない職場です。",
-    "title_synonyms": [
-      "Egatae",
-      "A Workplace Where You Can't Help But Smile"
-    ],
+    "title_synonyms": ["Egatae", "A Workplace Where You Can't Help But Smile"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -43539,10 +43321,7 @@
     "title": "Eiyuu Kyoushitsu",
     "title_english": "Classroom for Heroes",
     "title_japanese": "英雄教室",
-    "title_synonyms": [
-      "Class Room✿For Heroes",
-      "Hero Classroom"
-    ],
+    "title_synonyms": ["Class Room✿For Heroes", "Hero Classroom"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -44465,9 +44244,7 @@
     "title": "Fairy Tail (2014)",
     "title_english": "Fairy Tail Series 2",
     "title_japanese": "FAIRY TAIL（フェアリーテイル）",
-    "title_synonyms": [
-      "Fairy Tail Season 2"
-    ],
+    "title_synonyms": ["Fairy Tail Season 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 102,
@@ -44628,10 +44405,7 @@
     "title": "Fermat no Ryouri",
     "title_english": "Fermat Kitchen",
     "title_japanese": "フェルマーの料理",
-    "title_synonyms": [
-      "Fermat's Cuisine",
-      "Cuisson dans le Fermat"
-    ],
+    "title_synonyms": ["Fermat's Cuisine", "Cuisson dans le Fermat"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -44990,9 +44764,7 @@
     "title": "Free!",
     "title_english": "Free! - Iwatobi Swim Club",
     "title_japanese": "Free!",
-    "title_synonyms": [
-      "フリー！"
-    ],
+    "title_synonyms": ["フリー！"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -45157,9 +44929,7 @@
     "title": "Free! Dive to the Future",
     "title_english": null,
     "title_japanese": "Free!-Dive to the Future-",
-    "title_synonyms": [
-      "Free! 3rd Season"
-    ],
+    "title_synonyms": ["Free! 3rd Season"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -45316,9 +45086,7 @@
     "title": "Free! Dive to the Future: Soushun no Build-up!",
     "title_english": "Free! Dive to the Future Episode 0",
     "title_japanese": "Free!-Dive to the Future- 「早春のビルドアップ」",
-    "title_synonyms": [
-      "Free! Dive to the Future Special"
-    ],
+    "title_synonyms": ["Free! Dive to the Future Special"],
     "type": "Special",
     "source": "Original",
     "episodes": 1,
@@ -45447,10 +45215,7 @@
     "title": "Free! Eternal Summer",
     "title_english": null,
     "title_japanese": "Free!-Eternal Summer-",
-    "title_synonyms": [
-      "Free! - Iwatobi Swim Club 2",
-      "Free! 2nd Season"
-    ],
+    "title_synonyms": ["Free! - Iwatobi Swim Club 2", "Free! 2nd Season"],
     "type": "TV",
     "source": "Original",
     "episodes": 13,
@@ -45879,9 +45644,7 @@
     "title": "Free! Movie 1: Timeless Medley - Kizuna - Character Butai Aisatsu",
     "title_english": null,
     "title_japanese": "劇場版 Free!-Timeless Medley- 絆 キャラクター舞台挨拶",
-    "title_synonyms": [
-      "Timeless Medley - Kizuna: Photo Session"
-    ],
+    "title_synonyms": ["Timeless Medley - Kizuna: Photo Session"],
     "type": "Movie",
     "source": "Original",
     "episodes": 4,
@@ -46264,9 +46027,7 @@
     "title": "Free! Movie 4: The Final Stroke - Zenpen",
     "title_english": "Free! the Final Stroke: The First Volume",
     "title_japanese": "劇場版 Free!-the Final Stroke-",
-    "title_synonyms": [
-      "Gekijouban Free! The Final Stroke Zenpen"
-    ],
+    "title_synonyms": ["Gekijouban Free! The Final Stroke Zenpen"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -46404,9 +46165,7 @@
     "title": "Free! Take Your Marks",
     "title_english": null,
     "title_japanese": "特別版 Free!-Take Your Marks-",
-    "title_synonyms": [
-      "Tokubetsuban Free! Take Your Marks"
-    ],
+    "title_synonyms": ["Tokubetsuban Free! Take Your Marks"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -46557,10 +46316,7 @@
     "title": "Free!: FrFr - Short Movie",
     "title_english": null,
     "title_japanese": "FrFr!～Free! short movie～",
-    "title_synonyms": [
-      "Free! FrFr - Short Movie",
-      "Free! Specials"
-    ],
+    "title_synonyms": ["Free! FrFr - Short Movie", "Free! Specials"],
     "type": "Special",
     "source": "Light novel",
     "episodes": 7,
@@ -46714,10 +46470,7 @@
     "title": "Fruits Basket 1st Season",
     "title_english": "Fruits Basket 1st Season",
     "title_japanese": "フルーツバスケット",
-    "title_synonyms": [
-      "Furuba",
-      "Fruits Basket (Zenpen)"
-    ],
+    "title_synonyms": ["Furuba", "Fruits Basket (Zenpen)"],
     "type": "TV",
     "source": "Manga",
     "episodes": 25,
@@ -48022,9 +47775,7 @@
     "title": "Futoku no Guild",
     "title_english": "Immoral Guild",
     "title_japanese": "不徳のギルド",
-    "title_synonyms": [
-      "Guild of Depravity"
-    ],
+    "title_synonyms": ["Guild of Depravity"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -48486,11 +48237,7 @@
     "title": "Fuufu Ijou, Koibito Miman.",
     "title_english": "More than a Married Couple, but Not Lovers.",
     "title_japanese": "夫婦以上、恋人未満。",
-    "title_synonyms": [
-      "More than a Couple",
-      "Less than Lovers.",
-      "Fuukoi"
-    ],
+    "title_synonyms": ["More than a Couple", "Less than Lovers.", "Fuukoi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -49250,9 +48997,7 @@
     "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu",
     "title_english": "Skeleton Knight in Another World",
     "title_japanese": "骸骨騎士様、只今異世界へお出掛け中",
-    "title_synonyms": [
-      "Skeleton Knight going out to the parallel universe"
-    ],
+    "title_synonyms": ["Skeleton Knight going out to the parallel universe"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -49438,9 +49183,7 @@
     "title": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
     "title_english": "Skeleton Knight in Another World II",
     "title_japanese": "骸骨騎士様、只今異世界へお出掛け中Ⅱ",
-    "title_synonyms": [
-      "Skeleton Knight in Another World 2nd Season"
-    ],
+    "title_synonyms": ["Skeleton Knight in Another World 2nd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -49775,9 +49518,7 @@
     "title": "Gakuen Babysitters Special",
     "title_english": "School Babysitters Episode 13",
     "title_japanese": "学園ベビーシッターズ",
-    "title_synonyms": [
-      "Gakuen Babysitters Episode 13"
-    ],
+    "title_synonyms": ["Gakuen Babysitters Episode 13"],
     "type": "Special",
     "source": "Manga",
     "episodes": 1,
@@ -49921,9 +49662,7 @@
     "title": "Gakusen Toshi Asterisk",
     "title_english": "The Asterisk War",
     "title_japanese": "学戦都市アスタリスク",
-    "title_synonyms": [
-      "Academy Battle City Asterisk"
-    ],
+    "title_synonyms": ["Academy Battle City Asterisk"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -50146,9 +49885,7 @@
     "title": "Gakusen Toshi Asterisk 2nd Season",
     "title_english": "The Asterisk War Season 2",
     "title_japanese": "学戦都市アスタリスク",
-    "title_synonyms": [
-      "Academy Battle City Asterisk"
-    ],
+    "title_synonyms": ["Academy Battle City Asterisk"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -50530,11 +50267,7 @@
     "title": "Ganbare Douki-chan",
     "title_english": null,
     "title_japanese": "がんばれ同期ちゃん",
-    "title_synonyms": [
-      "Do Your Best",
-      "Douki-chan",
-      "Senpai is Mine"
-    ],
+    "title_synonyms": ["Do Your Best", "Douki-chan", "Senpai is Mine"],
     "type": "ONA",
     "source": "Web manga",
     "episodes": 12,
@@ -50677,9 +50410,7 @@
     "title": "Gate Season 2: Jieitai Kanoumi nite, Kaku Tatakaeri",
     "title_english": "Gate 2: Tides of Conflict",
     "title_japanese": "GATE SEASON2 自衛隊 彼の海にて、斯く戦えり",
-    "title_synonyms": [
-      "Gate Season 2: Thus the JSDF Fought in Their Seas!"
-    ],
+    "title_synonyms": ["Gate Season 2: Thus the JSDF Fought in Their Seas!"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -50841,9 +50572,7 @@
     "title": "Gate: Jieitai Kanochi nite, Kaku Tatakaeri",
     "title_english": "GATE",
     "title_japanese": "GATE（ゲート）自衛隊　彼の地にて、斯く戦えり",
-    "title_synonyms": [
-      "Gate: Thus the JSDF Fought There!"
-    ],
+    "title_synonyms": ["Gate: Thus the JSDF Fought There!"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -51600,9 +51329,7 @@
     "title": "Gekkan Shoujo Nozaki-kun",
     "title_english": "Monthly Girls' Nozaki-kun",
     "title_japanese": "月刊少女野崎くん",
-    "title_synonyms": [
-      "Gekkan Shoujo Nozaki-kun"
-    ],
+    "title_synonyms": ["Gekkan Shoujo Nozaki-kun"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 12,
@@ -51902,9 +51629,7 @@
     "title": "Genjitsu no Rimuru: Sunshine in the Slime",
     "title_english": null,
     "title_japanese": "幻日のリムル -SUNSHINE in the SLIME-",
-    "title_synonyms": [
-      "Rimuru the Parhelion: Sunshine in the Slime"
-    ],
+    "title_synonyms": ["Rimuru the Parhelion: Sunshine in the Slime"],
     "type": "ONA",
     "source": "Original",
     "episodes": 2,
@@ -52910,11 +52635,7 @@
     "title": "Gintama",
     "title_english": "Gintama",
     "title_japanese": "銀魂",
-    "title_synonyms": [
-      "Gin Tama",
-      "Silver Soul",
-      "Yorinuki Gintama-san"
-    ],
+    "title_synonyms": ["Gin Tama", "Silver Soul", "Yorinuki Gintama-san"],
     "type": "TV",
     "source": "Manga",
     "episodes": 201,
@@ -53120,9 +52841,7 @@
     "title": "Gintama.",
     "title_english": "Gintama Season 5",
     "title_japanese": "銀魂。",
-    "title_synonyms": [
-      "Gintama (2017)"
-    ],
+    "title_synonyms": ["Gintama (2017)"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -53319,10 +53038,7 @@
     "title": "Gokushufudou",
     "title_english": "The Way of the Househusband",
     "title_japanese": "極主夫道",
-    "title_synonyms": [
-      "The Way of the House Husband",
-      "Yakuza goes Houseman"
-    ],
+    "title_synonyms": ["The Way of the House Husband", "Yakuza goes Houseman"],
     "type": "ONA",
     "source": "Web manga",
     "episodes": 5,
@@ -54501,9 +54217,7 @@
     "title": "Guild no Uketsukejou desu ga, Zangyou wa Iya nanode Boss wo Solo Toubatsu Shiyou to Omoimasu",
     "title_english": "I May Be a Guild Receptionist, but I'll Solo Any Boss to Clock Out on Time",
     "title_japanese": "ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います",
-    "title_synonyms": [
-      "Girumasu"
-    ],
+    "title_synonyms": ["Girumasu"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -54670,9 +54384,7 @@
     "title": "Guilty Crown",
     "title_english": "Guilty Crown",
     "title_japanese": "ギルティクラウン",
-    "title_synonyms": [
-      "GUILTY CROWN"
-    ],
+    "title_synonyms": ["GUILTY CROWN"],
     "type": "TV",
     "source": "Original",
     "episodes": 22,
@@ -54951,9 +54663,7 @@
     "title": "Haibara-kun no Tsuyokute Seishun New Game",
     "title_english": null,
     "title_japanese": "灰原くんの強くて青春ニューゲーム",
-    "title_synonyms": [
-      "Haibara's Teenage New Game+"
-    ],
+    "title_synonyms": ["Haibara's Teenage New Game+"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -55447,9 +55157,7 @@
     "title": "Hana wa Saku, Shura no Gotoku",
     "title_english": "Flower and Asura",
     "title_japanese": "花は咲く、修羅の如く",
-    "title_synonyms": [
-      "Hanashura"
-    ],
+    "title_synonyms": ["Hanashura"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -55758,9 +55466,7 @@
     "title": "Hananoi-kun to Koi no Yamai",
     "title_english": "A Condition Called Love",
     "title_japanese": "花野井くんと恋の病",
-    "title_synonyms": [
-      "I'm Addicted to You."
-    ],
+    "title_synonyms": ["I'm Addicted to You."],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -56113,9 +55819,7 @@
     "title": "Hataraku Maou-sama!",
     "title_english": "The Devil is a Part-Timer!",
     "title_japanese": "はたらく魔王さま!",
-    "title_synonyms": [
-      "Hataraku Maou-sama!"
-    ],
+    "title_synonyms": ["Hataraku Maou-sama!"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -57566,10 +57270,7 @@
     "title": "Henjin no Salad Bowl",
     "title_english": "A Salad Bowl of Eccentrics",
     "title_japanese": "変人のサラダボウル",
-    "title_synonyms": [
-      "Salad Bowl of Eccentrics",
-      "Hensara"
-    ],
+    "title_synonyms": ["Salad Bowl of Eccentrics", "Hensara"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -58079,9 +57780,7 @@
     "title": "Hibi wa Sugiredo Meshi Umashi",
     "title_english": "Food for the Soul",
     "title_japanese": "日々は過ぎれど飯うまし",
-    "title_synonyms": [
-      "Hibimeshi"
-    ],
+    "title_synonyms": ["Hibimeshi"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -58257,9 +57956,7 @@
     "title": "Higashi no Eden",
     "title_english": "Eden of The East",
     "title_japanese": "東のエデン",
-    "title_synonyms": [
-      "Higashi no Eden"
-    ],
+    "title_synonyms": ["Higashi no Eden"],
     "type": "TV",
     "source": "Original",
     "episodes": 11,
@@ -58454,9 +58151,7 @@
     "title": "Higashi no Eden Movie I: The King of Eden",
     "title_english": "Eden of The East the Movie I: The King of Eden",
     "title_japanese": "東のエデン 劇場版I The King of Eden",
-    "title_synonyms": [
-      "Higashi no Eden: Gekijouban I The King of Eden"
-    ],
+    "title_synonyms": ["Higashi no Eden: Gekijouban I The King of Eden"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -58651,9 +58346,7 @@
     "title": "Higashi no Eden Movie II: Paradise Lost",
     "title_english": "Eden of The East the Movie II: Paradise Lost",
     "title_japanese": "東のエデン 劇場版II Paradise Lost",
-    "title_synonyms": [
-      "Higashi no Eden: Gekijouban II Paradise Lost"
-    ],
+    "title_synonyms": ["Higashi no Eden: Gekijouban II Paradise Lost"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -59589,9 +59282,7 @@
     "title": "High School DxD",
     "title_english": "High School DxD",
     "title_japanese": "ハイスクールD×D",
-    "title_synonyms": [
-      "Highschool DxD"
-    ],
+    "title_synonyms": ["Highschool DxD"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -60377,9 +60068,7 @@
     "title": "High School DxD Hero",
     "title_english": "High School DxD Hero",
     "title_japanese": "ハイスクールDxD HERO",
-    "title_synonyms": [
-      "High School DxD Season 4"
-    ],
+    "title_synonyms": ["High School DxD Season 4"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -61190,9 +60879,7 @@
     "title": "High School DxD Specials",
     "title_english": null,
     "title_japanese": "ハイスクールD×Dスペシャル",
-    "title_synonyms": [
-      "Highschool DxD Specials"
-    ],
+    "title_synonyms": ["Highschool DxD Specials"],
     "type": "Special",
     "source": "Light novel",
     "episodes": 6,
@@ -61365,10 +61052,7 @@
     "title": "High☆Speed! Movie: Free! Starting Days",
     "title_english": "Free! Starting Days",
     "title_japanese": "映画 ハイ☆スピード！ -Free! Starting Days-",
-    "title_synonyms": [
-      "Free! Movie",
-      "High☆Speed!: Free! Starting Days"
-    ],
+    "title_synonyms": ["Free! Movie", "High☆Speed!: Free! Starting Days"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -61670,9 +61354,7 @@
     "title": "Hikikomari Kyuuketsuki no Monmon",
     "title_english": "The Vexations of a Shut-In Vampire Princess",
     "title_japanese": "ひきこまり吸血姫の悶々",
-    "title_synonyms": [
-      "The Shut-In Vampire Princess' Worries"
-    ],
+    "title_synonyms": ["The Shut-In Vampire Princess' Worries"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -61859,9 +61541,7 @@
     "title": "Himekishi wa Barbaroi no Yome",
     "title_english": "The Warrior Princess and the Barbaric King",
     "title_japanese": "姫騎士は蛮族の嫁",
-    "title_synonyms": [
-      "The Barbarian's Bride"
-    ],
+    "title_synonyms": ["The Barbarian's Bride"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -62409,9 +62089,7 @@
     "title": "Himouto! Umaru-chan",
     "title_english": "Himouto! Umaru-chan",
     "title_japanese": "干物妹！うまるちゃん",
-    "title_synonyms": [
-      "My Two-Faced Little Sister"
-    ],
+    "title_synonyms": ["My Two-Faced Little Sister"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -63064,9 +62742,7 @@
     "title": "Hinamatsuri",
     "title_english": "Hinamatsuri",
     "title_japanese": "ヒナまつり",
-    "title_synonyms": [
-      "Hina Festival"
-    ],
+    "title_synonyms": ["Hina Festival"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -63254,9 +62930,7 @@
     "title": "Hitoribocchi no Isekai Kouryaku",
     "title_english": "Loner Life in Another World",
     "title_japanese": "ひとりぼっちの異世界攻略",
-    "title_synonyms": [
-      "Lonely Attack on the Different World"
-    ],
+    "title_synonyms": ["Lonely Attack on the Different World"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -64143,9 +63817,7 @@
     "title": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 2nd Season",
     "title_english": "Ascendance of a Bookworm Season 2",
     "title_japanese": "本好きの下剋上 ～司書になるためには手段を選んでいられません～ 第2期",
-    "title_synonyms": [
-      "Ascendance of a Bookworm 2nd Season"
-    ],
+    "title_synonyms": ["Ascendance of a Bookworm 2nd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -64356,9 +64028,7 @@
     "title": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 3rd Season",
     "title_english": "Ascendance of a Bookworm Season 3",
     "title_japanese": "本好きの下剋上 ～司書になるためには手段を選んでいられません～ 第3期",
-    "title_synonyms": [
-      "Ascendance of a Bookworm 3rd Season"
-    ],
+    "title_synonyms": ["Ascendance of a Bookworm 3rd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 10,
@@ -64677,9 +64347,7 @@
     "title": "Horimiya",
     "title_english": "Horimiya",
     "title_japanese": "ホリミヤ",
-    "title_synonyms": [
-      "Hori-san and Miyamura-kun"
-    ],
+    "title_synonyms": ["Hori-san and Miyamura-kun"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -65186,9 +64854,7 @@
     "title": "Hoshifuru Oukoku no Nina",
     "title_english": "Nina the Starry Bride",
     "title_japanese": "星降る王国のニナ",
-    "title_synonyms": [
-      "Nina of the Starry Kingdom"
-    ],
+    "title_synonyms": ["Nina of the Starry Kingdom"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -65368,9 +65034,7 @@
     "title": "Hoshikuzu Telepath",
     "title_english": "Stardust Telepath",
     "title_japanese": "星屑テレパス",
-    "title_synonyms": [
-      "Hoshitele"
-    ],
+    "title_synonyms": ["Hoshitele"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 12,
@@ -65562,9 +65226,7 @@
     "title": "Hotarubi no Mori e",
     "title_english": "Into the Forest of Fireflies' Light",
     "title_japanese": "蛍火の杜へ",
-    "title_synonyms": [
-      "The Light of a Firefly Forest"
-    ],
+    "title_synonyms": ["The Light of a Firefly Forest"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -66300,9 +65962,7 @@
     "title": "Hunter x Hunter",
     "title_english": "Hunter x Hunter",
     "title_japanese": "HUNTER×HUNTER（ハンター×ハンター）",
-    "title_synonyms": [
-      "HxH"
-    ],
+    "title_synonyms": ["HxH"],
     "type": "TV",
     "source": "Manga",
     "episodes": 62,
@@ -66459,9 +66119,7 @@
     "title": "Hunter x Hunter (2011)",
     "title_english": "Hunter x Hunter",
     "title_japanese": "HUNTER×HUNTER（ハンター×ハンター）",
-    "title_synonyms": [
-      "HxH (2011)"
-    ],
+    "title_synonyms": ["HxH (2011)"],
     "type": "TV",
     "source": "Manga",
     "episodes": 148,
@@ -66802,9 +66460,7 @@
     "title": "Hunter x Hunter Movie 2: The Last Mission",
     "title_english": "Hunter x Hunter: The Last Mission",
     "title_japanese": "劇場版 HUNTERxHUNTER THE LAST MISSION",
-    "title_synonyms": [
-      "Gekijouban Hunter x Hunter"
-    ],
+    "title_synonyms": ["Gekijouban Hunter x Hunter"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -66963,9 +66619,7 @@
     "title": "Hunter x Hunter: Greed Island",
     "title_english": null,
     "title_japanese": "HUNTER×HUNTER Greed Island",
-    "title_synonyms": [
-      "Hunter X Hunter OVA 2"
-    ],
+    "title_synonyms": ["Hunter X Hunter OVA 2"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 8,
@@ -67096,10 +66750,7 @@
     "title": "Hunter x Hunter: Greed Island Final",
     "title_english": null,
     "title_japanese": "HUNTER×HUNTER G・I Final",
-    "title_synonyms": [
-      "Hunter x Hunter: G I Final",
-      "Hunter x Hunter OVA 3"
-    ],
+    "title_synonyms": ["Hunter x Hunter: G I Final", "Hunter x Hunter OVA 3"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 14,
@@ -67889,9 +67540,7 @@
     "title": "Ichigo Mashimaro",
     "title_english": "Strawberry Marshmallow",
     "title_japanese": "苺ましまろ",
-    "title_synonyms": [
-      "Ichigo Marshmallow"
-    ],
+    "title_synonyms": ["Ichigo Marshmallow"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -68219,10 +67868,7 @@
     "title": "Ikoku Nikki",
     "title_english": "Journal with Witch",
     "title_japanese": "違国日記",
-    "title_synonyms": [
-      "Different Country Diary",
-      "Foreign Country Diary"
-    ],
+    "title_synonyms": ["Different Country Diary", "Foreign Country Diary"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -68398,11 +68044,7 @@
     "title": "Inari, Konkon, Koi Iroha.",
     "title_english": "Inari Kon Kon",
     "title_japanese": "いなり、こんこん、恋いろは。",
-    "title_synonyms": [
-      "Inari",
-      "Konkon",
-      "ABCs of Love"
-    ],
+    "title_synonyms": ["Inari", "Konkon", "ABCs of Love"],
     "type": "TV",
     "source": "Manga",
     "episodes": 10,
@@ -69007,9 +68649,7 @@
     "title": "Inazuma Eleven Go vs. Danball Senki W Movie",
     "title_english": null,
     "title_japanese": "劇場版 イナズマイレブンGO vs ダンボール戦機W",
-    "title_synonyms": [
-      "Gekijouban Inazuma Eleven Go vs Danball Senki W"
-    ],
+    "title_synonyms": ["Gekijouban Inazuma Eleven Go vs Danball Senki W"],
     "type": "Movie",
     "source": "Game",
     "episodes": 1,
@@ -69550,9 +69190,7 @@
     "title": "Inazuma Eleven Go: TCG CM NG-shuu",
     "title_english": null,
     "title_japanese": "イナズマイレブンGO TCG CM NG集",
-    "title_synonyms": [
-      "Inazuma Eleven Go: Trading Card Game CM NG-shuu"
-    ],
+    "title_synonyms": ["Inazuma Eleven Go: Trading Card Game CM NG-shuu"],
     "type": "CM",
     "source": "Game",
     "episodes": 1,
@@ -69796,9 +69434,7 @@
     "title": "Inazuma Eleven: Ares no Tenbin",
     "title_english": "Inazuma Eleven: Ares",
     "title_japanese": "イナズマイレブン アレスの天秤",
-    "title_synonyms": [
-      "Inazuma Eleven: Balance of Ares"
-    ],
+    "title_synonyms": ["Inazuma Eleven: Balance of Ares"],
     "type": "TV",
     "source": "Game",
     "episodes": 26,
@@ -70309,9 +69945,7 @@
     "title": "Inazuma Eleven: Reloaded - Soccer no Henkaku",
     "title_english": null,
     "title_japanese": "イナズマイレブン リローデッド ～サッカーの変革へんかく～",
-    "title_synonyms": [
-      "Inazuma Eleven: Reloaded - Reformation of Soccer"
-    ],
+    "title_synonyms": ["Inazuma Eleven: Reloaded - Reformation of Soccer"],
     "type": "Special",
     "source": "Game",
     "episodes": 1,
@@ -70712,9 +70346,7 @@
     "title": "Inu ni Nattara Suki na Hito ni Hirowareta.",
     "title_english": "My Life as Inukai-san's Dog.",
     "title_japanese": "犬になったら好きな人に拾われた。",
-    "title_synonyms": [
-      "Inuhiro"
-    ],
+    "title_synonyms": ["Inuhiro"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -70870,9 +70502,7 @@
     "title": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
     "title_english": "I Got a Cheat Skill in Another World and Became Unrivaled in The Real World, Too",
     "title_japanese": "異世界でチート能力を手にした俺は、現実世界をも無双する ～レベルアップは人生を変えた～",
-    "title_synonyms": [
-      "Iseleve"
-    ],
+    "title_synonyms": ["Iseleve"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -71047,9 +70677,7 @@
     "title": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta (TV Special)",
     "title_english": "I Got a Cheat Skill in Another World and Became Unrivaled in The Real World, Too: Real World",
     "title_japanese": "異世界でチート能力を手にした俺は、現実世界をも無双する ～レベルアップは人生を変えた～",
-    "title_synonyms": [
-      "Iseleve"
-    ],
+    "title_synonyms": ["Iseleve"],
     "type": "TV Special",
     "source": "Light novel",
     "episodes": 1,
@@ -72494,10 +72122,7 @@
     "title": "Isekai Ojisan",
     "title_english": "Uncle from Another World",
     "title_japanese": "異世界おじさん",
-    "title_synonyms": [
-      "Isekai Uncle",
-      "Ojisan in Another World"
-    ],
+    "title_synonyms": ["Isekai Uncle", "Ojisan in Another World"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -72836,9 +72461,7 @@
     "title": "Isekai Shikkaku",
     "title_english": "No Longer Allowed in Another World",
     "title_japanese": "異世界失格",
-    "title_synonyms": [
-      "No Longer Human...In Another World"
-    ],
+    "title_synonyms": ["No Longer Human...In Another World"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -73409,9 +73032,7 @@
     "title": "Isekai Shoukan wa Nidome desu",
     "title_english": "Summoned to Another World for a Second Time",
     "title_japanese": "異世界召喚は二度目です",
-    "title_synonyms": [
-      "Isenido"
-    ],
+    "title_synonyms": ["Isenido"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -73610,9 +73231,7 @@
     "title": "Isekai wa Smartphone to Tomo ni.",
     "title_english": "In Another World With My Smartphone",
     "title_japanese": "異世界はスマートフォンとともに。",
-    "title_synonyms": [
-      "In a Different World with a Smartphone."
-    ],
+    "title_synonyms": ["In a Different World with a Smartphone."],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -74029,9 +73648,7 @@
     "title": "Isekai Yakkyoku",
     "title_english": "Parallel World Pharmacy",
     "title_japanese": "異世界薬局",
-    "title_synonyms": [
-      "Alternate World Pharmacy"
-    ],
+    "title_synonyms": ["Alternate World Pharmacy"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -74568,9 +74185,7 @@
     "title": "Isshun de Chiryou shiteita noni Yakutatazu to Tsuihou sareta Tensai Chiyushi, Yami Healer toshite Tanoshiku Ikiru",
     "title_english": "The Brilliant Healer's New Life in the Shadows",
     "title_japanese": "一瞬で治療していたのに役立たずと追放された天才治癒師、闇ヒーラーとして楽しく生きる",
-    "title_synonyms": [
-      "Yami Healer"
-    ],
+    "title_synonyms": ["Yami Healer"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -75354,9 +74969,7 @@
     "title": "Izure Saikyou no Renkinjutsushi?",
     "title_english": "Possibly the Greatest Alchemist of All Time",
     "title_japanese": "いずれ最強の錬金術師?",
-    "title_synonyms": [
-      "Someday Will I Be the Greatest Alchemist?"
-    ],
+    "title_synonyms": ["Someday Will I Be the Greatest Alchemist?"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -75531,9 +75144,7 @@
     "title": "Izure Saikyou no Renkinjutsushi? 2nd Season",
     "title_english": "Possibly the Greatest Alchemist of All Time Season 2",
     "title_japanese": "いずれ最強の錬金術師？ 2期",
-    "title_synonyms": [
-      "Someday Will I Be the Greatest Alchemist? Season 2"
-    ],
+    "title_synonyms": ["Someday Will I Be the Greatest Alchemist? Season 2"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -77068,9 +76679,7 @@
     "title": "Jigoku Sensei Nube (2025)",
     "title_english": "Hell Teacher: Jigoku Sensei Nube",
     "title_japanese": "地獄先生ぬ～べ～",
-    "title_synonyms": [
-      "Hell Teacher Nube"
-    ],
+    "title_synonyms": ["Hell Teacher Nube"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -77245,9 +76854,7 @@
     "title": "Jigoku Sensei Nube (2025) Part 2",
     "title_english": "Hell Teacher: Jigoku Sensei Nube Part 2",
     "title_japanese": "地獄先生ぬ～べ～",
-    "title_synonyms": [
-      "Hell Teacher Nube"
-    ],
+    "title_synonyms": ["Hell Teacher Nube"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -77426,10 +77033,7 @@
     "title": "Jigokuraku",
     "title_english": "Hell's Paradise",
     "title_japanese": "地獄楽",
-    "title_synonyms": [
-      "Paradition",
-      "Heavenhell"
-    ],
+    "title_synonyms": ["Paradition", "Heavenhell"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -77749,9 +77353,7 @@
     "title": "Jijou wo Shiranai Tenkousei ga Guigui Kuru.",
     "title_english": "My Clueless First Friend",
     "title_japanese": "事情を知らない転校生がグイグイくる。",
-    "title_synonyms": [
-      "The Clueless Transfer Student Is Assertive."
-    ],
+    "title_synonyms": ["The Clueless Transfer Student Is Assertive."],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -77944,9 +77546,7 @@
     "title": "Jingai Kyoushitsu no Ningengirai Kyoushi",
     "title_english": "A Misanthrope Teaches a Class for Demi-Humans",
     "title_japanese": "人外教室の人間嫌い教師",
-    "title_synonyms": [
-      "Misanthropic Teacher in Demi-Human Classroom."
-    ],
+    "title_synonyms": ["Misanthropic Teacher in Demi-Human Classroom."],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -78455,9 +78055,7 @@
     "title": "Joshiraku",
     "title_english": "Joshiraku",
     "title_japanese": "じょしらく",
-    "title_synonyms": [
-      "Rakugo Girls"
-    ],
+    "title_synonyms": ["Rakugo Girls"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -78649,10 +78247,7 @@
     "title": "Jujutsu Kaisen",
     "title_english": "Jujutsu Kaisen",
     "title_japanese": "呪術廻戦",
-    "title_synonyms": [
-      "Sorcery Fight",
-      "JJK"
-    ],
+    "title_synonyms": ["Sorcery Fight", "JJK"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -78832,10 +78427,7 @@
     "title": "Jujutsu Kaisen 0 Movie",
     "title_english": "Jujutsu Kaisen 0",
     "title_japanese": "劇場版 呪術廻戦 0",
-    "title_synonyms": [
-      "Gekijouban Jujutsu Kaisen 0",
-      "JJK 0"
-    ],
+    "title_synonyms": ["Gekijouban Jujutsu Kaisen 0", "JJK 0"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -79202,9 +78794,7 @@
     "title": "Jujutsu Kaisen 2nd Season Recaps",
     "title_english": "Jujutsu Kaisen Season 2 Recaps",
     "title_japanese": "呪術廻戦",
-    "title_synonyms": [
-      "Jujutsu Kaisen Season 2 + Movie Recap"
-    ],
+    "title_synonyms": ["Jujutsu Kaisen Season 2 + Movie Recap"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 2,
@@ -79491,9 +79081,7 @@
     "title": "Jujutsu Kaisen Official PVs",
     "title_english": "Jujutsu Kaisen Official PVs",
     "title_japanese": "呪術廻戦 公式PV",
-    "title_synonyms": [
-      "Sorcery Fight Official PVs"
-    ],
+    "title_synonyms": ["Sorcery Fight Official PVs"],
     "type": "PV",
     "source": "Manga",
     "episodes": 3,
@@ -79767,9 +79355,7 @@
     "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
     "title_english": "Jujutsu Kaisen: The Culling Game Part 1",
     "title_japanese": "呪術廻戦 「死滅回游 前編」",
-    "title_synonyms": [
-      "Jujutsu Kaisen 3rd Season"
-    ],
+    "title_synonyms": ["Jujutsu Kaisen 3rd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -79938,9 +79524,7 @@
     "title": "Kage no Jitsuryokusha ni Naritakute!",
     "title_english": "The Eminence in Shadow",
     "title_japanese": "陰の実力者になりたくて！",
-    "title_synonyms": [
-      "Shadow Garden"
-    ],
+    "title_synonyms": ["Shadow Garden"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 20,
@@ -80115,9 +79699,7 @@
     "title": "Kage no Jitsuryokusha ni Naritakute! 2nd Season",
     "title_english": "The Eminence in Shadow Season 2",
     "title_japanese": "陰の実力者になりたくて！ 2nd Season",
-    "title_synonyms": [
-      "Shadow Garden 2nd Season"
-    ],
+    "title_synonyms": ["Shadow Garden 2nd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -80298,9 +79880,7 @@
     "title": "Kage no Jitsuryokusha ni Naritakute! Movie: Zankyou-hen",
     "title_english": "The Eminence in Shadow: Lost Echoes",
     "title_japanese": "劇場版 陰の実力者 になりたくて！残響編",
-    "title_synonyms": [
-      "The Eminence in Shadow Movie: Lost Echoes Arc"
-    ],
+    "title_synonyms": ["The Eminence in Shadow Movie: Lost Echoes Arc"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -80450,9 +80030,7 @@
     "title": "Kaguya-sama wa Kokurasetai Movie",
     "title_english": "Kaguya-sama: Love is War Movie",
     "title_japanese": "劇場版 かぐや様は告らせたい",
-    "title_synonyms": [
-      "Kaguya Wants to be Confessed To Movie"
-    ],
+    "title_synonyms": ["Kaguya Wants to be Confessed To Movie"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -81573,9 +81151,7 @@
     "title": "Kaichou wa Maid-sama!",
     "title_english": "Maid Sama!",
     "title_japanese": "会長はメイド様!",
-    "title_synonyms": [
-      "Class President is a Maid!"
-    ],
+    "title_synonyms": ["Class President is a Maid!"],
     "type": "TV",
     "source": "Manga",
     "episodes": 26,
@@ -82085,12 +81661,7 @@
     "title": "Kaijuu 8-gou",
     "title_english": "Kaiju No. 8",
     "title_japanese": "怪獣8号",
-    "title_synonyms": [
-      "8Kaijuu",
-      "Monster #8",
-      "Kaiju No. Eight",
-      "Kaiju #8"
-    ],
+    "title_synonyms": ["8Kaijuu", "Monster #8", "Kaiju No. Eight", "Kaiju #8"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -82295,12 +81866,7 @@
     "title": "Kaijuu 8-gou 2nd Season",
     "title_english": "Kaiju No. 8 Season 2",
     "title_japanese": "怪獣8号 第2期",
-    "title_synonyms": [
-      "8Kaijuu",
-      "Monster #8",
-      "Kaiju No. Eight",
-      "Kaiju #8"
-    ],
+    "title_synonyms": ["8Kaijuu", "Monster #8", "Kaiju No. Eight", "Kaiju #8"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -82505,12 +82071,7 @@
     "title": "Kaijuu 8-gou Movie",
     "title_english": "Kaiju No. 8: Mission Recon",
     "title_japanese": "怪獣8号",
-    "title_synonyms": [
-      "8Kaijuu",
-      "Monster #8",
-      "Kaiju No. Eight",
-      "Kaiju #8"
-    ],
+    "title_synonyms": ["8Kaijuu", "Monster #8", "Kaiju No. Eight", "Kaiju #8"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -82794,12 +82355,7 @@
     "title": "Kaijuu 8-gou: Kanketsu-hen",
     "title_english": "Kaiju No. 8: Final Chapter",
     "title_japanese": "怪獣8号 完結編",
-    "title_synonyms": [
-      "8Kaijuu",
-      "Monster #8",
-      "Kaiju No. Eight",
-      "Kaiju #8"
-    ],
+    "title_synonyms": ["8Kaijuu", "Monster #8", "Kaiju No. Eight", "Kaiju #8"],
     "type": null,
     "source": "Manga",
     "episodes": null,
@@ -83323,9 +82879,7 @@
     "title": "Kakkou no Iinazuke",
     "title_english": "A Couple of Cuckoos",
     "title_japanese": "カッコウの許嫁",
-    "title_synonyms": [
-      "Cuckoo's Fiancee"
-    ],
+    "title_synonyms": ["Cuckoo's Fiancee"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -83484,9 +83038,7 @@
     "title": "Kami no Niwatsuki Kusunoki-tei",
     "title_english": null,
     "title_japanese": "神の庭付き楠木邸",
-    "title_synonyms": [
-      "Kusunoki's Garden of Gods"
-    ],
+    "title_synonyms": ["Kusunoki's Garden of Gods"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -83658,10 +83210,7 @@
     "title": "Kami no Tou",
     "title_english": "Tower of God",
     "title_japanese": "神之塔 -Tower of God-",
-    "title_synonyms": [
-      "Sin-ui Tap",
-      "신의 탑"
-    ],
+    "title_synonyms": ["Sin-ui Tap", "신의 탑"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -84205,9 +83754,7 @@
     "title": "Kami nomi zo Shiru Sekai",
     "title_english": "The World God Only Knows",
     "title_japanese": "神のみぞ知るセカイ",
-    "title_synonyms": [
-      "Kaminomi"
-    ],
+    "title_synonyms": ["Kaminomi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -84726,9 +84273,7 @@
     "title": "Kami nomi zo Shiru Sekai: Flag 0",
     "title_english": "The World God Only Knows: Flag 0",
     "title_japanese": "神のみぞ知るセカイ: Flag 0",
-    "title_synonyms": [
-      "Kaminomi: Flag 0"
-    ],
+    "title_synonyms": ["Kaminomi: Flag 0"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -85075,9 +84620,7 @@
     "title": "Kami nomi zo Shiru Sekai: Tenri-hen",
     "title_english": "The World God Only Knows: Tenri Arc",
     "title_japanese": "神のみぞ知るセカイ 天理篇",
-    "title_synonyms": [
-      "Kaminomi: Tenri-hen"
-    ],
+    "title_synonyms": ["Kaminomi: Tenri-hen"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 2,
@@ -85879,9 +85422,7 @@
     "title": "Kamonohashi Ron no Kindan Suiri",
     "title_english": "Ron Kamonohashi's Forbidden Deductions",
     "title_japanese": "鴨乃橋ロンの禁断推理",
-    "title_synonyms": [
-      "Ron Kamonohashi: Deranged Detective"
-    ],
+    "title_synonyms": ["Ron Kamonohashi: Deranged Detective"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -86056,9 +85597,7 @@
     "title": "Kamonohashi Ron no Kindan Suiri 2nd Season",
     "title_english": "Ron Kamonohashi's Forbidden Deductions Season 2",
     "title_japanese": "鴨乃橋ロンの禁断推理 2nd Season",
-    "title_synonyms": [
-      "Ron Kamonohashi: Deranged Detective Season 2"
-    ],
+    "title_synonyms": ["Ron Kamonohashi: Deranged Detective Season 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -86519,9 +86058,7 @@
     "title": "Kanojo mo Kanojo",
     "title_english": "Girlfriend, Girlfriend",
     "title_japanese": "カノジョも彼女",
-    "title_synonyms": [
-      "Kanokano"
-    ],
+    "title_synonyms": ["Kanokano"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -86702,9 +86239,7 @@
     "title": "Kanojo mo Kanojo Season 2",
     "title_english": "Girlfriend, Girlfriend Season 2",
     "title_japanese": "カノジョも彼女 Season 2",
-    "title_synonyms": [
-      "Kanokano"
-    ],
+    "title_synonyms": ["Kanokano"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -86907,10 +86442,7 @@
     "title": "Kanojo, Okarishimasu",
     "title_english": "Rent-a-Girlfriend",
     "title_japanese": "彼女、お借りします",
-    "title_synonyms": [
-      "I'd like to Borrow a Girlfriend",
-      "Kanokari"
-    ],
+    "title_synonyms": ["I'd like to Borrow a Girlfriend", "Kanokari"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -87073,9 +86605,7 @@
     "title": "Kanojo, Okarishimasu 2nd Season",
     "title_english": "Rent-a-Girlfriend Season 2",
     "title_japanese": "彼女、お借りします",
-    "title_synonyms": [
-      "Kanokari"
-    ],
+    "title_synonyms": ["Kanokari"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -87245,9 +86775,7 @@
     "title": "Kanojo, Okarishimasu 3rd Season",
     "title_english": "Rent-a-Girlfriend Season 3",
     "title_japanese": "彼女、お借りします",
-    "title_synonyms": [
-      "Kanokari"
-    ],
+    "title_synonyms": ["Kanokari"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -87404,9 +86932,7 @@
     "title": "Kanpekisugite Kawaige ga Nai to Konyaku Haki sareta Seijo wa Ringoku ni Urareru",
     "title_english": "The Too-Perfect Saint: Tossed Aside by My Fiancé and Sold to Another Kingdom",
     "title_japanese": "完璧すぎて可愛げがないと婚約破棄された聖女は隣国に売られる",
-    "title_synonyms": [
-      "Kanpekiseijo"
-    ],
+    "title_synonyms": ["Kanpekiseijo"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -87567,9 +87093,7 @@
     "title": "Kao ni Denai Kashiwada-san to Kao ni Deru Oota-kun",
     "title_english": "Inexpressive Kashiwada and Expressive Oota",
     "title_japanese": "顔に出ない柏田さんと顔に出る太田君",
-    "title_synonyms": [
-      "Expressionless Face Girl & Emotional Face Boy"
-    ],
+    "title_synonyms": ["Expressionless Face Girl & Emotional Face Boy"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -87749,9 +87273,7 @@
     "title": "Kaoru Hana wa Rin to Saku",
     "title_english": "The Fragrant Flower Blooms with Dignity",
     "title_japanese": "薫る花は凛と咲く",
-    "title_synonyms": [
-      "The Fragrant Flowers Bloom with Dignity"
-    ],
+    "title_synonyms": ["The Fragrant Flowers Bloom with Dignity"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -87927,9 +87449,7 @@
     "title": "Karakai Jouzu no Takagi-san",
     "title_english": "Teasing Master Takagi-san",
     "title_japanese": "からかい上手の高木さん",
-    "title_synonyms": [
-      "Skilled Teaser Takagi-san"
-    ],
+    "title_synonyms": ["Skilled Teaser Takagi-san"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -89786,9 +89306,7 @@
     "title": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
     "title_english": "Our Dating Story: The Experienced You and The Inexperienced Me",
     "title_japanese": "経験済みなキミと、 経験ゼロなオレが、 お付き合いする話。",
-    "title_synonyms": [
-      "Kimizero"
-    ],
+    "title_synonyms": ["Kimizero"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -89950,9 +89468,7 @@
     "title": "Kekkon suru tte, Hontou desu ka",
     "title_english": "365 Days to the Wedding",
     "title_japanese": "結婚するって、本当ですか 365 Days To The Wedding",
-    "title_synonyms": [
-      "Are You Really Getting Married?"
-    ],
+    "title_synonyms": ["Are You Really Getting Married?"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -90329,9 +89845,7 @@
     "title": "Kenja no Deshi wo Nanoru Kenja",
     "title_english": "She Professed Herself Pupil of the Wise Man",
     "title_japanese": "賢者の弟子を名乗る賢者",
-    "title_synonyms": [
-      "Kendeshi"
-    ],
+    "title_synonyms": ["Kendeshi"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -90522,10 +90036,7 @@
     "title": "Kenja no Mago",
     "title_english": "Wise Man's Grandchild",
     "title_japanese": "賢者の孫",
-    "title_synonyms": [
-      "Philosopher's Grandson",
-      "Magi's Grandson"
-    ],
+    "title_synonyms": ["Philosopher's Grandson", "Magi's Grandson"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -90708,11 +90219,7 @@
     "title": "Kenka Dokugaku",
     "title_english": "Viral Hit",
     "title_japanese": "喧嘩独学",
-    "title_synonyms": [
-      "Ssaumdokhak",
-      "How to Fight",
-      "싸움독학"
-    ],
+    "title_synonyms": ["Ssaumdokhak", "How to Fight", "싸움독학"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -90880,9 +90387,7 @@
     "title": "Kijin Gentoushou",
     "title_english": "Sword of the Demon Hunter: Kijin Gentosho",
     "title_japanese": "鬼人幻燈抄",
-    "title_synonyms": [
-      "Sword of the Demon Hunter"
-    ],
+    "title_synonyms": ["Sword of the Demon Hunter"],
     "type": "TV",
     "source": "Novel",
     "episodes": 24,
@@ -91530,9 +91035,7 @@
     "title": "Kimi ni Todoke",
     "title_english": "Kimi ni Todoke: From Me to You",
     "title_japanese": "君に届け",
-    "title_synonyms": [
-      "Reaching You"
-    ],
+    "title_synonyms": ["Reaching You"],
     "type": "TV",
     "source": "Manga",
     "episodes": 25,
@@ -92192,10 +91695,7 @@
     "title": "Kimi no Suizou wo Tabetai",
     "title_english": "I Want To Eat Your Pancreas",
     "title_japanese": "君の膵臓をたべたい",
-    "title_synonyms": [
-      "KimiSui",
-      "Let Me Eat Your Pancreas"
-    ],
+    "title_synonyms": ["KimiSui", "Let Me Eat Your Pancreas"],
     "type": "Movie",
     "source": "Novel",
     "episodes": 1,
@@ -92364,9 +91864,7 @@
     "title": "Kimi to Boku.",
     "title_english": "You and Me.",
     "title_japanese": "君と僕。",
-    "title_synonyms": [
-      "Kimi to Boku."
-    ],
+    "title_synonyms": ["Kimi to Boku."],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -92529,9 +92027,7 @@
     "title": "Kimi wa Houkago Insomnia",
     "title_english": "Insomniacs After School",
     "title_japanese": "君は放課後インソムニア",
-    "title_synonyms": [
-      "Kimisomu"
-    ],
+    "title_synonyms": ["Kimisomu"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -93225,9 +92721,7 @@
     "title": "Kirei ni Shitemoraemasu ka.",
     "title_english": "Wash It All Away",
     "title_japanese": "綺麗にしてもらえますか。",
-    "title_synonyms": [
-      "Will You Clean This For Me?"
-    ],
+    "title_synonyms": ["Will You Clean This For Me?"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -93427,11 +92921,7 @@
     "title": "Kiseijuu: Sei no Kakuritsu",
     "title_english": "Parasyte: The Maxim",
     "title_japanese": "寄生獣 セイの格率",
-    "title_synonyms": [
-      "Parasite",
-      "Parasitic Beasts",
-      "Parasyte"
-    ],
+    "title_synonyms": ["Parasite", "Parasitic Beasts", "Parasyte"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -93607,9 +93097,7 @@
     "title": "Kizetsu Yuusha to Ansatsu Hime",
     "title_english": "The Shy Hero and the Assassin Princesses",
     "title_japanese": "気絶勇者と暗殺姫",
-    "title_synonyms": [
-      "The Stunned Hero and the Assassin Princesses"
-    ],
+    "title_synonyms": ["The Stunned Hero and the Assassin Princesses"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -94142,9 +93630,7 @@
     "title": "Kobayashi-san Chi no Maid Dragon",
     "title_english": "Miss Kobayashi's Dragon Maid",
     "title_japanese": "小林さんちのメイドラゴン",
-    "title_synonyms": [
-      "The maid dragon of Kobayashi-san"
-    ],
+    "title_synonyms": ["The maid dragon of Kobayashi-san"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -94462,9 +93948,7 @@
     "title": "Kobayashi-san Chi no Maid Dragon S: Nippon no Omotenashi - Attend wa Dragon desu",
     "title_english": "Miss Kobayashi's Dragon Maid S: Japanese Hospitality (The Attendant is a Dragon)",
     "title_japanese": "小林さんちのメイドラゴンＳ ニッポンのおもてなし（アテンドはドラゴンです）",
-    "title_synonyms": [
-      "Miss Kobayashi's Dragon Maid S Special"
-    ],
+    "title_synonyms": ["Miss Kobayashi's Dragon Maid S Special"],
     "type": "Special",
     "source": "Manga",
     "episodes": 1,
@@ -94758,9 +94242,7 @@
     "title": "Kobayashi-san Chi no Maid Dragon: Valentine, Soshite Onsen! - Amari Kitai Shinaide Kudasai",
     "title_english": "Miss Kobayashi's Dragon Maid: Valentine's, and Then Hot Springs! (Please Don't Get Your Hopes Up)",
     "title_japanese": "小林さんちのメイドラゴン バレンタイン, そして温泉! (あまり期待しないでください)",
-    "title_synonyms": [
-      "Kobayashi-san Chi no Maid Dragon Episode 14"
-    ],
+    "title_synonyms": ["Kobayashi-san Chi no Maid Dragon Episode 14"],
     "type": "Special",
     "source": "Manga",
     "episodes": 1,
@@ -95319,9 +94801,7 @@
     "title": "Kochira Katsushikaku Kameari Kouenmae Hashutsujo The Movie",
     "title_english": "Kameari Park Precinct",
     "title_japanese": "こちら葛飾区亀有公園前派出所　ＴＨＥ　ＭＯＶＩＥ",
-    "title_synonyms": [
-      "Kochikame Movie 1"
-    ],
+    "title_synonyms": ["Kochikame Movie 1"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -95467,9 +94947,7 @@
     "title": "Kochira Katsushikaku Kameari Kouenmae Hashutsujo: Jump Festa Special",
     "title_english": null,
     "title_japanese": "こちら葛飾区亀有公園前派出所",
-    "title_synonyms": [
-      "Kochikame"
-    ],
+    "title_synonyms": ["Kochikame"],
     "type": "Special",
     "source": "Manga",
     "episodes": 1,
@@ -95607,9 +95085,7 @@
     "title": "Koe no Katachi",
     "title_english": "A Silent Voice",
     "title_japanese": "聲の形",
-    "title_synonyms": [
-      "The Shape of Voice"
-    ],
+    "title_synonyms": ["The Shape of Voice"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -95784,9 +95260,7 @@
     "title": "Koi wa Futago de Warikirenai",
     "title_english": "Love Is Indivisible by Twins",
     "title_japanese": "恋は双子で割り切れない",
-    "title_synonyms": [
-      "Futakire"
-    ],
+    "title_synonyms": ["Futakire"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -95976,10 +95450,7 @@
     "title": "Koisuru One Piece",
     "title_english": "One Piece in Love",
     "title_japanese": "恋するワンピース",
-    "title_synonyms": [
-      "Loving One Piece",
-      "One Piece in Love"
-    ],
+    "title_synonyms": ["Loving One Piece", "One Piece in Love"],
     "type": "ONA",
     "source": "Manga",
     "episodes": 5,
@@ -96249,9 +95720,7 @@
     "title": "Kokoro Connect",
     "title_english": "Kokoro Connect",
     "title_japanese": "ココロコネクト",
-    "title_synonyms": [
-      "Kokoroco"
-    ],
+    "title_synonyms": ["Kokoroco"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -96585,10 +96054,7 @@
     "title": "Komi-san wa, Comyushou desu.",
     "title_english": "Komi Can't Communicate",
     "title_japanese": "古見さんは、コミュ症です。",
-    "title_synonyms": [
-      "Komi-san wa",
-      "Communication Shougai desu."
-    ],
+    "title_synonyms": ["Komi-san wa", "Communication Shougai desu."],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -96749,10 +96215,7 @@
     "title": "Komi-san wa, Comyushou desu. 2nd Season",
     "title_english": "Komi Can't Communicate Season 2",
     "title_japanese": "古見さんは、コミュ症です。 2",
-    "title_synonyms": [
-      "Komi-san wa",
-      "Communication Shougai desu. 2"
-    ],
+    "title_synonyms": ["Komi-san wa", "Communication Shougai desu. 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -96921,9 +96384,7 @@
     "title": "Kono Bijutsu-bu ni wa Mondai ga Aru!",
     "title_english": "This Art Club Has a Problem!",
     "title_japanese": "この美術部には問題がある！",
-    "title_synonyms": [
-      "Konobi"
-    ],
+    "title_synonyms": ["Konobi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -97093,9 +96554,7 @@
     "title": "Kono Healer, Mendokusai",
     "title_english": "Don't Hurt Me, My Healer!",
     "title_japanese": "このヒーラー、めんどくさい",
-    "title_synonyms": [
-      "This Healer's a Handful"
-    ],
+    "title_synonyms": ["This Healer's a Handful"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -97262,9 +96721,7 @@
     "title": "Kono Kaisha ni Suki na Hito ga Imasu",
     "title_english": "I Have a Crush at Work",
     "title_japanese": "この会社に好きな人がいます",
-    "title_synonyms": [
-      "Can You Keep a Secret?"
-    ],
+    "title_synonyms": ["Can You Keep a Secret?"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -97463,9 +96920,7 @@
     "title": "Kono Oto Tomare!",
     "title_english": "Kono Oto Tomare!: Sounds of Life",
     "title_japanese": "この音とまれ！",
-    "title_synonyms": [
-      "Stop This Sound!"
-    ],
+    "title_synonyms": ["Stop This Sound!"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -97860,9 +97315,7 @@
     "title": "Kono Sekai wa Fukanzen Sugiru",
     "title_english": "Quality Assurance in Another World",
     "title_japanese": "この世界は不完全すぎる",
-    "title_synonyms": [
-      "Konofuka"
-    ],
+    "title_synonyms": ["Konofuka"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -98212,9 +97665,7 @@
     "title": "Kono Subarashii Sekai ni Shukufuku wo!",
     "title_english": "KonoSuba: God's Blessing on This Wonderful World!",
     "title_japanese": "この素晴らしい世界に祝福を！",
-    "title_synonyms": [
-      "Give Blessings to This Wonderful World!"
-    ],
+    "title_synonyms": ["Give Blessings to This Wonderful World!"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 10,
@@ -98425,9 +97876,7 @@
     "title": "Kono Subarashii Sekai ni Shukufuku wo! 2",
     "title_english": "KonoSuba: God's Blessing on This Wonderful World! 2",
     "title_japanese": "この素晴らしい世界に祝福を！ 2",
-    "title_synonyms": [
-      "Give Blessings to This Wonderful World! 2"
-    ],
+    "title_synonyms": ["Give Blessings to This Wonderful World! 2"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 10,
@@ -99453,10 +98902,7 @@
     "title": "Kono Subarashii Sekai ni Shukufuku wo!: Kono Subarashii Choker ni Shukufuku wo!",
     "title_english": "KonoSuba: God's Blessing on This Wonderful World! - God's Blessing on This Wonderful Choker!",
     "title_japanese": "この素晴らしい世界に祝福を！ 第11話 この素晴らしいチヨーカーに祝福を！",
-    "title_synonyms": [
-      "KonoSuba OVA",
-      "A Blessing to this Wonderful Choker!"
-    ],
+    "title_synonyms": ["KonoSuba OVA", "A Blessing to this Wonderful Choker!"],
     "type": "OVA",
     "source": "Light novel",
     "episodes": 1,
@@ -99607,9 +99053,7 @@
     "title": "Konyaku Haki sareta Reijou wo Hirotta Ore ga, Ikenai Koto wo Oshiekomu",
     "title_english": "I'm Giving the Disgraced Noble Lady I Rescued a Crash Course in Naughtiness",
     "title_japanese": "婚約破棄された令嬢を拾った俺が、イケナイことを教え込む",
-    "title_synonyms": [
-      "Ikenaikyo"
-    ],
+    "title_synonyms": ["Ikenaikyo"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -100165,9 +99609,7 @@
     "title": "Kotarou wa Hitorigurashi",
     "title_english": "Kotaro Lives Alone",
     "title_japanese": "コタローは1人暮らし",
-    "title_synonyms": [
-      "Kotaro Lives By Himself"
-    ],
+    "title_synonyms": ["Kotaro Lives By Himself"],
     "type": "ONA",
     "source": "Manga",
     "episodes": 10,
@@ -100309,10 +99751,7 @@
     "title": "Kotonoha no Niwa",
     "title_english": "The Garden of Words",
     "title_japanese": "言の葉の庭",
-    "title_synonyms": [
-      "Koto no Ha no Niwa",
-      "The Garden of Kotonoha"
-    ],
+    "title_synonyms": ["Koto no Ha no Niwa", "The Garden of Kotonoha"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -100463,9 +99902,7 @@
     "title": "Koujo Denka no Kateikyoushi",
     "title_english": "Private Tutor to the Duke's Daughter",
     "title_japanese": "公女殿下の家庭教師",
-    "title_synonyms": [
-      "Tutor of the His Imperial Highness Princess"
-    ],
+    "title_synonyms": ["Tutor of the His Imperial Highness Princess"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -101105,9 +100542,7 @@
     "title": "Kuma Kuma Kuma Bear",
     "title_english": "Kuma Kuma Kuma Bear",
     "title_japanese": "くま クマ 熊 ベアー",
-    "title_synonyms": [
-      "The Bears Bear a Bare Kuma"
-    ],
+    "title_synonyms": ["The Bears Bear a Bare Kuma"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -101672,9 +101107,7 @@
     "title": "Kuro no Shoukanshi",
     "title_english": "Black Summoner",
     "title_japanese": "黒の召喚士",
-    "title_synonyms": [
-      "The Berserker Rises to Greatness."
-    ],
+    "title_synonyms": ["The Berserker Rises to Greatness."],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -102329,10 +101762,7 @@
     "title": "Kusuriya no Hitorigoto",
     "title_english": "The Apothecary Diaries",
     "title_japanese": "薬屋のひとりごと",
-    "title_synonyms": [
-      "The Pharmacist's Monologue",
-      "Drugstore Soliloquy"
-    ],
+    "title_synonyms": ["The Pharmacist's Monologue", "Drugstore Soliloquy"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 24,
@@ -102517,10 +101947,7 @@
     "title": "Kusuriya no Hitorigoto 2nd Season",
     "title_english": "The Apothecary Diaries Season 2",
     "title_japanese": "薬屋のひとりごと 第2期",
-    "title_synonyms": [
-      "The Pharmacist's Monologue",
-      "Drugstore Soliloquy"
-    ],
+    "title_synonyms": ["The Pharmacist's Monologue", "Drugstore Soliloquy"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 24,
@@ -102704,10 +102131,7 @@
     "title": "Kusuriya no Hitorigoto 3rd Season",
     "title_english": "The Apothecary Diaries Season 3",
     "title_japanese": "薬屋のひとりごと 第3期",
-    "title_synonyms": [
-      "The Pharmacist's Monologue",
-      "Drugstore Soliloquy"
-    ],
+    "title_synonyms": ["The Pharmacist's Monologue", "Drugstore Soliloquy"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -102835,10 +102259,7 @@
     "title": "Kusuriya no Hitorigoto 3rd Season Part 2",
     "title_english": "The Apothecary Diaries Season 3 Part 2",
     "title_japanese": "薬屋のひとりごと 第3期 第2クール",
-    "title_synonyms": [
-      "The Pharmacist's Monologue",
-      "Drugstore Soliloquy"
-    ],
+    "title_synonyms": ["The Pharmacist's Monologue", "Drugstore Soliloquy"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -103094,9 +102515,7 @@
     "title": "Kyoukai no Kanata",
     "title_english": "Beyond the Boundary",
     "title_japanese": "境界の彼方",
-    "title_synonyms": [
-      "Beyond the Horizon"
-    ],
+    "title_synonyms": ["Beyond the Horizon"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -103435,9 +102854,7 @@
     "title": "Kyuuketsuki Sugu Shinu 2",
     "title_english": "The Vampire Dies in No Time Season 2",
     "title_japanese": "吸血鬼すぐ死ぬ2",
-    "title_synonyms": [
-      "KyuuShi"
-    ],
+    "title_synonyms": ["KyuuShi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -103765,9 +103182,7 @@
     "title": "Leadale no Daichi nite",
     "title_english": "In the Land of Leadale",
     "title_japanese": "リアデイルの大地にて",
-    "title_synonyms": [
-      "World of Leadale"
-    ],
+    "title_synonyms": ["World of Leadale"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -104123,9 +103538,7 @@
     "title": "Little Busters!",
     "title_english": "Little Busters!",
     "title_japanese": "リトルバスターズ!",
-    "title_synonyms": [
-      "LB!"
-    ],
+    "title_synonyms": ["LB!"],
     "type": "TV",
     "source": "Visual novel",
     "episodes": 26,
@@ -104837,9 +104250,7 @@
     "title": "Magic Maker: Isekai Mahou no Tsukurikata",
     "title_english": "Magic Maker: How to Make Magic in Another World",
     "title_japanese": "マジック・メイカー －異世界魔法の作り方－",
-    "title_synonyms": [
-      "Magic Maker: How to Create Magic in Another World"
-    ],
+    "title_synonyms": ["Magic Maker: How to Create Magic in Another World"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -105150,10 +104561,7 @@
     "title": "Mahou Shoujo Magical Destroyers",
     "title_english": "Magical Destroyers",
     "title_japanese": "魔法少女マジカルデストロイヤーズ",
-    "title_synonyms": [
-      "Magical Girl Magical Destroyers",
-      "MagiDes"
-    ],
+    "title_synonyms": ["Magical Girl Magical Destroyers", "MagiDes"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -105675,9 +105083,7 @@
     "title": "Mahouka Koukou no Rettousei Movie: Hoshi wo Yobu Shoujo",
     "title_english": "The Irregular at Magic High School The Movie - The Girl Who Summons The Stars",
     "title_japanese": "劇場版 魔法科高校の劣等生 星を呼ぶ少女",
-    "title_synonyms": [
-      "Gekijouban Mahouka Koukou no Rettousei"
-    ],
+    "title_synonyms": ["Gekijouban Mahouka Koukou no Rettousei"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -106506,9 +105912,7 @@
     "title": "Mahoutsukai no Yakusoku",
     "title_english": "Promise of Wizard",
     "title_japanese": "魔法使いの約束",
-    "title_synonyms": [
-      "Mahoyaku"
-    ],
+    "title_synonyms": ["Mahoyaku"],
     "type": "TV",
     "source": "Game",
     "episodes": 12,
@@ -106710,10 +106114,7 @@
     "title": "Mahoutsukai no Yome",
     "title_english": "The Ancient Magus' Bride",
     "title_japanese": "魔法使いの嫁",
-    "title_synonyms": [
-      "The Magician's Bride",
-      "Mahoyome"
-    ],
+    "title_synonyms": ["The Magician's Bride", "Mahoyome"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -107602,10 +107003,7 @@
     "title": "Mahoutsukai no Yome: Hoshi Matsu Hito",
     "title_english": "The Ancient Magus' Bride: Those Awaiting a Star",
     "title_japanese": "魔法使いの嫁 星待つひと",
-    "title_synonyms": [
-      "The Magician's Bride",
-      "Mahoyome"
-    ],
+    "title_synonyms": ["The Magician's Bride", "Mahoyome"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 3,
@@ -107937,9 +107335,7 @@
     "title": "Mahoutsukai Reimeiki",
     "title_english": "The Dawn of the Witch",
     "title_japanese": "魔法使い黎明期",
-    "title_synonyms": [
-      "Mahou Tsukai Reimeiki"
-    ],
+    "title_synonyms": ["Mahou Tsukai Reimeiki"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -108447,9 +107843,7 @@
     "title": "Mairimashita! Iruma-kun 2nd Season",
     "title_english": "Welcome to Demon School! Iruma-kun Season 2",
     "title_japanese": "魔入りました！入間くん",
-    "title_synonyms": [
-      "Welcome to Demon School! Iruma-kun 2nd Season"
-    ],
+    "title_synonyms": ["Welcome to Demon School! Iruma-kun 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 21,
@@ -108601,9 +107995,7 @@
     "title": "Mairimashita! Iruma-kun 3rd Season",
     "title_english": "Welcome to Demon School! Iruma-kun Season 3",
     "title_japanese": "魔入りました！入間くん",
-    "title_synonyms": [
-      "Welcome to Demon School! Iruma-kun 3rd Season"
-    ],
+    "title_synonyms": ["Welcome to Demon School! Iruma-kun 3rd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 21,
@@ -109049,9 +108441,7 @@
     "title": "Majo to Yajuu",
     "title_english": "The Witch and the Beast",
     "title_japanese": "魔女と野獣",
-    "title_synonyms": [
-      "Witch and the Beast"
-    ],
+    "title_synonyms": ["Witch and the Beast"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -109407,9 +108797,7 @@
     "title": "Make Heroine ga Oosugiru!",
     "title_english": "Makeine: Too Many Losing Heroines!",
     "title_japanese": "負けヒロインが多すぎる！",
-    "title_synonyms": [
-      "Makeine"
-    ],
+    "title_synonyms": ["Makeine"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -109583,9 +108971,7 @@
     "title": "Make Heroine ga Oosugiru! 2nd Season",
     "title_english": "Makeine: Too Many Losing Heroines! Season 2",
     "title_japanese": "負けヒロインが多すぎる！2期",
-    "title_synonyms": [
-      "Makeine"
-    ],
+    "title_synonyms": ["Makeine"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -109707,10 +109093,7 @@
     "title": "Mamahaha no Tsurego ga Motokano datta",
     "title_english": "My Stepmom's Daughter Is My Ex",
     "title_japanese": "継母の連れ子が元カノだった",
-    "title_synonyms": [
-      "My Stepsister is My Ex-Girlfriend",
-      "Tsurekano"
-    ],
+    "title_synonyms": ["My Stepsister is My Ex-Girlfriend", "Tsurekano"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -111095,9 +110478,7 @@
     "title": "Maougun Saikyou no Majutsushi wa Ningen datta",
     "title_english": "The Strongest Magician in the Demon Lord's Army Was a Human",
     "title_japanese": "魔王軍最強の魔術師は人間だった",
-    "title_synonyms": [
-      "The Maou Army's Strongest Magician Was a Human"
-    ],
+    "title_synonyms": ["The Maou Army's Strongest Magician Was a Human"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -111705,9 +111086,7 @@
     "title": "Masamune-kun no Revenge: Uchi no Mama ni Kagitte/Tsunade Shima, Futatabi./12-Ji wo Sugita Cinderella",
     "title_english": "Masamune-kun's Revenge OVA",
     "title_japanese": "政宗くんのリベンジ OVA",
-    "title_synonyms": [
-      "Masamune-kun no Revenge OVA"
-    ],
+    "title_synonyms": ["Masamune-kun no Revenge OVA"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -112078,9 +111457,7 @@
     "title": "Mashle: Mash Burnedead to Fushigi na Tegami",
     "title_english": "Mashle: Magic and Muscles - Mash Burnedead and the Mysterious Letter",
     "title_japanese": "マッシュル-MASHLE- マッシュ・バーンデッドと不思議な手紙",
-    "title_synonyms": [
-      "Mashle Recap"
-    ],
+    "title_synonyms": ["Mashle Recap"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -112230,9 +111607,7 @@
     "title": "Mashle: Shinkakusha Kouho Senbatsu Shiken-hen",
     "title_english": "Mashle: Magic and Muscles - The Divine Visionary Candidate Exam Arc",
     "title_japanese": "マッシュル-MASHLE- 神覚者候補選抜試験編",
-    "title_synonyms": [
-      "Mashle 2nd Season"
-    ],
+    "title_synonyms": ["Mashle 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -112585,9 +111960,7 @@
     "title": "Megami no Café Terrace",
     "title_english": "The Café Terrace and Its Goddesses",
     "title_japanese": "女神のカフェテラス",
-    "title_synonyms": [
-      "Goddess Café Terrace"
-    ],
+    "title_synonyms": ["Goddess Café Terrace"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -112762,9 +112135,7 @@
     "title": "Megami no Café Terrace 2nd Season",
     "title_english": "The Café Terrace and Its Goddesses Season 2",
     "title_japanese": "女神のカフェテラス 第2期",
-    "title_synonyms": [
-      "Goddess Café Terrace 2nd Season"
-    ],
+    "title_synonyms": ["Goddess Café Terrace 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -113472,9 +112843,7 @@
     "title": "Miira no Kaikata",
     "title_english": "How to Keep a Mummy",
     "title_japanese": "ミイラの飼い方",
-    "title_synonyms": [
-      "How to keep a mummy"
-    ],
+    "title_synonyms": ["How to keep a mummy"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -114342,9 +113711,7 @@
     "title": "Mini Dragon",
     "title_english": "Miss Kobayashi's Dragon Maid S Short Animation Series",
     "title_japanese": "ミニドラ",
-    "title_synonyms": [
-      "Minidora"
-    ],
+    "title_synonyms": ["Minidora"],
     "type": "ONA",
     "source": "Manga",
     "episodes": 13,
@@ -114466,10 +113833,7 @@
     "title": "Mini Dragon Specials",
     "title_english": "Miss Kobayashi's Dragon Maid S Short Animation Series",
     "title_japanese": "ミニドラ",
-    "title_synonyms": [
-      "Mini Dragon EX",
-      "Mini Dragon SP"
-    ],
+    "title_synonyms": ["Mini Dragon EX", "Mini Dragon SP"],
     "type": "Special",
     "source": "Manga",
     "episodes": 8,
@@ -114975,10 +114339,7 @@
     "title": "Mob Psycho 100",
     "title_english": "Mob Psycho 100",
     "title_japanese": "モブサイコ100",
-    "title_synonyms": [
-      "Mob Psycho Hyaku",
-      "Mob Psycho One Hundred"
-    ],
+    "title_synonyms": ["Mob Psycho Hyaku", "Mob Psycho One Hundred"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -115954,9 +115315,7 @@
     "title": "Mono",
     "title_english": "mono",
     "title_japanese": "mono",
-    "title_synonyms": [
-      "Mono: Weekend Animation"
-    ],
+    "title_synonyms": ["Mono: Weekend Animation"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 12,
@@ -116427,10 +115786,7 @@
     "title": "Muchuu sa, Kimi ni.",
     "title_english": "Captivated, By You",
     "title_japanese": "夢中さ、きみに。",
-    "title_synonyms": [
-      "Captivated",
-      "by You"
-    ],
+    "title_synonyms": ["Captivated", "by You"],
     "type": "TV",
     "source": "Manga",
     "episodes": 5,
@@ -116689,9 +116045,7 @@
     "title": "Mushikaburi-hime",
     "title_english": "Bibliophile Princess",
     "title_japanese": "虫かぶり姫",
-    "title_synonyms": [
-      "Princess of the Bibliophile"
-    ],
+    "title_synonyms": ["Princess of the Bibliophile"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -117257,9 +116611,7 @@
     "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz",
     "title_english": "Mushoku Tensei: Jobless Reincarnation Season 2 - Episode 0 \"Guardian Fitz\"",
     "title_japanese": "無職転生Ⅱ ～異世界行ったら本気だす～ 第0話「守護術師フィッツ」",
-    "title_synonyms": [
-      "Mushoku Tensei Ⅱ: Isekai Ittara Honki Dasu Episode 0"
-    ],
+    "title_synonyms": ["Mushoku Tensei Ⅱ: Isekai Ittara Honki Dasu Episode 0"],
     "type": "TV Special",
     "source": "Light novel",
     "episodes": 1,
@@ -118945,9 +118297,7 @@
     "title": "Nakitai Watashi wa Neko wo Kaburu",
     "title_english": "A Whisker Away",
     "title_japanese": "泣きたい私は猫をかぶる",
-    "title_synonyms": [
-      "Nakineko"
-    ],
+    "title_synonyms": ["Nakineko"],
     "type": "ONA",
     "source": "Original",
     "episodes": 1,
@@ -119145,9 +118495,7 @@
     "title": "Nanatsu no Maken ga Shihai suru",
     "title_english": "Reign of the Seven Spellblades",
     "title_japanese": "七つの魔剣が支配する",
-    "title_synonyms": [
-      "Nanatsuma"
-    ],
+    "title_synonyms": ["Nanatsuma"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 15,
@@ -119339,9 +118687,7 @@
     "title": "Natsu e no Tunnel, Sayonara no Deguchi",
     "title_english": "The Tunnel to Summer, the Exit of Goodbyes",
     "title_japanese": "夏へのトンネル, さよならの出口",
-    "title_synonyms": [
-      "Natsuton"
-    ],
+    "title_synonyms": ["Natsuton"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -119507,10 +118853,7 @@
     "title": "Natsume Yuujinchou",
     "title_english": "Natsume's Book of Friends",
     "title_japanese": "夏目友人帳",
-    "title_synonyms": [
-      "Natsume Yujincho",
-      "Natsume Yujin-cho"
-    ],
+    "title_synonyms": ["Natsume Yujincho", "Natsume Yujin-cho"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -119690,10 +119033,7 @@
     "title": "Naze Boku no Sekai wo Daremo Oboeteinai no ka?",
     "title_english": "Why Does Nobody Remember Me in This World?",
     "title_japanese": "なぜ僕の世界を誰も覚えていないのか？",
-    "title_synonyms": [
-      "Why Nobody Remembers My World?",
-      "NazeBoku"
-    ],
+    "title_synonyms": ["Why Nobody Remembers My World?", "NazeBoku"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -119902,10 +119242,7 @@
     "title": "Needy Girl Overdose",
     "title_english": null,
     "title_japanese": "NEEDY GIRL OVERDOSE",
-    "title_synonyms": [
-      "NGO",
-      "Nidiga"
-    ],
+    "title_synonyms": ["NGO", "Nidiga"],
     "type": "TV",
     "source": "Visual novel",
     "episodes": null,
@@ -120469,9 +119806,7 @@
     "title": "Nekomonogatari: Kuro",
     "title_english": "Nekomonogatari Black",
     "title_japanese": "猫物語（黒）",
-    "title_synonyms": [
-      "Nekomonogatari Black: Tsubasa Family"
-    ],
+    "title_synonyms": ["Nekomonogatari Black: Tsubasa Family"],
     "type": "TV Special",
     "source": "Light novel",
     "episodes": 4,
@@ -120839,9 +120174,7 @@
     "title": "Nichijou",
     "title_english": "Nichijou - My Ordinary Life",
     "title_japanese": "日常",
-    "title_synonyms": [
-      "Everyday"
-    ],
+    "title_synonyms": ["Everyday"],
     "type": "TV",
     "source": "Manga",
     "episodes": 26,
@@ -121168,9 +120501,7 @@
     "title": "Nige Jouzu no Wakagimi",
     "title_english": "The Elusive Samurai",
     "title_japanese": "逃げ上手の若君",
-    "title_synonyms": [
-      "Nigewaka"
-    ],
+    "title_synonyms": ["Nigewaka"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -121346,9 +120677,7 @@
     "title": "Nige Jouzu no Wakagimi 2nd Season",
     "title_english": "The Elusive Samurai Season 2",
     "title_japanese": "逃げ上手の若君 第二期",
-    "title_synonyms": [
-      "Nigewaka"
-    ],
+    "title_synonyms": ["Nigewaka"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -121998,10 +121327,7 @@
     "title": "Ninja to Koroshiya no Futarigurashi",
     "title_english": "A Ninja and an Assassin Under One Roof",
     "title_japanese": "忍者と殺し屋のふたりぐらし",
-    "title_synonyms": [
-      "NinKoro",
-      "A Ninja and an Assassin Living Together"
-    ],
+    "title_synonyms": ["NinKoro", "A Ninja and an Assassin Living Together"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -123151,9 +122477,7 @@
     "title": "Non Non Biyori Repeat: Hotaru ga Tanoshinda",
     "title_english": "Non Non Biyori Repeat: Hotaru Had Fun",
     "title_japanese": "のんのんびより りぴーと 蛍が楽しんだ",
-    "title_synonyms": [
-      "Non Non Biyori Repeat OVA"
-    ],
+    "title_synonyms": ["Non Non Biyori Repeat OVA"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -123291,9 +122615,7 @@
     "title": "Non Non Biyori: Okinawa e Ikukoto ni Natta",
     "title_english": "Non Non Biyori: We're Going to Okinawa",
     "title_japanese": "のんのんびより　沖縄へ行くことになった",
-    "title_synonyms": [
-      "Non Non Biyori OVA"
-    ],
+    "title_synonyms": ["Non Non Biyori OVA"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -124622,9 +123944,7 @@
     "title": "Ojou to Banken-kun",
     "title_english": "A Girl & Her Guard Dog",
     "title_japanese": "お嬢と番犬くん",
-    "title_synonyms": [
-      "A Girl and Her Guard Dog"
-    ],
+    "title_synonyms": ["A Girl and Her Guard Dog"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -124799,9 +124119,7 @@
     "title": "Okashi na Tensei",
     "title_english": "Sweet Reincarnation",
     "title_japanese": "おかしな転生",
-    "title_synonyms": [
-      "Treat of Reincarnation"
-    ],
+    "title_synonyms": ["Treat of Reincarnation"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -125320,9 +124638,7 @@
     "title": "One Piece",
     "title_english": "One Piece",
     "title_japanese": "ONE PIECE",
-    "title_synonyms": [
-      "OP"
-    ],
+    "title_synonyms": ["OP"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -125487,9 +124803,7 @@
     "title": "One Piece 3D2Y: Ace no shi wo Koete! Luffy Nakama Tono Chikai",
     "title_english": "One Piece 3D2Y: Overcoming Ace's Death! Luffy's Pledge to His Friends",
     "title_japanese": "ワンピース〝3D2Y〟 エースの死を越えて！　ルフィ仲間との誓い",
-    "title_synonyms": [
-      "One Piece Special 15th Anniversary"
-    ],
+    "title_synonyms": ["One Piece Special 15th Anniversary"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -125756,10 +125070,7 @@
     "title": "One Piece 3D: Mugiwara Chase",
     "title_english": "One Piece 3D: Straw Hat Chase",
     "title_japanese": "ONE PIECE 3D 麦わらチェイス",
-    "title_synonyms": [
-      "One Piece 3D: Strawhat Chase",
-      "One Piece Movie 11"
-    ],
+    "title_synonyms": ["One Piece 3D: Strawhat Chase", "One Piece Movie 11"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -126021,9 +125332,7 @@
     "title": "One Piece Film: Gold",
     "title_english": null,
     "title_japanese": "ONE PIECE FILM GOLD",
-    "title_synonyms": [
-      "One Piece Movie 13"
-    ],
+    "title_synonyms": ["One Piece Movie 13"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -126161,9 +125470,7 @@
     "title": "One Piece Film: Gold Episode 0 - 711 ver.",
     "title_english": "One Piece Film: Gold Episode 0 - 711 ver.",
     "title_japanese": "ワンピース フィルム ゴールド ～episode 0～ 711ver.",
-    "title_synonyms": [
-      "One Piece Film: Gold Episode 0"
-    ],
+    "title_synonyms": ["One Piece Film: Gold Episode 0"],
     "type": "ONA",
     "source": "Manga",
     "episodes": 1,
@@ -126300,9 +125607,7 @@
     "title": "One Piece Film: Red",
     "title_english": "One Piece Film: Red",
     "title_japanese": "ONE PIECE FILM RED",
-    "title_synonyms": [
-      "One Piece Movie 15"
-    ],
+    "title_synonyms": ["One Piece Movie 15"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -126477,9 +125782,7 @@
     "title": "One Piece Film: Strong World",
     "title_english": "One Piece Film: Strong World",
     "title_japanese": "ワンピース　フィルム　ストロングワールド",
-    "title_synonyms": [
-      "One Piece Movie 10"
-    ],
+    "title_synonyms": ["One Piece Movie 10"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -126625,9 +125928,7 @@
     "title": "One Piece Film: Z",
     "title_english": "One Piece Film: Z",
     "title_japanese": "ワンピース　フィルム　﻿Ｚ",
-    "title_synonyms": [
-      "One Piece Movie 12"
-    ],
+    "title_synonyms": ["One Piece Movie 12"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -126784,9 +126085,7 @@
     "title": "One Piece Movie 01",
     "title_english": "One Piece: The Movie",
     "title_japanese": "ONE PIECE",
-    "title_synonyms": [
-      "One Piece: The Movie"
-    ],
+    "title_synonyms": ["One Piece: The Movie"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -127092,9 +126391,7 @@
     "title": "One Piece Movie 03: Chinjuu-jima no Chopper Oukoku",
     "title_english": "One Piece: Chopper Kingdom of Strange Animal Island",
     "title_japanese": "ワンピース 珍獣島のチョッパー王国",
-    "title_synonyms": [
-      "One Piece: Chinjou Shima no Chopper Oukoku"
-    ],
+    "title_synonyms": ["One Piece: Chinjou Shima no Chopper Oukoku"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -128294,9 +127591,7 @@
     "title": "One Piece Recap",
     "title_english": "One Piece: Romance Dawn Story - Recapping the TV Series So Far",
     "title_japanese": "ワンピース",
-    "title_synonyms": [
-      "One Piece Recap OVA"
-    ],
+    "title_synonyms": ["One Piece Recap OVA"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -128431,9 +127726,7 @@
     "title": "One Piece: Adventure of Nebulandia",
     "title_english": "One Piece: Adventure of Nebulandia",
     "title_japanese": "ワンピース～アドベンチャー オブ ネブランディア～",
-    "title_synonyms": [
-      "One Piece Special"
-    ],
+    "title_synonyms": ["One Piece Special"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -128582,10 +127875,7 @@
     "title": "One Piece: Dai Tannou Kikaku! \"Shi no Gekai\" Trafalgar Law",
     "title_english": "One Piece: A Project to Fully Enjoy! `Surgeon of Death` Trafalgar Law",
     "title_japanese": "大堪能企画! \"死の外科医\" トラファルガー・ロー",
-    "title_synonyms": [
-      "One Piece Recap",
-      "One Piece Special"
-    ],
+    "title_synonyms": ["One Piece Recap", "One Piece Special"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -128722,9 +128012,7 @@
     "title": "One Piece: Densetsu no Log! Akagami no Shanks!",
     "title_english": "One Piece: The Captain's Log of the Legend! Red-Haired Shanks!",
     "title_japanese": "伝説の記録！赤髪のシャンクス！",
-    "title_synonyms": [
-      "One Piece Recap"
-    ],
+    "title_synonyms": ["One Piece Recap"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -129140,9 +128428,7 @@
     "title": "One Piece: Episode of Merry - Mou Hitori no Nakama no Monogatari",
     "title_english": "One Piece: Episode of Merry - The Tale of One More Friend",
     "title_japanese": "ワンピース エピソード・オブ・メリー ～もうひとりの仲間の物語～",
-    "title_synonyms": [
-      "One Piece Special"
-    ],
+    "title_synonyms": ["One Piece Special"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -129708,9 +128994,7 @@
     "title": "One Piece: Glorious Island",
     "title_english": null,
     "title_japanese": "ワンピース 『GLORIOUS ISLAND』",
-    "title_synonyms": [
-      "One Piece Special: Glorious Island"
-    ],
+    "title_synonyms": ["One Piece Special: Glorious Island"],
     "type": "ONA",
     "source": "Manga",
     "episodes": 2,
@@ -129848,9 +129132,7 @@
     "title": "One Piece: Gyojin Tou-hen",
     "title_english": "One Piece Log: Fish-Man Island Saga",
     "title_japanese": "SPECIAL EDITED VERSION『ONE PIECE』魚人島編",
-    "title_synonyms": [
-      "OP"
-    ],
+    "title_synonyms": ["OP"],
     "type": "TV",
     "source": "Manga",
     "episodes": 21,
@@ -130123,9 +129405,7 @@
     "title": "One Piece: Heroines",
     "title_english": null,
     "title_japanese": "ONE PIECE HEROINES",
-    "title_synonyms": [
-      "One Piece Novel: Heroines"
-    ],
+    "title_synonyms": ["One Piece Novel: Heroines"],
     "type": null,
     "source": "Light novel",
     "episodes": null,
@@ -130253,10 +129533,7 @@
     "title": "One Piece: Innen no Log! Mugiwara no Ichimi to Cipher Pol",
     "title_english": "One Piece: The Log of the Rivalry! The Straw Hats vs. Cipher Pol",
     "title_japanese": "因縁の記録[ログ]! 麦わらの一味とCP[サイファーポール]",
-    "title_synonyms": [
-      "One Piece Recap",
-      "One Piece Special"
-    ],
+    "title_synonyms": ["One Piece Recap", "One Piece Special"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -130514,9 +129791,7 @@
     "title": "One Piece: Kinkyuu Kikaku One Piece Kanzen Kouryakuhou",
     "title_english": "One Piece: Emergency Planning, A Perfect Strategy for the One Piece",
     "title_japanese": "緊急企画ワンピース完全攻略法",
-    "title_synonyms": [
-      "One Piece Recap"
-    ],
+    "title_synonyms": ["One Piece Recap"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -130664,10 +129939,7 @@
     "title": "One Piece: Kizamareru Rekishi! Gekidou no Shinkyuu Yonkou!",
     "title_english": "One Piece: Making History! The Turbulent Old and New Four Emperors!",
     "title_japanese": "刻まれる歴史! 激動の新旧四皇!",
-    "title_synonyms": [
-      "One Piece Recap",
-      "One Piece Special"
-    ],
+    "title_synonyms": ["One Piece Recap", "One Piece Special"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -130938,9 +130210,7 @@
     "title": "One Piece: Romance Dawn Story",
     "title_english": "One Piece: Romance Dawn Story",
     "title_japanese": "ワンピース ロマンスドーンストーリー",
-    "title_synonyms": [
-      "One Piece Special: Romance Dawn Story"
-    ],
+    "title_synonyms": ["One Piece Special: Romance Dawn Story"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -131205,9 +130475,7 @@
     "title": "One Piece: Yume no Soccer Ou!",
     "title_english": "One Piece: Dream Soccer King",
     "title_japanese": "ワンピース 夢のサッカー王!",
-    "title_synonyms": [
-      "One Piece: Soccer King of Dreams"
-    ],
+    "title_synonyms": ["One Piece: Soccer King of Dreams"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -131349,10 +130617,7 @@
     "title": "One Punch Man",
     "title_english": "One-Punch Man",
     "title_japanese": "ワンパンマン",
-    "title_synonyms": [
-      "One Punch-Man",
-      "OPM"
-    ],
+    "title_synonyms": ["One Punch-Man", "OPM"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -131572,11 +130837,7 @@
     "title": "One Punch Man 2nd Season",
     "title_english": "One-Punch Man Season 2",
     "title_japanese": "ワンパンマン 2期",
-    "title_synonyms": [
-      "One Punch-Man 2",
-      "One-Punch Man 2",
-      "OPM 2"
-    ],
+    "title_synonyms": ["One Punch-Man 2", "One-Punch Man 2", "OPM 2"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -131929,10 +131190,7 @@
     "title": "One Punch Man 3",
     "title_english": "One-Punch Man Season 3",
     "title_japanese": "ワンパンマン 3",
-    "title_synonyms": [
-      "One Punch Man 3rd Season",
-      "OPM 3"
-    ],
+    "title_synonyms": ["One Punch Man 3rd Season", "OPM 3"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -132141,10 +131399,7 @@
     "title": "One Punch Man 3 Part 2",
     "title_english": "One-Punch Man Season 3 Part 2",
     "title_japanese": "ワンパンマン 3期 第2クール",
-    "title_synonyms": [
-      "One Punch Man 3rd Season Part 2",
-      "OPM 3"
-    ],
+    "title_synonyms": ["One Punch Man 3rd Season Part 2", "OPM 3"],
     "type": "TV",
     "source": "Web manga",
     "episodes": null,
@@ -132765,10 +132020,7 @@
     "title": "Oniichan wa Oshimai!",
     "title_english": "Onimai: I'm Now Your Sister!",
     "title_japanese": "お兄ちゃんはおしまい！",
-    "title_synonyms": [
-      "Onimai",
-      "Onii-chan is Done For"
-    ],
+    "title_synonyms": ["Onimai", "Onii-chan is Done For"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -132979,9 +132231,7 @@
     "title": "Onmyou Kaiten Re:Birth",
     "title_english": "Onmyo Kaiten Re:Birth Verse",
     "title_japanese": "陰陽廻天 Re:バース",
-    "title_synonyms": [
-      "Onmyou Kaiten Re:Verse"
-    ],
+    "title_synonyms": ["Onmyou Kaiten Re:Verse"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -133169,9 +132419,7 @@
     "title": "Ookami to Koushinryou",
     "title_english": "Spice and Wolf",
     "title_japanese": "狼と香辛料",
-    "title_synonyms": [
-      "Ookami to Koushinryou"
-    ],
+    "title_synonyms": ["Ookami to Koushinryou"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -133346,9 +132594,7 @@
     "title": "Ookami to Koushinryou: Merchant Meets the Wise Wolf",
     "title_english": "Spice and Wolf: Merchant Meets the Wise Wolf",
     "title_japanese": "狼と香辛料 MERCHANT MEETS THE WISE WOLF",
-    "title_synonyms": [
-      "Spice and Wolf"
-    ],
+    "title_synonyms": ["Spice and Wolf"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 25,
@@ -133843,9 +133089,7 @@
     "title": "Ore dake Haireru Kakushi Dungeon",
     "title_english": "The Hidden Dungeon Only I Can Enter",
     "title_japanese": "俺だけ入れる隠しダンジョン",
-    "title_synonyms": [
-      "Special training in the Secret Dungeon"
-    ],
+    "title_synonyms": ["Special training in the Secret Dungeon"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -134193,9 +133437,7 @@
     "title": "Ore dake Level Up na Ken Season 2: Arise from the Shadow",
     "title_english": "Solo Leveling Season 2: Arise from the Shadow",
     "title_japanese": "俺だけレベルアップな件 Season 2 -Arise from the Shadow-",
-    "title_synonyms": [
-      "Solo Leveling Second Season"
-    ],
+    "title_synonyms": ["Solo Leveling Second Season"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -134691,10 +133933,7 @@
     "title": "Ore Monogatari!!",
     "title_english": "My Love Story!!",
     "title_japanese": "俺物語!!",
-    "title_synonyms": [
-      "Ore Monogatari!!",
-      "My Story!!"
-    ],
+    "title_synonyms": ["Ore Monogatari!!", "My Story!!"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -135923,10 +135162,7 @@
     "title": "Oroka na Tenshi wa Akuma to Odoru",
     "title_english": "The Foolish Angel Dances with the Devil",
     "title_japanese": "愚かな天使は悪魔と踊る",
-    "title_synonyms": [
-      "The Foolish Angel Dances with Demons",
-      "Kanaten"
-    ],
+    "title_synonyms": ["The Foolish Angel Dances with Demons", "Kanaten"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -136441,9 +135677,7 @@
     "title": "Otaku ni Yasashii Gal wa Inai!?",
     "title_english": null,
     "title_japanese": "オタクに優しいギャルはいない!?",
-    "title_synonyms": [
-      "Gals Can't Be Kind to Otaku!?"
-    ],
+    "title_synonyms": ["Gals Can't Be Kind to Otaku!?"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -137413,9 +136647,7 @@
     "title": "Ousama Ranking",
     "title_english": "Ranking of Kings",
     "title_japanese": "王様ランキング",
-    "title_synonyms": [
-      "King Ranking"
-    ],
+    "title_synonyms": ["King Ranking"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 23,
@@ -137678,9 +136910,7 @@
     "title": "Ousama Ranking: Yuuki no Takarabako",
     "title_english": "Ranking of Kings: The Treasure Chest of Courage",
     "title_japanese": "王様ランキング 勇気の宝箱",
-    "title_synonyms": [
-      "Ranking of Kings: Treasure Chest of Courage"
-    ],
+    "title_synonyms": ["Ranking of Kings: Treasure Chest of Courage"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 10,
@@ -138647,9 +137877,7 @@
     "title": "Overlord Movie 1: Fushisha no Ou",
     "title_english": "Overlord: The Undead King",
     "title_japanese": "【前編】劇場版総集編 オーバーロード 不死者の王",
-    "title_synonyms": [
-      "Gekijouban Overlord"
-    ],
+    "title_synonyms": ["Gekijouban Overlord"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -138784,9 +138012,7 @@
     "title": "Overlord Movie 2: Shikkoku no Eiyuu",
     "title_english": "Overlord: The Dark Hero",
     "title_japanese": "【後編】劇場版総集編 オーバーロード 漆黒の英雄",
-    "title_synonyms": [
-      "Gekijouban Overlord 2"
-    ],
+    "title_synonyms": ["Gekijouban Overlord 2"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -138917,9 +138143,7 @@
     "title": "Overlord Movie 3: Sei Oukoku-hen",
     "title_english": "Overlord: The Sacred Kingdom",
     "title_japanese": "劇場版「オーバーロード」聖王国編",
-    "title_synonyms": [
-      "Gekijouban Overlord: Sei Oukoku-hen"
-    ],
+    "title_synonyms": ["Gekijouban Overlord: Sei Oukoku-hen"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -139087,9 +138311,7 @@
     "title": "Overlord: Ple Ple Pleiades - Nazarick Saidai no Kiki",
     "title_english": "Overlord: Ple Ple Pleiades - Nazarick's Greatest Crisis",
     "title_japanese": "オーバーロード　ぷれぷれぷれあです 『なざりっく最大の危機』",
-    "title_synonyms": [
-      "Overlord OVA"
-    ],
+    "title_synonyms": ["Overlord OVA"],
     "type": "OVA",
     "source": "Light novel",
     "episodes": 1,
@@ -139220,9 +138442,7 @@
     "title": "Paripi Koumei",
     "title_english": "Ya Boy Kongming!",
     "title_japanese": "パリピ孔明",
-    "title_synonyms": [
-      "Party People Koumei"
-    ],
+    "title_synonyms": ["Party People Koumei"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -140372,9 +139592,7 @@
     "title": "Pokemon Movie 20: Kimi ni Kimeta!",
     "title_english": "Pokémon the Movie: I Choose You!",
     "title_japanese": "劇場版ポケットモンスター キミにきめた！",
-    "title_synonyms": [
-      "Pokemon Movie 20"
-    ],
+    "title_synonyms": ["Pokemon Movie 20"],
     "type": "Movie",
     "source": "Game",
     "episodes": 1,
@@ -140683,9 +139901,7 @@
     "title": "Potion-danomi de Ikinobimasu!",
     "title_english": "I Shall Survive Using Potions!",
     "title_japanese": "ポーション頼みで生き延びます!",
-    "title_synonyms": [
-      "Poukin"
-    ],
+    "title_synonyms": ["Poukin"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -140853,9 +140069,7 @@
     "title": "Prison School",
     "title_english": "Prison School",
     "title_japanese": "監獄学園〈プリズンスクール〉",
-    "title_synonyms": [
-      "Kangoku Gakuen"
-    ],
+    "title_synonyms": ["Kangoku Gakuen"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -141435,10 +140649,7 @@
     "title": "Ramayana: The Legend of Prince Rama",
     "title_english": "Ramayana: The Legend of Prince Rama",
     "title_japanese": "ラーマーヤナ ラーマ王子伝説",
-    "title_synonyms": [
-      "Ramayana: Rama Ouji Densetsu",
-      "The Warrior Prince"
-    ],
+    "title_synonyms": ["Ramayana: Rama Ouji Densetsu", "The Warrior Prince"],
     "type": "Movie",
     "source": "Other",
     "episodes": 1,
@@ -141557,9 +140768,7 @@
     "title": "Re:Monster",
     "title_english": "Re:Monster",
     "title_japanese": "Re:Monster",
-    "title_synonyms": [
-      "ReMonster"
-    ],
+    "title_synonyms": ["ReMonster"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -142018,10 +141227,7 @@
     "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
     "title_english": "Re:ZERO -Starting Life in Another World-",
     "title_japanese": "Re:ゼロから始める異世界生活",
-    "title_synonyms": [
-      "Re: Life in a different world from zero",
-      "ReZero"
-    ],
+    "title_synonyms": ["Re: Life in a different world from zero", "ReZero"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 25,
@@ -142226,9 +141432,7 @@
     "title": "Re:Zero kara Hajimeru Isekai Seikatsu - Hyouketsu no Kizuna",
     "title_english": "Re:ZERO -Starting Life in Another World- The Frozen Bond",
     "title_japanese": "Re：ゼロから始める異世界生活『氷結の絆』",
-    "title_synonyms": [
-      "Re:Zero kara Hajimeru Isekai Seikatsu OVA 2"
-    ],
+    "title_synonyms": ["Re:Zero kara Hajimeru Isekai Seikatsu OVA 2"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -143893,9 +143097,7 @@
     "title": "Reincarnation no Kaben",
     "title_english": "Petals of Reincarnation",
     "title_japanese": "リィンカーネーションの花弁",
-    "title_synonyms": [
-      "Reincarnation no Hanabira"
-    ],
+    "title_synonyms": ["Reincarnation no Hanabira"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -144228,9 +143430,7 @@
     "title": "ReLIFE",
     "title_english": "ReLIFE",
     "title_japanese": "ReLIFE",
-    "title_synonyms": [
-      "Re LIFE"
-    ],
+    "title_synonyms": ["Re LIFE"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -144576,9 +143776,7 @@
     "title": "Rikei ga Koi ni Ochita no de Shoumei shitemita.",
     "title_english": "Science Fell in Love, So I Tried to Prove It",
     "title_japanese": "理系が恋に落ちたので証明してみた。",
-    "title_synonyms": [
-      "RikeKoi"
-    ],
+    "title_synonyms": ["RikeKoi"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -144777,9 +143975,7 @@
     "title": "Rokudenashi Majutsu Koushi to Akashic Records",
     "title_english": "Akashic Records of Bastard Magic Instructor",
     "title_japanese": "ロクでなし魔術講師と禁忌教典",
-    "title_synonyms": [
-      "RokuAka"
-    ],
+    "title_synonyms": ["RokuAka"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -145113,9 +144309,7 @@
     "title": "Rougo ni Sonaete Isekai de 8-manmai no Kinka wo Tamemasu",
     "title_english": "Saving 80,000 Gold in Another World for My Retirement",
     "title_japanese": "老後に備えて異世界で８万枚の金貨を貯めます",
-    "title_synonyms": [
-      "Roukin"
-    ],
+    "title_synonyms": ["Roukin"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -145277,9 +144471,7 @@
     "title": "Ruri no Houseki",
     "title_english": "Ruri Rocks",
     "title_japanese": "瑠璃の宝石",
-    "title_synonyms": [
-      "Introduction to Mineralogy"
-    ],
+    "title_synonyms": ["Introduction to Mineralogy"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -145600,9 +144792,7 @@
     "title": "Ryuu to Sobakasu no Hime",
     "title_english": "Belle",
     "title_japanese": "竜とそばかすの姫",
-    "title_synonyms": [
-      "Ryuusoba"
-    ],
+    "title_synonyms": ["Ryuusoba"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -146136,9 +145326,7 @@
     "title": "Saenai Heroine no Sodatekata",
     "title_english": "Saekano: How to Raise a Boring Girlfriend",
     "title_japanese": "冴えない彼女〈ヒロイン〉の育てかた",
-    "title_synonyms": [
-      "Saenai Kanojo no Sodate-kata"
-    ],
+    "title_synonyms": ["Saenai Kanojo no Sodate-kata"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -146357,9 +145545,7 @@
     "title": "Saenai Heroine no Sodatekata ♭",
     "title_english": "Saekano: How to Raise a Boring Girlfriend .flat",
     "title_japanese": "冴えない彼女〈ヒロイン〉の育てかた♭",
-    "title_synonyms": [
-      "Saenai Heroine no Sodatekata Flat"
-    ],
+    "title_synonyms": ["Saenai Heroine no Sodatekata Flat"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 11,
@@ -147047,9 +146233,7 @@
     "title": "Saigo ni Hitotsu dake Onegai shitemo Yoroshii deshou ka",
     "title_english": "May I Ask for One Final Thing?",
     "title_japanese": "最後にひとつだけお願いしてもよろしいでしょうか",
-    "title_synonyms": [
-      "Saihito"
-    ],
+    "title_synonyms": ["Saihito"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -147233,10 +146417,7 @@
     "title": "Saihate no Paladin",
     "title_english": "The Faraway Paladin",
     "title_japanese": "最果てのパラディン",
-    "title_synonyms": [
-      "Paladin of the End",
-      "Ultimate Paladin"
-    ],
+    "title_synonyms": ["Paladin of the End", "Ultimate Paladin"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -147540,9 +146721,7 @@
     "title": "Saihate no Paladin: Tetsusabi no Yama no Ou",
     "title_english": "The Faraway Paladin: The Lord of the Rust Mountains",
     "title_japanese": "最果てのパラディン 鉄錆の山の王",
-    "title_synonyms": [
-      "Saihate no Paladin 2nd Season"
-    ],
+    "title_synonyms": ["Saihate no Paladin 2nd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -148053,10 +147232,7 @@
     "title": "Saiki Kusuo no Ψ-nan",
     "title_english": "The Disastrous Life of Saiki K.",
     "title_japanese": "斉木楠雄のΨ難",
-    "title_synonyms": [
-      "Saiki Kusuo no Psi Nan",
-      "Saiki Kusuo no Sainan"
-    ],
+    "title_synonyms": ["Saiki Kusuo no Psi Nan", "Saiki Kusuo no Sainan"],
     "type": "TV",
     "source": "Manga",
     "episodes": 120,
@@ -148264,9 +147440,7 @@
     "title": "Saiki Kusuo no Ψ-nan (ONA)",
     "title_english": null,
     "title_japanese": "斉木楠雄のΨ難",
-    "title_synonyms": [
-      "Saiki Kusuo no Psi Nan"
-    ],
+    "title_synonyms": ["Saiki Kusuo no Psi Nan"],
     "type": "ONA",
     "source": "Manga",
     "episodes": 1,
@@ -148409,9 +147583,7 @@
     "title": "Saiki Kusuo no Ψ-nan 2",
     "title_english": "The Disastrous Life of Saiki K. 2",
     "title_japanese": "斉木楠雄のΨ難 2",
-    "title_synonyms": [
-      "Saiki Kusuo no Psi Nan 2"
-    ],
+    "title_synonyms": ["Saiki Kusuo no Psi Nan 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -148782,9 +147954,7 @@
     "title": "Saiki Kusuo no Ψ-nan: Kanketsu-hen",
     "title_english": "The Disastrous Life of Saiki K. Final Arc",
     "title_japanese": "斉木楠雄のΨ難 完結編",
-    "title_synonyms": [
-      "Saiki Kusuo no Psi Nan 3"
-    ],
+    "title_synonyms": ["Saiki Kusuo no Psi Nan 3"],
     "type": "TV Special",
     "source": "Manga",
     "episodes": 1,
@@ -148928,9 +148098,7 @@
     "title": "Saikin Yatotta Maid ga Ayashii",
     "title_english": "The Maid I Hired Recently Is Mysterious",
     "title_japanese": "最近雇ったメイドが怪しい",
-    "title_synonyms": [
-      "My Recently Hired Maid is Suspicious"
-    ],
+    "title_synonyms": ["My Recently Hired Maid is Suspicious"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -149105,9 +148273,7 @@
     "title": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?",
     "title_english": "The Beginning After the End",
     "title_japanese": "最強の王様、二度目の人生は何をする?",
-    "title_synonyms": [
-      "TBATE"
-    ],
+    "title_synonyms": ["TBATE"],
     "type": "TV",
     "source": "Other",
     "episodes": 12,
@@ -149287,9 +148453,7 @@
     "title": "Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru? Season 2",
     "title_english": "The Beginning After the End Season 2",
     "title_japanese": "最強の王様、二度目の人生は何をする? Season2",
-    "title_synonyms": [
-      "TBATE"
-    ],
+    "title_synonyms": ["TBATE"],
     "type": "TV",
     "source": "Other",
     "episodes": null,
@@ -150553,9 +149717,7 @@
     "title": "Sakamoto desu ga?",
     "title_english": "Haven't You Heard? I'm Sakamoto",
     "title_japanese": "坂本ですが？",
-    "title_synonyms": [
-      "Sakamoto desu ga?"
-    ],
+    "title_synonyms": ["Sakamoto desu ga?"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -150925,9 +150087,7 @@
     "title": "Sakura-sou no Pet na Kanojo",
     "title_english": "The Pet Girl of Sakurasou",
     "title_japanese": "さくら荘のペットな彼女",
-    "title_synonyms": [
-      "Sakurasou no Pet na Kanojo"
-    ],
+    "title_synonyms": ["Sakurasou no Pet na Kanojo"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 24,
@@ -151572,9 +150732,7 @@
     "title": "Sasaki to Pii-chan",
     "title_english": "Sasaki and Peeps",
     "title_japanese": "佐々木とピーちゃん",
-    "title_synonyms": [
-      "Sasaki to P-chan"
-    ],
+    "title_synonyms": ["Sasaki to P-chan"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -151748,9 +150906,7 @@
     "title": "Sasaki to Pii-chan Season 2",
     "title_english": "Sasaki and Peeps Season 2",
     "title_japanese": "佐々木とピーちゃん シーズン２",
-    "title_synonyms": [
-      "Sasaki to P-chan"
-    ],
+    "title_synonyms": ["Sasaki to P-chan"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -151904,10 +151060,7 @@
     "title": "Sasayaku You ni Koi wo Utau",
     "title_english": "Whisper Me a Love Song",
     "title_japanese": "ささやくように恋を唄う",
-    "title_synonyms": [
-      "Whispering You a Love Song",
-      "Sasakoi"
-    ],
+    "title_synonyms": ["Whispering You a Love Song", "Sasakoi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -152400,10 +151553,7 @@
     "title": "Sayounara Ryuusei, Konnichiwa Jinsei",
     "title_english": "Good Bye, Dragon Life",
     "title_japanese": "さようなら竜生、こんにちは人生",
-    "title_synonyms": [
-      "Goodbye Dragon Life",
-      "Hello Human Life"
-    ],
+    "title_synonyms": ["Goodbye Dragon Life", "Hello Human Life"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -152601,9 +151751,7 @@
     "title": "Scratch x One Piece Film: Gold",
     "title_english": "Scratch x One Piece Film: Gold",
     "title_japanese": "SCRATCH × ONE PIECE FILM GOLD",
-    "title_synonyms": [
-      "Takarakuji"
-    ],
+    "title_synonyms": ["Takarakuji"],
     "type": "CM",
     "source": "Other",
     "episodes": 1,
@@ -153099,9 +152247,7 @@
     "title": "Seijo no Maryoku wa Bannou desu",
     "title_english": "The Saint's Magic Power is Omnipotent",
     "title_japanese": "聖女の魔力は万能です",
-    "title_synonyms": [
-      "The power of the saint is all around."
-    ],
+    "title_synonyms": ["The power of the saint is all around."],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -153434,9 +152580,7 @@
     "title": "Seiken Gakuin no Makentsukai",
     "title_english": "The Demon Sword Master of Excalibur Academy",
     "title_japanese": "聖剣学院の魔剣使い",
-    "title_synonyms": [
-      "Magic Sword Master of Holy Sword School"
-    ],
+    "title_synonyms": ["Magic Sword Master of Holy Sword School"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -153641,9 +152785,7 @@
     "title": "Seirei Gensouki",
     "title_english": "Seirei Gensouki: Spirit Chronicles",
     "title_japanese": "精霊幻想記",
-    "title_synonyms": [
-      "Spirit Chronicles"
-    ],
+    "title_synonyms": ["Spirit Chronicles"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -154107,9 +153249,7 @@
     "title": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
     "title_english": "Rascal Does Not Dream of Bunny Girl Senpai",
     "title_japanese": "青春ブタ野郎はバニーガール先輩の夢を見ない",
-    "title_synonyms": [
-      "AoButa"
-    ],
+    "title_synonyms": ["AoButa"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -154718,9 +153858,7 @@
     "title": "Seishun Buta Yarou wa Santa Claus no Yume wo Minai",
     "title_english": "Rascal Does Not Dream of Santa Claus",
     "title_japanese": "青春ブタ野郎はサンタクロースの夢を見ない",
-    "title_synonyms": [
-      "Seishun Buta Yarou: Daigakusei-hen"
-    ],
+    "title_synonyms": ["Seishun Buta Yarou: Daigakusei-hen"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -155079,9 +154217,7 @@
     "title": "Seitokai Yakuindomo",
     "title_english": "Student Council Staff Members",
     "title_japanese": "生徒会役員共",
-    "title_synonyms": [
-      "SYD"
-    ],
+    "title_synonyms": ["SYD"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 13,
@@ -155229,9 +154365,7 @@
     "title": "Seitokai Yakuindomo Movie",
     "title_english": null,
     "title_japanese": "劇場版 生徒会役員共",
-    "title_synonyms": [
-      "Gekijouban Seitokai Yakuindomo"
-    ],
+    "title_synonyms": ["Gekijouban Seitokai Yakuindomo"],
     "type": "Movie",
     "source": "4-koma manga",
     "episodes": 1,
@@ -155546,10 +154680,7 @@
     "title": "Seitokai Yakuindomo*",
     "title_english": null,
     "title_japanese": "生徒会役員共＊",
-    "title_synonyms": [
-      "Seitokai Yakuindomo 2",
-      "SYD*"
-    ],
+    "title_synonyms": ["Seitokai Yakuindomo 2", "SYD*"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 13,
@@ -156224,9 +155355,7 @@
     "title": "Sen to Chihiro no Kamikakushi",
     "title_english": "Spirited Away",
     "title_japanese": "千と千尋の神隠し",
-    "title_synonyms": [
-      "Sen and Chihiro's Spiriting Away"
-    ],
+    "title_synonyms": ["Sen and Chihiro's Spiriting Away"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -156925,9 +156054,7 @@
     "title": "Sentai Daishikkaku",
     "title_english": "Go! Go! Loser Ranger!",
     "title_japanese": "戦隊大失格",
-    "title_synonyms": [
-      "Ranger Reject"
-    ],
+    "title_synonyms": ["Ranger Reject"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -157096,9 +156223,7 @@
     "title": "Sentai Daishikkaku 2nd Season",
     "title_english": "Go! Go! Loser Ranger! Season 2",
     "title_japanese": "戦隊大失格 2nd Season",
-    "title_synonyms": [
-      "Ranger Reject Season 2"
-    ],
+    "title_synonyms": ["Ranger Reject Season 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -158570,9 +157695,7 @@
     "title": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
     "title_english": "The Greatest Demon Lord Is Reborn as a Typical Nobody",
     "title_japanese": "史上最強の大魔王、村人Aに転生する",
-    "title_synonyms": [
-      "The Greatest Maou is Reborned to Get Friends"
-    ],
+    "title_synonyms": ["The Greatest Maou is Reborned to Get Friends"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -158922,10 +158045,7 @@
     "title": "Shikioriori",
     "title_english": "Flavors of Youth",
     "title_japanese": "詩季織々（しきおりおり）",
-    "title_synonyms": [
-      "肆式青春",
-      "Si Shi Qing Chun"
-    ],
+    "title_synonyms": ["肆式青春", "Si Shi Qing Chun"],
     "type": "Movie",
     "source": "Original",
     "episodes": 3,
@@ -159263,9 +158383,7 @@
     "title": "Shin Atashin'chi",
     "title_english": null,
     "title_japanese": "新あたしンち",
-    "title_synonyms": [
-      "Shin Atashinchi"
-    ],
+    "title_synonyms": ["Shin Atashinchi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 26,
@@ -159377,9 +158495,7 @@
     "title": "Shin Jidai",
     "title_english": "New Genesis",
     "title_japanese": "新時代",
-    "title_synonyms": [
-      "Shinjidai"
-    ],
+    "title_synonyms": ["Shinjidai"],
     "type": "Music",
     "source": "Original",
     "episodes": 1,
@@ -159838,9 +158954,7 @@
     "title": "Shin Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei",
     "title_english": "The Fruit of Evolution: Before I Knew It, My Life Had It Made Season 2",
     "title_japanese": "真・進化の実～知らないうちに勝ち組人生～",
-    "title_synonyms": [
-      "Shinka no Mi 2nd Season"
-    ],
+    "title_synonyms": ["Shinka no Mi 2nd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -160543,9 +159657,7 @@
     "title": "Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei",
     "title_english": "The Fruit of Evolution: Before I Knew It, My Life Had It Made",
     "title_japanese": "進化の実～知らないうちに勝ち組人生～",
-    "title_synonyms": [
-      "The Evolution Fruit: Conquering Life Unknowingly"
-    ],
+    "title_synonyms": ["The Evolution Fruit: Conquering Life Unknowingly"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -160889,9 +160001,7 @@
     "title": "Shinobi no Ittoki",
     "title_english": "Shinobi no Ittoki",
     "title_japanese": "忍の一時",
-    "title_synonyms": [
-      "Ittoki the Ninja"
-    ],
+    "title_synonyms": ["Ittoki the Ninja"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -161051,9 +160161,7 @@
     "title": "Shinryaku! Ika Musume",
     "title_english": "The Squid Girl",
     "title_japanese": "侵略!イカ娘",
-    "title_synonyms": [
-      "The Invader Comes From the Bottom of the Sea!"
-    ],
+    "title_synonyms": ["The Invader Comes From the Bottom of the Sea!"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -161400,9 +160508,7 @@
     "title": "Shinsekai yori",
     "title_english": "From the New World",
     "title_japanese": "新世界より",
-    "title_synonyms": [
-      "Shin Sekai Yori"
-    ],
+    "title_synonyms": ["Shin Sekai Yori"],
     "type": "TV",
     "source": "Novel",
     "episodes": 25,
@@ -161577,9 +160683,7 @@
     "title": "Shiro Seijo to Kuro Bokushi",
     "title_english": "Saint Cecilia and Pastor Lawrence",
     "title_japanese": "白聖女と黒牧師",
-    "title_synonyms": [
-      "White Saint and Black Pastor"
-    ],
+    "title_synonyms": ["White Saint and Black Pastor"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 12,
@@ -161910,9 +161014,7 @@
     "title": "Shokei Shoujo no Virgin Road",
     "title_english": "The Executioner and Her Way of Life",
     "title_japanese": "処刑少女の生きる道〈バージンロード〉",
-    "title_synonyms": [
-      "Shokei Shoujo no Ikiru Michi"
-    ],
+    "title_synonyms": ["Shokei Shoujo no Ikiru Michi"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -162097,10 +161199,7 @@
     "title": "Shokugeki no Souma",
     "title_english": "Food Wars! Shokugeki no Soma",
     "title_japanese": "食戟のソーマ",
-    "title_synonyms": [
-      "Shokugeki no Soma",
-      "Food Wars: Shokugeki no Soma"
-    ],
+    "title_synonyms": ["Shokugeki no Soma", "Food Wars: Shokugeki no Soma"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -162482,9 +161581,7 @@
     "title": "Shokugeki no Souma: Gou no Sara",
     "title_english": "Food Wars! The Fifth Plate",
     "title_japanese": "食戟のソーマ 豪ノ皿",
-    "title_synonyms": [
-      "Shokugeki no Soma 5th Season"
-    ],
+    "title_synonyms": ["Shokugeki no Soma 5th Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -163056,10 +162153,7 @@
     "title": "Shokugeki no Souma: San no Sara",
     "title_english": "Food Wars! The Third Plate",
     "title_japanese": "食戟のソーマ 餐ノ皿",
-    "title_synonyms": [
-      "Shokugeki no Soma 3rd Season",
-      "Shokugeki no Soma 3"
-    ],
+    "title_synonyms": ["Shokugeki no Soma 3rd Season", "Shokugeki no Soma 3"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -163596,9 +162690,7 @@
     "title": "Shokugeki no Souma: Shin no Sara",
     "title_english": "Food Wars! The Fourth Plate",
     "title_japanese": "食戟のソーマ 神ノ皿",
-    "title_synonyms": [
-      "Shokugeki no Soma 4th Season"
-    ],
+    "title_synonyms": ["Shokugeki no Soma 4th Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -163961,9 +163053,7 @@
     "title": "Shoujo Shuumatsu Ryokou",
     "title_english": "Girls' Last Tour",
     "title_japanese": "少女終末旅行",
-    "title_synonyms": [
-      "The End Girl Trip"
-    ],
+    "title_synonyms": ["The End Girl Trip"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -164825,9 +163915,7 @@
     "title": "Shuumatsu Touring",
     "title_english": "Touring After the Apocalypse",
     "title_japanese": "終末ツーリング",
-    "title_synonyms": [
-      "Riding a Motorbike at the End of the World..."
-    ],
+    "title_synonyms": ["Riding a Motorbike at the End of the World..."],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -165007,9 +164095,7 @@
     "title": "Shuumatsu Train Doko e Iku?",
     "title_english": "Train to the End of the World",
     "title_japanese": "終末トレインどこへいく？",
-    "title_synonyms": [
-      "Where Does the Doomsday Train Go?"
-    ],
+    "title_synonyms": ["Where Does the Doomsday Train Go?"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -165865,9 +164951,7 @@
     "title": "Slime Taoshite 300-nen, Shiranai Uchi ni Level Max ni Nattemashita",
     "title_english": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "title_japanese": "スライム倒して300年、知らないうちにレベルMAXになってました",
-    "title_synonyms": [
-      "Slime 300"
-    ],
+    "title_synonyms": ["Slime 300"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -166681,10 +165765,7 @@
     "title": "Sono Bisque Doll wa Koi wo Suru",
     "title_english": "My Dress-Up Darling",
     "title_japanese": "その着せ替え人形は恋をする",
-    "title_synonyms": [
-      "Sono Kisekae Ningyou wa Koi wo Suru",
-      "KiseKoi"
-    ],
+    "title_synonyms": ["Sono Kisekae Ningyou wa Koi wo Suru", "KiseKoi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -166853,9 +165934,7 @@
     "title": "Sono Bisque Doll wa Koi wo Suru Season 2",
     "title_english": "My Dress-Up Darling Season 2",
     "title_japanese": "その着せ替え人形は恋をする Season 2",
-    "title_synonyms": [
-      "KiseKoi"
-    ],
+    "title_synonyms": ["KiseKoi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -167226,10 +166305,7 @@
     "title": "Sousou no Frieren",
     "title_english": "Frieren: Beyond Journey's End",
     "title_japanese": "葬送のフリーレン",
-    "title_synonyms": [
-      "Frieren at the Funeral",
-      "Frieren The Slayer"
-    ],
+    "title_synonyms": ["Frieren at the Funeral", "Frieren The Slayer"],
     "type": "TV",
     "source": "Manga",
     "episodes": 28,
@@ -167404,9 +166480,7 @@
     "title": "Sousou no Frieren 2nd Season",
     "title_english": "Frieren: Beyond Journey's End Season 2",
     "title_japanese": "葬送のフリーレン 第2期",
-    "title_synonyms": [
-      "Frieren at the Funeral Season 2"
-    ],
+    "title_synonyms": ["Frieren at the Funeral Season 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 10,
@@ -167592,9 +166666,7 @@
     "title": "Sozai Saishuka no Isekai Ryokouki",
     "title_english": "A Gatherer's Adventure in Isekai",
     "title_japanese": "素材採取家の異世界旅行記",
-    "title_synonyms": [
-      "Material Collector's Another World Travels"
-    ],
+    "title_synonyms": ["Material Collector's Another World Travels"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -167768,9 +166840,7 @@
     "title": "Spy Kyoushitsu",
     "title_english": "Spy Classroom",
     "title_japanese": "スパイ教室",
-    "title_synonyms": [
-      "Spy Room"
-    ],
+    "title_synonyms": ["Spy Room"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -168790,9 +167860,7 @@
     "title": "Suki na Ko ga Megane wo Wasureta",
     "title_english": "The Girl I Like Forgot Her Glasses",
     "title_japanese": "好きな子がめがねを忘れた",
-    "title_synonyms": [
-      "Sukimega"
-    ],
+    "title_synonyms": ["Sukimega"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -169098,9 +168166,7 @@
     "title": "Summer Ghost",
     "title_english": null,
     "title_japanese": "サマーゴースト",
-    "title_synonyms": [
-      "Project Common"
-    ],
+    "title_synonyms": ["Project Common"],
     "type": "Movie",
     "source": "Mixed media",
     "episodes": 1,
@@ -169238,9 +168304,7 @@
     "title": "Summer Pockets",
     "title_english": "Summer Pockets",
     "title_japanese": "Summer Pockets",
-    "title_synonyms": [
-      "SumPock"
-    ],
+    "title_synonyms": ["SumPock"],
     "type": "TV",
     "source": "Visual novel",
     "episodes": 26,
@@ -169419,9 +168483,7 @@
     "title": "Summer Pockets Movie",
     "title_english": "Summer Pockets",
     "title_japanese": "Summer Pockets 劇場編集版",
-    "title_synonyms": [
-      "SumPock"
-    ],
+    "title_synonyms": ["SumPock"],
     "type": "Movie",
     "source": "Visual novel",
     "episodes": 4,
@@ -169863,9 +168925,7 @@
     "title": "Suzume no Tojimari",
     "title_english": "Suzume",
     "title_japanese": "すずめの戸締まり",
-    "title_synonyms": [
-      "Suzume's Door-Locking"
-    ],
+    "title_synonyms": ["Suzume's Door-Locking"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -170227,10 +169287,7 @@
     "title": "Tada-kun wa Koi wo Shinai",
     "title_english": "Tada Never Falls in Love",
     "title_japanese": "多田くんは恋をしない",
-    "title_synonyms": [
-      "Tada Doesn't Fall in Love",
-      "TadaKoi"
-    ],
+    "title_synonyms": ["Tada Doesn't Fall in Love", "TadaKoi"],
     "type": "TV",
     "source": "Original",
     "episodes": 13,
@@ -170393,9 +169450,7 @@
     "title": "Taiyou yori mo Mabushii Hoshi",
     "title_english": "A Star Brighter Than the Sun",
     "title_japanese": "太陽よりも眩しい星",
-    "title_synonyms": [
-      "Tamahoshi"
-    ],
+    "title_synonyms": ["Tamahoshi"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -170570,9 +169625,7 @@
     "title": "Taiyou yori mo Mabushii Hoshi 2nd Season",
     "title_english": "A Star Brighter Than the Sun Season 2",
     "title_japanese": "太陽よりも眩しい星 二期",
-    "title_synonyms": [
-      "Tamahoshi"
-    ],
+    "title_synonyms": ["Tamahoshi"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -170992,9 +170045,7 @@
     "title": "Tamako Love Story",
     "title_english": null,
     "title_japanese": "たまこラブストーリー",
-    "title_synonyms": [
-      "Tamako Market Movie"
-    ],
+    "title_synonyms": ["Tamako Market Movie"],
     "type": "Movie",
     "source": "Original",
     "episodes": 1,
@@ -171725,9 +170776,7 @@
     "title": "Tantei wa Mou, Shindeiru.",
     "title_english": "The Detective Is Already Dead",
     "title_japanese": "探偵はもう、死んでいる。",
-    "title_synonyms": [
-      "Tanmoshi"
-    ],
+    "title_synonyms": ["Tanmoshi"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -171890,9 +170939,7 @@
     "title": "Tantei wa Mou, Shindeiru. Season 2",
     "title_english": "The Detective Is Already Dead Season 2",
     "title_japanese": "探偵はもう、死んでいる。Season2",
-    "title_synonyms": [
-      "Tanmoshi"
-    ],
+    "title_synonyms": ["Tanmoshi"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -172576,9 +171623,7 @@
     "title": "Tate no Yuusha no Nariagari Season 2",
     "title_english": "The Rising of the Shield Hero Season 2",
     "title_japanese": "盾の勇者の成り上がり Season2",
-    "title_synonyms": [
-      "Tate no Yuusha no Nariagari 2nd Season"
-    ],
+    "title_synonyms": ["Tate no Yuusha no Nariagari 2nd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -173314,9 +172359,7 @@
     "title": "Tatoeba Last Dungeon Mae no Mura no Shounen ga Joban no Machi de Kurasu Youna Monogatari",
     "title_english": "Suppose a Kid from the Last Dungeon Boonies Moved to a Starter Town?",
     "title_japanese": "たとえばラストダンジョン前の村の少年が序盤の街で暮らすような物語",
-    "title_synonyms": [
-      "Last Dungeon Boonies Kid"
-    ],
+    "title_synonyms": ["Last Dungeon Boonies Kid"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -173956,9 +172999,7 @@
     "title": "Tensei Kenja no Isekai Life: Dai-2 no Shokugyou wo Ete, Sekai Saikyou ni Narimashita",
     "title_english": "My Isekai Life: I Gained a Second Character Class and Became the Strongest Sage in the World",
     "title_japanese": "転生賢者の異世界ライフ ～第二の職業を得て、世界最強になりました～",
-    "title_synonyms": [
-      "Tensei Kenjya no Isekai Life"
-    ],
+    "title_synonyms": ["Tensei Kenjya no Isekai Life"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -174352,9 +173393,7 @@
     "title": "Tensei Kizoku, Kantei Skill de Nariagaru",
     "title_english": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
     "title_japanese": "転生貴族、鑑定スキルで成り上がる",
-    "title_synonyms": [
-      "Reincarnated as an Aristocrat with an Appraisal Skill"
-    ],
+    "title_synonyms": ["Reincarnated as an Aristocrat with an Appraisal Skill"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -174864,10 +173903,7 @@
     "title": "Tensei Oujo to Tensai Reijou no Mahou Kakumei",
     "title_english": "The Magical Revolution of the Reincarnated Princess and the Genius Young Lady",
     "title_japanese": "転生王女と天才令嬢の魔法革命",
-    "title_synonyms": [
-      "Tenten Kakumei",
-      "MagiRevo"
-    ],
+    "title_synonyms": ["Tenten Kakumei", "MagiRevo"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -175764,9 +174800,7 @@
     "title": "Tensei shitara Slime Datta Ken",
     "title_english": "That Time I Got Reincarnated as a Slime",
     "title_japanese": "転生したらスライムだった件",
-    "title_synonyms": [
-      "TenSura"
-    ],
+    "title_synonyms": ["TenSura"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -175960,9 +174994,7 @@
     "title": "Tensei shitara Slime Datta Ken 2nd Season",
     "title_english": "That Time I Got Reincarnated as a Slime Season 2",
     "title_japanese": "転生したらスライムだった件",
-    "title_synonyms": [
-      "Tensura 2"
-    ],
+    "title_synonyms": ["Tensura 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -176132,9 +175164,7 @@
     "title": "Tensei shitara Slime Datta Ken 2nd Season Part 2",
     "title_english": "That Time I Got Reincarnated as a Slime Season 2 Part 2",
     "title_japanese": "転生したらスライムだった件",
-    "title_synonyms": [
-      "Tensura 2"
-    ],
+    "title_synonyms": ["Tensura 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -176466,9 +175496,7 @@
     "title": "Tensei shitara Slime Datta Ken 3rd Season",
     "title_english": "That Time I Got Reincarnated as a Slime Season 3",
     "title_japanese": "転生したらスライムだった件 第3期",
-    "title_synonyms": [
-      "Tensura 3"
-    ],
+    "title_synonyms": ["Tensura 3"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -176674,9 +175702,7 @@
     "title": "Tensei shitara Slime Datta Ken 4th Season",
     "title_english": "That Time I Got Reincarnated as a Slime Season 4",
     "title_japanese": "転生したらスライムだった件 第4期",
-    "title_synonyms": [
-      "Tensura 4"
-    ],
+    "title_synonyms": ["Tensura 4"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -176820,9 +175846,7 @@
     "title": "Tensei shitara Slime Datta Ken 4th Season Part 2",
     "title_english": "That Time I Got Reincarnated as a Slime Season 4 Part 2",
     "title_japanese": "転生したらスライムだった件 第4期",
-    "title_synonyms": [
-      "Tensura 4 Part 2"
-    ],
+    "title_synonyms": ["Tensura 4 Part 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -176959,9 +175983,7 @@
     "title": "Tensei shitara Slime Datta Ken Movie 2: Soukai no Namida-hen",
     "title_english": "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea",
     "title_japanese": "劇場版 転生したらスライムだった件 蒼海の涙編",
-    "title_synonyms": [
-      "TenSura"
-    ],
+    "title_synonyms": ["TenSura"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -178376,11 +177398,7 @@
     "title": "The God of High School",
     "title_english": "The God of High School",
     "title_japanese": "THE GOD OF HIGH SCHOOL ゴッド・オブ・ハイスクール",
-    "title_synonyms": [
-      "Gat Obeu Hai Seukul",
-      "갓 오브 하이스쿨",
-      "GOHS"
-    ],
+    "title_synonyms": ["Gat Obeu Hai Seukul", "갓 오브 하이스쿨", "GOHS"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -178833,9 +177851,7 @@
     "title": "Toaru Ossan no VRMMO Katsudouki",
     "title_english": "A Playthrough of a Certain Dude's VRMMO Life",
     "title_japanese": "とあるおっさんのVRMMO活動記",
-    "title_synonyms": [
-      "A Certain Middle-Aged Man's VRMMO Activity Log"
-    ],
+    "title_synonyms": ["A Certain Middle-Aged Man's VRMMO Activity Log"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -179392,9 +178408,7 @@
     "title": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san Season 2",
     "title_english": "Alya Sometimes Hides Her Feelings in Russian Season 2",
     "title_japanese": "時々ボソッとロシア語でデレる隣のアーリャさん Season 2",
-    "title_synonyms": [
-      "Alya Sometimes Hides Her Feelings in Russian Season 2"
-    ],
+    "title_synonyms": ["Alya Sometimes Hides Her Feelings in Russian Season 2"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -180017,9 +179031,7 @@
     "title": "Tokyo Revengers: Tenjiku-hen",
     "title_english": "Tokyo Revengers: Tenjiku Arc",
     "title_japanese": "東京リベンジャーズ 天竺編",
-    "title_synonyms": [
-      "Tokyo Revengers Third Season"
-    ],
+    "title_synonyms": ["Tokyo Revengers Third Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -180352,9 +179364,7 @@
     "title": "Tomodachi Game",
     "title_english": "Tomodachi Game",
     "title_japanese": "トモダチゲーム",
-    "title_synonyms": [
-      "Friends Game"
-    ],
+    "title_synonyms": ["Friends Game"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -180720,9 +179730,7 @@
     "title": "Tonari no Seki-kun",
     "title_english": "Tonari no Seki-kun: The Master of Killing Time",
     "title_japanese": "となりの関くん",
-    "title_synonyms": [
-      "My Neighbor Seki"
-    ],
+    "title_synonyms": ["My Neighbor Seki"],
     "type": "TV",
     "source": "Manga",
     "episodes": 21,
@@ -180864,9 +179872,7 @@
     "title": "Tonari no Seki-kun OVA",
     "title_english": null,
     "title_japanese": "となりの関くん DVD",
-    "title_synonyms": [
-      "Tonari no Seki-kun OAD"
-    ],
+    "title_synonyms": ["Tonari no Seki-kun OAD"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -181572,9 +180578,7 @@
     "title": "Tongari Boushi no Atelier",
     "title_english": "Witch Hat Atelier",
     "title_japanese": "とんがり帽子のアトリエ",
-    "title_synonyms": [
-      "Atelier of Witch Hat"
-    ],
+    "title_synonyms": ["Atelier of Witch Hat"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -181728,10 +180732,7 @@
     "title": "Tonikaku Kawaii",
     "title_english": "Tonikawa: Over The Moon For You",
     "title_japanese": "トニカクカワイイ",
-    "title_synonyms": [
-      "Generally Cute",
-      "Fly Me to the Moon"
-    ],
+    "title_synonyms": ["Generally Cute", "Fly Me to the Moon"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -182046,9 +181047,7 @@
     "title": "Tonikaku Kawaii: Joshikou-hen",
     "title_english": "TONIKAWA: Over The Moon For You - High School Days",
     "title_japanese": "トニカクカワイイ 女子高編",
-    "title_synonyms": [
-      "Tonikaku Kawaii: High School Days"
-    ],
+    "title_synonyms": ["Tonikaku Kawaii: High School Days"],
     "type": "ONA",
     "source": "Manga",
     "episodes": 4,
@@ -182862,9 +181861,7 @@
     "title": "Toradora!",
     "title_english": "Toradora!",
     "title_japanese": "とらドラ！",
-    "title_synonyms": [
-      "Tiger X Dragon"
-    ],
+    "title_synonyms": ["Tiger X Dragon"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 25,
@@ -183033,10 +182030,7 @@
     "title": "Toradora! Recap",
     "title_english": null,
     "title_japanese": "とらドラ・ポータブル!",
-    "title_synonyms": [
-      "Toradora! Portable",
-      "Toradora! OVA"
-    ],
+    "title_synonyms": ["Toradora! Portable", "Toradora! OVA"],
     "type": "OVA",
     "source": "Light novel",
     "episodes": 1,
@@ -183405,11 +182399,7 @@
     "title": "Totsukuni no Shoujo (2022)",
     "title_english": "The Girl From the Other Side",
     "title_japanese": "とつくにの少女",
-    "title_synonyms": [
-      "Siúil",
-      "a Rún OVA",
-      "Totsukuni no Shoujo OAD"
-    ],
+    "title_synonyms": ["Siúil", "a Rún OVA", "Totsukuni no Shoujo OAD"],
     "type": "OVA",
     "source": "Manga",
     "episodes": 1,
@@ -183547,9 +182537,7 @@
     "title": "Toujima Tanzaburou wa Kamen Rider ni Naritai",
     "title_english": "Tojima Wants to Be a Kamen Rider",
     "title_japanese": "東島丹三郎は仮面ライダーになりたい",
-    "title_synonyms": [
-      "Tojima Tanzaburo Wants to Be a Masked Rider"
-    ],
+    "title_synonyms": ["Tojima Tanzaburo Wants to Be a Masked Rider"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -183888,9 +182876,7 @@
     "title": "Towa no Yuugure",
     "title_english": "Dusk Beyond the End of the World",
     "title_japanese": "永久のユウグレ",
-    "title_synonyms": [
-      "Towa no Yugure"
-    ],
+    "title_synonyms": ["Towa no Yugure"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -184334,9 +183320,7 @@
     "title": "Tsue to Tsurugi no Wistoria",
     "title_english": "Wistoria: Wand and Sword",
     "title_japanese": "杖と剣のウィストリア",
-    "title_synonyms": [
-      "Wistoria's Wand and Sword"
-    ],
+    "title_synonyms": ["Wistoria's Wand and Sword"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -184517,9 +183501,7 @@
     "title": "Tsue to Tsurugi no Wistoria Season 2",
     "title_english": "Wistoria: Wand and Sword Season 2",
     "title_japanese": "杖と剣のウィストリア Season 2",
-    "title_synonyms": [
-      "Wistoria's Wand and Sword Season 2"
-    ],
+    "title_synonyms": ["Wistoria's Wand and Sword Season 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -184852,11 +183834,7 @@
     "title": "Tsuki ga Kirei",
     "title_english": "Tsukigakirei",
     "title_japanese": "月がきれい",
-    "title_synonyms": [
-      "The Moon is Beautiful",
-      "As the Moon",
-      "So Beautiful"
-    ],
+    "title_synonyms": ["The Moon is Beautiful", "As the Moon", "So Beautiful"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -185019,9 +183997,7 @@
     "title": "Tsuki ga Michibiku Isekai Douchuu",
     "title_english": "Tsukimichi -Moonlit Fantasy-",
     "title_japanese": "月が導く異世界道中",
-    "title_synonyms": [
-      "Moon-led Journey Across Another World"
-    ],
+    "title_synonyms": ["Moon-led Journey Across Another World"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -185551,9 +184527,7 @@
     "title": "Tsuma, Shougakusei ni Naru.",
     "title_english": "TsumaSho",
     "title_japanese": "妻、小学生になる。",
-    "title_synonyms": [
-      "If My Wife Becomes an Elementary School Student."
-    ],
+    "title_synonyms": ["If My Wife Becomes an Elementary School Student."],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -185728,9 +184702,7 @@
     "title": "Tsundere Akuyaku Reijou Liselotte to Jikkyou no Endou-kun to Kaisetsu no Kobayashi-san",
     "title_english": "Endo and Kobayashi Live! The Latest on Tsundere Villainess Lieselotte",
     "title_japanese": "ツンデレ悪役令嬢リーゼロッテと実況の遠藤くんと解説の小林さん",
-    "title_synonyms": [
-      "Tsunlise"
-    ],
+    "title_synonyms": ["Tsunlise"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -186594,9 +185566,7 @@
     "title": "Tsurune: Tsunagari no Issha",
     "title_english": "Tsurune - The Linking Shot -",
     "title_japanese": "ツルネ ―つながりの一射―",
-    "title_synonyms": [
-      "Tsurune 2nd Season"
-    ],
+    "title_synonyms": ["Tsurune 2nd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 13,
@@ -186759,9 +185729,7 @@
     "title": "Tsuyokute New Saga",
     "title_english": "New Saga",
     "title_japanese": "強くてニューサーガ",
-    "title_synonyms": [
-      "Be Stronger! New Saga"
-    ],
+    "title_synonyms": ["Be Stronger! New Saga"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -187358,9 +186326,7 @@
     "title": "Uchuujin MuuMuu",
     "title_english": null,
     "title_japanese": "宇宙人ムームー",
-    "title_synonyms": [
-      "Me and the Alien MuMu"
-    ],
+    "title_synonyms": ["Me and the Alien MuMu"],
     "type": "TV",
     "source": "Manga",
     "episodes": 24,
@@ -187511,9 +186477,7 @@
     "title": "Udon no Kuni no Kiniro Kemari",
     "title_english": "Poco's Udon World",
     "title_japanese": "うどんの国の金色毛鞠",
-    "title_synonyms": [
-      "Gaogao-chan to Aoi Sora"
-    ],
+    "title_synonyms": ["Gaogao-chan to Aoi Sora"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -188207,9 +187171,7 @@
     "title": "Unnamed Memory Act.2",
     "title_english": "Unnamed Memory Season 2",
     "title_japanese": "Unnamed Memory Act.2",
-    "title_synonyms": [
-      "Unnamed Memory 2nd Season"
-    ],
+    "title_synonyms": ["Unnamed Memory 2nd Season"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -188718,9 +187680,7 @@
     "title": "Usagi Drop",
     "title_english": "Bunny Drop",
     "title_japanese": "うさぎドロップ",
-    "title_synonyms": [
-      "Usagi Drop"
-    ],
+    "title_synonyms": ["Usagi Drop"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -189049,9 +188009,7 @@
     "title": "Uzaki-chan wa Asobitai!",
     "title_english": "Uzaki-chan Wants to Hang Out!",
     "title_japanese": "宇崎ちゃんは遊びたい！",
-    "title_synonyms": [
-      "Uzaki-chan Wants to Play!"
-    ],
+    "title_synonyms": ["Uzaki-chan Wants to Play!"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -190157,9 +189115,7 @@
     "title": "Violet Evergarden Movie",
     "title_english": "Violet Evergarden: The Movie",
     "title_japanese": "劇場版 ヴァイオレット・エヴァーガーデン",
-    "title_synonyms": [
-      "Gekijouban Violet Evergarden"
-    ],
+    "title_synonyms": ["Gekijouban Violet Evergarden"],
     "type": "Movie",
     "source": "Light novel",
     "episodes": 1,
@@ -190455,9 +189411,7 @@
     "title": "Violet Evergarden: Recollections",
     "title_english": "Violet Evergarden: Recollections",
     "title_japanese": "ヴァイオレット・エヴァーガーデン特別総集版",
-    "title_synonyms": [
-      "Violet Evergarden: Pour Mémoire"
-    ],
+    "title_synonyms": ["Violet Evergarden: Pour Mémoire"],
     "type": "Special",
     "source": "Light novel",
     "episodes": 1,
@@ -190775,9 +189729,7 @@
     "title": "Watashi ni Tenshi ga Maiorita!",
     "title_english": "Wataten! an Angel Flew Down to Me",
     "title_japanese": "私に天使が舞い降りた！",
-    "title_synonyms": [
-      "Wataten"
-    ],
+    "title_synonyms": ["Wataten"],
     "type": "TV",
     "source": "4-koma manga",
     "episodes": 12,
@@ -190943,10 +189895,7 @@
     "title": "Watashi no Shiawase na Kekkon",
     "title_english": "My Happy Marriage",
     "title_japanese": "わたしの幸せな結婚",
-    "title_synonyms": [
-      "My Blissful Marriage",
-      "Watakon"
-    ],
+    "title_synonyms": ["My Blissful Marriage", "Watakon"],
     "type": "TV",
     "source": "Novel",
     "episodes": 12,
@@ -191120,9 +190069,7 @@
     "title": "Watashi no Shiawase na Kekkon 2nd Season",
     "title_english": "My Happy Marriage Season 2",
     "title_japanese": "わたしの幸せな結婚",
-    "title_synonyms": [
-      "My Blissful Marriage"
-    ],
+    "title_synonyms": ["My Blissful Marriage"],
     "type": "TV",
     "source": "Novel",
     "episodes": 13,
@@ -191296,10 +190243,7 @@
     "title": "Watashi no Shiawase na Kekkon Special",
     "title_english": null,
     "title_japanese": "わたしの幸せな結婚 特別篇",
-    "title_synonyms": [
-      "My Happy Marriage",
-      "My Blissful Marriage"
-    ],
+    "title_synonyms": ["My Happy Marriage", "My Blissful Marriage"],
     "type": "TV Special",
     "source": "Novel",
     "episodes": 3,
@@ -191607,10 +190551,7 @@
     "title": "Wind Breaker",
     "title_english": "Wind Breaker",
     "title_japanese": "WIND BREAKER",
-    "title_synonyms": [
-      "Winbre",
-      "WBK"
-    ],
+    "title_synonyms": ["Winbre", "WBK"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -191771,10 +190712,7 @@
     "title": "Wind Breaker Season 2",
     "title_english": "Wind Breaker Season 2",
     "title_japanese": "WIND BREAKER Season 2",
-    "title_synonyms": [
-      "Winbre",
-      "WBK"
-    ],
+    "title_synonyms": ["Winbre", "WBK"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -192241,9 +191179,7 @@
     "title": "Wotaku ni Koi wa Muzukashii",
     "title_english": "Wotakoi: Love is Hard for Otaku",
     "title_japanese": "ヲタクに恋は難しい",
-    "title_synonyms": [
-      "It's Difficult to Love an Otaku"
-    ],
+    "title_synonyms": ["It's Difficult to Love an Otaku"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 11,
@@ -193332,10 +192268,7 @@
     "title": "Xian Wang de Richang Shenghuo",
     "title_english": "The Daily Life of the Immortal King",
     "title_japanese": "仙王的日常生活",
-    "title_synonyms": [
-      "Xian Wang de Ri Chang Sheng Huo",
-      "不死身な僕の日常"
-    ],
+    "title_synonyms": ["Xian Wang de Ri Chang Sheng Huo", "不死身な僕の日常"],
     "type": "ONA",
     "source": "Web novel",
     "episodes": 15,
@@ -193623,9 +192556,7 @@
     "title": "Xian Wang de Richang Shenghuo 3",
     "title_english": "The Daily Life of the Immortal King 3",
     "title_japanese": "仙王的日常生活 第三季",
-    "title_synonyms": [
-      "不死身な僕の日常 3期"
-    ],
+    "title_synonyms": ["不死身な僕の日常 3期"],
     "type": "ONA",
     "source": "Web novel",
     "episodes": 12,
@@ -194079,11 +193010,7 @@
     "title": "Yagate Kimi ni Naru",
     "title_english": "Bloom Into You",
     "title_japanese": "やがて君になる",
-    "title_synonyms": [
-      "YagaKimi",
-      "Eventually",
-      "I Will Become You"
-    ],
+    "title_synonyms": ["YagaKimi", "Eventually", "I Will Become You"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -196544,9 +195471,7 @@
     "title": "Yamada-kun to Lv999 no Koi wo Suru",
     "title_english": "My Love Story with Yamada-kun at Lv999",
     "title_japanese": "山田くんとLv999の恋をする",
-    "title_synonyms": [
-      "Loving Yamada at Lv999"
-    ],
+    "title_synonyms": ["Loving Yamada at Lv999"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 13,
@@ -196844,9 +195769,7 @@
     "title": "Yano-kun no Futsuu no Hibi",
     "title_english": "Yano-kun's Ordinary Days",
     "title_japanese": "矢野くんの普通の日々",
-    "title_synonyms": [
-      "Mr. Yano's Ordinary Days"
-    ],
+    "title_synonyms": ["Mr. Yano's Ordinary Days"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -197804,9 +196727,7 @@
     "title": "Yomi no Tsugai",
     "title_english": "Daemons of the Shadow Realm",
     "title_japanese": "黄泉のツガイ",
-    "title_synonyms": [
-      "Tsugai of the Underworld"
-    ],
+    "title_synonyms": ["Tsugai of the Underworld"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -197956,9 +196877,7 @@
     "title": "Yoru no Kurage wa Oyogenai",
     "title_english": "Jellyfish Can't Swim in the Night",
     "title_japanese": "夜のクラゲは泳げない",
-    "title_synonyms": [
-      "Yorukura"
-    ],
+    "title_synonyms": ["Yorukura"],
     "type": "TV",
     "source": "Original",
     "episodes": 12,
@@ -198127,9 +197046,7 @@
     "title": "Yoru wa Neko to Issho",
     "title_english": "Nights with a Cat",
     "title_japanese": "夜は猫といっしょ",
-    "title_synonyms": [
-      "Zutto Neko Shoshinsha"
-    ],
+    "title_synonyms": ["Zutto Neko Shoshinsha"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 30,
@@ -198255,9 +197172,7 @@
     "title": "Yoru wa Neko to Issho Season 2",
     "title_english": "Nights with a Cat Season 2",
     "title_japanese": "夜は猫といっしょ Season2",
-    "title_synonyms": [
-      "Zutto Neko Shoshinsha"
-    ],
+    "title_synonyms": ["Zutto Neko Shoshinsha"],
     "type": "ONA",
     "source": "Web manga",
     "episodes": 30,
@@ -199759,9 +198674,7 @@
     "title": "Yozakura-san Chi no Daisakusen",
     "title_english": "Mission: Yozakura Family",
     "title_japanese": "夜桜さんちの大作戦",
-    "title_synonyms": [
-      "Mission of Yozakura Family"
-    ],
+    "title_synonyms": ["Mission of Yozakura Family"],
     "type": "TV",
     "source": "Manga",
     "episodes": 27,
@@ -200393,9 +199306,7 @@
     "title": "Yuragi-sou no Yuuna-san",
     "title_english": "Yuuna and the Haunted Hot Springs",
     "title_japanese": "ゆらぎ荘の幽奈さん",
-    "title_synonyms": [
-      "Yuuna of Yuragi Manor"
-    ],
+    "title_synonyms": ["Yuuna of Yuragi Manor"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -200896,9 +199807,7 @@
     "title": "Yuri!!! on Ice: Yuri Plisetsky GPF in Barcelona EX - Welcome to The Madness",
     "title_english": "Yuri!!! On ICE: Yuri Plisetsky GPF in Barcelona EX \"Welcome to The Madness\"",
     "title_japanese": "ユーリ!!! on ICE Yuri Plisetsky GPF in Barcelona EX \"Welcome to The Madness\"",
-    "title_synonyms": [
-      "Yuri!!! on ICE Special"
-    ],
+    "title_synonyms": ["Yuri!!! on ICE Special"],
     "type": "Special",
     "source": "Original",
     "episodes": 1,
@@ -201043,9 +199952,7 @@
     "title": "Yuru Camp△",
     "title_english": "Laid-Back Camp",
     "title_japanese": "ゆるキャン△",
-    "title_synonyms": [
-      "Yurukyan"
-    ],
+    "title_synonyms": ["Yurukyan"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -201219,9 +200126,7 @@
     "title": "Yuru Camp△ Movie",
     "title_english": "Laid-Back Camp: The Movie",
     "title_japanese": "映画 ゆるキャン△",
-    "title_synonyms": [
-      "Eiga Yuru Camp"
-    ],
+    "title_synonyms": ["Eiga Yuru Camp"],
     "type": "Movie",
     "source": "Manga",
     "episodes": 1,
@@ -201435,10 +200340,7 @@
     "title": "Yuru Camp△ Season 2",
     "title_english": "Laid-Back Camp Season 2",
     "title_japanese": "ゆるキャン△ SEASON2",
-    "title_synonyms": [
-      "Yuru Camp 2nd Season",
-      "Yurukyan"
-    ],
+    "title_synonyms": ["Yuru Camp 2nd Season", "Yurukyan"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -201582,9 +200484,7 @@
     "title": "Yuru Camp△ Season 2 Specials",
     "title_english": "Laid-Back Camp Season 2 Specials",
     "title_japanese": "ゆるキャン△ SEASON2",
-    "title_synonyms": [
-      "Laid-back Camp Season 2"
-    ],
+    "title_synonyms": ["Laid-back Camp Season 2"],
     "type": "Special",
     "source": "Manga",
     "episodes": 2,
@@ -201716,9 +200616,7 @@
     "title": "Yuru Camp△ Season 3",
     "title_english": "Laid-Back Camp Season 3",
     "title_japanese": "ゆるキャン△ SEASON3",
-    "title_synonyms": [
-      "Yuru Camp 3rd Season"
-    ],
+    "title_synonyms": ["Yuru Camp 3rd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -201910,9 +200808,7 @@
     "title": "Yuru Camp△ Season 3 Specials",
     "title_english": "Laid-Back Camp Season 3 Specials",
     "title_japanese": "ゆるキャン△ SEASON3",
-    "title_synonyms": [
-      "Yuru Camp 3rd Season Specials"
-    ],
+    "title_synonyms": ["Yuru Camp 3rd Season Specials"],
     "type": "Special",
     "source": "Manga",
     "episodes": 3,
@@ -202044,9 +200940,7 @@
     "title": "Yuru Camp△ Season 4",
     "title_english": "Laid-Back Camp Season 4",
     "title_japanese": "ゆるキャン△ SEASON４",
-    "title_synonyms": [
-      "Yuru Camp 4th Season"
-    ],
+    "title_synonyms": ["Yuru Camp 4th Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": null,
@@ -202301,9 +201195,7 @@
     "title": "Yuusha ga Shinda!",
     "title_english": "The Legendary Hero Is Dead!",
     "title_japanese": "勇者が死んだ！",
-    "title_synonyms": [
-      "The Hero Is Dead!"
-    ],
+    "title_synonyms": ["The Hero Is Dead!"],
     "type": "TV",
     "source": "Web manga",
     "episodes": 12,
@@ -202712,9 +201604,7 @@
     "title": "Yuusha Party wo Oidasareta Kiyoubinbou",
     "title_english": "Jack-of-All-Trades, Party of None",
     "title_japanese": "勇者パーティを追い出された器用貧乏",
-    "title_synonyms": [
-      "Yuusya Party wo Oidasareta Kiyou Bimbou"
-    ],
+    "title_synonyms": ["Yuusya Party wo Oidasareta Kiyou Bimbou"],
     "type": "TV",
     "source": "Light novel",
     "episodes": null,
@@ -203225,9 +202115,7 @@
     "title": "Yuusha, Yamemasu",
     "title_english": "I'm Quitting Heroing",
     "title_japanese": "勇者、辞めます",
-    "title_synonyms": [
-      "Yuuyame"
-    ],
+    "title_synonyms": ["Yuuyame"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -204383,9 +203271,7 @@
     "title": "Zutaboro Reijou wa Ane no Moto Konyakusha ni Dekiai sareru",
     "title_english": "Betrothed to My Sister's Ex",
     "title_japanese": "ずたぼろ令嬢は姉の元婚約者に溺愛される",
-    "title_synonyms": [
-      "Loved by Her Sister's Former Fiancée"
-    ],
+    "title_synonyms": ["Loved by Her Sister's Former Fiancée"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 12,
@@ -204752,9 +203638,7 @@
     "title": "[Oshi no Ko]",
     "title_english": "[Oshi No Ko]",
     "title_japanese": "【推しの子】",
-    "title_synonyms": [
-      "My Star"
-    ],
+    "title_synonyms": ["My Star"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -204924,9 +203808,7 @@
     "title": "[Oshi no Ko] 2nd Season",
     "title_english": "[Oshi No Ko] Season 2",
     "title_japanese": "【推しの子】第2期",
-    "title_synonyms": [
-      "My Star Season 2"
-    ],
+    "title_synonyms": ["My Star Season 2"],
     "type": "TV",
     "source": "Manga",
     "episodes": 13,
@@ -205090,9 +203972,7 @@
     "title": "[Oshi no Ko] 3rd Season",
     "title_english": "[Oshi No Ko] Season 3",
     "title_japanese": "【推しの子】 第3期",
-    "title_synonyms": [
-      "My Star Season 3"
-    ],
+    "title_synonyms": ["My Star Season 3"],
     "type": "TV",
     "source": "Manga",
     "episodes": 11,
@@ -206142,9 +205022,7 @@
     "title": "3-gatsu no Lion",
     "title_english": "March Comes In Like a Lion",
     "title_japanese": "3月のライオン",
-    "title_synonyms": [
-      "Sangatsu no Lion"
-    ],
+    "title_synonyms": ["Sangatsu no Lion"],
     "type": "TV",
     "source": "Manga",
     "episodes": 22,
@@ -206332,9 +205210,7 @@
     "title": "3-gatsu no Lion 2nd Season",
     "title_english": "March Comes In Like a Lion 2nd Season",
     "title_japanese": "3月のライオン 第2シリーズ",
-    "title_synonyms": [
-      "Sangatsu no Lion Second Season"
-    ],
+    "title_synonyms": ["Sangatsu no Lion Second Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 22,
@@ -206698,9 +205574,7 @@
     "title": "3D Kanojo: Real Girl",
     "title_english": "Real Girl",
     "title_japanese": "3D彼女 リアルガール",
-    "title_synonyms": [
-      "3D Girlfriend"
-    ],
+    "title_synonyms": ["3D Girlfriend"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -206858,9 +205732,7 @@
     "title": "3D Kanojo: Real Girl 2nd Season",
     "title_english": "Real Girl Season 2",
     "title_japanese": "3D彼女 リアルガール(第2シーズン)",
-    "title_synonyms": [
-      "3D Girlfriend 2nd Season"
-    ],
+    "title_synonyms": ["3D Girlfriend 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -207040,10 +205912,7 @@
     "title": "5-toubun no Hanayome",
     "title_english": "The Quintessential Quintuplets",
     "title_japanese": "五等分の花嫁",
-    "title_synonyms": [
-      "Gotoubun no Hanayome",
-      "The Five Wedded Brides"
-    ],
+    "title_synonyms": ["Gotoubun no Hanayome", "The Five Wedded Brides"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -207946,9 +206815,7 @@
     "title": "86",
     "title_english": "86 Eighty-Six",
     "title_japanese": "86―エイティシックス―",
-    "title_synonyms": [
-      "Eighty Six"
-    ],
+    "title_synonyms": ["Eighty Six"],
     "type": "TV",
     "source": "Light novel",
     "episodes": 11,
@@ -208991,9 +207858,7 @@
     "title": "3-gatsu no Lion",
     "title_english": "March Comes In Like a Lion",
     "title_japanese": "3月のライオン",
-    "title_synonyms": [
-      "Sangatsu no Lion"
-    ],
+    "title_synonyms": ["Sangatsu no Lion"],
     "type": "TV",
     "source": "Manga",
     "episodes": 22,
@@ -209181,9 +208046,7 @@
     "title": "3-gatsu no Lion 2nd Season",
     "title_english": "March Comes In Like a Lion 2nd Season",
     "title_japanese": "3月のライオン 第2シリーズ",
-    "title_synonyms": [
-      "Sangatsu no Lion Second Season"
-    ],
+    "title_synonyms": ["Sangatsu no Lion Second Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 22,
@@ -209547,9 +208410,7 @@
     "title": "3D Kanojo: Real Girl",
     "title_english": "Real Girl",
     "title_japanese": "3D彼女 リアルガール",
-    "title_synonyms": [
-      "3D Girlfriend"
-    ],
+    "title_synonyms": ["3D Girlfriend"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
@@ -209707,9 +208568,7 @@
     "title": "3D Kanojo: Real Girl 2nd Season",
     "title_english": "Real Girl Season 2",
     "title_japanese": "3D彼女 リアルガール(第2シーズン)",
-    "title_synonyms": [
-      "3D Girlfriend 2nd Season"
-    ],
+    "title_synonyms": ["3D Girlfriend 2nd Season"],
     "type": "TV",
     "source": "Manga",
     "episodes": 12,
