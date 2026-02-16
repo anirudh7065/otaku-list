@@ -20,7 +20,7 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
               {title}
               </span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 md:w-[89%] w-full mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 max-w-[94%]  mx-auto">
 
               {anime?.length === 0 && <div className="flex justify-center items-center h-screen w-full">
                   <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
