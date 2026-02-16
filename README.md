@@ -1,36 +1,211 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎌 Otaku List
 
-## Getting Started
+[![Live App](https://img.shields.io/badge/Live-App-000?style=for-the-badge&logo=vercel&logoColor=white)](https://otaku-anime-list.vercel.app)
+![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Jikan API](https://img.shields.io/badge/API-Jikan-blue?style=for-the-badge)
+![India Optimized](https://img.shields.io/badge/Optimized_for-India-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-First, run the development server:
+A modern anime discovery platform built with **Next.js** and **Tailwind CSS**, powered by the **Jikan API** — optimized specifically for **Indian users** 🇮🇳.
+
+Otaku List provides curated anime browsing with smart caching, debounced search, backend filtering, and schedules aligned to **Indian Standard Time (IST)**.
+
+
+
+
+---
+
+## ✨ Features
+
+- 🏠 Home dashboard with trending anime
+- 📅 Anime schedules aligned to **Indian time (IST)**
+- 🌸 Seasonal anime browsing
+- 🔝 Top anime rankings
+- ❤️ My Own curated list of animes under **My List**
+- 🎭 Genre-based anime filtering
+- 🔍 Debounced anime search
+- ⚡ Smart caching for faster performance
+- 🚦 App-level rate limiting
+- 🇮🇳 Backend-filtered data optimized for Indian viewers
+- 📱 Fully responsive UI
+
+---
+
+## 🇮🇳 Built for Indian Anime Fans
+
+Most anime platforms show schedules in Japanese or global time zones.
+
+Otaku List:
+
+- Converts schedules to **Indian Standard Time**
+- Filters backend data for **Indian-friendly viewing**
+- Reduces unnecessary metadata
+- Focuses on practical watchability
+
+This makes it easier for Indian users to know *exactly when anime airs*.
+
+---
+
+## 📸 Screenshot
+
+
+![Otaku List Screenshot](./screenshots/app-preview1.png)
+![Otaku List Screenshot](./screenshots/app-preview2.png)
+![Otaku List Screenshot](./screenshots/app-preview3.png)
+![Otaku List Screenshot](./screenshots/app-preview4.png)
+
+
+---
+
+## 🛠 Tech Stack
+
+<p align="left">
+
+<img src="https://skillicons.dev/icons?i=nextjs" height="40"/>
+<img src="https://skillicons.dev/icons?i=tailwind" height="40"/>
+<img src="https://skillicons.dev/icons?i=react" height="40"/>
+<img src="https://skillicons.dev/icons?i=typescript" height="40"/>
+<img src="https://skillicons.dev/icons?i=vercel" height="40"/>
+
+</p>
+
+**Core Architecture**
+
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Jikan API
+- Server-side caching
+- Custom debouncing logic
+- Backend filtering layer
+- App-level rate limiting
+- Vercel deployment
+
+---
+
+## 🧠 Performance & Architecture
+
+Otaku List is designed to protect API limits and ensure smooth UX:
+
+- **Debouncing** → prevents spam search requests
+- **Caching** → reduces repeated API calls
+- **Rate limiting** → protects Jikan API
+- **Backend filtering** → lighter payloads
+- **Time-zone normalization** → IST schedules
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repo
+
+```bash
+git clone https://github.com/your-username/otaku-list.git
+cd otaku-list
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+/app
+/components
+/constants
+/hooks
+/lib
+/api
+/types
+/public
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contribution Guidelines
 
-## Deploy on Vercel
+Contributions are welcome!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the repository
+2. Create a feature branch
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+git checkout -b feature/amazing-feature
+```
+
+3. Commit changes
+
+```bash
+git commit -m "Add amazing feature"
+```
+
+4. Push
+
+```bash
+git push origin feature/amazing-feature
+```
+
+5. Open a Pull Request
+
+### Rules
+
+- Keep components reusable
+- Follow existing structure
+- Use TypeScript types
+- No breaking UI without discussion
+- Write clean, readable code
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+```
+MIT License
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge...
+```
+
+
+---
+
+## 🙌 Acknowledgements
+
+- Jikan API — https://jikan.moe
+- Anime data from MyAnimeList
+- Built with ❤️ using Next.js
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+⭐ Star the repo  
+🍴 Fork it  
+📢 Share it  
+
+---
+
+**Made by Otaku, for Otaku 🎌**
