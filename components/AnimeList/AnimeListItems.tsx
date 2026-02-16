@@ -20,7 +20,7 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
               {title}
               </span>
           </div>
-          <div className="flex flex-wrap justify-center gap-6 max-w-[94%]  mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 max-w-full  mx-auto">
 
               {anime?.length === 0 && <div className="flex justify-center items-center h-screen w-full">
                   <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
@@ -28,7 +28,7 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
               
               {anime?.map((item, index) => (
                   <div key={index}
-                      className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 hover:scale-[1.02] m-4 h-50 w-40 hover:ring-3 hover:ring-purple-400 md:w-75 md:h-105 max-md:overflow-hidden
+                      className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 hover:scale-[1.02] h-50 w-40 hover:ring-3 hover:ring-purple-400 md:w-70 md:h-105 max-md:overflow-hidden
  "
                       onClick={() => router.push(`/anime/${item.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
                   >
@@ -47,7 +47,7 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
               ))}
           </div >
           {(setPage && page && maxPages) &&
-          <div className="w-full flex justify-center items-center pb-20 md:pb-12 gap-4 ">
+              <div className="w-full flex justify-center items-center pb-20 md:pb-12  my-4 gap-4 ">
 
               <button
                   onClick={() => {
