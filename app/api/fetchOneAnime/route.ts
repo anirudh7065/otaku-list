@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
-import anime from "./anime_data.json" with { type: "json" };
+import { NextResponse, NextRequest } from "next/server";
 import type { newPost } from "@/types/newPost";
 
+export const revalidate = 3600;
 
 const RATE_LIMIT = 30;
 const WINDOW = 60 * 1000; // 1 minute
@@ -22,23 +22,33 @@ function rateLimit(ip: string) {
   entry.count++;
   return true;
 }
+
 export async function GET(req: NextRequest) {
-        const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
-      
-        if (!rateLimit(ip)) {
-          return NextResponse.json({ message: "Too many requests" }, { status: 429 });
-        }
+      const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
+    
+      if (!rateLimit(ip)) {
+        return NextResponse.json({ message: "Too many requests" }, { status: 429 });
+      }
+  const baseUrl = process.env.BASE_URL;
+  const id = req.nextUrl.searchParams.get("id") ?? 1;
+  const apiUrl = `${baseUrl}/anime/${id}`;
+
   try {
-      
-    const maxPage = Math.ceil((anime as newPost[]).length / 25);
-    const page = Number(req.nextUrl.searchParams.get("page") ?? 1) > maxPage ? maxPage : Number(req.nextUrl.searchParams.get("page") ?? 1);
-    const res = (anime as newPost[]).slice((page - 1) * 25, page * 25);
+    const response = await fetch(apiUrl, { next: { revalidate: 3600 } });
+
+    if (!response.ok) {
+      return NextResponse.json(
+        { error: "Failed to fetch anime data" },
+        { status: response.status },
+      );
+    }
+
+    const data: { data: newPost[] } =
+      await response.json();
     return NextResponse.json({
-      data: res,
-      maxPage: maxPage,
-      page: page
+      data:[ data.data],
     });
-  }catch(error){
+  } catch (error) {
     console.log(error);
     if (error instanceof Error) {
       return NextResponse.json(

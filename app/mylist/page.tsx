@@ -1,40 +1,47 @@
 'use client';
 
-import { useEffect, useState, useRef } from "react";
+import { Suspense, useEffect } from "react";
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
 import Loader from "@/components/Loader";
 import useGetData from "@/hooks/useGetData";
+import { usePageQuery } from "@/hooks/usePageQuery";
 
-export default function Mylist() {
-    const [page, setPage] = useState(1);
-    const scrollRef = useRef<HTMLDivElement>(null);
+function MyListContent() {
+    const { page, setPage } = usePageQuery();
 
-    const { anime, maxPages, loading } = useGetData({
+    const { anime, maxPages, loading,error} = useGetData({
         url: "/api/fetchMyAnime",
         page,
-    });
 
+    });
+    if (error) {
+        throw new Error(error);
+    }
     useEffect(() => {
-        scrollRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }, [page]);
 
-
     return (
-        <main
-            ref={scrollRef}
-            className="w-full no-scrollbar overflow-y-auto h-screen "
-        >
+        <main className="w-full min-h-screen pt-10">
             {loading && <Loader />}
 
             {!loading && (
-            <AnimeListItems
-                title="My List"
-                page={page}
-                anime={anime}
-                setPage={setPage}
-                maxPages={maxPages}
+                <AnimeListItems
+                    title="My List"
+                    page={page}
+                    anime={anime}
+                    setPage={setPage}
+                    maxPages={maxPages}
                 />
             )}
         </main>
+    );
+}
+
+export default function Mylist() {
+    return (
+        <Suspense fallback={<Loader />}>
+            <MyListContent />
+        </Suspense>
     );
 }

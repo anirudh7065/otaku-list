@@ -1,25 +1,33 @@
 'use client';
 
-import { useState, useRef, useEffect } from "react";
+import { useEffect } from "react";
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
 import Loader from "@/components/Loader";
 import useGetData from "@/hooks/useGetData";
+import { usePageQuery } from "@/hooks/usePageQuery";
+import { Suspense } from "react";
+function TopContent() {
+      const { page, setPage } = usePageQuery();
+    
 
-export default function Top() {
-    const [page, setPage] = useState(1);
-    const ref = useRef<HTMLDivElement>(null);
-
-    const { anime, maxPages, loading } = useGetData({
+    const { anime, maxPages, loading,error } = useGetData({
         url: "/api/fetchTopAnime",
         page,
     });
 
+    if (error) {
+        throw new Error(error);
+    }
+
+
+
+
     useEffect(() => {
-        ref.current?.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }, [page]);
 
     return (
-        <main ref={ref} className="w-full h-screen overflow-y-auto no-scrollbar">
+        <main className="w-full min-h-screen pt-10 ">
             {loading && <Loader />}
 
             {!loading && (
@@ -34,3 +42,18 @@ export default function Top() {
         </main>
     );
 }
+export default function Top() {
+
+    return (
+
+        <Suspense fallback={<Loader />}>
+
+            <TopContent />
+
+        </Suspense>
+
+    );
+
+}
+
+

@@ -1,28 +1,36 @@
 'use client';
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect } from "react";
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
 import Loader from "@/components/Loader";
 import useGetData from "@/hooks/useGetData";
+import { usePageQuery } from "@/hooks/usePageQuery";
+import { Suspense } from "react";
+// import ErrorPage from "./error";
+function HomeContent() {
 
-export default function Home() {
-  const [page, setPage] = useState(1);
+  const { page, setPage } = usePageQuery();
 
-  const ref = useRef<HTMLDivElement>(null);
 
-  const { anime, maxPages, loading } = useGetData({
+
+  const { anime, maxPages, loading,error } = useGetData({
     url: "/api/fetchAnime",
     page,
   });
 
+  if (error) {
+    throw new Error(error);
+  }
+
   useEffect(() => {
-    ref.current?.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [page]);
-
-
+  
 
   return (
-    <main ref={ref} className="w-full h-screen overflow-y-auto no-scrollbar">
+    <main className="w-full min-h-screen pt-10">
+
+
       {loading && <Loader />}
 
       {!loading && (
@@ -37,3 +45,19 @@ export default function Home() {
     </main>
   );
 }
+
+export default function Home() {
+
+  return (
+
+    <Suspense fallback={<Loader />}>
+
+      <HomeContent />
+
+    </Suspense>
+
+  );
+
+}
+
+

@@ -1,43 +1,47 @@
 'use client';
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
 import Loader from "@/components/Loader";
 import useGetData from "@/hooks/useGetData";
+import { usePageQuery } from "@/hooks/usePageQuery";
+import { Suspense } from "react";
 
-type seasonalAnime = "winter" | "spring" | "summer" | "fall"
+type seasonalAnime = "winter" | "spring" | "summer" | "fall";
 
-export default function SeasonalList() {
+function SeasonalListContent() {
     const date = new Date();
     const currentYear = date.getFullYear();
 
-    const [page, setPage] = useState(1);
+    const { page, setPage } = usePageQuery();
+
     const seasonOptions =
-        date.getMonth() >= 0 && date.getMonth() <= 2 ? "winter" :
-            date.getMonth() >= 3 && date.getMonth() <= 5 ? "spring" :
-                date.getMonth() >= 6 && date.getMonth() <= 8 ? "summer" :
-                    date.getMonth() >= 9 && date.getMonth() <= 11 ? "fall" : "winter";
+        date.getMonth() <= 2 ? "winter" :
+            date.getMonth() <= 5 ? "spring" :
+                date.getMonth() <= 8 ? "summer" : "fall";
 
     const [season, setSeason] = useState<seasonalAnime>(seasonOptions);
     const [year, setYear] = useState(currentYear);
 
     const [draftSeason, setDraftSeason] = useState<seasonalAnime>(seasonOptions);
     const [draftYear, setDraftYear] = useState(currentYear);
-    const scrollRef = useRef<HTMLDivElement>(null);
 
-    const { anime, maxPages, loading } = useGetData({
+    const { anime, maxPages, loading,error } = useGetData({
         url: "/api/fetchSeasonalAnime",
         page,
         season,
         year,
-    });
 
-    // 🔹 Auto scroll to top on page change
+    });
+    if (error) {
+        throw new Error(error);
+    }
+
     useEffect(() => {
-        scrollRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }, [page]);
 
-    const years = [];
+    const years: number[] = [];
     for (let i = 2000; i <= currentYear; i++) years.push(i);
 
     const handleSearch = () => {
@@ -47,29 +51,28 @@ export default function SeasonalList() {
     };
 
     return (
-        <div
-            ref={scrollRef}
-            className="no-scrollbar overflow-y-auto h-screen scroll-smooth"
-        >
-            <div className="w-full flex justify-center items-center pb-12 gap-4">
+        <div className="pt-10">
+
+            <div className="w-full flex max-md:flex-col justify-center items-center pb-12 gap-4">
+
                 <select
-                    className="w-full max-w-sm rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900"
+                    className="w-full max-w-sm rounded-lg border scrollbar-custom  bg-transparent p-2.5 text-sm"
                     value={draftSeason}
                     onChange={(e) => setDraftSeason(e.target.value as seasonalAnime)}
                 >
-                    <option value="winter">Winter</option>
-                    <option value="spring">Spring</option>
-                    <option value="summer">Summer</option>
-                    <option value="fall">Fall</option>
+                    <option className="bg-black" value="winter">Winter</option>
+                    <option className="bg-black" value="spring">Spring</option>
+                    <option className="bg-black" value="summer">Summer</option>
+                    <option className="bg-black" value="fall">Fall</option>
                 </select>
 
                 <select
-                    className="w-full max-w-sm rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900"
+                    className="w-full max-w-sm rounded-lg border scrollbar-custom bg-transparent p-2.5 text-sm"
                     value={draftYear}
                     onChange={(e) => setDraftYear(parseInt(e.target.value))}
                 >
                     {years.map((year) => (
-                        <option key={year} value={year}>{year}</option>
+                        <option key={year} className="bg-black" value={year}>{year}</option>
                     ))}
                 </select>
 
@@ -79,6 +82,7 @@ export default function SeasonalList() {
                 >
                     Search
                 </button>
+
             </div>
 
             {loading && <Loader />}
@@ -92,6 +96,23 @@ export default function SeasonalList() {
                     maxPages={maxPages}
                 />
             )}
+
         </div>
     );
 }
+
+export default function SeasonalList() {
+
+    return (
+
+        <Suspense fallback={<Loader />}>
+
+            <SeasonalListContent />
+
+        </Suspense>
+
+    );
+
+}
+
+

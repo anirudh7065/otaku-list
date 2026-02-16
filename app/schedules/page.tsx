@@ -1,0 +1,34 @@
+"use client"
+import AnimeListItems from "@/components/AnimeList/AnimeListItems";
+import Loader from "@/components/Loader";
+import useGetData from "@/hooks/useGetData";
+import type { newPost } from "@/types/newPost";
+export default function ScheduleContent() {
+
+    const { anime, loading,error } = useGetData({
+        url: "/api/fetchSchedule"
+    });
+  
+  if (error) {
+    throw new Error(error);
+  }
+  
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+  return (
+    <main className="py-10">
+      <h1 className="w-full text-4xl font-bold text-center">Schedule</h1>
+      {loading && <Loader />}
+
+      {!loading && Object.entries(anime ?? {}).map(([day, val]) => (
+        <AnimeListItems
+          key={day}
+          title={days[Number(day)]}
+          anime={val as newPost[]}
+          schedule={true}
+        />
+      ))
+}
+    </main>
+  )
+}

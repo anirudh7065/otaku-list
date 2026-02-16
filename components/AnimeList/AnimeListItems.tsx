@@ -4,55 +4,64 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import type { newPost } from "@/types/newPost";
 import { ArrowBigLeftDash } from "lucide-react";
-import Link from "next/link";
 
-const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false }: { title: string, page: number, anime: newPost[], setPage: React.Dispatch<React.SetStateAction<number>>, maxPages: number, genre?: boolean }) => {
+
+const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, schedule = false }: {
+    title: string, page?: number, anime: newPost[], setPage?: (page: number) => void
+
+, maxPages?: number, genre?: boolean, schedule?: boolean }) => {
     const router = useRouter();
 
   return (
-      <div className="">
+      <div className="cursor-pointer select-none ">
           <div className="py-4 w-full flex justify-center items-center" >
-              {genre && <ArrowBigLeftDash className="size-10" onClick={()=>router.back()} />}
-              <span className="w-[80%] text-4xl font-bold text-center">
+              {genre && <ArrowBigLeftDash className="size-10 ml-10" onClick={()=>router.back()} />}
+              <span className={`w-full font-bold text-center ${schedule ? "text-2xl bg-purple-900 py-2 " : "text-4xl"}`}>
               {title}
               </span>
           </div>
-          <div className="flex justify-center items-center flex-wrap">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 md:w-[89%] w-full mx-auto">
+
               {anime?.length === 0 && <div className="flex justify-center items-center h-screen w-full">
                   <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
               </div>}
               
               {anime?.map((item, index) => (
                   <div key={index}
-                      className="max-w-sm hover:-translate-y-3 transition-transform duration-200 hover:shadow-lg hover:shadow-purple-400 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 m-4 h-105 w-75 "
+                      className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 hover:scale-[1.02] m-4 h-50 w-40 hover:ring-3 hover:ring-purple-400 md:w-75 md:h-105 max-md:overflow-hidden
+ "
+                      onClick={() => router.push(`/anime/${item.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
                   >
-                          <Link href={item.url} target="_blank">
                       <Image
-                          src={item.images.jpg.image_url || item.images.webp.image_url}
+                          src={item.images.webp.image_url || item.images.jpg.image_url || item.images.webp.medium_image_url || item.images.jpg.medium_image_url || ""}
                           alt={item.title}
+                          sizes="(max-width: 768px) 120px, 300px"
                           width={300}
                           height={300}
-                              className="h-[80%] w-full aspect-auto p-4  object-cover bg-linear-to-br from-black via-gray-700  to-black rounded-t-xl  backdrop-blur-md"
+                          priority={index<6}
+                          fetchPriority="high"
+                          className="h-[80%] md:h-84 md:w-full  md:p-4  object-cover bg-linear-to-br from-black via-gray-700  to-black rounded-t-xl transform-[translateZ(0)] will-change-transform "
                           />
-                      <h2 className="text-md px-1 font-bold text-center  border-t-4 py-2 border-purple-700 w-full h-20 overflow-hidden ">{item.title}</h2>
-                      </Link>
+                      <h2 className="md:text-lg text-xs md:px-1 font-bold text-center  border-t-4 py-2 border-purple-700 w-full md:h-18 overflow-hidden max-md:line-clamp-1 h-7 line-clamp-2">{item.title}</h2>
                   </div>
               ))}
           </div >
-          <div className="w-full flex justify-center items-center pb-12 gap-4">
+          {(setPage && page && maxPages) &&
+          <div className="w-full flex justify-center items-center pb-20 md:pb-12 gap-4 ">
 
               <button
                   onClick={() => {
-                      setPage(page - 1)
-                  }}
-                  className="py-1 px-4 bg-amber-100 text-black rounded-3xl font-bold">Previous</button>
+                          setPage(page <= maxPages ? page - 1 : maxPages)
+                    }}
+                    className="py-1 px-4 bg-amber-100 text-black rounded-3xl font-bold">Previous</button>
               <p className="py-2 px-4 bg-amber-100 text-black rounded-3xl font-bold">{page} / {maxPages}</p>
               <button
                   onClick={() => {
-                      setPage(page + 1)
-                  }
-                  } className={`${page === maxPages ? "hidden" : ""} py-1 px-4 bg-amber-100 text-black rounded-3xl font-bold`}>Next</button>
+                      setPage(page <=maxPages ?page + 1: maxPages)
+                    }
+                } className={`${page === maxPages ? "hidden" : ""} py-1 px-4 bg-amber-100 text-black rounded-3xl font-bold`}>Next</button>
           </div>
+        }
       </div>
   )
 }

@@ -1,31 +1,48 @@
 'use client';
 import { useParams } from 'next/navigation';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect } from 'react';
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
 import genres from "@/constants/genresData.json";
 import useGetData from "@/hooks/useGetData";
+import { usePageQuery } from "@/hooks/usePageQuery";
+import { Suspense } from "react";
+import Loader from "@/components/Loader";
+import { notFound } from 'next/navigation';
 
+type Genre = {
+    mal_id: number;
+    name: string;
+}
 
-const GenreAnime = () => {
+const GenreAnimeContent = () => {
     const param = useParams();
-    const rawId = Array.isArray(param?.id) ? param.id[0] : param?.id;
+    const rawId = Number( Array.isArray(param?.id) ? param.id[0] : param?.id);
     const id = rawId ?? null;
+    if(id === null || isNaN(id) || !(id >= 1 && id <= 83)) {
+        notFound()
+    }
 
-    const [page, setPage] = useState(1);
-    
-    const ref = useRef<HTMLDivElement>(null);
+    const { page, setPage } = usePageQuery();
 
-    const { anime, maxPages, loading } = useGetData({
+
+
+    const { anime, maxPages,error, loading } = useGetData({
         url: "/api/fetchGenres",
         page, id
     });
-    const parsedId = id && parseInt(id, 10);
+
+    if (error) {
+        throw new Error(error);
+    }
+
+
+    const parsedId = id;
       useEffect(() => {
-          ref.current?.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }, [page, id]);
 
   return (
-      <main ref={ref} className="w-full h-screen overflow-y-auto no-scrollbar">
+      <main className="py-10">
           {loading && <div className="flex justify-center items-center h-screen w-full">
               <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
           </div>}
@@ -33,7 +50,7 @@ const GenreAnime = () => {
           {!loading && (
         <AnimeListItems
                   genre={true}
-                  title={genres.find((genre) => genre.mal_id === parsedId)?.name || 'Genre'}
+                  title={genres.find((genre: Genre) => genre.mal_id === parsedId)?.name || 'Genre'}
                   page={page}
                   anime={anime}
                   setPage={setPage}
@@ -44,4 +61,18 @@ const GenreAnime = () => {
   )
 }
 
-export default GenreAnime
+export default function GenreAnime() {
+
+    return (
+
+        <Suspense fallback={<Loader />}>
+
+            <GenreAnimeContent />
+
+        </Suspense>
+
+    );
+
+}
+
+

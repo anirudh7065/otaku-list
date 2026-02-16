@@ -4,6 +4,21 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+body.is-scrolling .card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -26,15 +41,7 @@ body {
 }
 
 @layer utilities {
-  .no-scrollbar {
-    -ms-overflow-style: none;   /* IE & Edge */
-    scrollbar-width: none; 
-    scroll-behavior: smooth;    /* Firefox */
-  }
 
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;              /* Chrome, Safari */
-  }
 }
 html, body {
   scrollbar-width: none;
@@ -44,4 +51,24 @@ html, body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
+}
+
+@layer utilities {
+  .scrollbar-custom {
+    &::-webkit-scrollbar {
+      width: 4px;
+      max-height: 500px;
+    }
+    &::-webkit-scrollbar-track {
+      @apply bg-none;
+      border-radius: 100vh;
+    }
+    &::-webkit-scrollbar-thumb {
+      @apply bg-blue-700;
+      border-radius: 100vh;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      @apply bg-blue-600;
+    }
+  }
 }
