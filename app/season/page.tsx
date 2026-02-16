@@ -42,7 +42,7 @@ function SeasonalListContent() {
     }, [page]);
 
     const years: number[] = [];
-    for (let i = 2000; i <= currentYear; i++) years.push(i);
+    for (let i = 1917; i <= currentYear; i++) years.push(i);
 
     const handleSearch = () => {
         setSeason(draftSeason);
