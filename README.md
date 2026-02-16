@@ -192,9 +192,10 @@ Permission is hereby granted, free of charge...
 
 ## 🙌 Acknowledgements
 
-- Jikan API — https://jikan.moe
-- Anime data from MyAnimeList
-- Built with ❤️ using Next.js
+Powered by [jikan-rest](https://github.com/jikan-me/jikan-rest) — thanks to @jikan-me  
+Anime data from https://jikan.moe  
+Data sourced from MyAnimeList  
+Built with ❤️ using Next.js
 
 ---
 
