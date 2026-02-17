@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import type { newPost } from "@/types/newPost";
 import { ArrowBigLeftDash } from "lucide-react";
+import AnimeCountdown from "./AnimeCountDown";
+
 
 
 const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, schedule = false }: {
@@ -11,12 +13,13 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
 
 , maxPages?: number, genre?: boolean, schedule?: boolean }) => {
     const router = useRouter();
+    
 
   return (
       <div className="cursor-pointer select-none ">
           <div className="py-4 w-full flex justify-center items-center" >
               {genre && <ArrowBigLeftDash className="size-10 ml-10" onClick={()=>router.back()} />}
-              <span className={`w-full font-bold text-center ${schedule ? "text-2xl bg-purple-900 py-2 " : "text-4xl"}`}>
+              <span className={`w-full font-bold text-center ${schedule ? "text-2xl my-6 bg-purple-900 py-2 " : "text-4xl"}`}>
               {title}
               </span>
           </div>
@@ -27,11 +30,12 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
               </div>}
               
               {anime?.map((item, index) => (
-                  <div key={index}
+                  <div key={index}>
+                  <div
                       className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 hover:scale-[1.02] h-50 w-40 hover:ring-3 hover:ring-purple-400 md:w-70 md:h-105 max-md:overflow-hidden
- "
+                      "
                       onClick={() => router.push(`/anime/${item.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
-                  >
+                      >
                       <Image
                           src={item.images.webp.image_url || item.images.jpg.image_url || item.images.webp.medium_image_url || item.images.jpg.medium_image_url || ""}
                           alt={item.title}
@@ -44,6 +48,8 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
                           />
                       <h2 className="md:text-lg text-xs md:px-1 font-bold text-center  border-t-4 py-2 border-purple-700 w-full md:h-18 overflow-hidden max-md:line-clamp-1 h-7 line-clamp-2">{item.title}</h2>
                   </div>
+                 {item.airing && schedule && < AnimeCountdown  day={item?.broadcast.day ?? ""} time={item.broadcast.time || ""} />}
+                </div>
               ))}
           </div >
           {(setPage && page && maxPages) &&

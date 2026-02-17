@@ -31,7 +31,7 @@ export async function GET(req: NextRequest) {
       }
   const baseUrl = process.env.BASE_URL;
   const id = req.nextUrl.searchParams.get("id") ?? 1;
-  const apiUrl = `${baseUrl}/anime/${id}`;
+  const apiUrl = `${baseUrl}/anime/${id}/full`;
 
   try {
     const response = await fetch(apiUrl, { next: { revalidate: 3600 } });

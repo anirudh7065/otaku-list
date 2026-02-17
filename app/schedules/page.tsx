@@ -16,7 +16,7 @@ export default function ScheduleContent() {
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   return (
-    <main className="py-10">
+    <main className="pt-10 pb-20">
       <h1 className="w-full text-4xl font-bold text-center">Schedule</h1>
       {loading && <Loader />}
 
