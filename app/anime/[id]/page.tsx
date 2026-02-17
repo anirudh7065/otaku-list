@@ -57,21 +57,21 @@ const AnimeContent = () => {
                         <ArrowBigLeftDash className="size-10 ml-10 max-md:hidden cursor-pointer" onClick={() => router.push(url.pathname + url.search)} />
                         <div className="w-[90%] text-center mx-auto ">
 
-                            <h1 className="text-center text-2xl max-md:text-xl text-purple-300 max-md:pb-2 max-md:border-b-2">{anime[0].title}</h1>
-                            <h2 className="text-center text-2xl max-md:text-xl text-purple-200 max-md:pt-2 ">{anime[0].title_english}</h2>
+                            <h1 className="text-center text-2xl max-md:text-xl text-purple-300 max-md:pb-2 max-md:border-b-2">{anime[0]?.title}</h1>
+                            <h2 className="text-center text-2xl max-md:text-xl text-purple-200 max-md:pt-2 ">{anime[0]?.title_english}</h2>
                         </div>
                     </div>
                     <div className="main w-[90%] min-h-96 flex max-md:flex-col justify-center items-start my-10 gap-10 mx-auto">
                         <div className="md:w-[20%] w-full h-full">
-                            <Image src={anime[0].images.webp.image_url || anime[0].images.jpg.image_url} alt={anime[0].title} width={300} height={300} className={`w-full aspect-auto min-h-[90%] object-cover `} onClick={() => setZoom(!zoom)} />
+                            <Image src={anime[0]?.images?.webp?.image_url || anime[0]?.images?.jpg?.image_url} alt={anime[0]?.title} width={300} height={300} className={`w-full aspect-auto min-h-[90%] object-cover `} onClick={() => setZoom(!zoom)} />
                             {zoom && <div className="size-screen bg-black/70 fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-100" >
                                 <button className="size-8 rounded-full text-xl font-bold absolute top-4 right-4 shadow-lg shadow-black md:right-1/3 bg-white text-black" onClick={() => setZoom(!zoom)}>X</button>
-                                <Image src={anime[0].images.jpg.large_image_url||anime[0].images.jpg.large_image_url} alt={anime[0].title} width={500} height={500} className={`aspect auto object-contain `} />
+                                <Image src={anime[0]?.images?.jpg?.large_image_url||anime[0]?.images?.jpg?.large_image_url} alt={anime[0]?.title} width={500} height={500} className={`aspect auto object-contain `} />
                             </div>}
                             <span className="flex justify-center items-center gap-1.5 text-xl w-full bg-purple-950">
                                 Score:
-                                <span className="text-purple-400 py-1"> {anime[0].score ?? "-"} </span> (
-                                {anime[0].scored_by ?? "-"})
+                                <span className="text-purple-400 py-1"> {anime[0]?.score ?? "-"} </span> (
+                                {anime[0]?.scored_by ?? "-"})
                             </span>
 
                         </div>
@@ -83,13 +83,13 @@ const AnimeContent = () => {
                                 <span className="text-lg">Genre :</span>
 
                                 <div className="flex gap-2 text-sm flex-wrap">
-                                    {anime[0].genres.map((genre: Genre, index: number) => (
+                                    {anime[0]?.genres.map((genre: Genre, index: number) => (
                                         <button
                                             key={index}
                                             className="cursor-pointer py-1 px-3 border-2 border-purple-600 rounded-2xl hover:bg-purple-600 hover:text-white"
                                             onClick={() => router.push(`/genres/${genre.mal_id}`)}
                                         >
-                                            {genre.name}
+                                            {genre?.name}
                                         </button>
                                     ))}
                                 </div>
@@ -98,8 +98,8 @@ const AnimeContent = () => {
                                 <span className="text-lg">Streaming :</span>
 
                                 <div className="flex gap-2 text-sm flex-wrap">{
-                                    !anime[0].streaming.length && <span className="text-lg  text-purple-400">Not Available</span>}
-                                    {anime[0].streaming.map((stream: { name: string, url: string }, index: number) => (
+                                    !anime[0]?.streaming?.length && <span className="text-lg  text-purple-400">Not Available</span>}
+                                    {anime[0]?.streaming?.map((stream: { name: string, url: string }, index: number) => (
                                         <a
                                             href={stream.url}
                                             key={index}
@@ -118,12 +118,12 @@ const AnimeContent = () => {
                                         {
                                             anime[0]?.studios?.map((studio: { name: string, url: string }, index: number) => (
                                                 <a
-                                                    href={studio.url}
+                                                    href={studio?.url}
                                                     target="_blank"
                                                     key={index}
                                                     className="cursor-pointer py-1 px-3 border-2 border-purple-600 rounded-2xl hover:bg-purple-600 hover:text-white"
                                                 >
-                                                    {studio.name}
+                                                    {studio?.name}
                                                 </a>
                                             ))
                                         }
@@ -132,38 +132,38 @@ const AnimeContent = () => {
                             </div>
                             <div className="text-lg">
                                 <span>Brodcast :</span>
-                                <span className="ml-2 text-purple-400">{jpnToInd(anime[0].broadcast.day || "Sundays", anime[0].broadcast.time || "17:00") as string}</span>
+                                <span className="ml-2 text-purple-400">{jpnToInd(anime[0]?.broadcast?.day || "Sundays", anime[0]?.broadcast?.time || "17:00") as string}</span>
                             </div>
                             <div className="text-lg">
                                 <span>Season :</span>
-                                <span className="ml-2 text-purple-400">{anime[0].season === null ? "Unknown" : `${anime[0].season} ${anime[0].year}`}</span>
+                                <span className="ml-2 text-purple-400">{anime[0]?.season === null ? "Unknown" : `${anime[0]?.season} ${anime[0]?.year}`}</span>
                             </div>
                             <div className="text-lg">
                                 <span>Episodes :</span>
                                 <span className="ml-2 text-purple-400">
-                                    {anime[0].episodes === null ? "Unknown" : `${anime[0].episodes} Episodes of ${anime[0].duration}`}
+                                    {anime[0]?.episodes === null ? "Unknown" : `${anime[0]?.episodes} Episodes of ${anime[0]?.duration}`}
                                 </span>
                             </div>
                             <div className="text-lg">
                                 <span>Aired :</span>
                                 <span className="ml-2 text-purple-400">
-                                    {anime[0].aired.string}
+                                    {anime[0]?.aired.string}
                                 </span>
                             </div>
                             <div className="text-lg">
                                 <span>Type :</span>
                                 <span className="ml-2 text-purple-400">
-                                    {anime[0].type ?? "Unknown"}
+                                    {anime[0]?.type ?? "Unknown"}
                                 </span>
                             </div>
                             <div className="text-lg">
                                 <span>Status :</span>
                                 <span className="ml-2 text-purple-400">
-                                    {anime[0].status ?? "Unknown"}
+                                    {anime[0]?.status ?? "Unknown"}
                                 </span>
                             </div>
                             {
-                                anime[0].airing && <div className="text-lg">
+                                anime[0]?.airing && <div className="text-lg">
                                 <span>Next Episode :</span>
                                 <span className="ml-2 text-purple-400">
                                         {
@@ -175,11 +175,12 @@ const AnimeContent = () => {
                             <div className="text-lg">
                                 <span>For More Info : </span>
                                 <span className="ml-2 text-purple-400">
-                                    <a href={anime[0].url} target="_blank" className="underline-offset-0">MyAnimeList</a>
+                                    <a href={anime[0]?.url} target="_blank" className="underline-offset-0">MyAnimeList</a>
                                 </span>
                             </div>
                         </div>
                     </div>
+                    {anime[0]?.synopsis &&
                     <div className="synopsis w-[90%] mx-auto flex flex-col gap-4">
                         <h2 className="text-3xl font-bold">Synopsis</h2>
 
@@ -189,25 +190,26 @@ const AnimeContent = () => {
                                 }`}
                         >
                             <p className="text-lg pr-2 ">
-                                {anime[0].synopsis}
+                                {anime[0]?.synopsis}
                             </p>
 
                             {/* fade overlay when collapsed */}
-                            {(!toggle && anime[0].synopsis.length > 700) && (
+                            {(!toggle && anime[0]?.synopsis?.length > 700) && (
                                 <div className="absolute bottom-0 left-0 w-full h-12 bg-linear-to-t from-black to-transparent pointer-events-none" />
                             )}
                         </div>
 
-                        {anime[0].synopsis.length > 700 && <button
+                        {anime[0]?.synopsis?.length > 700 && <button
                             onClick={() => setToggle(!toggle)}
                             className="self-end text-red-400 hover:text-red-300 transition"
                         >
                             {toggle ? "Read Less" : "Read More"}
                         </button>}
                     </div>
-                    {anime[0].trailer.embed_url && (
+                }
+                    {anime[0]?.trailer?.embed_url && (
 
-                        <iframe src={anime[0].trailer.embed_url || ""} className=" block md:w-200 md:h-100 w-[90%] h-60 mx-auto my-10"
+                        <iframe src={anime[0]?.trailer?.embed_url || ""} className=" block md:w-200 md:h-100 w-[90%] h-60 mx-auto my-10"
                             allowFullScreen
                         >
 
