@@ -22,7 +22,7 @@ function MyListContent() {
     }, [page]);
 
     return (
-        <main className="w-full min-h-screen pt-10">
+        <main className="w-full min-h-screen ">
             {loading && <Loader />}
 
             {!loading && (

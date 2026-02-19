@@ -13,7 +13,7 @@ const Genres = () => {
           {genres.length === 0 ? (
         <p className="text-center mt-10">Loading genres...</p>
       ) : (
-        <div className=" w-[80%] p-4 pb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mx-auto my-10">
+        <div className=" md:w-[80%] w-[95%] py-4 px-2 pb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mx-auto">
           {genres?.map((genre: Genre) => (
             <Link   href={`/genres/${genre.mal_id}`} key={genre.mal_id} className="border p-4 rounded-lg hover:shadow-lg transition-shadow">
               <h2 className="text-sm md:text-lg font-semibold">{genre.name}</h2>

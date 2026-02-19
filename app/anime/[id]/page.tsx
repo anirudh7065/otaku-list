@@ -39,6 +39,21 @@ const AnimeContent = () => {
         anime?.[0]?.broadcast.day ?? null,
         anime?.[0]?.broadcast.time ?? null
     );
+    const downloadImage = async () => {
+        const url = anime[0]?.images?.jpg?.large_image_url;
+        const res = await fetch(url);
+        const blob = await res.blob();
+
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = blobUrl;
+        a.download = `${anime[0]?.title}.jpg`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(blobUrl);
+    };
+
 
 
 
@@ -64,9 +79,16 @@ const AnimeContent = () => {
                     <div className="main w-[90%] min-h-96 flex max-md:flex-col justify-center items-start my-10 gap-10 mx-auto">
                         <div className="md:w-[20%] w-full h-full">
                             <Image src={anime[0]?.images?.webp?.image_url || anime[0]?.images?.jpg?.image_url} alt={anime[0]?.title} width={300} height={300} className={`w-full aspect-auto min-h-[90%] object-cover `} onClick={() => setZoom(!zoom)} />
-                            {zoom && <div className="size-screen bg-black/70 fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-100" >
+                            {zoom && <div className="size-screen bg-black/70 fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-100 flex-col gap-2" >
                                 <button className="size-8 rounded-full text-xl font-bold absolute top-4 right-4 shadow-lg shadow-black md:right-1/3 bg-white text-black" onClick={() => setZoom(!zoom)}>X</button>
-                                <Image src={anime[0]?.images?.jpg?.large_image_url||anime[0]?.images?.jpg?.large_image_url} alt={anime[0]?.title} width={500} height={500} className={`aspect auto object-contain `} />
+                                <Image src={anime[0]?.images?.jpg?.large_image_url || anime[0]?.images?.jpg?.large_image_url} alt={anime[0]?.title} width={500} height={500} className={`aspect auto object-contain `} />
+                                <button
+                                    onClick={downloadImage}
+                                    className="px-4 py-2 bg-white text-xl text-black font-bold rounded-3xl"
+                                >
+                                    Download
+                                </button>
+
                             </div>}
                             <span className="flex justify-center items-center gap-1.5 text-xl w-full bg-purple-950">
                                 Score:

@@ -53,10 +53,10 @@ function SeasonalListContent() {
     return (
         <div className="pt-10">
 
-            <div className="w-full flex max-md:flex-col justify-center items-center pb-12 gap-4">
+            <div className="w-full flex max-md:flex-col justify-center items-center gap-4">
 
                 <select
-                    className="w-full max-w-sm rounded-lg border scrollbar-custom  bg-transparent p-2.5 text-sm"
+                    className="w-full max-w-sm max-md:w-[90%] rounded-lg border scrollbar-custom  bg-transparent p-2.5 text-sm"
                     value={draftSeason}
                     onChange={(e) => setDraftSeason(e.target.value as seasonalAnime)}
                 >
@@ -67,7 +67,7 @@ function SeasonalListContent() {
                 </select>
 
                 <select
-                    className="w-full max-w-sm rounded-lg border scrollbar-custom bg-transparent p-2.5 text-sm"
+                    className="w-full max-w-sm max-md:w-[90%] rounded-lg border scrollbar-custom bg-transparent p-2.5 text-sm"
                     value={draftYear}
                     onChange={(e) => setDraftYear(parseInt(e.target.value))}
                 >

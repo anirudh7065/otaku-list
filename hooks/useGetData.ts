@@ -32,19 +32,23 @@ const useGetData = ({
   id,
   season,
   year,
-  
+  query,
+  cache = "long",
 }: {
   url: string;
   page?: number;
   id?: number;
   season?: string;
   year?: number;
+  query?: string;
+  cache?: "long" | "none";
 }) => {
   const params = new URLSearchParams({
     ...(page && { page: String(page) }),
     ...(id && { id : String(id) }),
     ...(season && { season }),
     ...(year && { year: String(year) }),
+    ...(query && { query }),
   });
   
   const key = `${url}?${params}`;
@@ -53,12 +57,8 @@ const useGetData = ({
 
   const { data, error, isLoading } = useSWR(debouncedKey, fetcher, {
     revalidateOnFocus: false,
-    dedupingInterval: 60 * 60 * 1000,
+    dedupingInterval: cache === "none" ? 0 : 3600000,
   });
-  console.log(error);
-
-
-
 
 
   if (url === "/api/fetchSchedule") return { anime: data, error:error, loading: isLoading };

@@ -18,8 +18,8 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
   return (
       <div className="cursor-pointer select-none ">
           <div className="py-4 w-full flex justify-center items-center" >
-              {genre && <ArrowBigLeftDash className="size-10 ml-10" onClick={()=>router.back()} />}
-              <span className={`w-full font-bold text-center ${schedule ? "text-2xl my-6 bg-purple-900 py-2 " : "text-4xl"}`}>
+              {genre && <ArrowBigLeftDash className="size-10 ml-10 py-5" onClick={()=>router.back()} />}
+              <span className={`w-full max-md:text-[25px] md:text-4xl py-5 font-bold text-center ${schedule ? "text-2xl my-6 bg-purple-900 py-2 " : "text-4xl"}`}>
               {title}
               </span>
           </div>

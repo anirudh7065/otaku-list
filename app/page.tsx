@@ -6,9 +6,10 @@ import Loader from "@/components/Loader";
 import useGetData from "@/hooks/useGetData";
 import { usePageQuery } from "@/hooks/usePageQuery";
 import { Suspense } from "react";
+
 // import ErrorPage from "./error";
 function HomeContent() {
-
+  
   const { page, setPage } = usePageQuery();
 
 
@@ -28,7 +29,7 @@ function HomeContent() {
   
 
   return (
-    <main className="w-full min-h-screen pt-10">
+    <main className="w-full min-h-screen">
 
 
       {loading && <Loader />}
@@ -47,11 +48,9 @@ function HomeContent() {
 }
 
 export default function Home() {
-
   return (
 
     <Suspense fallback={<Loader />}>
-
       <HomeContent />
 
     </Suspense>
