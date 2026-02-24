@@ -8,11 +8,7 @@ import { usePageQuery } from "@/hooks/usePageQuery";
 import { Suspense } from "react";
 import Loader from "@/components/Loader";
 import { notFound } from 'next/navigation';
-
-type Genre = {
-    mal_id: number;
-    name: string;
-}
+import { Genres } from '@/types/genreType';
 
 const GenreAnimeContent = () => {
     const param = useParams();
@@ -27,7 +23,7 @@ const GenreAnimeContent = () => {
 
 
     const { anime, maxPages,error, loading } = useGetData({
-        url: "/api/fetchGenres",
+        url: "/api/fetchGenresByID",
         page, id
     });
 
@@ -50,7 +46,7 @@ const GenreAnimeContent = () => {
           {!loading && (
         <AnimeListItems
                   genre={true}
-                  title={genres.find((genre: Genre) => genre.mal_id === parsedId)?.name || 'Genre'}
+                  title={genres.find((genre: Genres) => genre.mal_id === parsedId)?.name || 'Genre'}
                   page={page}
                   anime={anime}
                   setPage={setPage}

@@ -25,7 +25,6 @@ const Navbar = () => {
           <Link href={"/"} className="cursor-pointer">Home</Link>
           <Link href={"/season"} className="cursor-pointer">Season</Link>
           <Link href={"/genres"} className="cursor-pointer">Genres</Link>
-          <Link href={"/top"} className="cursor-pointer">Top</Link>
           <Link href={"/schedules"} className="cursor-pointer">Schedule</Link>
           <Link href={"/mylist"} className="cursor-pointer">My List</Link>
 

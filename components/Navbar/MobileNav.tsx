@@ -38,7 +38,6 @@ const MobileNav = () => {
           <Link href="/">Home</Link>
           <Link href="/season">Season</Link>
           <Link href="/genres">Genres</Link>
-          <Link href="/top">Top</Link>
           <Link href="/schedules">Schedule</Link>
           <Link href="/mylist">My List</Link>
         </nav>

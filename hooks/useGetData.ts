@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useSWR from "swr";
 import type { newPost } from "@/types/newPost";
+import type { GenreData } from "@/types/genreType";
 
 
 const fetcher = async (url: string) => {
@@ -62,7 +63,7 @@ const useGetData = ({
 
 
   if (url === "/api/fetchSchedule") return { anime: data, error:error, loading: isLoading };
-
+  if(url === "/api/fetchGenres") return { genres: data?.data as GenreData, error:error, loading: isLoading };
     return {
       anime: (data?.data ?? []) as newPost[],
       maxPages: data?.maxPage ?? 1,

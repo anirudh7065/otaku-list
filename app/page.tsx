@@ -15,7 +15,7 @@ function HomeContent() {
 
 
   const { anime, maxPages, loading,error } = useGetData({
-    url: "/api/fetchAnime",
+    url: "/api/fetchTopAnime",
     page,
   });
 
@@ -36,7 +36,7 @@ function HomeContent() {
 
       {!loading && (
         <AnimeListItems
-          title="All Anime"
+          title="Top Anime"
           page={page}
           anime={anime}
           setPage={setPage}

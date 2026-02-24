@@ -58,7 +58,7 @@ export async function GET(req: NextRequest) {
       { status: 400 },
     );
   }
-  const apiUrl = `${baseUrl}/seasons/${year}/${season}?page=${page}&sfw=true`;
+  const apiUrl = `${baseUrl}/seasons/${year}/${season}?page=${page}&sfw=true&order_by=members&sort=desc`;
 
   try {
     let response = await fetch(apiUrl, { next: { revalidate: 3600 } });
