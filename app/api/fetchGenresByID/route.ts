@@ -1,9 +1,8 @@
-import { NextResponse,NextRequest } from 'next/server';
+import { NextResponse, NextRequest } from "next/server";
 
 export const revalidate = 3600;
 
-
-const RATE_LIMIT = 30;
+const RATE_LIMIT = 40;
 const WINDOW = 60 * 1000; // 1 minute
 
 const ipStore = new Map<string, { count: number; reset: number }>();
@@ -23,55 +22,81 @@ function rateLimit(ip: string) {
   return true;
 }
 export async function GET(req: NextRequest) {
-    const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
-  
-    if (!rateLimit(ip)) {
-      return NextResponse.json({ message: "Too many requests" }, { status: 429 });
-    }
-    const baseUrl = process.env.BASE_URL;
-    const id = Number(req.nextUrl.searchParams.get('id') ?? 2);
-      let page = Number(req.nextUrl.searchParams.get("page") ?? 1);
-      if (
-        !page ||
-        Number.isNaN(page) ||
-        page < 1 ||
-        page > Number.MAX_SAFE_INTEGER ||
-        !Number.isFinite(page)
-      )
-        page = 1;
-      page = Math.floor(page);
-    const apiUrl = `${baseUrl}/anime?genres=${id}&page=${page}&order_by=members&sort=desc`;
-    try {
-    let response = await fetch(apiUrl,{next:{revalidate: 3600}});
-    if (!response.ok) {
-        return NextResponse.json({ error: 'Failed to fetch genres' }, { status: response.status });
-    }
-        let data = await response.json();
-            if (page > data.pagination.last_visible_page) {
-              page = data.pagination.last_visible_page;
-              response = await fetch(`${baseUrl}/anime?page=${page}&sfw=true`, {
-                next: { revalidate: 3600 },
-              });
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 10000);
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
 
-              data = await response.json();
-            } 
-        return NextResponse.json({ data: data.data, maxPage: data.pagination.last_visible_page ,page:page});
-    } catch (error) {
-      console.log(error);
-      if (error instanceof Error) {
-        return NextResponse.json(
-          {
-            message:
-              error.message === "fetch failed"
-                ? "Internal Server Error"
-                : error.message,
-          },
-          { status: 500 },
-        );
-      } else
-        return NextResponse.json(
-          { message: "Internal Server Error" },
-          { status: 500 },
-        );
+  if (!rateLimit(ip)) {
+    return NextResponse.json({ message: "Too many requests" }, { status: 429 });
+  }
+  const baseUrl = process.env.BASE_URL;
+  const id = Number(req.nextUrl.searchParams.get("id") ?? 2);
+  let page = Number(req.nextUrl.searchParams.get("page") ?? 1);
+  if (
+    !page ||
+    Number.isNaN(page) ||
+    page < 1 ||
+    page > Number.MAX_SAFE_INTEGER ||
+    !Number.isFinite(page)
+  )
+    page = 1;
+  page = Math.floor(page);
+  const apiUrl = `${baseUrl}/anime?genres=${id}&page=${page}&order_by=members&sort=desc`;
+  try {
+    let response = await fetch(apiUrl, {
+      next: { revalidate: 3600 },
+      headers: {
+        "User-Agent": "my-nextjs-anime-app",
+        Accept: "application/json",
+      },
+      signal: controller.signal,
+    });
+    clearTimeout(timeout);
+    if (!response.ok) {
+      return NextResponse.json(
+        { error: "Failed to fetch genres" },
+        { status: response.status },
+      );
     }
+    let data = await response.json();
+    if (page > data.pagination.last_visible_page) {
+      page = data.pagination.last_visible_page;
+      response = await fetch(
+        `${baseUrl}/anime?genres=${id}&page=${page}&limit=12&order_by=members&sort=desc`,
+        {
+          headers: {
+            "User-Agent": "my-nextjs-anime-app",
+            Accept: "application/json",
+          },
+          signal: controller.signal,
+          next: { revalidate: 3600 },
+        },
+      );
+
+      data = await response.json();
+    }
+    clearTimeout(timeout);
+    return NextResponse.json({
+      data: data.data,
+      maxPage: data.pagination.last_visible_page,
+      page: page,
+    });
+  } catch (error) {
+    console.log(error);
+    if (error instanceof Error) {
+      return NextResponse.json(
+        {
+          message:
+            error.message === "fetch failed"
+              ? "Internal Server Error"
+              : error.message,
+        },
+        { status: 500 },
+      );
+    } else
+      return NextResponse.json(
+        { message: "Internal Server Error" },
+        { status: 500 },
+      );
+  }
 }
