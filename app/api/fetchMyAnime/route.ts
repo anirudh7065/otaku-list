@@ -23,13 +23,13 @@ function rateLimit(ip: string) {
   return true;
 }
 export async function GET(req: NextRequest) {
-        const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
       
-        if (!rateLimit(ip)) {
-          return NextResponse.json({ message: "Too many requests" }, { status: 429 });
-        }
+  if (!rateLimit(ip)) {
+    return NextResponse.json({ message: "Too many requests" }, { status: 429 });
+  }
   try {
-      
+
     const maxPage = Math.ceil((anime as newPost[]).length / 25);
     const page = Number(req.nextUrl.searchParams.get("page") ?? 1) > maxPage ? maxPage : Number(req.nextUrl.searchParams.get("page") ?? 1);
     const res = (anime as newPost[]).slice((page - 1) * 25, page * 25);

@@ -17,9 +17,9 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
 
   return (
       <div className="cursor-pointer select-none ">
-          <div className="py-4 w-full flex justify-center items-center" >
-              {genre && <ArrowBigLeftDash className="size-10 ml-10 py-5" onClick={()=>router.back()} />}
-              <span className={`w-full max-md:text-[25px] md:text-4xl py-5 font-bold text-center ${schedule ? "text-2xl my-6 bg-purple-900 py-2 " : "text-4xl"}`}>
+          <div className={`py-4 ${schedule ? " " : "px-15"} w-full flex justify-center gap-15 items-center mx-auto`} >
+              {genre && <ArrowBigLeftDash className="size-14  max-md:hidden" onClick={()=>router.back()} />}
+              <span className={` w-full font-bold text-center ${schedule ? "text-2xl my-6 bg-purple-900 py-2 " : "text-4xl py-5"}`}>
               {title}
               </span>
           </div>
@@ -37,7 +37,7 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
                       onClick={() => router.push(`/anime/${item.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
                       >
                       <Image
-                          src={item.images.webp.image_url || item.images.jpg.image_url || item.images.webp.medium_image_url || item.images.jpg.medium_image_url || ""}
+                          src={item.images.webp.medium_image_url || item.images.jpg.medium_image_url ||item.images.webp.image_url || ""}
                           alt={item.title}
                           sizes="(max-width: 768px) 120px, 300px"
                           width={300}

@@ -17,7 +17,7 @@ export default function ScheduleContent() {
 
   return (
     <main className="pt-10 pb-20">
-      <h1 className="w-full text-3xl font-bold text-center">Schedule</h1>
+      <h1 className="w-full text-4xl font-bold text-center">Schedule</h1>
       {loading && <Loader />}
 
       {!loading && Object.entries(anime ?? {}).map(([day, val]) => (
