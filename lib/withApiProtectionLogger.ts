@@ -51,6 +51,18 @@ export function withApiProtectionLogger(
         body = "non-json-response";
       }
 
+      let summary: unknown = body;
+
+      if (
+        body &&
+        typeof body === "object" &&
+        "data" in body &&
+        Array.isArray(body.data) &&
+        body.data.length > 0
+      ) {
+        summary = body.data[0];
+      }
+
       console.log({
         layer: "api",
         timestamp: ist(),
@@ -59,7 +71,7 @@ export function withApiProtectionLogger(
         path: req.nextUrl.pathname,
         status: res.status,
         duration: `${Date.now() - start}ms`,
-        response: body.data[0].title ?? body,
+        response: summary,
       });
 
       return res;
