@@ -1,34 +1,9 @@
 import { NextResponse, NextRequest } from "next/server";
+import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
 
 export const revalidate = 3600;
 
-const RATE_LIMIT = 40;
-const WINDOW = 60 * 1000; // 1 minute
-
-const ipStore = new Map<string, { count: number; reset: number }>();
-
-function rateLimit(ip: string) {
-  const now = Date.now();
-  const entry = ipStore.get(ip);
-
-  if (!entry || now > entry.reset) {
-    ipStore.set(ip, { count: 1, reset: now + WINDOW });
-    return true;
-  }
-
-  if (entry.count >= RATE_LIMIT) return false;
-
-  entry.count++;
-  return true;
-}
-export async function GET(req: NextRequest) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 10000);
-  const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
-
-  if (!rateLimit(ip)) {
-    return NextResponse.json({ message: "Too many requests" }, { status: 429 });
-  }
+export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const baseUrl = process.env.BASE_URL;
   const id = Number(req.nextUrl.searchParams.get("id") ?? 2);
   let page = Number(req.nextUrl.searchParams.get("page") ?? 1);
@@ -45,13 +20,7 @@ export async function GET(req: NextRequest) {
   try {
     let response = await fetch(apiUrl, {
       next: { revalidate: 3600 },
-      headers: {
-        "User-Agent": "my-nextjs-anime-app",
-        Accept: "application/json",
-      },
-      signal: controller.signal,
     });
-    clearTimeout(timeout);
     if (!response.ok) {
       return NextResponse.json(
         { error: "Failed to fetch genres" },
@@ -64,25 +33,19 @@ export async function GET(req: NextRequest) {
       response = await fetch(
         `${baseUrl}/anime?genres=${id}&page=${page}&limit=12&order_by=members&sort=desc`,
         {
-          headers: {
-            "User-Agent": "my-nextjs-anime-app",
-            Accept: "application/json",
-          },
-          signal: controller.signal,
           next: { revalidate: 3600 },
         },
       );
 
       data = await response.json();
     }
-    clearTimeout(timeout);
     return NextResponse.json({
       data: data.data,
       maxPage: data.pagination.last_visible_page,
       page: page,
     });
   } catch (error) {
-    console.log(error);
+    console.error(error);
     if (error instanceof Error) {
       return NextResponse.json(
         {
@@ -99,4 +62,4 @@ export async function GET(req: NextRequest) {
         { status: 500 },
       );
   }
-}
+});

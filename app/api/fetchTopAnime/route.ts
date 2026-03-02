@@ -1,33 +1,8 @@
 import { NextResponse, NextRequest } from "next/server";
-
+import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
 export const revalidate = 3600;
 
-const RATE_LIMIT = 30;
-const WINDOW = 60 * 1000; // 1 minute
-
-const ipStore = new Map<string, { count: number; reset: number }>();
-
-function rateLimit(ip: string) {
-  const now = Date.now();
-  const entry = ipStore.get(ip);
-
-  if (!entry || now > entry.reset) {
-    ipStore.set(ip, { count: 1, reset: now + WINDOW });
-    return true;
-  }
-
-  if (entry.count >= RATE_LIMIT) return false;
-
-  entry.count++;
-  return true;
-}
-
-export async function GET(req: NextRequest) {
-  const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
-
-  if (!rateLimit(ip)) {
-    return NextResponse.json({ message: "Too many requests" }, { status: 429 });
-  }
+export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const baseUrl = process.env.BASE_URL;
   let page = Number(req.nextUrl.searchParams.get("page") ?? 1);
   if (
@@ -46,7 +21,7 @@ export async function GET(req: NextRequest) {
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error("Kitsu API Response Error:", errorText);
+      console.error("Jikan API Response Error:", errorText);
       return NextResponse.json(
         { error: "Failed to fetch anime data" },
         { status: response.status },
@@ -69,17 +44,21 @@ export async function GET(req: NextRequest) {
       page: page,
     });
   } catch (error) {
-    console.log(error)
+    console.error(error);
     if (error instanceof Error) {
       return NextResponse.json(
         {
-          message: error.message === "fetch failed" ? "Internal Server Error" : error.message
+          message:
+            error.message === "fetch failed"
+              ? "Internal Server Error"
+              : error.message,
         },
         { status: 500 },
       );
-    } else return NextResponse.json(
-      { message: "Internal Server Error" },
-      { status: 500 },
-    );
+    } else
+      return NextResponse.json(
+        { message: "Internal Server Error" },
+        { status: 500 },
+      );
   }
-}
+});

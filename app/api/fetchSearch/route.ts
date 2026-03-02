@@ -1,34 +1,10 @@
 import { NextResponse, NextRequest } from "next/server";
 import type { newPost } from "@/types/newPost";
+import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
 
 export const revalidate = 3600;
 
-const RATE_LIMIT = 30;
-const WINDOW = 60 * 1000; // 1 minute
-
-const ipStore = new Map<string, { count: number; reset: number }>();
-
-function rateLimit(ip: string) {
-  const now = Date.now();
-  const entry = ipStore.get(ip);
-
-  if (!entry || now > entry.reset) {
-    ipStore.set(ip, { count: 1, reset: now + WINDOW });
-    return true;
-  }
-
-  if (entry.count >= RATE_LIMIT) return false;
-
-  entry.count++;
-  return true;
-}
-
-export async function GET(req: NextRequest) {
-  const ip = req.headers.get("x-forwarded-for")?.split(",")[0] || "unknown-ip";
-
-  if (!rateLimit(ip)) {
-    return NextResponse.json({ message: "Too many requests" }, { status: 429 });
-  }
+export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const baseUrl = process.env.BASE_URL;
   const query = String(req.nextUrl.searchParams.get("query") ?? "");
 
@@ -59,13 +35,15 @@ export async function GET(req: NextRequest) {
     let data = await response.json();
     if (page > data.pagination.last_visible_page) {
       page = data.pagination.last_visible_page;
-      response = await fetch(`${baseUrl}/anime?q=${query}&page=${page}&sfw=true`, {
-        next: { revalidate: 3600 },
-      });
+      response = await fetch(
+        `${baseUrl}/anime?q=${query}&page=${page}&sfw=true`,
+        {
+          next: { revalidate: 3600 },
+        },
+      );
 
       data = await response.json();
     }
-    
 
     return NextResponse.json({
       data: data.data as newPost[],
@@ -73,7 +51,7 @@ export async function GET(req: NextRequest) {
       page: page,
     });
   } catch (error) {
-    console.log(error);
+    console.error(error);
     if (error instanceof Error) {
       return NextResponse.json(
         {
@@ -90,4 +68,4 @@ export async function GET(req: NextRequest) {
         { status: 500 },
       );
   }
-}
+});

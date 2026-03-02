@@ -1,6 +1,12 @@
+'use client'
 import Link from "next/link"
+import { useEffect } from "react"
+import { clientLog } from "@/lib/clientLogger"
 
-export default function NotFound(){
+export default function NotFound() {
+      useEffect(() => {
+          clientLog('error', '404 page not found')
+      }, [])
   return (
     <main className='w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-5'>
 

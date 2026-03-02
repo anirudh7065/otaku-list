@@ -23,7 +23,7 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
               {title}
               </span>
           </div>
-          <div className="flex flex-wrap justify-center gap-6 max-w-full  mx-auto">
+          <div className="flex flex-wrap justify-center md:gap-6 gap-4 max-w-full  mx-auto">
 
               {anime?.length === 0 && <div className="flex justify-center items-center h-screen w-full">
                   <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
@@ -32,7 +32,7 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
               {anime?.map((item, index) => (
                   <div key={index}>
                   <div
-                      className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 hover:scale-[1.02] h-50 w-40 hover:ring-3 hover:ring-purple-400 md:w-70 md:h-105 max-md:overflow-hidden
+                      className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 hover:scale-[1.02] h-56 w-42 hover:ring-3 hover:ring-purple-400 md:w-70 md:h-105 max-md:overflow-hidden relative
                       "
                       onClick={() => router.push(`/anime/${item.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
                       >
@@ -44,9 +44,9 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
                           height={300}
                           priority={index<6}
                           fetchPriority="high"
-                          className="h-[80%] md:h-84 md:w-full  md:p-4  object-cover bg-linear-to-br from-black via-gray-700  to-black rounded-t-xl transform-[translateZ(0)] will-change-transform "
+                          className="h-full md:h-84 w-full  md:p-4  object-cover bg-linear-to-br from-black via-gray-700  to-black rounded-t-xl transform-[translateZ(0)] will-change-transform "
                           />
-                      <h2 className="md:text-lg text-xs md:px-1 font-bold text-center  border-t-4 py-2 border-purple-700 w-full md:h-18 overflow-hidden max-md:line-clamp-1 h-7 line-clamp-2">{item.title}</h2>
+                          <div className="md:text-[15px] text-xs md:px-1 text-center  md:border-t-4 md:py-3 py-2 border-purple-700  w-full md:h-18 overflow-hidden  h-12 max-md:relative max-md:bottom-12 max-md:bg-black/80 max-md:z-10 line-clamp-2"><span className="w-full line-clamp-2 font-bold ">{item.title}</span></div>
                   </div>
                  {item.airing && schedule && < AnimeCountdown  day={item?.broadcast.day ?? ""} time={item.broadcast.time || ""} />}
                 </div>
