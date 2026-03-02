@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "cdn.myanimelist.net",
         pathname: "/**",
+      },{
+        protocol: "https",
+        hostname: "myanimelist.net",
+        pathname: "/**",
       },
     ],
   },
