@@ -25,16 +25,7 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
     });
 
     const visibleResults = query.trim()
-        ? anime
-            .filter((a: newPost) => {
-                const q = query.toLowerCase();
-                return (
-                    a.title?.toLowerCase().startsWith(q) ||
-                    a.title_english?.toLowerCase().startsWith(q) ||
-                    a.title_japanese?.startsWith(query)
-                );
-            })
-            .slice(0, 5)
+        ? anime.slice(0, 5)
         : [];
 
     const closeSearch = () => {
@@ -97,14 +88,22 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
             ref={containerRef}
             className={`md:max-w-xl md:w-lg mx-auto max-sm:mt-4 relative z-50 max-sm:w-[90%] ${cls}`}
         >
-            <div className="relative">
+            <form
+                className="relative"
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    submitSearch();
+                }}
+            >
                 <input
                     value={query}
                     onChange={(e) => {
                         setQuery(e.target.value);
                         setActiveIndex(-1);
                     }}
-                    type="text"
+                    type="search"
+                    enterKeyHint="search"
+
                     onKeyDown={handleKeyDown}
                     placeholder="Search anime..."
                     className="w-full px-4 pr-10 py-2  border rounded-xl text-white border-gray-700 bg-zinc-900 focus:outline-none"
@@ -130,7 +129,7 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
                         />
                     </svg>
                 </button>
-            </div>
+            </form>
 
 
             {loading && query && (
@@ -143,7 +142,7 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
                 <ul className="absolute left-0 right-0 mt-2 bg-zinc-900 border border-zinc-700 rounded-xl shadow-xl max-h-100  overflow-hidden">
                     {visibleResults.map((anime: newPost, i: number) => (
                         <li
-                            key={anime.mal_id}
+                            key={i}
                             onClick={() => goToAnime(anime.mal_id)}
                             className={`flex items-center gap-3 p-3 cursor-pointer  ${i === activeIndex
                                 ? "bg-purple-700 text-white "

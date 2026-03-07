@@ -1,15 +1,24 @@
 'use client';
 
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
 import Loader from "@/components/Loader";
 import useGetData from "@/hooks/useGetData";
 import { usePageQuery } from "@/hooks/usePageQuery";
 import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+
+
 
 type seasonalAnime = "winter" | "spring" | "summer" | "fall";
 
 function SeasonalListContent() {
+    const searchParams = useSearchParams();
+
+const seasonParam = searchParams.get("season") as seasonalAnime;
+    const yearParam = searchParams.get("year");
+    
     const date = new Date();
     const currentYear = date.getFullYear();
 
@@ -20,11 +29,29 @@ function SeasonalListContent() {
             date.getMonth() <= 5 ? "spring" :
                 date.getMonth() <= 8 ? "summer" : "fall";
 
-    const [season, setSeason] = useState<seasonalAnime>(seasonOptions);
-    const [year, setYear] = useState(currentYear);
+    const validSeasons: seasonalAnime[] = ["winter", "spring", "summer", "fall"];
 
-    const [draftSeason, setDraftSeason] = useState<seasonalAnime>(seasonOptions);
-    const [draftYear, setDraftYear] = useState(currentYear);
+    let season: seasonalAnime = seasonOptions;
+    let year: number = currentYear;
+
+    if (yearParam !== null && yearParam.trim() !== "") {
+        const parsedYear = Number(yearParam);
+
+        if (Number.isFinite(parsedYear)) {
+            if (parsedYear > currentYear) {
+                year = currentYear;
+                season = seasonOptions;
+            } else if (parsedYear >= 1917) {
+                year = parsedYear;
+            }
+        }
+    }
+
+    if (seasonParam && validSeasons.includes(seasonParam)) {
+        season = seasonParam;
+    }
+    const [draftSeason, setDraftSeason] = useState<seasonalAnime>(season);
+    const [draftYear, setDraftYear] = useState(year);
 
     const { anime, maxPages, loading,error } = useGetData({
         url: "/api/fetchSeasonalAnime",
@@ -36,7 +63,7 @@ function SeasonalListContent() {
     if (error) {
         throw new Error(error);
     }
-
+    
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, [page]);
@@ -44,10 +71,17 @@ function SeasonalListContent() {
     const years: number[] = [];
     for (let i = 1917; i <= currentYear; i++) years.push(i);
 
+
+    const router = useRouter();
+
     const handleSearch = () => {
-        setSeason(draftSeason);
-        setYear(draftYear);
-        setPage(1);
+        const params = new URLSearchParams(window.location.search);
+
+        params.set("season", draftSeason);
+        params.set("year", draftYear.toString());
+        params.set("page", "1");
+
+        router.replace("?" + params.toString());
     };
 
     return (

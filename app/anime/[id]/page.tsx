@@ -69,7 +69,7 @@ const AnimeContent = () => {
             {!loading && (
                 <>
                     <div className="title w-full flex items-center px-18">
-                        <ArrowBigLeftDash className="size-12  max-md:hidden cursor-pointer" onClick={() => router.push(url.pathname + url.search)} />
+                        <ArrowBigLeftDash className="size-12  max-md:hidden cursor-pointer" onClick={() => router.push(url.pathname + url.search, { scroll: false })} />
                         <div className="w-[90%] text-center mx-auto ">
 
                             <h1 className="text-center text-2xl max-md:text-xl text-purple-300 max-md:pb-2 max-md:border-b-2">{anime[0]?.title}</h1>

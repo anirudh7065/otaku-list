@@ -1,7 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
 
-export const revalidate = 3600;
+export const revalidate = 36000;
 
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const baseUrl = process.env.BASE_URL;

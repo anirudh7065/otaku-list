@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
-export const revalidate = 3600;
+export const revalidate = 36000;
 
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const baseUrl = process.env.BASE_URL;
@@ -14,7 +14,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   )
     page = 1;
   page = Math.floor(page);
-  const apiUrl = `${baseUrl}/top/anime?page=${page}&sfw=true`;
+  let apiUrl = `${baseUrl}/top/anime?page=${page}&sfw=true`;
 
   try {
     let response = await fetch(apiUrl, { next: { revalidate: 3600 } });
@@ -31,7 +31,8 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
     let data = await response.json();
     if (page > data.pagination.last_visible_page) {
       page = data.pagination.last_visible_page;
-      response = await fetch(`${baseUrl}/anime?page=${page}&sfw=true`, {
+      apiUrl = `${baseUrl}/top/anime?page=${page}&sfw=true`;
+      response = await fetch(apiUrl, {
         next: { revalidate: 3600 },
       });
 
