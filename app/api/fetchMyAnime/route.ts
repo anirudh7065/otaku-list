@@ -1,24 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { readFile } from "fs/promises";
 import type { newPost } from "@/types/newPost";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
-import { fileURLToPath } from "url";
-import { dirname, join } from "path";
+import anime from "./anime_data.json";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+export const dynamic = "force-static";
 
-async function readJSON(path: string, fallback = []) {
-  try {
-    const data = await readFile(join(__dirname, path), "utf8");
-    if (!data.trim()) return fallback;
-    return JSON.parse(data);
-  } catch {
-    return fallback;
-  }
-}
+
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
-  const anime = await readJSON("/anime_data.json");
   try {
     const maxPage = Math.ceil((anime as newPost[]).length / 25);
     const page =
