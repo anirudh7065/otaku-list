@@ -47,7 +47,7 @@ const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false,
                           onClick={() => router.push(`/anime/${anime.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
                       >
                       <Image
-                              src={anime.images.webp.medium_image_url || anime.images.jpg.medium_image_url || anime.images.webp.image_url || ""}
+                              src={anime.images.webp.image_url|| anime.images.jpg.image_url || anime.images.webp.image_url || ""}
                               alt={anime.title}
                           sizes="(max-width: 768px) 120px, 300px"
                           width={300}

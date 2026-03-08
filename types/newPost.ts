@@ -1,66 +1,23 @@
-type ImageSet = {
-  image_url: string | null;
-  small_image_url: string | null;
-  medium_image_url?: string | null;
-  large_image_url: string | null;
-  maximum_image_url?: string | null;
-};
+export interface newPost {
+  mal_id: number;
+  url: string;
 
-type Images = {
-  jpg: ImageSet;
-  webp: ImageSet;
-};
-
-type Trailer = {
-  youtube_id: string | null;
-  url: string | null;
-  embed_url: string | null;
-  images: ImageSet;
-};
-
-type Title = {
-  type: string;
-  title: string;
-};
-
-type AiredPropDate = {
-  day: number | null;
-  month: number | null;
-  year: number | null;
-};
-
-type Aired = {
-  from: string | null;
-  to: string | null;
-  prop: {
-    from: AiredPropDate;
-    to: AiredPropDate;
+  images: {
+    jpg: ImageSet;
+    webp: ImageSet;
   };
-  string: string;
-};
 
-type Broadcast = {
-  day: string | null;
-  time: string | null;
-  timezone: string | null;
-  string: string | null;
-};
+  trailer: {
+    youtube_id: string | null;
+    url: string | null;
+    embed_url: string | null;
+    images: TrailerImages;
+  };
 
-type EntityRef = {
-  mal_id: number;
-  type: string;
-  name: string;
-  url: string;
-};
-
-export type newPost = {
-  mal_id: number;
-  url: string;
-  images: Images;
-  trailer: Trailer;
   approved: boolean;
 
   titles: Title[];
+
   title: string;
   title_english: string | null;
   title_japanese: string | null;
@@ -68,33 +25,117 @@ export type newPost = {
 
   type: string;
   source: string;
+
   episodes: number | null;
+
   status: string;
   airing: boolean;
 
-  aired: Aired;
-  duration: string | null;
-  rating: string | null;
+  aired: {
+    from: string | null;
+    to: string | null;
+    prop: {
+      from: DateProp;
+      to: DateProp;
+    };
+    string: string;
+  };
+
+  duration: string;
+  rating: string;
 
   score: number | null;
-  scored_by: number | null;
+  scored_by: number;
   rank: number | null;
-  popularity: number | null;
-  members: number | null;
-  favorites: number | null;
+  popularity: number;
+  members: number;
+  favorites: number;
 
   synopsis: string | null;
   background: string | null;
 
   season: string | null;
   year: number | null;
-  broadcast: Broadcast;
 
-  producers: EntityRef[];
-  licensors: EntityRef[];
-  studios: EntityRef[];
-  genres: EntityRef[];
-  explicit_genres: EntityRef[];
-  themes: EntityRef[];
-  demographics: EntityRef[];
-};
+  broadcast: {
+    day: string | null;
+    time: string | null;
+    timezone: string | null;
+    string: string | null;
+  };
+
+  producers: Company[];
+  licensors: Company[];
+  studios: Company[];
+
+  genres: Genre[];
+  explicit_genres: Genre[];
+  themes: Genre[];
+  demographics: Genre[];
+
+  relations: Relation[];
+
+  theme: {
+    openings: string[];
+    endings: string[];
+  };
+
+  external: ExternalLink[];
+  streaming: ExternalLink[];
+}
+
+interface ImageSet {
+  image_url: string;
+  small_image_url: string;
+  large_image_url: string;
+}
+
+interface TrailerImages {
+  image_url: string | null;
+  small_image_url: string | null;
+  medium_image_url: string | null;
+  large_image_url: string | null;
+  maximum_image_url: string | null;
+}
+
+interface Title {
+  type: string;
+  title: string;
+}
+
+interface DateProp {
+  day: number | null;
+  month: number | null;
+  year: number | null;
+}
+
+interface Company {
+  mal_id: number;
+  type: string;
+  name: string;
+  url: string;
+}
+
+interface Genre {
+  mal_id: number;
+  type: string;
+  name: string;
+  url: string;
+}
+
+interface Relation {
+  relation: string;
+  entry: RelationEntry[];
+}
+
+interface RelationEntry {
+  mal_id: number;
+  type: string;
+  name: string;
+  url: string;
+}
+
+interface ExternalLink {
+  name: string;
+  url: string;
+}

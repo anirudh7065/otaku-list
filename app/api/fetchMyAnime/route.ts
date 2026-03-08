@@ -1,9 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
-import anime from "./anime_data.json" with { type: "json" };
+import { readFile } from "fs/promises";
 import type { newPost } from "@/types/newPost";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
-
+async function readJSON(path: string, fallback = []) {
+  try {
+    const data = await readFile(path, "utf8");
+    if (!data.trim()) return fallback;
+    return JSON.parse(data);
+  } catch {
+    return fallback;
+  }
+}
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
+  const anime = await readJSON("./anime_data.json");
   try {
     const maxPage = Math.ceil((anime as newPost[]).length / 25);
     const page =

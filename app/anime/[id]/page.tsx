@@ -126,7 +126,7 @@ const AnimeContent = () => {
 
                                 <div className="flex gap-2 text-sm flex-wrap">{
                                     !anime[0]?.streaming?.length && <span className="text-lg  text-purple-400">Not Available</span>}
-                                    {anime[0]?.streaming?.map((stream: { name: string, url: string }, index: number) => (
+                                    {anime[0]?.streaming?.map((stream, index: number) => (
                                         <a
                                             href={stream.url}
                                             key={index}
