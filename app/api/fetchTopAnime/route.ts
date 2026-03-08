@@ -17,7 +17,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   let apiUrl = `${baseUrl}/top/anime?page=${page}&sfw=true`;
 
   try {
-    let response = await fetch(apiUrl, { next: { revalidate: 3600 } });
+    let response = await fetch(apiUrl, { next: { revalidate: 36000 } });
 
     if (!response.ok) {
       const errorText = await response.text();
@@ -33,7 +33,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       page = data.pagination.last_visible_page;
       apiUrl = `${baseUrl}/top/anime?page=${page}&sfw=true`;
       response = await fetch(apiUrl, {
-        next: { revalidate: 3600 },
+        next: { revalidate: 36000 },
       });
 
       data = await response.json();

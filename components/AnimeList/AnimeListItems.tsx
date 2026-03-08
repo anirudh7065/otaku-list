@@ -3,17 +3,27 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import type { newPost } from "@/types/newPost";
-import { ArrowBigLeftDash } from "lucide-react";
+import { ArrowBigLeftDash, Star } from "lucide-react";
 import AnimeCountdown from "./AnimeCountDown";
 
 
 
-const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, schedule = false }: {
-    title: string, page?: number, anime: newPost[], setPage?: (page: number) => void
+
+const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false, schedule = false }: {
+    title: string, page?: number, animes: newPost[], setPage?: (page: number) => void
 
 , maxPages?: number, genre?: boolean, schedule?: boolean }) => {
     const router = useRouter();
-    
+
+    const memberParse = (members: number) => {
+        const num = Number(members);
+        if (!num) return 0;
+
+        if (num < 1_000) return num;
+        if (num < 100_000) return (num / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+        if (num < 10_000_000) return (num / 100_000).toFixed(1).replace(/\.0$/, "") + "L";
+        return (num / 10_000_000).toFixed(1).replace(/\.0$/, "") + "C";
+    };
 
   return (
       <div className="cursor-pointer select-none ">
@@ -25,20 +35,20 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
           </div>
           <div className="flex flex-wrap justify-center md:gap-6 gap-4 max-w-full  mx-auto">
 
-              {anime?.length === 0 && <div className="flex justify-center items-center h-screen w-full">
+              {animes?.length === 0 && <div className="flex justify-center items-center h-screen w-full">
                   <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
               </div>}
               
-              {anime?.map((item, index) => (
+              {animes?.map((anime, index) => (
                   <div key={index}>
                   <div
                       className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 hover:scale-[1.02] h-56 w-42 hover:ring-3 hover:ring-purple-400 md:w-70 md:h-105 max-md:overflow-hidden relative
                       "
-                      onClick={() => router.push(`/anime/${item.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
+                          onClick={() => router.push(`/anime/${anime.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
                       >
                       <Image
-                          src={item.images.webp.medium_image_url || item.images.jpg.medium_image_url ||item.images.webp.image_url || ""}
-                          alt={item.title}
+                              src={anime.images.webp.medium_image_url || anime.images.jpg.medium_image_url || anime.images.webp.image_url || ""}
+                              alt={anime.title}
                           sizes="(max-width: 768px) 120px, 300px"
                           width={300}
                           height={300}
@@ -46,9 +56,16 @@ const AnimeListItems = ({ title, page, anime, setPage, maxPages, genre = false, 
                           fetchPriority="high"
                           className="h-full md:h-84 w-full  md:p-4  object-cover bg-linear-to-br from-black via-gray-700  to-black rounded-t-xl transform-[translateZ(0)] will-change-transform "
                           />
-                          <div className="md:text-[15px] text-xs md:px-1 text-center  md:border-t-4 md:py-3 py-2 border-purple-700  w-full md:h-18 overflow-hidden  h-12 max-md:relative max-md:bottom-12 max-md:bg-black/80 max-md:z-10 line-clamp-2"><span className="w-full line-clamp-2 font-bold ">{item.title}</span></div>
+                          <div className="md:text-[15px] text-xs md:px-1 text-center  md:border-t-4 md:py-3 py-2 border-purple-700  w-full md:h-18 overflow-hidden  h-12 max-md:relative max-md:bottom-12 max-md:bg-black/80 max-md:z-10 line-clamp-2"><span className="w-full line-clamp-2 font-bold ">{anime.title}</span></div>
                   </div>
-                 {item.airing && schedule && < AnimeCountdown  day={item?.broadcast.day ?? ""} time={item.broadcast.time || ""} />}
+                      <div className="flex justify-center items-center gap-1.5 md:text-lg text-xs  w-full ">
+                          <div className="flex items-center gap-1">
+                          <Star color="#fff82e" size={15} fill="#fff82e" />
+                              <span className="text-purple-400 py-1"> {anime.score ?? "-"} </span>
+                          </div>
+                          ({anime.members ? memberParse(anime.members) : anime.members ?? "-"})
+                      </div>
+                      {anime.airing && schedule && < AnimeCountdown day={anime?.broadcast.day ?? ""} time={anime.broadcast.time || ""} />}
                 </div>
               ))}
           </div >

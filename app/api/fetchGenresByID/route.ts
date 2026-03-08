@@ -19,7 +19,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const apiUrl = `${baseUrl}/anime?genres=${id}&page=${page}&order_by=members&sort=desc`;
   try {
     let response = await fetch(apiUrl, {
-      next: { revalidate: 3600 },
+      next: { revalidate: 36000 },
     });
     if (!response.ok) {
       return NextResponse.json(
@@ -33,7 +33,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       response = await fetch(
         `${baseUrl}/anime?genres=${id}&page=${page}&limit=12&order_by=members&sort=desc`,
         {
-          next: { revalidate: 3600 },
+          next: { revalidate: 36000 },
         },
       );
 

@@ -125,7 +125,7 @@ const seasonParam = searchParams.get("season") as seasonalAnime;
                 <AnimeListItems
                     title="Seasonal Anime"
                     page={page}
-                    anime={anime}
+                    animes={anime}
                     setPage={setPage}
                     maxPages={maxPages}
                 />

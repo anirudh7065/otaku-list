@@ -5,14 +5,14 @@ import useGetData from "@/hooks/useGetData";
 import type { newPost } from "@/types/newPost";
 export default function ScheduleContent() {
 
-    const { anime, loading,error } = useGetData({
-        url: "/api/fetchSchedule"
-    });
-  
+  const { anime, loading, error } = useGetData({
+    url: "/api/fetchSchedule"
+  });
+
   if (error) {
     throw new Error(error);
   }
-  
+
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   return (
@@ -20,15 +20,21 @@ export default function ScheduleContent() {
       <h1 className="w-full text-4xl font-bold text-center">Schedule</h1>
       {loading && <Loader />}
 
-      {!loading && Object.entries(anime ?? {}).map(([day, val]) => (
-        <AnimeListItems
-          key={day}
-          title={days[Number(day)]}
-          anime={val as newPost[]}
-          schedule={true}
-        />
-      ))
-}
+      {!loading &&
+        Object.entries(anime ?? {}).map(([day, val]) => {
+          const uniqueAnime = Array.from(
+            new Map((val as newPost[]).map(a => [a.mal_id, a])).values()
+          );
+
+          return (
+            <AnimeListItems
+              key={day}
+              title={days[Number(day)]}
+              animes={uniqueAnime}
+              schedule={true}
+            />
+          );
+        })}
     </main>
   )
 }

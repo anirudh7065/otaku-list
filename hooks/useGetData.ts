@@ -61,13 +61,16 @@ const useGetData = ({
   });
 
 
-  if (url === "/api/fetchSchedule") return { anime: data, error:error, loading: isLoading };
-    return {
-      anime: (data?.data ?? []) as newPost[],
-      maxPages: data?.maxPage ?? 1,
-      loading: isLoading,
-      error:error,
-    };
+  if (url === "/api/fetchSchedule") return { anime: data, error: error, loading: isLoading };
+  const uniqueAnime = Array.from(
+    new Map((data?.data ?? []).map((a: newPost) => [a.mal_id, a])).values(),
+  );
+return {
+  anime: uniqueAnime as newPost[],
+  maxPages: data?.maxPage ?? 1,
+  loading: isLoading,
+  error: error,
+};
 };
 
 export default useGetData;

@@ -49,7 +49,7 @@ function SearchContent() {
                 <AnimeListItems
                     title={`Search Result for "${searchParams.get("q") || ""}"`}
                     page={page}
-                    anime={anime}
+                    animes={anime}
                     setPage={setPage}
                     maxPages={maxPages}
                 />

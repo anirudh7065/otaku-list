@@ -8,7 +8,8 @@ import useGetData from "@/hooks/useGetData";
 import { ArrowBigLeftDash } from "lucide-react";
 import useCountdown from "@/hooks/useCountdown";
 import jpnToInd from "@/constants/japaneseToIndianTime";
-
+import { Star } from "lucide-react";
+import type { newPost } from "@/types/newPost";
 
 
 type Genre = {
@@ -23,7 +24,7 @@ const AnimeContent = () => {
     const rawId = Number(Array.isArray(param?.id) ? param.id[0] : param?.id);
     const [zoom, setZoom] = useState(false);
     const id = rawId ?? null;
-    const { anime, loading, error } = useGetData({
+    const { anime, loading, error }:{anime: newPost[], loading: boolean, error: string} = useGetData({
         url: "/api/fetchOneAnime",
         id
     });
@@ -34,28 +35,25 @@ const AnimeContent = () => {
     const [toggle, setToggle] = useState(false)
     const synopsisScroll = useRef<HTMLDivElement>(null);
 
+    const memberParse = (members: number) => {
+        const num = Number(members);
+        if (!num) return 0;
+
+        if (num < 1_000) return num;
+        if (num < 100_000) return (num / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+        if (num < 10_000_000) return (num / 100_000).toFixed(1).replace(/\.0$/, "") + "L";
+        return (num / 10_000_000).toFixed(1).replace(/\.0$/, "") + "C";
+    };
     const countdown = useCountdown(
         anime?.[0]?.airing ? jpnToInd : null,
         anime?.[0]?.broadcast.day ?? null,
         anime?.[0]?.broadcast.time ?? null
     );
-    const downloadImage = async () => {
-        const url = anime[0]?.images?.jpg?.large_image_url;
-        const res = await fetch(url);
-        const blob = await res.blob();
-
-        const blobUrl = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = blobUrl;
-        a.download = `${anime[0]?.title}.jpg`;
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(blobUrl);
-    };
-
-
-
+    const imageSrc =
+        anime[0]?.images?.webp?.image_url ||
+        anime[0]?.images?.jpg?.image_url ||
+        anime[0]?.images?.jpg?.large_image_url
+        ;
 
     useEffect(() => {
         synopsisScroll.current?.scrollTo({ top: 0, behavior: "smooth" });
@@ -66,7 +64,7 @@ const AnimeContent = () => {
             {loading && <div className="flex justify-center items-center h-screen w-full">
                 <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
             </div>}
-            {!loading && (
+            {!loading && anime?.length !== 0 && (
                 <>
                     <div className="title w-full flex items-center px-18">
                         <ArrowBigLeftDash className="size-12  max-md:hidden cursor-pointer" onClick={() => router.push(url.pathname + url.search, { scroll: false })} />
@@ -78,23 +76,30 @@ const AnimeContent = () => {
                     </div>
                     <div className="main w-[90%] min-h-96 flex max-md:flex-col justify-center items-start my-10 gap-10 mx-auto">
                         <div className="md:w-[20%] w-full h-full">
-                            <Image src={anime[0]?.images?.webp?.large_image_url || anime[0]?.images?.jpg?.large_image_url} alt={anime[0]?.title} width={1000} height={1000} className={`w-full aspect-auto min-h-[90%] object-cover `} onClick={() => setZoom(!zoom)} />
-                            {zoom && <div className="size-screen bg-black/70 fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-100 flex-col gap-2" >
-                                <button className="size-8 rounded-full text-xl font-bold absolute top-4 right-4 shadow-lg shadow-black md:right-1/3 bg-white text-black" onClick={() => setZoom(!zoom)}>X</button>
-                                <Image src={anime[0]?.images?.jpg?.large_image_url || anime[0]?.images?.jpg?.large_image_url} alt={anime[0]?.title} width={500} height={500} className={`aspect-auto object-contain w-100 max-md:w-[90%] `} />
-                                <button
-                                    onClick={downloadImage}
-                                    className="px-4 py-2 bg-white text-xl text-black font-bold rounded-3xl"
-                                >
-                                    Download
-                                </button>
 
-                            </div>}
-                            <span className="flex justify-center items-center gap-1.5 text-xl w-full bg-purple-950">
-                                Score:
-                                <span className="text-purple-400 py-1"> {anime[0]?.score ?? "-"} </span> (
-                                {anime[0]?.scored_by ?? "-"})
-                            </span>
+                            {imageSrc && <>
+                                <Image src={imageSrc} alt={anime[0]?.title} width={500} height={500} className={`w-full aspect-auto min-h-[90%] object-cover `} onClick={() => setZoom(!zoom)} />
+                                {zoom && anime[0]?.images?.jpg?.large_image_url && <div className="size-screen bg-black/70 fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-100 flex-col gap-2" >
+                                    <button className="size-8 rounded-full text-xl font-bold absolute top-20 right-10 shadow-lg shadow-black md:right-1/3 bg-white text-black" onClick={() => setZoom(!zoom)}>X</button>
+                                    <Image src={anime[0]?.images?.jpg?.large_image_url || anime[0]?.images?.jpg?.large_image_url || ""} alt={anime[0]?.title} width={1500} height={1500} className={`aspect-auto object-contain w-100 max-md:w-[90%] `} />
+                                    <a
+                                        href={anime[0]?.images?.jpg?.large_image_url || anime[0]?.images?.jpg?.large_image_url || ""}
+                                        target="_blank"
+                                        download
+                                        className="px-4 py-2 bg-white text-xl text-black font-bold rounded-3xl"
+                                    >
+                                        Download
+                                    </a>
+
+                                </div>}
+                            </>}
+                            <div className="flex justify-center items-center gap-1.5 text-lg lg:text-xl bg-purple-950  w-full ">
+                                <div className="flex items-center gap-1">
+                                    <Star color="#fff82e" size={15} fill="#fff82e" />
+                                    <span className="text-purple-300 py-1"> {anime[0].score ?? "-"} </span>
+                                </div>
+                                ({anime[0].scored_by ? memberParse(anime[0].scored_by) : anime[0].scored_by ?? "-"})
+                            </div>
 
                         </div>
                         <div className="w-full h-full flex flex-col gap-3">

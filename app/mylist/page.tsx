@@ -29,7 +29,7 @@ function MyListContent() {
                 <AnimeListItems
                     title="My List"
                     page={page}
-                    anime={anime}
+                    animes={anime}
                     setPage={setPage}
                     maxPages={maxPages}
                 />

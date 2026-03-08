@@ -2,7 +2,7 @@ import { NextResponse, NextRequest } from "next/server";
 import type { newPost } from "@/types/newPost";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
 
-export const revalidate = 3600;
+export const revalidate = 36000;
 
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const days = [
@@ -43,7 +43,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
     while (hasNext) {
       const res = await fetch(
         `https://api.jikan.moe/v4/seasons/now?page=${page}&sfw=true`,
-        { next: { revalidate: 600 } },
+        { next: { revalidate: 36000 } },
       );
 
       if (!res.ok) {

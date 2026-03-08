@@ -38,7 +38,7 @@ function HomeContent() {
         <AnimeListItems
           title="Top Anime"
           page={page}
-          anime={anime}
+          animes={anime}
           setPage={setPage}
           maxPages={maxPages}
         />

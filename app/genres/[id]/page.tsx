@@ -48,7 +48,7 @@ const GenreAnimeContent = () => {
                   genre={true}
                   title={genres.find((genre: Genres) => genre.mal_id === parsedId)?.name || 'Genre'}
                   page={page}
-                  anime={anime}
+                  animes={anime}
                   setPage={setPage}
                   maxPages={maxPages}
               />
