@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { rateLimiter } from "./rateLimiter";
-import { newPost } from "@/types/newPost";
+
 
 function ist() {
   return new Date().toLocaleString("en-IN", {
