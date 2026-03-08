@@ -43,7 +43,35 @@ export function withApiProtectionLogger(
     try {
       const res = await handler(req);
 
-      
+      const cloned = res.clone();
+      let body = null;
+
+      try {
+        body = await cloned.json();
+      } catch {
+        body = "non-json-response";
+      }
+  
+let summary: string = "no-preview";
+
+if (body && typeof body === "object") {
+  // Case 1: { data: [...] }
+  if (Array.isArray(body.data) && body.data.length > 0) {
+    summary = body.data[0]?.title ?? summary;
+  }
+
+  else {
+    const firstKey = Object.keys(body)[0];
+
+    if (
+      firstKey &&
+      Array.isArray(body[firstKey]) &&
+      body[firstKey].length > 0
+    ) {
+      summary = body[firstKey][0]?.title ?? summary;
+    }
+  }
+}
       console.log({
         layer: "api",
         timestamp: ist(),
@@ -52,7 +80,7 @@ export function withApiProtectionLogger(
         path: req.nextUrl.pathname,
         status: res.status,
         duration: `${Date.now() - start}ms`,
-        response: "response sent",
+        response: summary,
       });
 
       return res;

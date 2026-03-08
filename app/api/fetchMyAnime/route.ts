@@ -3,8 +3,8 @@ import type { newPost } from "@/types/newPost";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
 import anime from "./anime_data.json";
 
+export const runtime = "nodejs";
 export const dynamic = "force-static";
-
 
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   try {
