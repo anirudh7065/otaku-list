@@ -54,7 +54,9 @@ This makes it easier for Indian users to know *exactly when anime airs*.
 ![Otaku List Screenshot](public/screenshots/app-preview2.png)
 ![Otaku List Screenshot](public/screenshots/app-preview3.png)
 ![Otaku List Screenshot](public/screenshots/app-preview4.png)
-
+![Otaku List Screenshot](public/screenshots/app-preview5.png)
+![Otaku List Screenshot](public/screenshots/app-preview6.png)
+![Otaku List Screenshot](public/screenshots/app-preview7.png)
 
 ---
 
