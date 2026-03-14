@@ -9,10 +9,10 @@ import AnimeCountdown from "./AnimeCountDown";
 
 
 
-const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false, schedule = false }: {
+const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false, schedule = false, myList=false }: {
     title: string, page?: number, animes: newPost[], setPage?: (page: number) => void
 
-, maxPages?: number, genre?: boolean, schedule?: boolean }) => {
+    , maxPages?: number, genre?: boolean, schedule?: boolean, myList?: boolean, }) => {
     const router = useRouter();
 
     const memberParse = (members: number) => {
@@ -28,7 +28,7 @@ const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false,
   return (
       <div className="cursor-pointer select-none ">
           <div className={`py-4 ${schedule ? " " : "px-15"} w-full flex justify-center gap-15 items-center mx-auto`} >
-              {genre && <ArrowBigLeftDash className="size-14  max-md:hidden" onClick={()=>router.back()} />}
+              {(genre || myList) && <ArrowBigLeftDash className="size-14  max-md:hidden" onClick={()=>router.back()} />}
               <span className={` w-full font-bold text-center ${schedule ? "text-2xl my-6 bg-purple-900 py-2 " : "text-4xl py-5"}`}>
               {title}
               </span>

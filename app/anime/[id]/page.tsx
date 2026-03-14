@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react"
-import { useParams, useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import useGetData from "@/hooks/useGetData";
 import { ArrowBigLeftDash } from "lucide-react";
 import useCountdown from "@/hooks/useCountdown";
@@ -17,10 +17,7 @@ type Genre = {
     name: string;
 }
 const AnimeContent = () => {
-    // const anime: newPost[] = Anime as newPost[];
     const param = useParams();
-    const searchParams = useSearchParams();
-    const url = new URL(searchParams.get("from") || "", "http://localhost:3000");
     const rawId = Number(Array.isArray(param?.id) ? param.id[0] : param?.id);
     const [zoom, setZoom] = useState(false);
     const id = rawId ?? null;
@@ -67,7 +64,7 @@ const AnimeContent = () => {
             {!loading && anime?.length !== 0 && (
                 <>
                     <div className="title w-full flex items-center px-18">
-                        <ArrowBigLeftDash className="size-12  max-md:hidden cursor-pointer" onClick={() => router.push(url.pathname + url.search, { scroll: false })} />
+                        <ArrowBigLeftDash className="size-12  max-md:hidden cursor-pointer" onClick={() => router.back()} />
                         <div className="w-[90%] text-center mx-auto ">
 
                             <h1 className="text-center text-2xl max-md:text-xl text-purple-300 max-md:pb-2 max-md:border-b-2">{anime[0]?.title}</h1>

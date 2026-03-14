@@ -33,6 +33,7 @@ const useGetData = ({
   season,
   year,
   query,
+  type,
   cache = "long",
 }: {
   url: string;
@@ -41,16 +42,18 @@ const useGetData = ({
   season?: string;
   year?: number;
   query?: string;
+  type?: "all" | "movie" | "ona" | "ova" | "series" | "special";
   cache?: "long" | "none";
 }) => {
   const params = new URLSearchParams({
     ...(page && { page: String(page) }),
-    ...(id && { id : String(id) }),
+    ...(id && { id: String(id) }),
     ...(season && { season }),
     ...(year && { year: String(year) }),
     ...(query && { query }),
+    ...(type && { type }),
   });
-  
+
   const key = `${url}?${params}`;
 
   const debouncedKey = useDebouncedValue(key, 300);
@@ -60,17 +63,17 @@ const useGetData = ({
     dedupingInterval: cache === "none" ? 0 : 3600000,
   });
 
-
-  if (url === "/api/fetchSchedule") return { anime: data, error: error, loading: isLoading };
+  if (url === "/api/fetchSchedule")
+    return { anime: data, error: error, loading: isLoading };
   const uniqueAnime = Array.from(
     new Map((data?.data ?? []).map((a: newPost) => [a.mal_id, a])).values(),
   );
-return {
-  anime: uniqueAnime as newPost[],
-  maxPages: data?.maxPage ?? 1,
-  loading: isLoading,
-  error: error,
-};
+  return {
+    anime: uniqueAnime as newPost[],
+    maxPages: data?.maxPage ?? 1,
+    loading: isLoading,
+    error: error,
+  };
 };
 
 export default useGetData;

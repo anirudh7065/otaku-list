@@ -4,14 +4,32 @@ import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
 import anime from "./anime_data.json";
 
 export const revalidate = 3600000;
+
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   try {
-    const maxPage = Math.ceil((anime as newPost[]).length / 25);
+    const type = req.nextUrl.searchParams.get("type");
+    const newAnime =
+      type === "all"
+        ? anime
+        : type === "series"
+          ? (anime as newPost[]).filter((ani) => ani.type === "TV")
+          : type === "movie"
+            ? (anime as newPost[]).filter((ani) => ani.type === "Movie")
+            : type === "ona"
+              ? (anime as newPost[]).filter((ani) => ani.type === "ONA")
+              : type === "ova"
+                ? (anime as newPost[]).filter((ani) => ani.type === "OVA")
+                : type === "special"
+                  ? (anime as newPost[]).filter(
+                      (ani) => ani.type === "TV Special",
+                    )
+                  : (anime as newPost[]);
+    const maxPage = Math.ceil((newAnime as newPost[]).length / 25);
     const page =
       Number(req.nextUrl.searchParams.get("page") ?? 1) > maxPage
         ? maxPage
         : Number(req.nextUrl.searchParams.get("page") ?? 1);
-    const res = (anime as newPost[]).slice((page - 1) * 25, page * 25);
+    const res = (newAnime as newPost[]).slice((page - 1) * 25, page * 25);
     return NextResponse.json({
       data: res,
       maxPage: maxPage,
