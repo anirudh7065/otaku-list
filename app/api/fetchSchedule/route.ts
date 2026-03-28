@@ -71,7 +71,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
 
     for (const anime of all) {
       const day = anime.broadcast?.day?.toLowerCase() || null;
-      if (day === null) continue;
+      if (day === null || anime.airing === false) continue;
       if (!byDay[jpnToIndIndex(day, anime.broadcast?.time || "00:00")])
         byDay[jpnToIndIndex(day, anime.broadcast?.time || "00:00")] = [];
       byDay[jpnToIndIndex(day, anime.broadcast?.time || "00:00") || 0].push(
