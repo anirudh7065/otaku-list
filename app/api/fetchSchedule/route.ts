@@ -42,7 +42,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   try {
     while (hasNext) {
       const res = await fetch(
-        `https://api.jikan.moe/v4/seasons/now?page=${page}&sfw=true`,
+        `https://api.jikan.moe/v4/schedules?page=${page}&sfw=true&kids=false`,
         { next: { revalidate: 36000 } },
       );
 
