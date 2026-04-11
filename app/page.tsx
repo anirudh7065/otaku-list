@@ -19,7 +19,7 @@ export default function App() {
           ))
         }
       </div>
-      <MyListContent main={false} type="all" home={false} />
+      <MyListContent main={false} type="all" home={true} />
     </main>
   );
 }
