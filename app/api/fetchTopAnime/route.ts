@@ -5,6 +5,8 @@ export const revalidate = 36000;
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const baseUrl = process.env.BASE_URL;
   let page = Number(req.nextUrl.searchParams.get("page") ?? 1);
+  const type = req.nextUrl.searchParams.get("type");
+
   if (
     !page ||
     Number.isNaN(page) ||
@@ -14,7 +16,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   )
     page = 1;
   page = Math.floor(page);
-  let apiUrl = `${baseUrl}/top/anime?page=${page}&sfw=true`;
+  let apiUrl = `${baseUrl}/top/anime?${type === "all" ? "" : type === "series" ? "type=tv" : "type=" + type}&page=${page}&sfw=true`;
 
   try {
     let response = await fetch(apiUrl, { next: { revalidate: 36000 } });
@@ -31,7 +33,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
     let data = await response.json();
     if (page > data.pagination.last_visible_page) {
       page = data.pagination.last_visible_page;
-      apiUrl = `${baseUrl}/top/anime?page=${page}&sfw=true`;
+      apiUrl = `${baseUrl}/top/anime?${type === "all" ? "" : type === "series" ? "type=tv" : "type=" + type}&page=${page}&sfw=true`;
       response = await fetch(apiUrl, {
         next: { revalidate: 36000 },
       });

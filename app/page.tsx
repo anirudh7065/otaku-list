@@ -1,62 +1,25 @@
-'use client';
+import Link from "next/link";
 
-import { useEffect } from "react";
-import AnimeListItems from "@/components/AnimeList/AnimeListItems";
-import Loader from "@/components/Loader";
-import useGetData from "@/hooks/useGetData";
-import { usePageQuery } from "@/hooks/usePageQuery";
-import { Suspense } from "react";
+import MyListContent from "@/components/MyListComponent";
 
-// import ErrorPage from "./error";
-function HomeContent() {
-  
-  const { page, setPage } = usePageQuery();
-
-
-
-  const { anime, maxPages, loading,error } = useGetData({
-    url: "/api/fetchTopAnime",
-    page,
-  });
-
-  if (error) {
-    throw new Error(error);
-  }
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [page]);
-  
-
+export default function App() {
+  const type = ["Movie", 'ONA', 'OVA', 'Series', 'All', 'Special'];
   return (
-    <main className="w-full min-h-screen">
+    <main className="w-full min-h-screen mx-auto">
+      <h1 className={` w-full font-bold text-center text-4xl py-8`}>
+        Top Anime
+      </h1>
+      <div className="md:w-[80%] w-[95%] py-4 px-2 pb-10 grid grid-cols-2 md:grid-cols-3 gap-4 mx-auto">
+        {
+          type.map((val, i) => (
+            <Link key={i} href={`/top/${val.toLowerCase()}`} className="border p-4 rounded-lg hover:shadow-lg transition-shadow" >
 
-
-      {loading && <Loader />}
-
-      {!loading && (
-        <AnimeListItems
-          title="Top Anime"
-          page={page}
-          animes={anime}
-          setPage={setPage}
-          maxPages={maxPages}
-        />
-      )}
+              <span className="text-sm md:text-lg font-semibold" >{val}</span>
+            </Link>
+          ))
+        }
+      </div>
+      <MyListContent main={false} type="all" home={false} />
     </main>
   );
 }
-
-export default function Home() {
-  return (
-
-    <Suspense fallback={<Loader />}>
-      <HomeContent />
-
-    </Suspense>
-
-  );
-
-}
-
-

@@ -1,16 +1,7 @@
-import Image from 'next/image';
-
 const Loader = () => {
-  return (
-    <div className="flex justify-center items-center h-screen w-full">
-      <Image
-        src="./loading-circle.svg"
-        alt="Loading..."
-        width={150}
-        height={150}
-      />
-    </div>
-  );
+  return <div className="flex justify-center items-center h-screen w-full">
+    <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
+  </div>
 };
 
 export default Loader;
