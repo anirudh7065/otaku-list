@@ -67,8 +67,8 @@ const AnimeContent = () => {
                         <ArrowBigLeftDash className="size-12  max-md:hidden cursor-pointer" onClick={() => router.back()} />
                         <div className="w-[90%] text-center mx-auto ">
 
-                            <h1 className="text-center text-2xl max-md:text-xl text-purple-300 max-md:pb-2 max-md:border-b-2">{anime[0]?.title}</h1>
-                            <h2 className="text-center text-2xl max-md:text-xl text-purple-200 max-md:pt-2 ">{anime[0]?.title_english}</h2>
+                            <h1 className="text-center select-text text-2xl max-md:text-xl text-purple-300 max-md:pb-2 max-md:border-b-2">{anime[0]?.title}</h1>
+                            <h2 className="text-center select-text text-2xl max-md:text-xl text-purple-200 max-md:pt-2 ">{anime[0]?.title_english}</h2>
                         </div>
                     </div>
                     <div className="main w-[90%] min-h-96 flex max-md:flex-col justify-center items-start my-10 gap-10 mx-auto">
