@@ -3,6 +3,7 @@ import AnimeListItems from "@/components/AnimeList/AnimeListItems";
 import AnimeScheduleLoader from "../../components/Loaders/AnimeScheduleLoader";
 import useGetData from "@/hooks/useGetData";
 import type { newPost } from "@/types/newPost";
+import {useEffect} from "react";
 export default function ScheduleContent() {
 
   const { anime, loading, error } = useGetData({
@@ -12,7 +13,9 @@ export default function ScheduleContent() {
   if (error) {
     throw new Error(error);
   }
-
+  useEffect(() => {
+    document.title = "Schedule - Otakulist";
+  });
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   return (

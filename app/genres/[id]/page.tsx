@@ -34,6 +34,9 @@ const GenreAnimeContent = () => {
 
     const parsedId = id;
     useEffect(() => {
+        document.title = "Genre - "+genres.find((genre: Genres) => genre.mal_id === parsedId)?.name || 'Genre'
+    }, [parsedId]);
+    useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, [page, id]);
 

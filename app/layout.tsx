@@ -16,9 +16,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// app/layout.tsx
 export const metadata: Metadata = {
-  title: "Otaku List",
-  description: "Home Page",
+  title: {
+    default: "OtakuList — Anime Catalogue for Indian Fans",
+    template: "%s | OtakuList",
+  },
+  description: "Browse top anime, seasonal charts, airing schedules in Indian Standard Time (IST), genres and more. Built for Indian anime fans.",
+  keywords: ["anime", "anime schedule", "anime IST", "anime India", "top anime", "seasonal anime", "jikan", "myanimelist"],
+  metadataBase: new URL("https://av-otakulist.vercel.app"),
+  openGraph: {
+    siteName: "OtakuList",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 

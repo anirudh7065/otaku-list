@@ -23,6 +23,9 @@ function MyListContent({ type = "all", main = true, home = false }: { type?: "mo
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, [page]);
     const title = home ? type === "all" ? "Top Anime" : "Top " + type.charAt(0).toUpperCase() + type.slice(1) : `${type === "movie" || type === "series" ? "Anime " : ""}${type.charAt(0).toUpperCase() + type.slice(1)} ${type === "all" || type === "special" ? "Anime" : ""}`;
+    useEffect(() => {
+        document.title = main ? title + " - Otakulist" : home ? "Home - Otakulist" : "My List - Otakulist";
+    }, []);
     return (
         <main className="w-full min-h-screen ">
             {loading && <AnimeListLoader />}

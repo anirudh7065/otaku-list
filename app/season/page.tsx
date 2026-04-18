@@ -65,6 +65,9 @@ function SeasonalListContent() {
     }
 
     useEffect(() => {
+        document.title = "Season - " + season + " " + year || "Season";
+    }, [season, year]);
+    useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, [page]);
 

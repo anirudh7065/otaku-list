@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { GenreHeaderType } from "@/types/genreType";
 import genres from "./genres.json"
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Genres",
+  description: "Otakulist - Genres",
+}
 const Genres = () => {
 
   const GenreHeader: GenreHeaderType = {

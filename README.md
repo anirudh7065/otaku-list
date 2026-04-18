@@ -1,6 +1,6 @@
 # 🎌 Otaku List
 
-[![Live App](https://img.shields.io/badge/Live-App-000?style=for-the-badge&logo=vercel&logoColor=white)](https://otaku-anime-list.vercel.app)
+[![Live App](https://img.shields.io/badge/Live-App-000?style=for-the-badge&logo=vercel&logoColor=white)](https://av-otaku-list.vercel.app)
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Jikan API](https://img.shields.io/badge/API-Jikan-blue?style=for-the-badge)
@@ -57,6 +57,8 @@ This makes it easier for Indian users to know *exactly when anime airs*.
 ![Otaku List Screenshot](public/screenshots/app-preview5.png)
 ![Otaku List Screenshot](public/screenshots/app-preview6.png)
 ![Otaku List Screenshot](public/screenshots/app-preview7.png)
+![Otaku List Screenshot](public/screenshots/app-preview8.png)
+
 
 ---
 
@@ -103,9 +105,16 @@ Otaku List is designed to protect API limits and ensure smooth UX:
 ### Clone the repo
 
 ```bash
-git clone https://github.com/your-username/otaku-list.git
+git clone https://github.com/anirudh7065/otaku-list.git
 cd otaku-list
 ```
+
+## Environment Variables
+
+Create a `.env.local` file:
+\```
+BASE_URL=<https://api.jikan.moe/v4>
+\```
 
 ### Install dependencies
 
@@ -130,14 +139,116 @@ http://localhost:3000
 ## 📂 Project Structure
 
 ```
-/app
-/components
-/constants
-/hooks
-/lib
-/api
-/types
-/public
+.
+├── app
+│   ├── anime
+│   │   └── [id]
+│   │       └── page.tsx
+│   ├── api
+│   │   ├── fetchGenresByID
+│   │   │   └── route.ts
+│   │   ├── fetchMyAnime
+│   │   │   ├── anime_data.json
+│   │   │   └── route.ts
+│   │   ├── fetchOneAnime
+│   │   │   └── route.ts
+│   │   ├── fetchSchedule
+│   │   │   └── route.ts
+│   │   ├── fetchSearch
+│   │   │   └── route.ts
+│   │   ├── fetchSeasonalAnime
+│   │   │   └── route.ts
+│   │   ├── fetchTopAnime
+│   │   │   └── route.ts
+│   │   └── log
+│   │       └── route.ts
+│   ├── error.tsx
+│   ├── favicon.ico
+│   ├── genres
+│   │   ├── genres.json
+│   │   ├── [id]
+│   │   │   └── page.tsx
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── mylist
+│   │   ├── page.tsx
+│   │   └── [type]
+│   │       └── page.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   ├── schedules
+│   │   └── page.tsx
+│   ├── search
+│   │   └── page.tsx
+│   ├── season
+│   │   └── page.tsx
+│   └── top
+│       ├── not-found.tsx
+│       └── [type]
+│           └── page.tsx
+├── clean.txt
+├── components
+│   ├── AnimeList
+│   │   ├── AnimeContent.tsx
+│   │   ├── AnimeCountDown.tsx
+│   │   ├── AnimeListItems.tsx
+│   │   ├── AnimeSearchDesktopWrapper.tsx
+│   │   ├── AnimeSearchMobileWrapper.tsx
+│   │   └── AnimeSearch.tsx
+│   ├── Footer
+│   │   └── Footer.tsx
+│   ├── Loaders
+│   │   ├── AnimeListLoader.tsx
+│   │   ├── AnimeLoading.tsx
+│   │   ├── AnimeScheduleLoader.tsx
+│   │   ├── AnimeSearchLoader.tsx
+│   │   └── Loader.tsx
+│   ├── MyListComponent.tsx
+│   ├── Navbar
+│   │   ├── MobileNav.tsx
+│   │   └── Navbar.tsx
+│   └── ScrollToTop.tsx
+├── constants
+│   ├── genresData.json
+│   └── japaneseToIndianTime.ts
+├── context
+│   └── SearchToggleContext.tsx
+├── eslint.config.mjs
+├── hooks
+│   ├── useCountdown.ts
+│   ├── useGetData.ts
+│   └── usePageQuery.ts
+├── lib
+│   ├── clientLogger.ts
+│   ├── rateLimiter.ts
+│   └── withApiProtectionLogger.ts
+├── LICENSE
+├── next.config.ts
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── proxy.ts
+├── public
+│   ├── loading-circle.svg
+│   ├── logo
+│   │   └── logo-circle.png
+│   └── screenshots
+│       ├── app-preview1.png
+│       ├── app-preview2.png
+│       ├── app-preview3.png
+│       ├── app-preview4.png
+│       ├── app-preview5.png
+│       ├── app-preview6.png
+│       └── app-preview7.png
+├── README.md
+├── tsconfig.json
+└── types
+    ├── genreType.ts
+    └── newPost.ts
+
+
 ```
 
 ---
