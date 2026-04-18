@@ -23,6 +23,7 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
         url: "/api/fetchSearch",
         query: query.trim() ? query : undefined,
         page: 1,
+        enabled: !!query.trim()
     });
     if(error) throw new Error(error);
 
@@ -135,7 +136,7 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
             </form>
 
 
-            {loading && <AnimeSearchLoader />}
+            {loading && query.trim() &&<AnimeSearchLoader />}
 
             {visibleResults.length > 0 && (
                 <ul className="absolute left-0 right-0 mt-2 bg-zinc-900 border border-zinc-700 rounded-xl shadow-xl max-h-100  overflow-hidden">

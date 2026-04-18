@@ -35,6 +35,7 @@ const useGetData = ({
   query,
   type,
   cache = "long",
+  enabled=true
 }: {
   url: string;
   page?: number;
@@ -43,8 +44,10 @@ const useGetData = ({
   year?: number;
   query?: string;
   type?: "all" | "movie" | "ona" | "ova" | "series" | "special";
-  cache?: "long" | "none";
-}) => {
+    cache?: "long" | "none";
+    enabled?: boolean;
+  }) => {
+  
   const params = new URLSearchParams({
     ...(page && { page: String(page) }),
     ...(id && { id: String(id) }),
@@ -54,7 +57,8 @@ const useGetData = ({
     ...(type && { type }),
   });
 
-  const key = `${url}?${params}`;
+  const key = enabled ? `${url}?${params}` : null;
+;
 
   const debouncedKey = useDebouncedValue(key, 300);
 
