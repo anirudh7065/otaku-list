@@ -10,6 +10,7 @@ import useCountdown from "@/hooks/useCountdown";
 import jpnToInd from "@/constants/japaneseToIndianTime";
 import { Star } from "lucide-react";
 import type { newPost } from "@/types/newPost";
+import AnimeLoader from "../../../components/Loaders/AnimeLoading";
 
 
 type Genre = {
@@ -48,6 +49,7 @@ const AnimeContent = () => {
     );
     const imageSrc =
         anime[0]?.images?.webp?.image_url ||
+        anime[0]?.images?.webp?.large_image_url ||
         anime[0]?.images?.jpg?.image_url ||
         anime[0]?.images?.jpg?.large_image_url
         ;
@@ -58,9 +60,7 @@ const AnimeContent = () => {
 
     return (
         <main className="min-h-screen py-10">
-            {loading && <div className="flex justify-center items-center h-screen w-full">
-                <div className="w-24 h-24 border-4 border-gray-300 border-t-purple-900 rounded-full animate-spin"></div>
-            </div>}
+            {loading && <AnimeLoader />}
             {!loading && anime?.length !== 0 && (
                 <>
                     <div className="title w-full flex items-center px-18">
@@ -76,11 +76,11 @@ const AnimeContent = () => {
 
                             {imageSrc && <>
                                 <Image src={imageSrc} alt={anime[0]?.title} width={500} height={500} className={`w-full aspect-auto min-h-[90%] object-cover `} onClick={() => setZoom(!zoom)} />
-                                {zoom && anime[0]?.images?.jpg?.large_image_url && <div className="size-screen bg-black/70 fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-100 flex-col gap-2" >
+                                {zoom && <div className="size-screen bg-black/70 fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-100 flex-col gap-2" >
                                     <button className="size-8 rounded-full text-xl font-bold absolute top-20 right-10 shadow-lg shadow-black md:right-1/3 bg-white text-black" onClick={() => setZoom(!zoom)}>X</button>
-                                    <Image src={anime[0]?.images?.jpg?.large_image_url || anime[0]?.images?.jpg?.large_image_url || ""} alt={anime[0]?.title} width={1500} height={1500} className={`aspect-auto object-contain w-100 max-md:w-[90%] `} />
+                                    <Image src={imageSrc} alt={anime[0]?.title} width={1500} height={1500} className={`aspect-auto object-contain w-100 max-md:w-[90%] `} />
                                     <a
-                                        href={anime[0]?.images?.jpg?.large_image_url || anime[0]?.images?.jpg?.large_image_url || ""}
+                                        href={imageSrc}
                                         target="_blank"
                                         download
                                         className="px-4 py-2 bg-white text-xl text-black font-bold rounded-3xl"
@@ -127,7 +127,7 @@ const AnimeContent = () => {
                                         <a
                                             href={stream.url}
                                             key={index}
-                                            target="_blanket"
+                                            target="_blank"
                                             className="cursor-pointer py-1 px-3 border-2 border-purple-600 rounded-2xl hover:bg-purple-600 hover:text-white"
                                         >
                                             {stream.name}

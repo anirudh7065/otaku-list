@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
-import Loader from "@/components/Loader";
+import AnimeListLoader from "@/components/Loaders/AnimeListLoader";
 import useGetData from "@/hooks/useGetData";
 import { usePageQuery } from "@/hooks/usePageQuery";
 import { Suspense } from "react";
@@ -16,9 +16,9 @@ type seasonalAnime = "winter" | "spring" | "summer" | "fall";
 function SeasonalListContent() {
     const searchParams = useSearchParams();
 
-const seasonParam = searchParams.get("season") as seasonalAnime;
+    const seasonParam = searchParams.get("season") as seasonalAnime;
     const yearParam = searchParams.get("year");
-    
+
     const date = new Date();
     const currentYear = date.getFullYear();
 
@@ -53,7 +53,7 @@ const seasonParam = searchParams.get("season") as seasonalAnime;
     const [draftSeason, setDraftSeason] = useState<seasonalAnime>(season);
     const [draftYear, setDraftYear] = useState(year);
 
-    const { anime, maxPages, loading,error } = useGetData({
+    const { anime, maxPages, loading, error } = useGetData({
         url: "/api/fetchSeasonalAnime",
         page,
         season,
@@ -63,7 +63,7 @@ const seasonParam = searchParams.get("season") as seasonalAnime;
     if (error) {
         throw new Error(error);
     }
-    
+
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, [page]);
@@ -119,7 +119,7 @@ const seasonParam = searchParams.get("season") as seasonalAnime;
 
             </div>
 
-            {loading && <Loader />}
+            {loading && <AnimeListLoader />}
 
             {!loading && (
                 <AnimeListItems
@@ -139,7 +139,7 @@ export default function SeasonalList() {
 
     return (
 
-        <Suspense fallback={<Loader />}>
+        <Suspense fallback={<AnimeListLoader />}>
 
             <SeasonalListContent />
 

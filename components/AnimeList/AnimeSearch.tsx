@@ -7,6 +7,7 @@ import { useSearchToggle } from "@/context/SearchToggleContext";
 import useGetData from "@/hooks/useGetData";
 import Image from "next/image";
 import { forwardRef, useImperativeHandle } from "react";
+import AnimeSearchLoader from "../Loaders/AnimeSearchLoader";
 
 
 const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, ref) {
@@ -18,11 +19,13 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
     const router = useRouter();
     const { setSearchToggle } = useSearchToggle();
 
-    const { anime, loading } = useGetData({
+    const { anime, loading,error } = useGetData({
         url: "/api/fetchSearch",
         query: query.trim() ? query : undefined,
         page: 1,
     });
+    if(error) throw new Error(error);
+
 
     const visibleResults = query.trim()
         ? anime.slice(0, 5)
@@ -132,11 +135,7 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
             </form>
 
 
-            {loading && query && (
-                <p className="absolute left-0 right-0 mt-2 bg-zinc-900 border border-zinc-700 rounded-xl shadow-xl p-2">
-                    Searching...
-                </p>
-            )}
+            {loading && <AnimeSearchLoader />}
 
             {visibleResults.length > 0 && (
                 <ul className="absolute left-0 right-0 mt-2 bg-zinc-900 border border-zinc-700 rounded-xl shadow-xl max-h-100  overflow-hidden">

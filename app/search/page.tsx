@@ -3,7 +3,7 @@ import { Suspense, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import useGetData from '@/hooks/useGetData'
 import { usePageQuery } from '@/hooks/usePageQuery'
-import Loader from '@/components/Loader'
+import AnimeListLoader from '@/components/Loaders/AnimeListLoader'
 import AnimeListItems from '@/components/AnimeList/AnimeListItems'
 
 function SearchContent() {
@@ -31,7 +31,7 @@ function SearchContent() {
         <main className="w-full min-h-screen pt-10">
 
 
-            {loading && <Loader />}
+            {loading && <AnimeListLoader />}
             {anime.length === 0 && !loading && (
                 <div className='w-full flex justify-center items-center flex-col gap-4'>
                     <span className={`w-full max-md:text-[15px] md:text-lg font-bold text-center `}>
@@ -39,7 +39,7 @@ function SearchContent() {
                     </span>
 
                     <span className={`w-full max-sm:text-[20px] md:text-lg font-bold text-center text-purple-400`}>
-                       Matching Anime Not Found
+                        Matching Anime Not Found
                     </span>
 
                 </div>
@@ -62,7 +62,7 @@ export default function Search() {
 
     return (
 
-        <Suspense fallback={<Loader />}>
+        <Suspense fallback={<AnimeListLoader />}>
 
             <SearchContent />
 

@@ -1,6 +1,6 @@
 "use client"
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
-import Loader from "@/components/Loader";
+import AnimeScheduleLoader from "../../components/Loaders/AnimeScheduleLoader";
 import useGetData from "@/hooks/useGetData";
 import type { newPost } from "@/types/newPost";
 export default function ScheduleContent() {
@@ -18,7 +18,7 @@ export default function ScheduleContent() {
   return (
     <main className="pt-10 pb-20">
       <h1 className="w-full text-4xl font-bold text-center">Schedule</h1>
-      {loading && <Loader />}
+      {loading && <AnimeScheduleLoader />}
 
       {!loading &&
         Object.entries(anime ?? {}).map(([day, val]) => {
