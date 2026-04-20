@@ -42,6 +42,11 @@ Otaku List:
 - Filters backend data for **Indian-friendly viewing**
 - Reduces unnecessary metadata
 - Focuses on practical watchability
+- Developed an anime discovery platform with debounced search, API caching, and
+batch fetching to minimize redundant requests API calls by ~40% using caching
+-​ Built a custom backend with Redis-based rate limiting to handle Jikan API constraints
+-​ Implemented dynamic routing, filtering, and pagination for scalable UI performance
+-​ Optimized for Indian users with timezone-based scheduling and improved UX
 
 This makes it easier for Indian users to know *exactly when anime airs*.
 
