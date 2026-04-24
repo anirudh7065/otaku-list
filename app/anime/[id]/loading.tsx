@@ -1,4 +1,4 @@
-export default function AnimeLoader() {
+export default function Skeleton() {
     return (
         <main className="min-h-screen py-10">
             {/* Title */}

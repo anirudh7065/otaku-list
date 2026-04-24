@@ -2,13 +2,20 @@
 import type { Metadata } from "next";
 import AnimeContent from "@/components/AnimeList/AnimeContent";
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-    const res = await fetch(`${process.env.BASE_URL}/anime/${params.id}/full`, {
-        next: { revalidate: 3600 },
-    });
+// app/anime/[id]/page.tsx
+async function getAnime(id: string) {
+    const res = await fetch(
+        `${process.env.APP_BASE_URL || "http://localhost:3000"}/api/fetchOneAnime?id=${id}`,
+        { next: { revalidate: 3600 } }
+    );
+    if (!res.ok) return null;
     const data = await res.json();
-    const anime = data?.data;
+    return data?.data?.[0] ?? null;
+}
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+    const { id } = await params;
+    const anime = await getAnime(id);
     return {
         title: anime?.title_english || anime?.title,
         description: anime?.synopsis?.slice(0, 160),
@@ -18,6 +25,8 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     };
 }
 
-export default function AnimePage() {
-    return <AnimeContent />;
+export default async function AnimePage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const anime = await getAnime(id);
+    return <AnimeContent initialData={anime ?? undefined} />;
 }

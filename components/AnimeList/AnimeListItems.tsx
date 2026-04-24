@@ -54,7 +54,7 @@ const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false,
                                 height={300}
                                 priority={index < 6}
                                 fetchPriority="high"
-                                className="h-full md:h-84 w-full  md:p-4  object-cover bg-linear-to-br from-black via-gray-700  to-black rounded-t-xl transform-[translateZ(0)] will-change-transform "
+                                className="h-full md:h-84 w-full  md:p-4  object-cover bg-linear-to-br from-black via-gray-700  to-black rounded-t-xl transform-[translateZ(0)] will-change-transform aspect-3/4 "
                             />
                             <div className="md:text-[18px] text-xs md:px-1 text-center  md:border-t-4 md:py-3 py-2 border-purple-700  w-full md:h-18 overflow-hidden  h-12 max-md:relative max-md:bottom-12 max-md:bg-black/80 max-md:z-10 line-clamp-2"><span className="w-full line-clamp-2 font-bold ">{anime.title}</span></div>
                         </div>

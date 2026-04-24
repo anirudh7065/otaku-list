@@ -1,43 +1,18 @@
-"use client"
-import AnimeListItems from "@/components/AnimeList/AnimeListItems";
-import AnimeScheduleLoader from "../../components/Loaders/AnimeScheduleLoader";
-import useGetData from "@/hooks/useGetData";
+import AnimeScheduleContent from "@/components/AnimeList/AnimeScheduleContent";
 import type { newPost } from "@/types/newPost";
-import {useEffect} from "react";
-export default function ScheduleContent() {
+// app/anime/[id]/page.tsx
+async function getAnime() {
+  const res = await fetch(
+    `${process.env.APP_BASE_URL || "http://localhost:3000"}/api/fetchSchedule`,
+    { next: { revalidate: 3600 } }
+  );
+  if (!res.ok) return null;
+  const data = await res.json();
+  return data ?? null;
+}
 
-  const { anime, loading, error } = useGetData({
-    url: "/api/fetchSchedule"
-  });
 
-  if (error) {
-    throw new Error(error);
-  }
-  useEffect(() => {
-    document.title = "Schedule - Otakulist";
-  });
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-  return (
-    <main className="pt-10 pb-20">
-      <h1 className="w-full text-4xl font-bold text-center">Schedule</h1>
-      {loading && <AnimeScheduleLoader />}
-
-      {!loading &&
-        Object.entries(anime ?? {}).map(([day, val]) => {
-          const uniqueAnime = Array.from(
-            new Map((val as newPost[]).map(a => [a.mal_id, a])).values()
-          );
-
-          return (
-            <AnimeListItems
-              key={day}
-              title={days[Number(day)]}
-              animes={uniqueAnime}
-              schedule={true}
-            />
-          );
-        })}
-    </main>
-  )
+export default async function AnimePage() {
+  const anime: { key: string, value: newPost[] } = await getAnime();
+  return <AnimeScheduleContent InitialData={anime ?? undefined} />;
 }
