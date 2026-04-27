@@ -1,4 +1,4 @@
-import AnimeScheduleContent from "@/components/AnimeList/AnimeScheduleContent";
+import AnimeScheduleContent from "@/app/schedules/AnimeScheduleContent";
 import type { newPost } from "@/types/newPost";
 // app/anime/[id]/page.tsx
 async function getAnime() {

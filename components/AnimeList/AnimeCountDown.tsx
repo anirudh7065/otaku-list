@@ -1,6 +1,6 @@
 "use client";
 import useCountdown from "@/hooks/useCountdown";
-import jpnToInd from "@/constants/japaneseToIndianTime";
+import jpnToInd from "@/lib/japaneseToIndianTime";
 
 export default function AnimeCountdown({
     day,

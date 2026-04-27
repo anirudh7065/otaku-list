@@ -146,88 +146,85 @@ http://localhost:3000
 ```
 .
 ├── app
-│   ├── anime
-│   │   └── [id]
-│   │       └── page.tsx
-│   ├── api
-│   │   ├── fetchGenresByID
-│   │   │   └── route.ts
-│   │   ├── fetchMyAnime
-│   │   │   ├── anime_data.json
-│   │   │   └── route.ts
-│   │   ├── fetchOneAnime
-│   │   │   └── route.ts
-│   │   ├── fetchSchedule
-│   │   │   └── route.ts
-│   │   ├── fetchSearch
-│   │   │   └── route.ts
-│   │   ├── fetchSeasonalAnime
-│   │   │   └── route.ts
-│   │   ├── fetchTopAnime
-│   │   │   └── route.ts
-│   │   └── log
-│   │       └── route.ts
-│   ├── error.tsx
-│   ├── favicon.ico
-│   ├── genres
-│   │   ├── genres.json
-│   │   ├── [id]
-│   │   │   └── page.tsx
-│   │   └── page.tsx
-│   ├── globals.css
-│   ├── layout.tsx
-│   ├── mylist
-│   │   ├── page.tsx
-│   │   └── [type]
-│   │       └── page.tsx
-│   ├── not-found.tsx
-│   ├── page.tsx
-│   ├── schedules
-│   │   └── page.tsx
-│   ├── search
-│   │   └── page.tsx
-│   ├── season
-│   │   └── page.tsx
-│   └── top
-│       ├── not-found.tsx
-│       └── [type]
-│           └── page.tsx
-├── clean.txt
+│   ├── anime
+│   │   └── [id]
+│   │       ├── AnimeContent.tsx
+│   │       ├── loading.tsx
+│   │       └── page.tsx
+│   ├── api
+│   │   ├── fetchGenresByID
+│   │   │   └── route.ts
+│   │   ├── fetchMyAnime
+│   │   │   ├── anime_data.json
+│   │   │   └── route.ts
+│   │   ├── fetchOneAnime
+│   │   │   └── route.ts
+│   │   ├── fetchSchedule
+│   │   │   └── route.ts
+│   │   ├── fetchSearch
+│   │   │   └── route.ts
+│   │   ├── fetchSeasonalAnime
+│   │   │   └── route.ts
+│   │   ├── fetchTopAnime
+│   │   │   └── route.ts
+│   │   └── log
+│   │       └── route.ts
+│   ├── error.tsx
+│   ├── favicon.ico
+│   ├── genres
+│   │   ├── genres.json
+│   │   ├── [id]
+│   │   │   └── page.tsx
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── mylist
+│   │   ├── page.tsx
+│   │   └── [type]
+│   │       └── page.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   ├── robots.ts
+│   ├── schedules
+│   │   ├── AnimeScheduleContent.tsx
+│   │   ├── loading.tsx
+│   │   └── page.tsx
+│   ├── search
+│   │   ├── AnimeSearchDesktopWrapper.tsx
+│   │   ├── AnimeSearchMobileWrapper.tsx
+│   │   ├── AnimeSearch.tsx
+│   │   ├── loading.tsx
+│   │   └── page.tsx
+│   ├── season
+│   │   └── page.tsx
+│   ├── sitemap.ts
+│   └── top
+│       └── [type]
+│           └── page.tsx
 ├── components
-│   ├── AnimeList
-│   │   ├── AnimeContent.tsx
-│   │   ├── AnimeCountDown.tsx
-│   │   ├── AnimeListItems.tsx
-│   │   ├── AnimeSearchDesktopWrapper.tsx
-│   │   ├── AnimeSearchMobileWrapper.tsx
-│   │   └── AnimeSearch.tsx
-│   ├── Footer
-│   │   └── Footer.tsx
-│   ├── Loaders
-│   │   ├── AnimeListLoader.tsx
-│   │   ├── AnimeLoading.tsx
-│   │   ├── AnimeScheduleLoader.tsx
-│   │   ├── AnimeSearchLoader.tsx
-│   │   └── Loader.tsx
-│   ├── MyListComponent.tsx
-│   ├── Navbar
-│   │   ├── MobileNav.tsx
-│   │   └── Navbar.tsx
-│   └── ScrollToTop.tsx
-├── constants
-│   ├── genresData.json
-│   └── japaneseToIndianTime.ts
+│   ├── AnimeList
+│   │   ├── AnimeCountDown.tsx
+│   │   ├── AnimeListItems.tsx
+│   │   └── AnimeListLoader.tsx
+│   ├── Footer
+│   │   └── Footer.tsx
+│   ├── MyListComponent.tsx
+│   ├── Navbar
+│   │   ├── MobileNav.tsx
+│   │   └── Navbar.tsx
+│   └── ScrollToTop.tsx
 ├── context
-│   └── SearchToggleContext.tsx
+│   └── SearchToggleContext.tsx
 ├── eslint.config.mjs
 ├── hooks
-│   ├── useCountdown.ts
-│   ├── useGetData.ts
-│   └── usePageQuery.ts
+│   ├── useCountdown.ts
+│   ├── useGetData.ts
+│   └── usePageQuery.ts
 ├── lib
-│   ├── clientLogger.ts
-│   ├── rateLimiter.ts
-│   └── withApiProtectionLogger.ts
+│   ├── clientLogger.ts
+│   ├── japaneseToIndianTime.ts
+│   ├── rateLimiter.ts
+│   └── withApiProtectionLogger.ts
 ├── LICENSE
 ├── next.config.ts
 ├── next-env.d.ts
@@ -236,23 +233,23 @@ http://localhost:3000
 ├── postcss.config.mjs
 ├── proxy.ts
 ├── public
-│   ├── loading-circle.svg
-│   ├── logo
-│   │   └── logo-circle.png
-│   └── screenshots
-│       ├── app-preview1.png
-│       ├── app-preview2.png
-│       ├── app-preview3.png
-│       ├── app-preview4.png
-│       ├── app-preview5.png
-│       ├── app-preview6.png
-│       └── app-preview7.png
+│   ├── logo
+│   │   └── logo-circle.png
+│   └── screenshots
+│       ├── app-preview1.png
+│       ├── app-preview2.png
+│       ├── app-preview3.png
+│       ├── app-preview4.png
+│       ├── app-preview5.png
+│       ├── app-preview6.png
+│       ├── app-preview7.png
+│       └── app-preview8.png
 ├── README.md
 ├── tsconfig.json
+├── tsconfig.tsbuildinfo
 └── types
     ├── genreType.ts
     └── newPost.ts
-
 
 ```
 

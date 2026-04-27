@@ -3,7 +3,7 @@ import { Suspense, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import useGetData from '@/hooks/useGetData'
 import { usePageQuery } from '@/hooks/usePageQuery'
-import AnimeListLoader from '@/components/Loaders/AnimeListLoader'
+import AnimeListLoader from '@/components/AnimeList/AnimeListLoader'
 import AnimeListItems from '@/components/AnimeList/AnimeListItems'
 
 function SearchContent() {

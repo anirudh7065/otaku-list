@@ -1,5 +1,5 @@
 'use client';
-import AnimeSearch from "@/components/AnimeList/AnimeSearch";
+import AnimeSearch from "@/app/search/AnimeSearch";
 import { useSearchToggle } from "@/context/SearchToggleContext";
 
 const AnimeSearchMobileWrapper = () => {

@@ -1,6 +1,6 @@
 // app/anime/[id]/page.tsx
 import type { Metadata } from "next";
-import AnimeContent from "@/components/AnimeList/AnimeContent";
+import AnimeContent from "@/app/anime/[id]/AnimeContent";
 
 // app/anime/[id]/page.tsx
 async function getAnime(id: string) {

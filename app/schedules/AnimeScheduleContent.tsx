@@ -1,6 +1,6 @@
 "use client"
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
-import AnimeScheduleLoader from "@/components/Loaders/AnimeScheduleLoader";
+import AnimeScheduleLoader from "@/app/schedules/loading";
 import useGetData from "@/hooks/useGetData";
 import type { newPost } from "@/types/newPost";
 import { useEffect,useState } from "react";

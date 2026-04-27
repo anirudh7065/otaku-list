@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import type { newPost } from "@/types/newPost";
 import { ArrowBigLeftDash, Star } from "lucide-react";
 import AnimeCountdown from "./AnimeCountDown";
-import AnimeListLoader from "@/components/Loaders/AnimeListLoader";
+import AnimeListLoader from "@/components/AnimeList/AnimeListLoader";
 
 
 

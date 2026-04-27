@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
-import AnimeSearchDesktopWrapper from "../AnimeList/AnimeSearchDesktopWrapper";
-import AnimeSearchMobileWrapper from "../AnimeList/AnimeSearchMobileWrapper";
+import AnimeSearchDesktopWrapper from "@/app/search/AnimeSearchDesktopWrapper";
+import AnimeSearchMobileWrapper from "@/app/search/AnimeSearchMobileWrapper";
 const Navbar = () => {
 
   return (

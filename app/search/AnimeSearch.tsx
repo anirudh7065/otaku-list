@@ -7,7 +7,7 @@ import { useSearchToggle } from "@/context/SearchToggleContext";
 import useGetData from "@/hooks/useGetData";
 import Image from "next/image";
 import { forwardRef, useImperativeHandle } from "react";
-import AnimeSearchLoader from "../Loaders/AnimeSearchLoader";
+import AnimeSearchLoader from "@/app/search/loading";
 
 
 const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, ref) {

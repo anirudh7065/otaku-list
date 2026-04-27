@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navigation from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
-import AnimeSearchMobileWrapper from "@/components/AnimeList/AnimeSearchMobileWrapper";
+import AnimeSearchMobileWrapper from "@/app/search/AnimeSearchMobileWrapper";
 import { SearchToggleProvider } from "@/context/SearchToggleContext";
 import ScrollToTop from "@/components/ScrollToTop";
 const geistSans = Geist({

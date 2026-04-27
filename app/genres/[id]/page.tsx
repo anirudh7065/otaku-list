@@ -2,11 +2,11 @@
 import { useParams } from 'next/navigation';
 import { useEffect } from 'react';
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
-import genres from "@/constants/genresData.json";
+import genres from "@/app/genres/genres.json";
 import useGetData from "@/hooks/useGetData";
 import { usePageQuery } from "@/hooks/usePageQuery";
 import { Suspense } from "react";
-import AnimeListLoader from "@/components/Loaders/AnimeListLoader";
+import AnimeListLoader from "@/components/AnimeList/AnimeListLoader";
 import { notFound } from 'next/navigation';
 import { Genres } from '@/types/genreType';
 
@@ -20,7 +20,7 @@ const GenreAnimeContent = () => {
 
     const { page, setPage } = usePageQuery();
 
-
+    const genreData = [...genres["demographics"], ...genres["genres"], ...genres["explicit_genres"], ...genres["themes"]];
 
     const { anime, maxPages, error, loading } = useGetData({
         url: "/api/fetchGenresByID",
@@ -34,7 +34,7 @@ const GenreAnimeContent = () => {
 
     const parsedId = id;
     useEffect(() => {
-        document.title = "Genre - "+genres.find((genre: Genres) => genre.mal_id === parsedId)?.name || 'Genre'
+        document.title = "Genre - " + genreData.find((genre: Genres) => genre.mal_id === parsedId)?.name || 'Genre'
     }, [parsedId]);
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -47,7 +47,7 @@ const GenreAnimeContent = () => {
             {!loading && (
                 <AnimeListItems
                     genre={true}
-                    title={genres.find((genre: Genres) => genre.mal_id === parsedId)?.name || 'Genre'}
+                    title={genreData.find((genre: Genres) => genre.mal_id === parsedId)?.name || 'Genre'}
                     page={page}
                     animes={anime}
                     setPage={setPage}

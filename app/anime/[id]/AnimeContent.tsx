@@ -7,10 +7,10 @@ import { useParams } from "next/navigation";
 import useGetData from "@/hooks/useGetData";
 import { ArrowBigLeftDash } from "lucide-react";
 import useCountdown from "@/hooks/useCountdown";
-import jpnToInd from "@/constants/japaneseToIndianTime";
+import jpnToInd from "@/lib/japaneseToIndianTime";
 import { Star } from "lucide-react";
 import type { newPost } from "@/types/newPost";
-import AnimeLoader from "@/components/Loaders/AnimeLoading";
+import AnimeLoader from "@/app/anime/[id]/loading";
 
 type Genre = {
     mal_id: number;

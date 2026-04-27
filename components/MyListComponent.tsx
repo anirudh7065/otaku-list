@@ -2,7 +2,7 @@
 
 import { useEffect, Suspense } from "react";
 import AnimeListItems from "@/components/AnimeList/AnimeListItems";
-import AnimeListLoader from "@/components/Loaders/AnimeListLoader";
+import AnimeListLoader from "@/components/AnimeList/AnimeListLoader";
 import useGetData from "@/hooks/useGetData";
 import { usePageQuery } from "@/hooks/usePageQuery";
 
