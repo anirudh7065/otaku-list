@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: ["192.168.29.202","192.168.1.238"],
+  allowedDevOrigins: ["192.168.29.202", "192.168.1.238"],
   images: {
     remotePatterns: [
       {
@@ -16,6 +17,9 @@ const nextConfig: NextConfig = {
       },
     ],
     unoptimized: true,
+  },
+  turbopack: {
+    root: path.join(__dirname, ".."),
   },
 };
 

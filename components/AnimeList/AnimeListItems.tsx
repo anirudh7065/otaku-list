@@ -73,16 +73,13 @@ const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false,
                 <div className="w-full flex justify-center items-center pb-20 md:pb-12  my-4 gap-4 ">
 
                     <button
-                        onClick={() => {
-                            setPage(page <= maxPages ? page - 1 : maxPages)
-                        }}
+                        onClick={() => { if (page > 1) setPage(page - 1) }}
                         className="py-1 px-4 bg-amber-100 text-black rounded-3xl font-bold">Previous</button>
                     <p className="py-2 px-4 bg-amber-100 text-black rounded-3xl font-bold">{page} / {maxPages}</p>
                     <button
-                        onClick={() => {
-                            setPage(page <= maxPages ? page + 1 : maxPages)
-                        }
-                        } className={`${page === maxPages ? "hidden" : ""} py-1 px-4 bg-amber-100 text-black rounded-3xl font-bold`}>Next</button>
+                        onClick={() => { if (page < maxPages) setPage(page + 1) }}
+
+                        className={`${page === maxPages ? "hidden" : ""} py-1 px-4 bg-amber-100 text-black rounded-3xl font-bold`}>Next</button>
                 </div>
             }
         </div>

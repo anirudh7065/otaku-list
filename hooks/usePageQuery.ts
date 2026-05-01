@@ -18,10 +18,10 @@ export function usePageQuery(defaultPage = 1) {
       params.set("page", String(next));
 
       requestAnimationFrame(() => {
-        router.replace(`${pathname}?${params.toString()}`, {
-          scroll: false,
-        });
+        window.history.pushState(null, "", `${pathname}?${params.toString()}`);
+        router.refresh();
       });
+
     },
     [router, pathname, searchParams],
   );
