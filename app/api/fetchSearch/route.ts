@@ -21,7 +21,13 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const apiUrl = `${baseUrl}/anime?q=${query}&page=${page}&sfw=true`;
 
   try {
-    let response = await fetch(apiUrl, { next: { revalidate: 3600 } });
+    let response = await fetch(apiUrl, {
+      headers: {
+        "User-Agent": "OtakuList/1.0",
+        Accept: "application/json",
+      },
+      next: { revalidate: 3600 },
+    });
 
     if (!response.ok) {
       const errorText = await response.text();
@@ -38,6 +44,10 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       response = await fetch(
         `${baseUrl}/anime?q=${query}&page=${page}&sfw=true`,
         {
+          headers: {
+            "User-Agent": "OtakuList/1.0",
+            Accept: "application/json",
+          },
           next: { revalidate: 3600 },
         },
       );

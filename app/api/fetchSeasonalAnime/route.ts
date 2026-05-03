@@ -38,7 +38,13 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   let apiUrl = `${baseUrl}/seasons/${year}/${season}?page=${page}&sfw=true&order_by=members&sort=desc`;
 
   try {
-    let response = await fetch(apiUrl, { next: { revalidate: 36000 } });
+    let response = await fetch(apiUrl, {
+      headers: {
+        "User-Agent": "OtakuList/1.0",
+        Accept: "application/json",
+      },
+      next: { revalidate: 36000 },
+    });
 
     if (!response.ok) {
       const errorText = await response.text();
@@ -53,7 +59,11 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
     if (page > data.pagination.last_visible_page) {
       page = data.pagination.last_visible_page;
       apiUrl = `${baseUrl}/seasons/${year}/${season}?page=${page}&sfw=true&order_by=members&sort=desc`;
-      response = await fetch(apiUrl,{
+      response = await fetch(apiUrl, {
+        headers: {
+          "User-Agent": "OtakuList/1.0",
+          Accept: "application/json",
+        },
         next: { revalidate: 36000 },
       });
 

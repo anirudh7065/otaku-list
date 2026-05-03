@@ -19,7 +19,13 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   let apiUrl = `${baseUrl}/top/anime?${type === "all" ? "" : type === "series" ? "type=tv" : "type=" + type}&page=${page}&sfw=true`;
 
   try {
-    let response = await fetch(apiUrl, { next: { revalidate: 36000 } });
+    let response = await fetch(apiUrl, {
+      headers: {
+        "User-Agent": "OtakuList/1.0",
+        Accept: "application/json",
+      },
+      next: { revalidate: 36000 },
+    });
 
     if (!response.ok) {
       const errorText = await response.text();
@@ -35,6 +41,10 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       page = data.pagination.last_visible_page;
       apiUrl = `${baseUrl}/top/anime?${type === "all" ? "" : type === "series" ? "type=tv" : "type=" + type}&page=${page}&sfw=true`;
       response = await fetch(apiUrl, {
+        headers: {
+          "User-Agent": "OtakuList/1.0",
+          Accept: "application/json",
+        },
         next: { revalidate: 36000 },
       });
 

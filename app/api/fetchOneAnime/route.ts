@@ -10,7 +10,13 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const apiUrl = `${baseUrl}/anime/${id}/full`;
 
   try {
-    const response = await fetch(apiUrl, { next: { revalidate: 3600 } });
+    const response = await fetch(apiUrl, {
+      headers: {
+        "User-Agent": "OtakuList/1.0",
+        Accept: "application/json",
+      },
+      next: { revalidate: 3600 },
+    });
 
     if (!response.ok) {
       return NextResponse.json(

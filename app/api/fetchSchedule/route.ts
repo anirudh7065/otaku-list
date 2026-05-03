@@ -42,7 +42,13 @@ const fetchPage = async (page: number) => {
   const baseUrl = process.env.BASE_URL || "http://localhost:3000";
   const res = await fetch(
     `${baseUrl}/schedules?page=${page}&sfw=true&kids=false`,
-    { next: { revalidate: 36000 } },
+    {
+      headers: {
+        "User-Agent": "OtakuList/1.0",
+        Accept: "application/json",
+      },
+      next: { revalidate: 36000 },
+    },
   );
   if (!res.ok) {
     const text = await res.text();
