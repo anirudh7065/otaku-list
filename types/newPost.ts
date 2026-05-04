@@ -84,13 +84,13 @@ export interface newPost {
   streaming: ExternalLink[];
 }
 
-interface ImageSet {
+export interface ImageSet {
   image_url: string;
   small_image_url: string;
   large_image_url: string;
 }
 
-interface TrailerImages {
+export interface TrailerImages {
   image_url: string | null;
   small_image_url: string | null;
   medium_image_url: string | null;
@@ -98,44 +98,44 @@ interface TrailerImages {
   maximum_image_url: string | null;
 }
 
-interface Title {
+export interface Title {
   type: string;
   title: string;
 }
 
-interface DateProp {
+export interface DateProp {
   day: number | null;
   month: number | null;
   year: number | null;
 }
 
-interface Company {
+export interface Company {
   mal_id: number;
   type: string;
   name: string;
   url: string;
 }
 
-interface Genre {
+export interface Genre {
   mal_id: number;
   type: string;
   name: string;
   url: string;
 }
 
-interface Relation {
+export interface Relation {
   relation: string;
   entry: RelationEntry[];
 }
 
-interface RelationEntry {
+export interface RelationEntry {
   mal_id: number;
   type: string;
   name: string;
   url: string;
 }
 
-interface ExternalLink {
+export interface ExternalLink {
   name: string;
   url: string;
 }

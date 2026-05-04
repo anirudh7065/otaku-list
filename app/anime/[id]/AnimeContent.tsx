@@ -6,10 +6,10 @@ import { useState, useRef, useEffect } from "react"
 import { useParams } from "next/navigation";
 import useGetData from "@/hooks/useGetData";
 import { ArrowBigLeftDash } from "lucide-react";
-import useCountdown from "@/hooks/useCountdown";
 import jpnToInd from "@/lib/japaneseToIndianTime";
+import CountdownDisplay from "@/app/anime/CountdownDisplay";
 import { Star } from "lucide-react";
-import type { newPost } from "@/types/newPost";
+import type { newPost, RelationEntry } from "@/types/newPost";
 import AnimeLoader from "@/app/anime/[id]/loading";
 
 type Genre = {
@@ -21,6 +21,11 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
     const param = useParams();
     const rawId = Number(Array.isArray(param?.id) ? param.id[0] : param?.id);
     const [zoom, setZoom] = useState(false);
+    const [showAllRelations, setShowAllRelations] = useState(false);
+    const prequel: RelationEntry[] = [];
+    const sequel: RelationEntry[] = [];
+    let others: RelationEntry[] = [];
+
     const id = rawId ?? null;
 
     const { anime: fetched, loading, error } = useGetData({
@@ -29,7 +34,18 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
         enabled: !initialData,
     });
 
-    const animeData = initialData ?? fetched?.[0];
+    const animeData: newPost = initialData ?? fetched?.[0];
+
+    if (animeData?.relations?.length > 0) {
+        for (const rel of animeData.relations) {
+            if (rel.relation === "Character" || rel.relation === "Adaptation") continue
+            if (rel.relation === "Prequel") prequel.push(...rel.entry)
+            else if (rel.relation === "Sequel") sequel.push(...rel.entry)
+            else others.push(...rel.entry)
+        }
+    }
+    others = others.filter((ani) => ani.type === "anime");
+    const visibleOthers = showAllRelations ? others : others.slice(0, 5);
 
     if (error) {
         throw new Error(error);
@@ -48,18 +64,13 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
         return (num / 10_000_000).toFixed(1).replace(/\.0$/, "") + "C";
     };
 
-    const countdown = useCountdown(
-        animeData?.airing ? jpnToInd : null,
-        animeData?.broadcast?.day ?? null,
-        animeData?.broadcast?.time ?? null
-    );
 
     const imageSrc =
         animeData?.images?.webp?.image_url ||
         animeData?.images?.webp?.large_image_url ||
         animeData?.images?.jpg?.image_url ||
         animeData?.images?.jpg?.large_image_url;
-    const zoomImageSrc = 
+    const zoomImageSrc =
         animeData?.images?.webp?.large_image_url ||
         animeData?.images?.jpg?.large_image_url;
 
@@ -174,7 +185,7 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
                             {animeData?.airing && (
                                 <div className="text-lg">
                                     <span>Next Episode :</span>
-                                    <span className="ml-2 text-purple-400">{countdown}</span>
+                                    <CountdownDisplay animeData={animeData} />
                                 </div>
                             )}
                             <div className="text-lg">
@@ -185,6 +196,20 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
                             </div>
                         </div>
                     </div>
+                    {
+                        animeData.relations.length > 0 && (
+                            <div className="w-[90%] my-4  mx-auto flex max-md:flex-col max-md:gap-5 justify-between">
+                                {prequel.length > 0 ? <div className="flex flex-col gap-1 cursor-pointer border-2 border-purple-600 rounded-2xl hover:bg-purple-500/40 p-4 max-w-90 overflow-hidden" onClick={() => router.push(`/anime/${prequel[0].mal_id}`)}>
+                                    <span>Prequel</span>
+                                    <span className="text-purple-500 w-full line-clamp-1">{prequel[0].name}</span>
+                                </div> : <span></span>}
+                                {sequel.length > 0 ? <div className="flex flex-col gap-1 cursor-pointer border-2 border-purple-600 rounded-2xl hover:bg-purple-500/40 p-4 overflow-hidden max-w-90" onClick={() => router.push(`/anime/${sequel[0].mal_id}`)}>
+                                    <span>Sequel</span>
+                                    <span className="text-purple-500 w-full line-clamp-1">{sequel[0].name}</span>
+                                </div> : <span></span>}
+                            </div>
+                        )
+                    }
                     {animeData?.synopsis && (
                         <div className="synopsis w-[90%] mx-auto flex flex-col gap-4">
                             <h2 className="text-3xl font-bold">Synopsis</h2>
@@ -204,6 +229,37 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
                             )}
                         </div>
                     )}
+                    {
+                        animeData?.relations?.length > 0 && others.length > 0 && (
+                            <div className="w-[90%] flex flex-col mx-auto">
+
+                                <div className={`relative flex items-center flex-wrap w-full my-4 mx-auto ${showAllRelations && "flex-col items-start"}`}>
+                                    <span className="font-bold mr-2">Other Related Anime :</span>
+
+                                    {visibleOthers.map((rel: RelationEntry, i: number) => (
+                                        <span
+                                                key={rel.mal_id}
+                                            className={`cursor-pointer pr-3 max-sm:border-none border-r-2 mr-3 border-white text-purple-600 hover:text-white flex gap-2  items-center ${i === visibleOthers.length - 1 && "border-none"} ${showAllRelations && " mb-2 border-none"}`}
+                                                onClick={() => router.push(`/anime/${rel.mal_id}`)}
+                                            >
+                                                {rel?.name}
+                                            </span>
+                                    ))}
+                                    {(!showAllRelations && others.length > 5)&& <div className="absolute bottom-0 left-0 w-full h-8 bg-linear-to-t from-black to-transparent pointer-events-none" />}
+                                </div>
+
+                                {/* Read More / Less */}
+                                {others.length > 5 && (
+                                    <button
+                                        onClick={() => setShowAllRelations(prev => !prev)}
+                                        className="self-end text-red-400 hover:text-red-300 transition"
+                                    >
+                                        {showAllRelations ? "Read Less" : "Read More"}
+                                    </button>
+                                )}
+                            </div>
+                        )
+                    }
                     {animeData?.trailer?.embed_url && (
                         <iframe
                             src={animeData?.trailer?.embed_url || ""}
