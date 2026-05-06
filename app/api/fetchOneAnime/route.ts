@@ -12,7 +12,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   try {
     const response = await fetch(apiUrl, {
       headers: {
-        "User-Agent": "OtakuList/1.0",
+        UserAgent: "OtakuList/1.0",
         Accept: "application/json",
       },
       next: { revalidate: 3600 },
@@ -30,7 +30,6 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       data: [data.data],
     });
   } catch (error) {
-    console.log(error);
     if (error instanceof Error) {
       console.error(error);
       return NextResponse.json(

@@ -44,7 +44,7 @@ const fetchPage = async (page: number) => {
     `${baseUrl}/schedules?page=${page}&sfw=true&kids=false`,
     {
       headers: {
-        "User-Agent": "OtakuList/1.0",
+        UserAgent: "OtakuList/1.0",
         Accept: "application/json",
       },
       next: { revalidate: 36000 },

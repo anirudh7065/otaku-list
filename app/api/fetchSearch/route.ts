@@ -23,7 +23,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   try {
     let response = await fetch(apiUrl, {
       headers: {
-        "User-Agent": "OtakuList/1.0",
+        UserAgent: "OtakuList/1.0",
         Accept: "application/json",
       },
       next: { revalidate: 3600 },
@@ -45,7 +45,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
         `${baseUrl}/anime?q=${query}&page=${page}&sfw=true`,
         {
           headers: {
-            "User-Agent": "OtakuList/1.0",
+            UserAgent: "OtakuList/1.0",
             Accept: "application/json",
           },
           next: { revalidate: 3600 },

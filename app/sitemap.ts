@@ -6,10 +6,10 @@ const base = "https://av-otakulist.vercel.app";
 
 const fetchPage = (page: number) =>
   fetch(`https://api.jikan.moe/v4/top/anime?page=${page}`, {
-      headers: {
-        "User-Agent": "OtakuList/1.0",
-        Accept: "application/json",
-      },
+    headers: {
+      UserAgent: "OtakuList/1.0",
+      Accept: "application/json",
+    },
     next: {
       revalidate: 86400,
     },

@@ -36,7 +36,6 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       page: page,
     });
   } catch (error) {
-    console.log(error);
     if (error instanceof Error) {
       return NextResponse.json(
         {

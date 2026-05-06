@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     const { id } = await params;
     const studio: ProducerType = await getStudio(id);
     return {
-        title: studio.titles[0].title,
-        description: studio?.about?.slice(0, 160) || "",
+        title: studio?.titles[0]?.title || "Studio",
+        description: studio?.about?.slice(0, 160) || "This is studio page",
         openGraph: {
             images: [studio?.images?.jpg?.image_url],
         },
@@ -42,6 +42,6 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 export default async function AnimePage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
 
-    const studio:ProducerType = await getStudio(id);
+    const studio: ProducerType = await getStudio(id);
     return <AnimeStudiosContent studio={studio} />;
 }

@@ -12,12 +12,13 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   try {
     const response = await fetch(apiUrl, {
       headers: {
-        "User-Agent": "OtakuList/1.0",
+        UserAgent: "OtakuList/1.0",
         Accept: "application/json",
       },
       next: { revalidate: 3600 },
     });
 
+    
     if (!response.ok) {
       return NextResponse.json(
         { error: "Failed to fetch anime data" },
@@ -25,12 +26,12 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       );
     }
 
-    const data: { data: ProducerType } = await response.json();
+    const data = await response.json();
+    console.log(data)
     return NextResponse.json({
       data: data.data,
     });
   } catch (error) {
-    console.log(error);
     if (error instanceof Error) {
       console.error(error);
       return NextResponse.json(
