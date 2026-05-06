@@ -37,12 +37,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.8,
     }));
 
+    const studioCodes = [569, 18, 4, 314, 1258];
+    const studioUrls = studioCodes.map((id) => ({
+      url: `${base}/studio/${id}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    }));
+
     const topUrls = types.map((type) => ({
         url: `${base}/top/${type}`,
         lastModified: new Date(),
         changeFrequency: "daily" as const,
         priority: 0.7,
     }));
+
 
     const genreUrls = genresData.genres.map((g: { mal_id: number }) => ({
         url: `${base}/genres/${g.mal_id}`,
@@ -52,14 +61,45 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }));
 
     return [
-        { url: base, lastModified: new Date(), changeFrequency: "daily" as const, priority: 1 },
-        { url: `${base}/season`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.8 },
-        { url: `${base}/schedules`, lastModified: new Date(), changeFrequency: "daily" as const, priority: 0.9 },
-        { url: `${base}/genres`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.6 },
-        { url: `${base}/search`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.5 },
-        { url: `${base}/mylist`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.4 },
-        ...topUrls,
-        ...genreUrls,
-        ...animeUrls,
+      {
+        url: base,
+        lastModified: new Date(),
+        changeFrequency: "daily" as const,
+        priority: 1,
+      },
+      {
+        url: `${base}/season`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+      },
+      {
+        url: `${base}/schedules`,
+        lastModified: new Date(),
+        changeFrequency: "daily" as const,
+        priority: 0.9,
+      },
+      {
+        url: `${base}/genres`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+      },
+      {
+        url: `${base}/search`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.5,
+      },
+      {
+        url: `${base}/mylist`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.4,
+      },
+      ...topUrls,
+      ...genreUrls,
+      ...animeUrls,
+      ...studioUrls,
     ];
 }

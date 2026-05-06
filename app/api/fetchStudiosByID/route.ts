@@ -5,7 +5,7 @@ export const revalidate = 36000;
 
 export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const baseUrl = process.env.BASE_URL;
-  const id = Number(req.nextUrl.searchParams.get("id") ?? 2);
+  const id = Number(req.nextUrl.searchParams.get("id") ?? 1);
   let page = Number(req.nextUrl.searchParams.get("page") ?? 1);
   if (
     !page ||
@@ -16,7 +16,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   )
     page = 1;
   page = Math.floor(page);
-  const apiUrl = `${baseUrl}/anime?genres=${id}&page=${page}&order_by=members&sort=desc`;
+  const apiUrl = `${baseUrl}/anime?producer=${id}&page=${page}&order_by=members&sort=desc`;
   try {
     let response = await fetch(apiUrl, {
       headers: {
@@ -27,7 +27,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
     });
     if (!response.ok) {
       return NextResponse.json(
-        { error: "Failed to fetch genres" },
+        { error: "Failed to fetch Studios" },
         { status: response.status },
       );
     }
@@ -35,7 +35,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
     if (page > data.pagination.last_visible_page) {
       page = data.pagination.last_visible_page;
       response = await fetch(
-        `${baseUrl}/anime?genres=${id}&page=${page}&order_by=members&sort=desc`,
+        `${baseUrl}/anime?producer=${id}&page=${page}&order_by=members&sort=desc`,
         {
           headers: {
             "User-Agent": "OtakuList/1.0",
@@ -47,6 +47,11 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
 
       data = await response.json();
     }
+
+    if (data.data.length === 0) {
+      return NextResponse.json({ message: "No Studio found" }, { status: 404 });
+    }
+
     return NextResponse.json({
       data: data.data,
       maxPage: data.pagination.last_visible_page,

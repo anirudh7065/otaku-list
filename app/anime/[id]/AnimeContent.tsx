@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react"
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import useGetData from "@/hooks/useGetData";
 import { ArrowBigLeftDash } from "lucide-react";
@@ -146,10 +147,10 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
                                 <span>Studios : </span>
                                 {animeData?.studios?.length > 0 ? (
                                     <div className="flex gap-2 text-sm flex-wrap">
-                                        {animeData?.studios?.map((studio: { name: string, url: string }, index: number) => (
-                                            <a href={studio?.url} target="_blank" key={index} className="cursor-pointer py-1 px-3 border-2 border-purple-600 rounded-2xl hover:bg-purple-600 hover:text-white">
+                                        {animeData?.studios?.map((studio: { name: string, url: string, mal_id: number }, index: number) => (
+                                            <Link href={"/studios/" + studio?.mal_id || ""} key={index} className="cursor-pointer py-1 px-3 border-2 border-purple-600 rounded-2xl hover:bg-purple-600 hover:text-white">
                                                 {studio?.name}
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                 ) : (
