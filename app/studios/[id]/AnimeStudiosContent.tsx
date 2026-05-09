@@ -42,30 +42,23 @@ const AnimeStudiosContent = ({ studio }: { studio: ProducerType }) => {
 
     return (
         <main>
-            {studio && <section className="w-[90%] mx-auto my-5 border-b border-purple-800">
+            {studio && <section className="w-[90%] mx-auto my-5 min-h-62 border-b border-purple-800">
                 {studio?.titles?.length && <h1 className="bg-purple-900 mb-2  text-xl w-full text-center font-bold">{studio?.titles[0]?.title} {studio?.titles[1] && ` - ${studio?.titles[1]?.title}`}</h1>}
-                {!studio?.titles?.length &&<h1 className="bg-purple-900 mb-2  text-xl w-full text-center font-bold">{(anime as newPost[])[0]?.studios[0]?.name}</h1>}
-                <article className="w-full flex gap-5 mb-4">
+                {!studio?.titles?.length && <h1 className="bg-purple-900 mb-2  text-xl w-full text-center font-bold">{(anime as newPost[])[0]?.studios[0]?.name}</h1>}
+                <article className="w-full ">
+                    <p className="text-sm max-sm:mx-auto ">
 
-                    <figure className="w-60 h-60">
-                        {studio?.images?.jpg?.image_url  && <Image
-                            src={studio?.images?.jpg?.image_url}
-                            alt={studio?.titles[0]?.title}
-                            width={200}
-                            height={200}
-                            className="w-full h-full"
-                        />}
-                    </figure>
-                    <section className="w-[calc(100%-200px)] flex flex-col gap-2 pt-2 ">
-
-                        <p className="text-sm">
-                            {studio?.about}
-                        </p>
-                        <div>
-                            <span className="font-bold">Established : </span>
-                            <span className="text-purple-300">{date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()}</span>
-                        </div>
-                    </section>
+                            {studio?.images?.jpg?.image_url && <Image
+                                src={studio?.images?.jpg?.image_url}
+                                alt={studio?.titles[0]?.title}
+                                width={200}
+                                height={200}
+                                className="w-full md:w-50 md:h-50 max-md:mx-auto md:float-left md:mr-2 md:mb-1 max-md:mb-2"
+                            />}
+                        {studio?.about}
+                    </p>
+                    <span className="font-bold py-3">Established : </span>
+                    <span className="text-purple-300 py-3">{date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()}</span>
                 </article>
             </section>}
             {loading && <AnimeListLoader />}
