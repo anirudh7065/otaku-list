@@ -18,6 +18,33 @@ body::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
 }
 
+/* scrollbar container */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+/* transparent background */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* gray pill scrollbar */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 999px;
+}
+
+/* optional hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #2f3540;
+}
+
+/* firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2b2d transparent;
+}
+
 @theme {
   --animate-pulse: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

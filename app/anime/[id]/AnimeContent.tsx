@@ -12,13 +12,14 @@ import CountdownDisplay from "@/app/anime/CountdownDisplay";
 import { Star } from "lucide-react";
 import type { newPost, RelationEntry } from "@/types/newPost";
 import AnimeLoader from "@/app/anime/[id]/loading";
+import type { CharacterType } from "@/types/characterType";
 
 type Genre = {
     mal_id: number;
     name: string;
 }
 
-const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
+const AnimeContent = ({ initialData, characters }: { initialData?: newPost, characters?: CharacterType[] }) => {
     const param = useParams();
     const rawId = Number(Array.isArray(param?.id) ? param.id[0] : param?.id);
     const [zoom, setZoom] = useState(false);
@@ -28,6 +29,7 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
     let others: RelationEntry[] = [];
 
     const id = rawId ?? null;
+    //console.log(characters)
 
     const { anime: fetched, loading, error } = useGetData({
         url: "/api/fetchOneAnime",
@@ -231,6 +233,32 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
                         </div>
                     )}
                     {
+                        characters && characters?.length > 0 && (
+                            <div className="w-[90%] mx-auto my-4">
+                                <h2 className="text-3xl font-bold my-2">Characters</h2>
+                                <div className="flex overflow-x-scroll pb-5 mb:gap-4 gap-2 custom-scrollbar ">
+                                    {characters.map((val: CharacterType, index: number) => (
+                                        <div key={index} className="overflow-hidden min-w-20 border-2 rounded-2xl border-purple-700">
+
+                                            {
+                                                (val?.character?.images?.webp || val?.character?.images?.jpg?.image_url )&&
+                                                <Image
+                                                    src={val.character.images.webp.image_url || val.character.images.jpg.small_image_url}
+                                                    alt={val.character.name}
+                                                    loading="lazy"
+                                                    width={50}
+                                                    height={70}
+                                                    className="w-20 h-30"
+                                                />
+                                            }
+                                            <h3 className="text-[15px] w-20 text-center font-bold py-2">{val.character.name}</h3>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )
+                    }
+                    {
                         animeData?.relations?.length > 0 && others.length > 0 && (
                             <div className="w-[90%] flex flex-col mx-auto">
 
@@ -239,14 +267,14 @@ const AnimeContent = ({ initialData }: { initialData?: newPost }) => {
 
                                     {visibleOthers.map((rel: RelationEntry, i: number) => (
                                         <span
-                                                key={rel.mal_id}
+                                            key={rel.mal_id}
                                             className={`cursor-pointer pr-3 max-sm:border-none border-r-2 mr-3 border-white text-purple-600 hover:text-white flex gap-2  items-center ${i === visibleOthers.length - 1 && "border-none"} ${showAllRelations && " mb-2 border-none"}`}
-                                                onClick={() => router.push(`/anime/${rel.mal_id}`)}
-                                            >
-                                                {rel?.name}
-                                            </span>
+                                            onClick={() => router.push(`/anime/${rel.mal_id}`)}
+                                        >
+                                            {rel?.name}
+                                        </span>
                                     ))}
-                                    {(!showAllRelations && others.length > 5)&& <div className="absolute bottom-0 left-0 w-full h-8 bg-linear-to-t from-black to-transparent pointer-events-none" />}
+                                    {(!showAllRelations && others.length > 5) && <div className="absolute bottom-0 left-0 w-full h-8 bg-linear-to-t from-black to-transparent pointer-events-none" />}
                                 </div>
 
                                 {/* Read More / Less */}
