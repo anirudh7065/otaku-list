@@ -9,7 +9,6 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const apiUrl = `${baseUrl}/anime/${id}/characters`;
 
     try {
-        //console.log(apiUrl)
 
     const response = await fetch(apiUrl, {
       headers: {
@@ -30,7 +29,6 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       const mainCharacters = (data.data as CharacterType[])
         ?.filter((c) => c.role === "Main")
         .sort((a, b) => b.favorites - a.favorites);
-      console.log("maincharacter is ",mainCharacters);
     return NextResponse.json({
       data: mainCharacters,
     });

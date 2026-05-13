@@ -31,7 +31,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error("Kitsu API Response Error:", errorText);
+      console.error("Jikan API Response Error:", errorText);
       return NextResponse.json(
         { error: "Failed to fetch anime data" },
         { status: response.status },

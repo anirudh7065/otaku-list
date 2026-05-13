@@ -29,7 +29,7 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
     let others: RelationEntry[] = [];
 
     const id = rawId ?? null;
-    //console.log(characters)
+
 
     const { anime: fetched, loading, error } = useGetData({
         url: "/api/fetchOneAnime",

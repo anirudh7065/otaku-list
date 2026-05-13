@@ -27,7 +27,6 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
     }
 
     const data = await response.json();
-    console.log(data)
     return NextResponse.json({
       data: data.data,
     });

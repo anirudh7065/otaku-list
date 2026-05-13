@@ -18,7 +18,6 @@ async function getAnimeCharacters(id: string) {
     const data = await res.json();
 
     if (!res.ok) return null;
-    // console.log(data.data[0]);
 
     return data.data ?? null;
 }
