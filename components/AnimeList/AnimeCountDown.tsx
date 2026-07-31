@@ -18,7 +18,7 @@ export default function AnimeCountdown({
     if (!day || !time) return null;
 
     return (
-        <p className="text-xs md:text-lg py-2 text-purple-400 text-center">
+        <p className="text-xs md:text-lg py-2 text-primary-active text-center">
             {countdown}
         </p>
     );

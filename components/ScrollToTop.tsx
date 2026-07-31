@@ -31,7 +31,7 @@ export default function ScrollToTop() {
     return (
         <button
             onClick={scrollToTop}
-            className="fixed lg:bottom-14 bottom-6 right-6 z-50 p-2 md:p-3 rounded-full bg-black text-white shadow-md shadow-purple-500 hover:scale-110 transition-all duration-300 "
+            className="fixed lg:bottom-14 bottom-6 right-6 z-50 p-2 md:p-3 rounded-full bg-black text-white shadow-md shadow-primary-dark hover:scale-110 transition-all duration-300 "
         >
             <ArrowUp className="max-md:size-4"/>
         </button>

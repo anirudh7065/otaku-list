@@ -10,6 +10,6 @@ export default function CountdownDisplay({ animeData }: { animeData: newPost }) 
     );
 
 
-    return <span className="ml-2 text-purple-400">{countdown}</span>
+    return <span className="ml-2 text-primary">{countdown}</span>
 }
 

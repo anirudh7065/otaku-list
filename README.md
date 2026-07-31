@@ -3,11 +3,11 @@
 [![Live App](https://img.shields.io/badge/Live-App-000?style=for-the-badge&logo=vercel&logoColor=white)](https://av-otaku-list.vercel.app)
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Jikan API](https://img.shields.io/badge/API-Jikan-blue?style=for-the-badge)
+![Tenrai API](https://img.shields.io/badge/API-Tenrai-blue?style=for-the-badge)
 ![India Optimized](https://img.shields.io/badge/Optimized_for-India-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-A modern anime discovery platform built with **Next.js** and **Tailwind CSS**, powered by the **Jikan API** — optimized specifically for **Indian users** 🇮🇳.
+A modern anime discovery platform built with **Next.js** and **Tailwind CSS**, powered by the **Tenrai API** — optimized specifically for **Indian users** 🇮🇳.
 
 Otaku List provides curated anime browsing with smart caching, debounced search, backend filtering, and schedules aligned to **Indian Standard Time (IST)**.
 
@@ -44,7 +44,7 @@ Otaku List:
 - Focuses on practical watchability
 - Developed an anime discovery platform with debounced search, API caching, and
 batch fetching to minimize redundant requests API calls by ~40% using caching
--​ Built a custom backend with Redis-based rate limiting to handle Jikan API constraints
+-​ Built a custom backend with Redis-based rate limiting to handle Tenrai API constraints
 -​ Implemented dynamic routing, filtering, and pagination for scalable UI performance
 -​ Optimized for Indian users with timezone-based scheduling and improved UX
 
@@ -84,7 +84,7 @@ This makes it easier for Indian users to know *exactly when anime airs*.
 - Next.js (App Router)
 - React
 - Tailwind CSS
-- Jikan API
+- Tenrai API
 - Server-side caching
 - Custom debouncing logic
 - Backend filtering layer
@@ -99,7 +99,7 @@ Otaku List is designed to protect API limits and ensure smooth UX:
 
 - **Debouncing** → prevents spam search requests
 - **Caching** → reduces repeated API calls
-- **Rate limiting** → protects Jikan API
+- **Rate limiting** → protects Tenrai API
 - **Backend filtering** → lighter payloads
 - **Time-zone normalization** → IST schedules
 
@@ -117,9 +117,10 @@ cd otaku-list
 ## Environment Variables
 
 Create a `.env.local` file:
-\```
-BASE_URL=<https://api.jikan.moe/v4>
-\```
+
+```
+BASE_URL=https://api.tenrai.org/v1
+```
 
 ### Install dependencies
 
@@ -307,8 +308,8 @@ Permission is hereby granted, free of charge...
 
 ## 🙌 Acknowledgements
 
-Powered by [jikan-rest](https://github.com/jikan-me/jikan-rest) — thanks to @jikan-me  
-Anime data from https://jikan.moe  
+Powered by Tenrai  
+Anime data from https://tenrai.org  
 Data sourced from MyAnimeList  
 Built with ❤️ using Next.js
 

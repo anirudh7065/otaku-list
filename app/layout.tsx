@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import AnimeSearchMobileWrapper from "@/app/search/AnimeSearchMobileWrapper";
 import { SearchToggleProvider } from "@/context/SearchToggleContext";
+import { TitleLanguageToggleProvider } from "@/context/TitleLanguageContext";
 import ScrollToTop from "@/components/ScrollToTop";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
   },
   verification: {
-    google:"ntgtRLiU_NAPwiCyxFiuy3fQ3_wVKvUF3Gbl7mdAeTw"
+    google: "ntgtRLiU_NAPwiCyxFiuy3fQ3_wVKvUF3Gbl7mdAeTw"
   }
 };
 
@@ -47,14 +48,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable}  antialiased flex flex-col min-h-screen box-border`}
       >
         <SearchToggleProvider>
+          <TitleLanguageToggleProvider>
 
-          <Navigation />
-          <main>
-            <AnimeSearchMobileWrapper />
-            {children}
-            <ScrollToTop />
-          </main>
-          <Footer />
+
+            <Navigation />
+            <main>
+              <AnimeSearchMobileWrapper />
+              {children}
+              <ScrollToTop />
+            </main>
+            <Footer />
+          </TitleLanguageToggleProvider>
         </SearchToggleProvider>
       </body>
     </html>

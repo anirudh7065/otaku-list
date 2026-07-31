@@ -6,7 +6,7 @@ import AnimeSearchMobileWrapper from "@/app/search/AnimeSearchMobileWrapper";
 const Navbar = () => {
 
   return (
-    <main className="flex h-16 justify-between items-center py-3 px-6 bg-linear-to-r from-black via-purple-900 to-black
+    <main className="flex h-16 justify-between items-center py-3 px-6 bg-linear-to-r from-black via-primary-dark to-black
 
 ">
         <div className="logo">

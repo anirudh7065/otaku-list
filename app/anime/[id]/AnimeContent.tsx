@@ -93,8 +93,8 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                     <div className="title w-full flex items-center px-18">
                         <ArrowBigLeftDash className="size-12 max-md:hidden cursor-pointer" onClick={() => router.back()} />
                         <div className="w-[90%] text-center mx-auto">
-                            <h1 className="text-center select-text text-2xl max-md:text-xl text-purple-300 max-md:pb-2 max-md:border-b-2">{animeData?.title}</h1>
-                            <h2 className="text-center select-text text-2xl max-md:text-xl text-purple-200 max-md:pt-2">{animeData?.title_english}</h2>
+                            <h1 className="text-center select-text text-2xl max-md:text-xl text-primary-active border-b-2 border-border max-md:pb-2 ">{animeData?.title}</h1>
+                            <h2 className="text-center select-text text-2xl max-md:text-xl text-primary-active max-md:pt-2">{animeData?.title_english}</h2>
                         </div>
                     </div>
                     <div className="main w-[90%] min-h-96 flex max-md:flex-col justify-center items-start my-10 gap-10 mx-auto">
@@ -111,10 +111,10 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                                     </div>
                                 )}
                             </>}
-                            <div className="flex justify-center items-center gap-1.5 text-lg lg:text-xl bg-purple-950 w-full">
+                            <div className="flex justify-center items-center gap-1.5 text-lg lg:text-xl bg-primary-dark w-full">
                                 <div className="flex items-center gap-1">
                                     <Star color="#fff82e" size={15} fill="#fff82e" />
-                                    <span className="text-purple-300 py-1">{animeData?.score ?? "-"}</span>
+                                    <span className="text-text py-1">{animeData?.score ?? "-"}</span>
                                 </div>
                                 ({animeData?.scored_by ? memberParse(animeData.scored_by) : animeData?.scored_by ?? "-"})
                             </div>
@@ -126,7 +126,7 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                                     {animeData?.genres.map((genre: Genre, index: number) => (
                                         <button
                                             key={index}
-                                            className="cursor-pointer py-1 px-3 border-2 border-purple-600 rounded-2xl hover:bg-purple-600 hover:text-white"
+                                            className="cursor-pointer py-1 px-3 border-2 border-primary-dark rounded-2xl hover:bg-primary-hover hover:text-white"
                                             onClick={() => router.push(`/genres/${genre.mal_id}`)}
                                         >
                                             {genre?.name}
@@ -137,9 +137,9 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                             <div className="flex items-center gap-4 flex-wrap">
                                 <span className="text-lg">Streaming :</span>
                                 <div className="flex gap-2 text-sm flex-wrap">
-                                    {!animeData?.streaming?.length && <span className="text-lg text-purple-400">Not Available</span>}
+                                    {!animeData?.streaming?.length && <span className="text-lg text-text-muted">Not Available</span>}
                                     {animeData?.streaming?.map((stream: { name: string, url: string }, index: number) => (
-                                        <a href={stream.url} key={index} target="_blank" className="cursor-pointer py-1 px-3 border-2 border-purple-600 rounded-2xl hover:bg-purple-600 hover:text-white">
+                                        <a href={stream.url} key={index} target="_blank" className="cursor-pointer py-1 px-3 border-2 border-primary-dark rounded-2xl hover:bg-primary-hover hover:text-white">
                                             {stream.name}
                                         </a>
                                     ))}
@@ -150,40 +150,40 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                                 {animeData?.studios?.length > 0 ? (
                                     <div className="flex gap-2 text-sm flex-wrap">
                                         {animeData?.studios?.map((studio: { name: string, url: string, mal_id: number }, index: number) => (
-                                            <Link href={"/studios/" + studio?.mal_id || ""} key={index} className="cursor-pointer py-1 px-3 border-2 border-purple-600 rounded-2xl hover:bg-purple-600 hover:text-white">
+                                            <Link href={"/studios/" + studio?.mal_id || ""} key={index} className="cursor-pointer py-1 px-3 border-2 border-primary-dark rounded-2xl hover:bg-primary-hover hover:text-white">
                                                 {studio?.name}
                                             </Link>
                                         ))}
                                     </div>
                                 ) : (
-                                    <span className="text-purple-400 text-lg">Unknown</span>
+                                    <span className="text-text-muted text-lg">Unknown</span>
                                 )}
                             </div>
                             <div className="text-lg">
                                 <span>Brodcast :</span>
-                                <span className="ml-2 text-purple-400">{jpnToInd(animeData?.broadcast?.day || "Sundays", animeData?.broadcast?.time || "17:00") as string}</span>
+                                <span className="ml-2 text-text-muted">{jpnToInd(animeData?.broadcast?.day || "Sundays", animeData?.broadcast?.time || "17:00") as string}</span>
                             </div>
                             <div className="text-lg">
                                 <span>Season :</span>
-                                <span className="ml-2 text-purple-400">{animeData?.season === null ? "Unknown" : `${animeData?.season} ${animeData?.year}`}</span>
+                                <span className="ml-2 text-text-muted">{animeData?.season === null ? "Unknown" : `${animeData?.season} ${animeData?.year}`}</span>
                             </div>
                             <div className="text-lg">
                                 <span>Episodes :</span>
-                                <span className="ml-2 text-purple-400">
+                                <span className="ml-2 text-text-muted">
                                     {animeData?.episodes === null ? "Unknown" : `${animeData?.episodes} Episodes of ${animeData?.duration}`}
                                 </span>
                             </div>
                             <div className="text-lg">
                                 <span>Aired :</span>
-                                <span className="ml-2 text-purple-400">{animeData?.aired.string}</span>
+                                <span className="ml-2 text-text-muted">{animeData?.aired.string}</span>
                             </div>
                             <div className="text-lg">
                                 <span>Type :</span>
-                                <span className="ml-2 text-purple-400">{animeData?.type ?? "Unknown"}</span>
+                                <span className="ml-2 text-text-muted">{animeData?.type ?? "Unknown"}</span>
                             </div>
                             <div className="text-lg">
                                 <span>Status :</span>
-                                <span className="ml-2 text-purple-400">{animeData?.status ?? "Unknown"}</span>
+                                <span className="ml-2 text-text-muted">{animeData?.status ?? "Unknown"}</span>
                             </div>
                             {animeData?.airing && (
                                 <div className="text-lg">
@@ -193,7 +193,7 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                             )}
                             <div className="text-lg">
                                 <span>For More Info : </span>
-                                <span className="ml-2 text-purple-400">
+                                <span className="ml-2 text-text-muted">
                                     <a href={animeData?.url} target="_blank" className="underline-offset-0">MyAnimeList</a>
                                 </span>
                             </div>
@@ -202,25 +202,25 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                     {
                         animeData.relations.length > 0 && (
                             <div className="w-[90%] my-4  mx-auto flex max-md:flex-col max-md:gap-5 justify-between">
-                                {prequel.length > 0 ? <div className="flex flex-col gap-1 cursor-pointer border-2 border-purple-600 rounded-2xl hover:bg-purple-500/40 p-4 max-w-90 overflow-hidden" onClick={() => router.push(`/anime/${prequel[0].mal_id}`)}>
+                                {prequel.length > 0 ? <div className="flex flex-col gap-1 cursor-pointer border-2 border-primary-dark rounded-2xl hover:bg-primary-hover/20 p-4 max-w-90 overflow-hidden" onClick={() => router.push(`/anime/${prequel[0].mal_id}`)}>
                                     <span>Prequel</span>
-                                    <span className="text-purple-500 w-full line-clamp-1">{prequel[0].name}</span>
+                                    <span className="text-primary-active w-full line-clamp-1">{prequel[0].name}</span>
                                 </div> : <span></span>}
-                                {sequel.length > 0 ? <div className="flex flex-col gap-1 cursor-pointer border-2 border-purple-600 rounded-2xl hover:bg-purple-500/40 p-4 overflow-hidden max-w-90" onClick={() => router.push(`/anime/${sequel[0].mal_id}`)}>
+                                {sequel.length > 0 ? <div className="flex flex-col gap-1 cursor-pointer border-2 border-primary-dark rounded-2xl hover:bg-primary-hover/20 p-4 overflow-hidden max-w-90" onClick={() => router.push(`/anime/${sequel[0].mal_id}`)}>
                                     <span>Sequel</span>
-                                    <span className="text-purple-500 w-full line-clamp-1">{sequel[0].name}</span>
+                                    <span className="text-primary-active w-full line-clamp-1">{sequel[0].name}</span>
                                 </div> : <span></span>}
                             </div>
                         )
                     }
                     {animeData?.synopsis && (
                         <div className="synopsis w-[90%] mx-auto flex flex-col gap-4">
-                            <h2 className="text-3xl font-bold">Synopsis</h2>
+                            <h2 className="text-3xl font-bold text-text">Synopsis</h2>
                             <div
                                 ref={synopsisScroll}
                                 className={`relative transition-all duration-300 ${toggle ? "md:max-h-125 scrollbar-custom" : "md:max-h-32 max-h-85 overflow-hidden"}`}
                             >
-                                <p className="text-lg pr-2">{animeData?.synopsis}</p>
+                                <p className="text-lg pr-2 text-text-muted">{animeData?.synopsis}</p>
                                 {(!toggle && animeData?.synopsis?.length > 700) && (
                                     <div className="absolute bottom-0 left-0 w-full h-12 bg-linear-to-t from-black to-transparent pointer-events-none" />
                                 )}
@@ -233,27 +233,40 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                         </div>
                     )}
                     {
-                        characters && characters?.length > 0 && (
+                        characters && characters.length > 0 && (
                             <div className="w-[90%] mx-auto my-4">
                                 <h2 className="text-3xl font-bold my-2">Characters</h2>
-                                <div className="flex overflow-x-scroll pb-5 mb:gap-4 gap-2 custom-scrollbar ">
-                                    {characters.map((val: CharacterType, index: number) => (
-                                        <div key={index} className="overflow-hidden min-w-20 border-2 rounded-2xl border-purple-700">
 
-                                            {
-                                                (val?.character?.images?.webp || val?.character?.images?.jpg?.image_url )&&
-                                                <Image
-                                                    src={val.character.images.webp.image_url || val.character.images.jpg.small_image_url}
-                                                    alt={val.character.name}
-                                                    loading="lazy"
-                                                    width={50}
-                                                    height={70}
-                                                    className="w-20 h-30"
-                                                />
-                                            }
-                                            <h3 className="text-[15px] w-20 text-center font-bold py-2">{val.character.name}</h3>
-                                        </div>
-                                    ))}
+                                <div className="relative">
+                                    <div className="flex overflow-x-scroll pb-5 gap-2 md:gap-4 custom-scrollbar">
+                                        {characters.map((val: CharacterType, index: number) => (
+                                            <div
+                                                key={index}
+                                                className="overflow-hidden border-3 min-w-23 rounded-2xl border-primary-dark"
+                                            >
+                                                {(val?.character?.images?.webp || val?.character?.images?.jpg?.image_url) && (
+                                                    <Image
+                                                        src={
+                                                            val.character.images.webp.image_url ||
+                                                            val.character.images.jpg.small_image_url
+                                                        }
+                                                        alt={val.character.name}
+                                                        loading="lazy"
+                                                        width={50}
+                                                        height={70}
+                                                        className="w-23 h-30"
+                                                    />
+                                                )}
+
+                                                <h3 className="text-[15px] w-23 text-center font-bold py-2">
+                                                    {val.character.name}
+                                                </h3>
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    {/* Right fade */}
+                                    <div className="pointer-events-none absolute top-0 right-0 h-full w-10 bg-linear-to-l from-background to-transparent" />
                                 </div>
                             </div>
                         )
@@ -268,13 +281,14 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                                     {visibleOthers.map((rel: RelationEntry, i: number) => (
                                         <span
                                             key={rel.mal_id}
-                                            className={`cursor-pointer pr-3 max-sm:border-none border-r-2 mr-3 border-white text-purple-600 hover:text-white flex gap-2  items-center ${i === visibleOthers.length - 1 && "border-none"} ${showAllRelations && " mb-2 border-none"}`}
+                                            className={`cursor-pointer pr-3 max-sm:border-none border-r-2 mr-3 border-white text-primary hover:text-white  ${i === visibleOthers.length - 1 && "border-none"} ${showAllRelations && " mb-2 border-none"}`}
                                             onClick={() => router.push(`/anime/${rel.mal_id}`)}
                                         >
+                                            {showAllRelations && <span className="mr-2 text-blue-200">{i + 1}.</span>}
                                             {rel?.name}
                                         </span>
                                     ))}
-                                    {(!showAllRelations && others.length > 5) && <div className="absolute bottom-0 left-0 w-full h-8 bg-linear-to-t from-black to-transparent pointer-events-none" />}
+                                    {(!showAllRelations && others.length > 5) && <div className="absolute bottom-0 left-0 w-full h-5 bg-linear-to-t from-black to-transparent pointer-events-none" />}
                                 </div>
 
                                 {/* Read More / Less */}

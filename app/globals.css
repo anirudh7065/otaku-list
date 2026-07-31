@@ -1,8 +1,38 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #000000;
+  --color-background-2: #0b0b0b;
+
+  --color-surface: #141414;
+  --color-surface-2: #1e1e1e;
+
+  --color-primary: #E32636;
+  --color-primary-hover: #F44353;
+  --color-primary-active: #C81E2D;
+  --color-primary-dark: #8E0F1D;
+
+  --color-border: #303030;
+
+  --color-text: #F5F5F5;
+  --color-text-muted: #B8B8B8;
+}
 :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --background: #000000;
+  --background-secondary: #0B0B0B;
+
+  --surface: #141414;
+  --surface-hover: #1E1E1E;
+
+  --primary: #E32636;
+  --primary-hover: #F44353;
+  --primary-active: #C81E2D;
+  --primary-dark: #8E0F1D;
+
+  --border: #303030;
+
+  --text: #F5F5F5;
+  --text-secondary: #B8B8B8;
 }
 body.is-scrolling .card:hover {
   transform: none !important;
@@ -90,15 +120,23 @@ body::-webkit-scrollbar {
       max-height: 500px;
     }
     &::-webkit-scrollbar-track {
-      @apply bg-none;
+      @apply bg-black;
       border-radius: 100vh;
     }
     &::-webkit-scrollbar-thumb {
-      @apply bg-blue-700;
+      @apply bg-primary-dark;
       border-radius: 100vh;
     }
     &::-webkit-scrollbar-thumb:hover {
-      @apply bg-blue-600;
+      @apply bg-primary-active;
     }
   }
+}
+select option:checked {
+  background: var(--primary-dark);
+  color: white;
+}
+option:hover {
+  background: var(--primary-active);
+  color: white;
 }

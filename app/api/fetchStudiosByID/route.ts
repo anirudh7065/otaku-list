@@ -16,7 +16,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   )
     page = 1;
   page = Math.floor(page);
-  const apiUrl = `${baseUrl}/anime?producer=${id}&page=${page}&order_by=members&sort=desc`;
+  const apiUrl = `${baseUrl}/anime?producers=${id}&page=${page}&order_by=members&sort=desc`;
   try {
     let response = await fetch(apiUrl, {
       headers: {

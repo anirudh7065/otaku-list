@@ -24,7 +24,7 @@ const Genres = () => {
       <section className="mb-10">
         {genres && Object.entries(genres)?.map(([key, val]) => (
           <article key={key}>
-            <h1 className="w-full max-md:text-[25px] md:text-4xl font-bold text-center text-2xl my-6 bg-purple-900 py-3 ">{GenreHeader[key]}</h1>
+            <h1 className="w-full max-md:text-[25px] md:text-4xl font-bold text-center text-2xl my-6 bg-primary-dark py-3 ">{GenreHeader[key]}</h1>
             <div className=" md:w-[80%] w-[95%] py-4 px-2 pb-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mx-auto">
               {
                 val.length === 0 ? <p className="text-center mt-10">No {GenreHeader[key]} found</p>

@@ -145,7 +145,7 @@ const AnimeSearch = forwardRef(function AnimeSearch({ cls }: { cls?: string }, r
                             key={i}
                             onClick={() => goToAnime(anime.mal_id)}
                             className={`flex items-center gap-3 p-3 cursor-pointer  ${i === activeIndex
-                                ? "bg-purple-700 text-white "
+                                ? "bg-primary text-white "
                                 : "text-white hover:bg-zinc-800"
                                 }`}
                         >

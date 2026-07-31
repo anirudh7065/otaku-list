@@ -15,13 +15,13 @@ export default function Error({
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center gap-4">
-            <h2 className="text-6xl text-purple-700 text-center">Something went wrong!</h2>
-            <p className="text-2xl text-purple-300">{error.message.slice(7) }</p>
-            <p className="text-2xl text-purple-300">500</p>
+            <h2 className="text-6xl text-primary-dark text-center">Something went wrong!</h2>
+            <p className="text-2xl text-primary-active">{error.message.slice(7) }</p>
+            <p className="text-2xl text-primary-active">500</p>
 
             <Link
                 href="/"
-                className="px-4 py-2 border-2 border-purple-500 text-xl text-white rounded-3xl"
+                className="px-4 py-2 border-2 border-primary-dark text-xl text-white rounded-3xl"
             >
                 Back to Home
             </Link>

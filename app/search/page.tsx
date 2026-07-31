@@ -38,7 +38,7 @@ function SearchContent() {
                         Search Result for &quot;{searchParams.get("q") || ""}&quot;
                     </span>
 
-                    <span className={`w-full max-sm:text-[20px] md:text-lg font-bold text-center text-purple-400`}>
+                    <span className={`w-full max-sm:text-[20px] md:text-lg font-bold text-center text-primary-active`}>
                         Matching Anime Not Found
                     </span>
 

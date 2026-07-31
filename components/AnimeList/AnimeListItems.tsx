@@ -6,6 +6,7 @@ import type { newPost } from "@/types/newPost";
 import { ArrowBigLeftDash, Star } from "lucide-react";
 import AnimeCountdown from "./AnimeCountDown";
 import AnimeListLoader from "@/components/AnimeList/AnimeListLoader";
+import { useTitleLanguageToggle } from "@/context/TitleLanguageContext";
 
 
 
@@ -16,6 +17,7 @@ const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false,
     , maxPages?: number, genre?: boolean, schedule?: boolean, myList?: boolean,
 }) => {
     const router = useRouter();
+    const { titleLanguageJP } = useTitleLanguageToggle();
 
     const memberParse = (members: number) => {
         const num = Number(members);
@@ -31,7 +33,7 @@ const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false,
         <div className="cursor-pointer select-none w-screen ">
             <div className={`py-4 ${schedule ? " " : "px-15"} w-full flex justify-center gap-15 items-center mx-auto`} >
                 {(genre || myList) && <ArrowBigLeftDash className="size-14  max-md:hidden" onClick={() => router.back()} />}
-                <span className={` w-full font-bold text-center ${schedule ? "text-2xl my-6 bg-purple-900 py-2 " : "text-4xl py-5"}`}>
+                <span className={` w-full font-bold text-center ${schedule ? "text-2xl my-6 bg-primary-dark py-2 " : "text-4xl py-5"}`}>
                     {title}
                 </span>
             </div>
@@ -42,7 +44,7 @@ const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false,
                 {animes?.map((anime, index) => (
                     <div key={index}>
                         <div
-                            className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-purple-200 shadow-md dark:border-purple-900 hover:scale-[1.02] h-56 w-40 hover:ring-3 hover:ring-purple-400 md:w-70 md:h-105 max-md:overflow-hidden relative
+                            className="hover:-translate-y-2 transition-transform duration-200 rounded-2xl border-3 border-primary-dark shadow-md dark:border-primary-dark hover:scale-[1.02] h-54 w-38 hover:ring-3 hover:ring-primary-active md:w-70 md:h-105 max-md:overflow-hidden relative
                       "
                             onClick={() => router.push(`/anime/${anime.mal_id}?from=${encodeURIComponent(window.location.href)}`)}
                         >
@@ -54,14 +56,14 @@ const AnimeListItems = ({ title, page, animes, setPage, maxPages, genre = false,
                                 height={300}
                                 priority={index < 6}
                                 fetchPriority="high"
-                                className="h-full md:h-84 w-full  md:p-4  object-cover bg-linear-to-br from-black via-gray-700  to-black rounded-t-xl transform-[translateZ(0)] will-change-transform aspect-3/4 "
+                                className="h-full md:h-84 w-full  md:p-4  object-cover bg-linear-to-br from-black via-primary-dark/35  to-black rounded-t-2xl transform-[translateZ(0)] will-change-transform aspect-3/4 "
                             />
-                            <div className="md:text-[18px] text-xs md:px-1 text-center  md:border-t-4 md:py-3 py-2 border-purple-700  w-full md:h-18 overflow-hidden  h-12 max-md:relative max-md:bottom-12 max-md:bg-black/80 max-md:z-10 line-clamp-2"><span className="w-full line-clamp-2 font-bold ">{anime.title}</span></div>
+                            <div className="md:text-[18px] text-xs md:px-1 text-center  md:border-t-4 md:py-3 py-2 border-primary-dark  w-full md:h-18 overflow-hidden  h-12 max-md:relative max-md:bottom-12 max-md:bg-black/80 max-md:z-10 line-clamp-2"><span className="w-full text-text-muted line-clamp-2 font-bold ">{titleLanguageJP ? anime.title : anime.title_english ? anime.title_english : anime.title}</span></div>
                         </div>
                         <div className="flex justify-center items-center gap-1.5 md:text-lg text-xs  w-full ">
                             <div className="flex items-center gap-1">
                                 <Star color="#fff82e" size={15} fill="#fff82e" />
-                                <span className="text-purple-400 py-1"> {anime.score ?? "-"} </span>
+                                <span className="text-text-muted py-1"> {anime.score ?? "-"} </span>
                             </div>
                             ({anime.members ? memberParse(anime.members) : anime.members ?? "-"})
                         </div>
