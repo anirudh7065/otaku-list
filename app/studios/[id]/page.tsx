@@ -11,7 +11,12 @@ async function getStudio(id:string) {
     }
     const res = await fetch(
         `${process.env.APP_BASE_URL || "http://localhost:3000"}/api/fetchProducer?id=${newId}`,
-        { next: { revalidate: 3600 } }
+        {
+            next: { revalidate: 3600 },
+            headers: process.env.INTERNAL_KEY
+                ? { "x-internal-key": process.env.INTERNAL_KEY }
+                : {},
+        },
     );
     const data = await res.json();
     let error = null;

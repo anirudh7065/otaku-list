@@ -1,6 +1,6 @@
 # 🎌 Otaku List
 
-[![Live App](https://img.shields.io/badge/Live-App-000?style=for-the-badge&logo=vercel&logoColor=white)](https://av-otaku-list.vercel.app)
+[![Live App](https://img.shields.io/badge/Live-App-000?style=for-the-badge&logo=vercel&logoColor=white)](https://av-otakulist.vercel.app)
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Tenrai API](https://img.shields.io/badge/API-Tenrai-blue?style=for-the-badge)
@@ -44,7 +44,7 @@ Otaku List:
 - Focuses on practical watchability
 - Developed an anime discovery platform with debounced search, API caching, and
 batch fetching to minimize redundant requests API calls by ~40% using caching
--​ Built a custom backend with Redis-based rate limiting to handle Tenrai API constraints
+-​ Built a custom backend with in-memory rate limiting and upstream request throttling to handle Tenrai API constraints
 -​ Implemented dynamic routing, filtering, and pagination for scalable UI performance
 -​ Optimized for Indian users with timezone-based scheduling and improved UX
 
@@ -120,7 +120,11 @@ Create a `.env.local` file:
 
 ```
 BASE_URL=https://api.tenrai.org/v1
+OTAKU_UA=OtakuList/1.0
+INTERNAL_KEY=<random-secret>
 ```
+
+> `INTERNAL_KEY`: shared secret used to sign internal `/api` calls made by server components during build/ISR. Without it the API guard stays disabled (fail-open). Keep the same value across all deployments, or build/ISR self-fetches will be blocked.
 
 ### Install dependencies
 

@@ -1,18 +1,11 @@
 'use client';
 import Link from "next/link";
-import { useEffect } from "react";
-import { clientLog } from "@/lib/clientLogger";
 
 export default function Error({
     error,
 }: {
     error: Error;
     }) {
-    
-    useEffect(() => {
-        clientLog('error', error.message)
-    }, [error])
-
     return (
         <div className="min-h-screen flex flex-col items-center justify-center gap-4">
             <h2 className="text-6xl text-primary-dark text-center">Something went wrong!</h2>

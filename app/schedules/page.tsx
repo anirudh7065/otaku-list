@@ -4,7 +4,12 @@ import type { newPost } from "@/types/newPost";
 async function getAnime() {
   const res = await fetch(
     `${process.env.APP_BASE_URL || "http://localhost:3000"}/api/fetchSchedule`,
-    { next: { revalidate: 3600 } }
+    {
+      next: { revalidate: 3600 },
+      headers: process.env.INTERNAL_KEY
+        ? { "x-internal-key": process.env.INTERNAL_KEY }
+        : {},
+    },
   );
   if (!res.ok) return null;
   const data = await res.json();
