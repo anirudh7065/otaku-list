@@ -1,5 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
+import { upstreamFetch } from "@/lib/upstream";
 import { CharacterType } from "@/types/characterType";
 export const revalidate = 3600;
 
@@ -10,13 +11,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
 
     try {
 
-    const response = await fetch(apiUrl, {
-      headers: {
-        UserAgent: "OtakuList/1.0",
-        Accept: "application/json",
-      },
-      next: { revalidate: 3600 },
-    });
+    const response = await upstreamFetch(apiUrl, { revalidate: 3600 });
 
     if (!response.ok) {
       return NextResponse.json(

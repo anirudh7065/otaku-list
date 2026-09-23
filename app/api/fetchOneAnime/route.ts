@@ -1,6 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 import type { newPost } from "@/types/newPost";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
+import { upstreamFetch } from "@/lib/upstream";
 
 export const revalidate = 3600;
 
@@ -10,13 +11,8 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const apiUrl = `${baseUrl}/anime/${id}/full`;
 
   try {
-    const response = await fetch(apiUrl, {
-      headers: {
-        UserAgent: "OtakuList/1.0",
-        Accept: "application/json",
-      },
-      next: { revalidate: 3600 },
-    });
+    const response = await upstreamFetch(apiUrl, { revalidate: 3600 });
+
 
     if (!response.ok) {
       return NextResponse.json(
@@ -25,9 +21,11 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
       );
     }
 
-    const data: { data: newPost[] } = await response.json();
+
+    const animeData: { data: newPost[] } = await response.json();
+
     return NextResponse.json({
-      data: [data.data],
+      data: [animeData.data],
     });
   } catch (error) {
     if (error instanceof Error) {

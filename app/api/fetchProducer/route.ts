@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
-import type { ProducerType } from "@/types/producertype";
+import { upstreamFetch } from "@/lib/upstream";
 
 export const revalidate = 3600;
 
@@ -10,13 +10,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const apiUrl = `${baseUrl}/producers/${id}`;
 
   try {
-    const response = await fetch(apiUrl, {
-      headers: {
-        UserAgent: "OtakuList/1.0",
-        Accept: "application/json",
-      },
-      next: { revalidate: 3600 },
-    });
+    const response = await upstreamFetch(apiUrl, { revalidate: 3600 });
 
     
     if (!response.ok) {

@@ -1,6 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 import type { newPost } from "@/types/newPost";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
+import { upstreamFetch } from "@/lib/upstream";
 
 export const revalidate = 3600;
 
@@ -21,13 +22,7 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
   const apiUrl = `${baseUrl}/anime?q=${query}&page=${page}&sfw=true`;
 
   try {
-    let response = await fetch(apiUrl, {
-      headers: {
-        UserAgent: "OtakuList/1.0",
-        Accept: "application/json",
-      },
-      next: { revalidate: 3600 },
-    });
+    let response = await upstreamFetch(apiUrl, { revalidate: 3600 });
 
     if (!response.ok) {
       const errorText = await response.text();
@@ -41,15 +36,9 @@ export const GET = withApiProtectionLogger(async (req: NextRequest) => {
     let data = await response.json();
     if (page > data.pagination.last_visible_page) {
       page = data.pagination.last_visible_page;
-      response = await fetch(
+      response = await upstreamFetch(
         `${baseUrl}/anime?q=${query}&page=${page}&sfw=true`,
-        {
-          headers: {
-            UserAgent: "OtakuList/1.0",
-            Accept: "application/json",
-          },
-          next: { revalidate: 3600 },
-        },
+        { revalidate: 3600 },
       );
 
       data = await response.json();

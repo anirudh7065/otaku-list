@@ -1,6 +1,7 @@
-import { NextResponse, NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 import type { newPost } from "@/types/newPost";
 import { withApiProtectionLogger } from "@/lib/withApiProtectionLogger";
+import { upstreamFetch } from "@/lib/upstream";
 
 export const revalidate = 36000;
 
@@ -40,15 +41,9 @@ function jpnToIndIndex(day: string, time24: string) {
 
 const fetchPage = async (page: number) => {
   const baseUrl = process.env.BASE_URL || "http://localhost:3000";
-  const res = await fetch(
+  const res = await upstreamFetch(
     `${baseUrl}/schedules?page=${page}&sfw=true&kids=false`,
-    {
-      headers: {
-        UserAgent: "OtakuList/1.0",
-        Accept: "application/json",
-      },
-      next: { revalidate: 36000 },
-    },
+    { revalidate: 36000 },
   );
   if (!res.ok) {
     const text = await res.text();
@@ -76,7 +71,7 @@ const fetchPageWithRetry = async (
   throw new Error(`Page ${page} failed after ${retries} retries`);
 };
 
-export const GET = withApiProtectionLogger(async (req: NextRequest) => {
+export const GET = withApiProtectionLogger(async () => {
   try {
     if (cache && Date.now() - lastFetch < CACHE_TIME) {
       return NextResponse.json(cache);

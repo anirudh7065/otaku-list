@@ -1,18 +1,15 @@
 // app/sitemap.ts
 import type { MetadataRoute } from "next";
 import genresData from "./genres/genres.json";
+import { upstreamFetch } from "@/lib/upstream";
 
 const base = "https://av-otakulist.vercel.app";
 
+const apiBase = process.env.BASE_URL || "https://api.tenrai.org/v1";
+
 const fetchPage = (page: number) =>
-  fetch(`https://api.jikan.moe/v4/top/anime?page=${page}`, {
-    headers: {
-      UserAgent: "OtakuList/1.0",
-      Accept: "application/json",
-    },
-    next: {
-      revalidate: 86400,
-    },
+  upstreamFetch(`${apiBase}/top/anime?page=${page}`, {
+    revalidate: 86400,
   }).then((r) => r.json());
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -39,7 +36,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const studioCodes = [569, 18, 4, 314, 1258];
     const studioUrls = studioCodes.map((id) => ({
-      url: `${base}/studio/${id}`,
+      url: `${base}/studios/${id}`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.8,
