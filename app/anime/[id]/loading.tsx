@@ -60,6 +60,22 @@ export default function Skeleton() {
                 </div>
             </div>
 
+            {/* Episodes */}
+            <div className="w-[95vw] mx-auto my-3 border pb-2 rounded-2xl select-none">
+                <div className="w-full border-b flex justify-between">
+                    <div className="h-7 w-24 m-4 rounded-md bg-gray-700 animate-pulse [animation-duration:0.8s]" />
+                    <div className="h-7 w-28 m-4 rounded-md bg-gray-700 animate-pulse [animation-duration:0.8s]" />
+                </div>
+                <div className="w-full h-100 overflow-hidden">
+                    {Array.from({ length: 8 }).map((_, i) => (
+                        <div key={i} className="flex items-center gap-3 p-4 border-b">
+                            <div className="h-5 w-5 rounded-md bg-gray-700 animate-pulse [animation-duration:0.8s]" />
+                            <div className="h-5 w-45 rounded-md bg-gray-700 animate-pulse [animation-duration:0.8s]" />
+                        </div>
+                    ))}
+                </div>
+            </div>
+
             {/* Trailer */}
             <div className="md:w-200 md:h-100 w-[90%] h-60 mx-auto my-10 rounded-md bg-gray-700 animate-pulse [animation-duration:0.8s]" />
         </main>

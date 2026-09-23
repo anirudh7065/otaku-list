@@ -84,6 +84,28 @@ export interface newPost {
   streaming: ExternalLink[];
 }
 
+export interface Episode {
+  mal_id: number;
+  url: string;
+  title: string;
+  title_japanese: string;
+  title_romanji: string;
+  duration: number;
+  aired: string; // ISO 8601 date string
+  score: number;
+  filler: boolean;
+  recap: boolean;
+  synopsis: string;
+  replies: number;
+  forum_url: string;
+  images: EpisodeImages;
+}
+
+interface EpisodeImages {
+  jpg: {
+    image_url: string;
+  };
+}
 export interface ImageSet {
   image_url: string;
   small_image_url: string;

@@ -10,16 +10,16 @@ import { ArrowBigLeftDash } from "lucide-react";
 import jpnToInd from "@/lib/japaneseToIndianTime";
 import CountdownDisplay from "@/app/anime/CountdownDisplay";
 import { Star } from "lucide-react";
-import type { newPost, RelationEntry } from "@/types/newPost";
+import type { newPost, RelationEntry, Episode } from "@/types/newPost";
 import AnimeLoader from "@/app/anime/[id]/loading";
 import type { CharacterType } from "@/types/characterType";
-
+import Episodes from "./Episodes";
 type Genre = {
     mal_id: number;
     name: string;
 }
 
-const AnimeContent = ({ initialData, characters }: { initialData?: newPost, characters?: CharacterType[] }) => {
+const AnimeContent = ({ initialData, characters, episodes }: { initialData?: newPost, characters?: CharacterType[], episodes?: { episodes: Episode[]; maxPage: number } | null }) => {
     const param = useParams();
     const rawId = Number(Array.isArray(param?.id) ? param.id[0] : param?.id);
     const [zoom, setZoom] = useState(false);
@@ -36,7 +36,7 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
         id,
         enabled: !initialData,
     });
-
+    
     const animeData: newPost = initialData ?? fetched?.[0];
 
     if (animeData?.relations?.length > 0) {
@@ -294,14 +294,20 @@ const AnimeContent = ({ initialData, characters }: { initialData?: newPost, char
                                 {/* Read More / Less */}
                                 {others.length > 5 && (
                                     <button
-                                        onClick={() => setShowAllRelations(prev => !prev)}
-                                        className="self-end text-red-400 hover:text-red-300 transition"
+                                    onClick={() => setShowAllRelations(prev => !prev)}
+                                    className="self-end text-red-400 hover:text-red-300 transition"
                                     >
                                         {showAllRelations ? "Read Less" : "Read More"}
                                     </button>
                                 )}
                             </div>
                         )
+                    }
+                    {
+                        <Episodes id={id} initialData={episodes} />
+                    }
+                    {
+                        
                     }
                     {animeData?.trailer?.embed_url && (
                         <iframe
