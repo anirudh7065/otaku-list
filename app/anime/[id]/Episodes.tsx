@@ -45,10 +45,10 @@ const Episodes = ({ id, initialData }: { id: number; initialData?: { episodes: E
     }
 
     return (
-        <div className="w-[95vw] mx-auto my-3 border pb-2 rounded-2xl ">
-            <div className="w-full border-b flex justify-between">
-                <h1 className="font-bold p-4 text-xl">Episodes</h1>
-                {episodes.length > 0 && (
+        <>{
+            episodes?.length > 0 && <div className="w-[95vw] mx-auto my-3 border pb-2 rounded-2xl ">
+                <div className="w-full border-b flex justify-between">
+                    <h1 className="font-bold p-4 text-xl">Episodes</h1>
                     <div className="inline font-bold p-4">
                         {page > 1 && <button onClick={() => setPage(page - 1)}>{"<"}</button>}
                         <span className=" px-1">
@@ -56,11 +56,7 @@ const Episodes = ({ id, initialData }: { id: number; initialData?: { episodes: E
                         </span>
                         {page < maxPages && <button onClick={() => setPage(page + 1)}>{">"}</button>}
                     </div>
-                )}
-            </div>
-            {episodes.length === 0 ? (
-                <p className="text-lg text-text-muted p-4">No episodes available yet.</p>
-            ) : (
+                </div>
                 <div className="w-full h-100 overflow-x-hidden overflow-scroll scrollbar-custom">
                     {episodes.map((episode: Episode, index: number) => (
                         <div key={episode?.mal_id} className={`w-full flex items-center gap-3 p-4 ${index !== episodes.length - 1 && "border-b"}`}>
@@ -73,8 +69,8 @@ const Episodes = ({ id, initialData }: { id: number; initialData?: { episodes: E
                         </div>
                     ))}
                 </div>
-            )}
-        </div>
+            </div >
+        }</>
     )
 }
 
